@@ -1,0 +1,10 @@
+@import '../theme';
+
+.sidebarLeft {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  height: 100%;
+  background-color: $sidebar-color;
+}
