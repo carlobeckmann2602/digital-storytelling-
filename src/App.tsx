@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
+import './App.scss'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 import { motion, useScroll } from 'framer-motion'
 
