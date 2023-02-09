@@ -1,1 +1,1 @@
-export const HEADLINE = 'Kindheit von Chum Mey'
+export const HEADLINE = 'Beispiel Headline' // TODO: Replace with real language keys
