@@ -16,7 +16,7 @@ const ChildhoodC = (props: Props) => {
 
   return (
     <div ref={ref} className={'wrapper'}>
-      <h2>{CHAPTER_TITLES['CHILDHOOD_C']}</h2>
+      <h2 className='heading'>{CHAPTER_TITLES['CHILDHOOD_C']}</h2>
     </div>
   )
 }

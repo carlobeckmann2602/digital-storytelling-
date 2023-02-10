@@ -21,7 +21,7 @@ const Template = (props: Props) => {
 
   return (
     <div ref={ref} className={'wrapper'}>
-      <h2>{<h2>{CHAPTER_TITLES['TEMPLATE']}</h2>}</h2>
+      <h2 className='heading'>{CHAPTER_TITLES['TEMPLATE']}</h2>
     </div>
   )
 }
