@@ -1,6 +1,11 @@
+import { PropsWithChildren } from 'react'
 import './SidebarLeft.scss'
 
-function SidebarLeft(props: any) {
+interface Props {
+  anyProp: string // TODO: Replace with real props
+}
+
+function SidebarLeft(props: PropsWithChildren<Props>) {
   return (
     <div className='sidebarLeft'>
       <span>{props.children}</span>
