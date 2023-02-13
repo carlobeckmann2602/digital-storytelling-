@@ -16,10 +16,46 @@ const ChildhoodB = (props: Props) => {
   }, [onScreen])
 
   return (
-    <div ref={ref} className={'chapter-heading-wrapper'}>
-      <h2 className={classNames(classes.heading, 'chapter-heading')}>
-        {CHAPTER_TITLES['CHILDHOOD_B']}
-      </h2>
+    <div>
+      <div ref={ref} className={'header-outer'}>
+        <div className='header-inner'>
+          <h2 className={classNames(classes.heading, 'chapter-heading')}>
+            {CHAPTER_TITLES['CHILDHOOD_B']}
+          </h2>
+        </div>
+      </div>
+      <div className='chapter-body-wrapper'>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
+          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
+          consectetur distinctio nobis tempora voluptatum voluptates?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
+          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
+          consectetur distinctio nobis tempora voluptatum voluptates?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
+          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
+          consectetur distinctio nobis tempora voluptatum voluptates?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
+          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
+          consectetur distinctio nobis tempora voluptatum voluptates?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
+          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
+          consectetur distinctio nobis tempora voluptatum voluptates?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
+          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
+          consectetur distinctio nobis tempora voluptatum voluptates?
+        </p>
+      </div>
     </div>
   )
 }
