@@ -1,3 +1,27 @@
 $text-color: #000000;
 $bg-color: #ffffff;
 $sidebar-color: #ff00dd;
+
+@font-face {
+  font-family: 'InriaSerif-Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('InriaSerif-Bold'), url(@/assets/fonts/InriaSerif-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'InriaSerif-Regular';
+  font-style: normal;
+  src: local('InriaSerif-Regular'), url(@/assets/fonts/InriaSerif-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'InriaSerif-Italic';
+  font-style: italic;
+  src: local('InriaSerif-Italic'), url(@/assets/fonts/InriaSerif-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'InriaSerif-BoldItalic';
+  font-style: italic;
+  font-weight: bold;
+  src: local('InriaSerif-BoldItalic'),
+    url(@/assets/fonts/InriaSerif-BoldItalic.ttf) format('truetype');
+}
