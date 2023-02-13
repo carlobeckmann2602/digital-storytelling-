@@ -28,7 +28,7 @@
   width: 100%;
   padding-bottom: 32px;
   position: sticky;
-  top: 16px;
+  top: 0px;
 }
 
 .header-outer {
@@ -41,7 +41,7 @@
   position: sticky;
 
   // hack to make transition between full screen heading and sticky header possible
-  top: calc(80px + 16px - 100vh);
+  top: calc(80px + 32px - 100vh);
   // hack to make this possible with <Parallax> too
   z-index: 99;
   // hack to prevent underlying elements to shine through
