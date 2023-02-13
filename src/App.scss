@@ -23,6 +23,19 @@
   padding: 0 240px;
 }
 
+.chapter-heading-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chapter-heading {
+  position: sticky;
+  top: 20px;
+}
+
 #root {
   text-align: center;
   width: 100%;
