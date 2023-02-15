@@ -1,7 +1,8 @@
-import { ScrollControls, Sky, Stage } from '@react-three/drei'
+import { Loader, ScrollControls, Sky, Stage } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { Suspense } from 'react'
 import { PrisonModel } from './PrisonModel'
+import * as language from './PrisonModelCanvas_lang'
 
 const PrisonModelCanvas = () => {
   return (
@@ -25,6 +26,7 @@ const PrisonModelCanvas = () => {
           </Stage>
         </Suspense>
       </Canvas>
+      <Loader dataInterpolation={(p) => `${language.LOADING} ${p.toFixed(2)}%`} />
     </div>
   )
 }

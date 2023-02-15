@@ -7,9 +7,10 @@ Source: https://sketchfab.com/3d-models/uscss-prometheus-flying-feeb1921cb9a4d09
 Title: USCSS Prometheus flying
 */
 
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import { useGLTF, useScroll } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
+import { Mesh } from 'three'
 
 export function PrisonModel(props) {
   const scrollPosition = useScroll()
