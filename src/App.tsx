@@ -18,8 +18,10 @@ function App() {
       <div className='app'>
         <PrisonModelCanvas />
         <div className='chapters'>
-          <SidebarLeft anyProp='' />
-          <SidebarRight currentChapter={currentChapter} />
+          <div className='sidebars'>
+            <SidebarLeft anyProp='' />
+            <SidebarRight currentChapter={currentChapter} />
+          </div>
           <div className='chapter-content'>
             <Template setCurrentChapter={setCurrentChapter} />
             <ChildhoodC setCurrentChapter={setCurrentChapter} />
