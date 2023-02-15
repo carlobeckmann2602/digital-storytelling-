@@ -16,7 +16,6 @@ function App() {
   return (
     <ParallaxProvider>
       <div className='app'>
-        <PrisonModelCanvas />
         <div className='chapters'>
           <div className='sidebars'>
             <SidebarLeft anyProp='' />
