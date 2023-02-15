@@ -1,19 +1,22 @@
-import './App.scss'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import { useState } from 'react'
 import ChildhoodC from './components/chapter/ChildhoodC/ChildhoodC'
 import ChildhoodB from './components/chapter/ChildhoodB/ChildhoodB'
 import Template from './components/chapter/Template/Template'
 import SidebarLeft from './components/SidebarLeft'
 import SidebarRight from './components/SidebarRight'
-import { useState } from 'react'
+import PrisonModelCanvas from './components/landingpage/PrisonModelCanvas'
 import { Chapter } from './helpers/constants'
+import './App.scss'
 
 function App() {
   const [currentChapter, setCurrentChapter] = useState<Chapter>('TITLE')
 
+  // TODO: Do not show sidebar when on landingpage
   return (
     <ParallaxProvider>
       <div className='app'>
+        <PrisonModelCanvas />
         <div className='chapters'>
           <SidebarLeft anyProp='' />
           <SidebarRight currentChapter={currentChapter} />
