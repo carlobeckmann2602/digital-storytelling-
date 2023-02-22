@@ -7,4 +7,31 @@
   width: 240px;
   height: 100vh;
   background-color: $sidebar-color;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.timeline {
+  font-family: $primary-fontfamily;
+  color: $context-timeline-color;
+
+  padding: 30px;
+
+  .prev-date,
+  .next-date {
+    margin: 5px;
+  }
+
+  .current-date {
+    margin: 10px;
+    font-size: 32px;
+    color: $c-timeline-color;
+  }
+
+  .hidden-date {
+    display: none;
+  }
 }
