@@ -17,12 +17,17 @@
 .timeline {
   font-family: $primary-fontfamily;
   color: $context-timeline-color;
+  padding: 30px 10px;
 
-  padding: 30px;
-
-  .prev-date,
-  .next-date {
+  .date {
+    font-size: 18px;
+    line-height: 36px;
     margin: 5px;
+  }
+
+  .date:hover {
+    font-size: 24px;
+    color: $b-timeline-color;
   }
 
   .current-date {

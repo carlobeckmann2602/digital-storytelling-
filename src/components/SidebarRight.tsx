@@ -25,9 +25,9 @@ function SidebarRight(props: Props) {
         <ul className={expandTimeline ? 'date' : 'hidden-date'}>XXXX</ul>
         <ul className={expandTimeline ? 'date' : 'hidden-date'}>XX.XX.XXXX</ul>
         <ul className={expandTimeline ? 'date' : 'hidden-date'}>XX.XX.XXXX</ul>
-        <ul className='prev-date'>1975-1978</ul>
+        <ul className='prev-date date'>1975-1978</ul>
         <ul className='current-date'>07.01.1979</ul>
-        <ul className='next-date'>13.07.1980</ul>
+        <ul className='next-date date'>13.07.1980</ul>
         <ul className={expandTimeline ? 'date' : 'hidden-date'}>XXXX-XXXX</ul>
         <ul className={expandTimeline ? 'date' : 'hidden-date'}>XX.XX.XXXX</ul>
         <ul className={expandTimeline ? 'date' : 'hidden-date'}>XX.XX.XXXX</ul>
