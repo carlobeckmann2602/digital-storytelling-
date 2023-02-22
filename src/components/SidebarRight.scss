@@ -9,15 +9,15 @@
   background-color: $sidebar-color;
 
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .timeline {
   font-family: $primary-fontfamily;
   color: $context-timeline-color;
   padding: 30px 10px;
+  flex: 100%;
 
   .date {
     font-size: 18px;
