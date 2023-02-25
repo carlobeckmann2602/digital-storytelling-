@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import classNames from 'classnames'
-import { Chapter, CHAPTER_TITLES } from '../../../helpers/constants'
+import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodC.module.scss'
 
@@ -9,18 +9,20 @@ interface Props {
 }
 
 const ChildhoodC = (props: Props) => {
+  const CHAPTER_ID: Chapter = 'CHILDHOOD_C'
+
   const ref = React.useRef<HTMLInputElement>(null)
   const onScreen = useOnScreen(ref, '-350px')
   useEffect(() => {
-    onScreen && props.setCurrentChapter('CHILDHOOD_C')
+    onScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [onScreen])
 
   return (
-    <div>
+    <div id={CHAPTER_ID}>
       <div ref={ref} className={'header-outer'}>
         <div className='header-inner'>
           <h2 className={classNames(classes.heading, 'chapter-heading')}>
-            {CHAPTER_TITLES['CHILDHOOD_C']}
+            {CHAPTERS.get(CHAPTER_ID)?.title}
           </h2>
         </div>
       </div>

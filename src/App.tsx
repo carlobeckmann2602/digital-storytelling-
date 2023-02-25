@@ -18,7 +18,7 @@ function App() {
       <div className='app'>
         <div className='chapters'>
           <div className='sidebars'>
-            <SidebarLeft anyProp='' />
+            <SidebarLeft currentChapter={currentChapter} />
             <SidebarRight currentChapter={currentChapter} />
           </div>
           <div className='chapter-content'>

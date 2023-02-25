@@ -1,14 +1,15 @@
 import { PropsWithChildren } from 'react'
+import { Chapter, CHAPTERS } from '../helpers/constants'
 import './SidebarLeft.scss'
 
-interface Props {
-  anyProp: string // TODO: Replace with real props
+interface SidebarProps {
+  currentChapter: Chapter
 }
 
-function SidebarLeft(props: PropsWithChildren<Props>) {
+function SidebarLeft(props: PropsWithChildren<SidebarProps>) {
   return (
     <div className='sidebarLeft'>
-      <span>{props.children}</span>
+      <span className='place'>{CHAPTERS.get(props.currentChapter)?.place}</span>
     </div>
   )
 }

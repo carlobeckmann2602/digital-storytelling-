@@ -7,4 +7,14 @@
   width: 240px;
   height: 100vh;
   background-color: $sidebar-color;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.place {
+  color: $context-timeline-color;
+  padding: 30px 10px;
+  font-size: 18px;
 }
