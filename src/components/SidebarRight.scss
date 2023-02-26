@@ -22,8 +22,8 @@
 
   .date {
     display: block;
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 24px;
     margin: 5px;
     padding: 0;
     color: $context-timeline-color;
@@ -31,20 +31,19 @@
   }
 
   .date:hover {
-    font-size: 24px;
+    font-size: 20px;
     color: $b-timeline-color;
   }
 
   .current-date {
     @extend .date;
     padding: 0;
-    margin: 10px;
-    font-size: 32px;
+    font-size: 24px;
     color: $c-timeline-color;
   }
 
   .current-date:hover {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .prev-date {

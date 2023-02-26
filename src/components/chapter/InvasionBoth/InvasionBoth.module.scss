@@ -1,0 +1,31 @@
+@import '@/App.scss';
+
+.heading {
+  color: $context-timeline-color;
+}
+
+.splitScreenWrapper {
+  display: flex;
+  align-items: space-between;
+  gap: 5%;
+}
+
+.leftSide,
+.rightSide {
+  width: 50%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.dashed {
+  border-right: 3px dashed #bbb;
+  color: transparent;
+}
+
+.img {
+  width: 100%;
+}

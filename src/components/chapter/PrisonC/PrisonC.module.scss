@@ -1,0 +1,11 @@
+@import '@/App.scss';
+
+.heading {
+  color: $c-timeline-color;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
