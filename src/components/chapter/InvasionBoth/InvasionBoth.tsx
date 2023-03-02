@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
@@ -20,6 +20,38 @@ const InvasionBoth = (props: Props) => {
     onScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [onScreen])
 
+  const refScroll = React.useRef<HTMLInputElement>(null)
+  const onLeftFixed = useOnScreen(refScroll, '-350px');
+
+
+
+  /* test */
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+    return () => window.removeEventListener("scroll", listenToScroll);
+  }, []);
+
+  const getOffset =(element: HTMLElement | null) => {
+    const elementRect = element?.getBoundingClientRect();
+    console.log('pos' + elementRect?.top);
+    return elementRect?.top;
+  };
+
+  const listenToScroll = () => {
+    const heightToHide = getOffset(document.getElementById('test'));
+    const windowScrollHeight = document.body.scrollTop || document.documentElement.scrollTop;
+    console.log('body' + document.body.scrollTop);
+    console.log('element' + document.documentElement.scrollTop);
+    if(600 < heightToHide!){
+      setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+  };
+
+
   return (
     <div id={CHAPTER_ID}>
       <div ref={ref} className={'header-outer'}>
@@ -31,9 +63,22 @@ const InvasionBoth = (props: Props) => {
       </div>
       <div className='chapter-body-wrapper'>
         <div className={classes.splitScreenWrapper}>
-          <div className={classes.leftSide}>
+        {isVisible && (
+        <div className={classNames(classes.leftSide, classes.sticky)}>
             <div className={classes.section}>
-              <Parallax speed={-5}>
+                <p>{language.C_1}</p>
+                <img src={TestImage} alt='Testbild' className={classes.img} />
+                <p>{language.C_2}</p>
+            </div>
+            <div className={classes.section}>
+              <p>{language.C_3}</p>
+            </div>
+          </div>
+          )}
+          {!isVisible && (
+        <div className={classNames(classes.leftSides)}>
+            <div className={classes.section}>
+              <Parallax speed={-5} className={classNames(classes.section)}>
                 <p>{language.C_1}</p>
                 <img src={TestImage} alt='Testbild' className={classes.img} />
                 <p>{language.C_2}</p>
@@ -43,6 +88,7 @@ const InvasionBoth = (props: Props) => {
               <p>{language.C_3}</p>
             </div>
           </div>
+          )}
           <hr className={classes.dashed}></hr>
           <div className={classes.rightSide}>
             <div className={classes.section}>
@@ -53,6 +99,27 @@ const InvasionBoth = (props: Props) => {
                   hic, ea consectetur distinctio nobis tempora voluptatum voluptates?
                 </p>
               </Parallax>
+            </div>
+            <div className={classes.section}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
+                itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
+                consectetur distinctio nobis tempora voluptatum voluptates?
+              </p>
+            </div>
+            <div id='test' className={classes.section}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
+                itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
+                consectetur distinctio nobis tempora voluptatum voluptates?
+              </p>
+            </div>
+            <div className={classes.section}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
+                itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
+                consectetur distinctio nobis tempora voluptatum voluptates?
+              </p>
             </div>
             <div className={classes.section}>
               <p>
