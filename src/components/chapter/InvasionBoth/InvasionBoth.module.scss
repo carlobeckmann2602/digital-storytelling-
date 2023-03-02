@@ -5,14 +5,14 @@
 }
 
 .splitScreenWrapper {
-  display: flex;
-  align-items: space-between;
-  gap: 5%;
+  display: grid;
+  grid-template-columns: 48% 2% 48%;
+  width: 100%;
 }
 
 .leftSide,
 .rightSide {
-  width: 50%;
+  width: 100%;
 }
 
 .section {
@@ -23,9 +23,10 @@
 }
 
 .sticky {
+  width: 100%;
   position: sticky;
   align-self: flex-start;
-  top: 0;
+  top: 100px;
   background-color: red;
 }
 
@@ -37,4 +38,3 @@
 .img {
   width: 100%;
 }
-
