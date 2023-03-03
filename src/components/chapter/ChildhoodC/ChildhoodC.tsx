@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodC.module.scss'
+import * as language from './ChildhoodC_lang'
 import sampleGlücklich from '@/assets/img/sample_glücklich.png'
 import sampleArbeit from '@/assets/img/sample_hand.png'
 import sampleBedruckt from '@/assets/img/sample_bedruckt.png'
@@ -36,9 +37,7 @@ const ChildhoodC = (props: Props) => {
           <img src={sampleGlücklich} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
-        <p>
-          Es war ein Samstag im November 1931, als ein kleiner Junge namens Chum Mey in Thaot Croh geboren wurde.
-        </p>
+          <p>{language.geburt_c}</p>
         </Parallax>
       </div>
       <div className={classes.section}>
@@ -46,10 +45,7 @@ const ChildhoodC = (props: Props) => {
           <img src={sampleArbeit} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={0} translateX={['-10px', '-100px']}>
-        <p>
-          In diesem Dorf in der Prey Veng Provinz lebte er mit seinen 5 Brüdern und 2 Schwestern und
-          arbeitete zusammen mit seinen Eltern auf der Reisfarm. In die Schule ging er allerdings nicht.
-        </p>
+          <p>{language.dorf_geburt}</p>
         </Parallax>
       </div>
       <div className={classes.section}>
@@ -57,12 +53,7 @@ const ChildhoodC = (props: Props) => {
           <img src={sampleBedruckt} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
-        <p>
-          Als Chum Mey 10 Jahre alt war, starben seine Eltern und er zog mit seinen Geschwistern
-            zu seinem ältesten Bruder nach Ba Phnom und arbeitete dort wieder auf einer Farm.
-            Nachdem kurze Zeit später der älteste Bruder starb, brachen schwere Zeiten für die Familie an,
-            da die Ernte nicht genug zum Leben war. INFO FRANZ ZEIT.
-        </p>
+          <p>{language.c_10J}</p>
         </Parallax>
       </div>
     </div>

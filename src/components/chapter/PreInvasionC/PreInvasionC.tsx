@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './PreInvasionC.module.scss'
+import * as language from './PreInvasionC_lang'
 import sampleSorge from '@/assets/img/sample_sorge.png'
 import sampleHappy from '@/assets/img/sample_happy.png'
 import sampleLove from '@/assets/img/sample_love.png'
@@ -36,12 +37,7 @@ const PreInvasionC = (props: Props) => {
           <img src={sampleSorge} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
-        <p>
-            Im Jahr 1950 ging Chum Mey nach Phnom Penh. Dort hatte er große Mühe arbeit zu finden, da er niemanden kannte.
-            Er lebte auf der Straße und fand später als Bootsgehilfe eine Arbeit. Kurz darauf fand er Arbeit als Assistent
-            und lernte dann als Mechaniker.
-            Zu dieser Zeit verdiente er kaum Geld und war immer noch sehr arm.
-        </p>
+          <p>{language.c_1950}</p>
         </Parallax>
       </div>
       <div className={classes.section}>
@@ -49,10 +45,7 @@ const PreInvasionC = (props: Props) => {
           <img src={sampleHappy} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
-        <p>
-            Vier Jahre später studierte Chum Mey Mechanik in Prey Veng und bekam darauf viel Geld.
-            Zu dieser Zeit reparierte er Fahrzeuge und arbeitete in einer Werkstatt.
-        </p>
+          <p>{language.c_study}</p>
         </Parallax>
       </div>
       <div className={classes.section}>
@@ -60,11 +53,7 @@ const PreInvasionC = (props: Props) => {
           <img src={sampleLove} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
-        <p>
-            Im Jahr 1964 arrangierte ein Arbeitskollege für Chum Mey eine Heirat
-            mit dessen Cousine, die er zuvor erst einmal getroffen hatte.
-            Trotzdem führte er eine sehr glückliche Ehe mit ihr und sie bekamen insgesamt 4 Kinder, welche alle im Krieg starben.
-        </p>
+          <p>{language.c_heirat}</p>
         </Parallax>
       </div>
       <div className={classes.section}>
@@ -72,10 +61,7 @@ const PreInvasionC = (props: Props) => {
           <img src={sampleFight} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
-        <p>
-            Kurz vor der Invasion von den Khmer eröffnete Chum Mey kurz hintereinander zwei Werkstätten.
-            Diese verkaufte er am Ende, um dann für einen General im Militär zu arbeiten und für diesen Traktoren und Autos zu reparieren.
-        </p>
+          <p>{language.c_werkstatt}</p>
         </Parallax>
       </div>
     </div>

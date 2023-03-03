@@ -1,6 +1,6 @@
 export const CHAPTERS = new Map([
   ['TEMPLATE', { time: 'XX.XX.XXXX', title: 'Beispielkapitel', place: 'Beispielort' }],
-  ['CHILDHOOD_C', { time: 'YYYY - ZZZZ', title: 'Kindheit von Chum Mey', place: 'Beispielort2' }],
+  ['CHILDHOOD_C', { time: '1931 - 1949', title: 'Kindheit von Chum Mey', place: 'Beispielort2' }],
   ['CHILDHOOD_B', { time: 'XXXX - YZYZ', title: 'Kindheit von Bou Meng', place: 'Beispielort3' }],
   [
     'HISTORICAL_BACKGROUND',
@@ -12,7 +12,7 @@ export const CHAPTERS = new Map([
   ],
   [
     'PRE_INVASION_C',
-    { time: 'XXXX - YZYZ', title: 'Chum Meys Leben vor der Invasion', place: 'Beispielort3' },
+    { time: '1950 - 1973', title: 'Chum Meys Leben vor der Invasion', place: 'Beispielort3' },
   ],
   [
     'INVASION_BACKGROUND',
