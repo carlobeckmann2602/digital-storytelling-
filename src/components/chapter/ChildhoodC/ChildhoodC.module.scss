@@ -3,3 +3,18 @@
 .heading {
   color: $c-timeline-color;
 }
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+
+}
+
+.img {
+  width: 20%;
+  height: 20%;
+}

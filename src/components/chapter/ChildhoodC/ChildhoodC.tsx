@@ -3,6 +3,9 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodC.module.scss'
+import sampleGlücklich from '@/assets/img/sample_glücklich.png'
+import sampleArbeit from '@/assets/img/sample_hand.png'
+import sampleTraurig from '@/assets/img/sample_traurig.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -26,21 +29,24 @@ const ChildhoodC = (props: Props) => {
           </h2>
         </div>
       </div>
-      <div className='chapter-body-wrapper'>
+      <div className={classes.section}>
+        <img src={sampleGlücklich} alt='Austauschbild' className={classes.img}/>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
+          Es war ein Samstag im November 1931, als ein kleiner Junge namens Chum Mey in Thaot Croh geboren wurde.
         </p>
+      </div>
+      <div className={classes.section}>
+        <img src={sampleArbeit} alt='Austauschbild' className={classes.img}/>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
+          In diesem Dorf in der Prey Veng Provinz lebte er mit seinen 5 Brüdern und 2 Schwestern und
+          arbeitete zusammen mit seinen Eltern auf der Reisfarm. In die Schule ging er allerdings nicht.
         </p>
+      </div>
+      <div className={classes.section}>
+        <img src={sampleTraurig} alt='Austauschbild' className={classes.img}/>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
+          Als Chum Mey 10 Jahre alt war, starben seine ELtern und er zog mit seinen Geschwistern
+          zu seinem ältesten Bruder nach Ba Phnom.
         </p>
       </div>
     </div>
