@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './InvasionBoth.module.scss'
 import * as language from './InvasionBoth_lang'
-import TestImage from '@/assets/img/template-1.jpg'
+import InvasionImage1 from '@/assets/img/InvasionBoth_Invasion1_c_Roland_Neveu.png'
+import InvasionImage2 from '@/assets/img/InvasionBoth_Invasion2_c_Claude_Juvenal.jpg'
+import InvasionImage3 from '@/assets/img/InvasionBoth_Invasion3_c_Roland_Neveu.png'
 import { Parallax } from 'react-scroll-parallax'
 
 interface Props {
@@ -20,32 +22,15 @@ const InvasionBoth = (props: Props) => {
     onScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [onScreen])
 
-  const refScroll = React.useRef<HTMLInputElement>(null)
-
-  /* test */
-  const [isVisible, setIsVisible] = useState(true)
-
-  useEffect(() => {
-    window.addEventListener('scroll', listenToScroll)
-    return () => window.removeEventListener('scroll', listenToScroll)
-  }, [])
-
-  const getOffset = (element: HTMLElement | null) => {
-    const elementRect = element?.getBoundingClientRect()
-    console.log('pos' + elementRect?.top)
-    return elementRect?.top
-  }
-
-  const listenToScroll = () => {
-    const heightToHide = getOffset(document.getElementById('test'))
-    // const windowScrollHeight = document.body.scrollTop || document.documentElement.scrollTop
-    console.log('body' + document.body.scrollTop)
-    console.log('element' + document.documentElement.scrollTop)
-    if (heightToHide && heightToHide > 600) {
-      setIsVisible(false)
-    } else {
-      setIsVisible(true)
-    }
+  /* Formula (all elements must have the same idKey):
+  (Height of own sticky-container)
+  + (Height of Content of other sides container)
+  + (Height of next sticky-container of other side) */
+  const computeHeight = (idKey: string) => {
+    const elements = document.querySelectorAll(idKey)
+    let height = 0
+    elements.forEach((elem) => (height += elem.getBoundingClientRect().height))
+    return height
   }
 
   return (
@@ -58,108 +43,84 @@ const InvasionBoth = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'>
+        <img src={InvasionImage1} alt='Testbild' className={classes.imgL} />
         <div className={classes.splitScreenWrapper}>
           <div className={classNames(classes.leftSide)}>
-            {isVisible && (
-              <div className={classNames(classes.sticky)}>
-                <div className='test'>
-                  <p>{language.C_1}</p>
-                  <img src={TestImage} alt='Testbild' className={classes.img} />
+            {/* first section LEFT */}
+            <div className='firstR'>
+              <div className={classNames(classes.subsection, classes.leftAlign)}>
+                <p>{language.C_1}</p>
+              </div>
+              <div className={classNames(classes.subsection, classes.rightAlign)}>
+                <Parallax speed={5}>
+                  <img src={InvasionImage2} alt='Testbild' className={classNames(classes.imgL)} />
+                </Parallax>
+              </div>
+            </div>
+            {/* second section LEFT */}
+            <div style={{ height: computeHeight('.secondL') }}>
+              <div className={classNames(classes.sticky, 'firstR', 'secondL')}>
+                <div className={classNames(classes.subsection)}>
                   <p>{language.C_2}</p>
                 </div>
-                <div className={classes.section}>
-                  <p>{language.C_3}</p>
-                </div>
-                <div className={classes.section}>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae
-                    natus itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti
-                    hic, ea consectetur distinctio nobis tempora voluptatum voluptates?
-                  </p>
+                <div className={classNames(classes.subsection)}>
+                  <img src={InvasionImage3} alt='Testbild' className={classNames(classes.imgS)} />
                 </div>
               </div>
-            )}
-            {!isVisible && (
-              <div>
-                <div className={classes.section}>
-                  <Parallax speed={-5} className={classNames(classes.section)}>
-                    <p>{language.C_1}</p>
-                    <img src={TestImage} alt='Testbild' className={classes.img} />
-                    <p>{language.C_2}</p>
-                  </Parallax>
-                </div>
-                <div className={classes.section}>
-                  <p>{language.C_3}</p>
-                </div>
-                <div className={classes.section}>
+            </div>
+            {/* third section LEFT */}
+            <div className={classNames('secondR')}>
+              <div className={classes.subsection}>
+                <Parallax speed={0}>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae
-                    natus itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti
-                    hic, ea consectetur distinctio nobis tempora voluptatum voluptates?
+                    DREIIIIIILorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt,
+                    recusandae natus itaque fugit quod optio earum excepturi quae est quibusdam eius
+                    deleniti hic, ea consectetur distinctio nobis tempora voluptatum voluptates?
                   </p>
-                </div>
+                </Parallax>
               </div>
-            )}
-          </div>
-          <hr className={classes.dashed}></hr>
-          <div className={classes.rightSide}>
-            <div className={classes.section}>
-              <Parallax speed={-5}>
+              <div className={classes.subsection}>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae
                   natus itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti
                   hic, ea consectetur distinctio nobis tempora voluptatum voluptates?
                 </p>
-              </Parallax>
+              </div>
+              <div id='test' className={classes.subsection}>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae
+                  natus itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti
+                  hic, ea consectetur distinctio nobis tempora voluptatum voluptates?
+                </p>
+              </div>
             </div>
-            <div className={classes.section}>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-                itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-                consectetur distinctio nobis tempora voluptatum voluptates?
-              </p>
+          </div>
+          <hr className={classes.dashed}></hr>
+          <div className={classes.rightSide}>
+            {/* Offset container for first section */}
+            <div style={{ height: computeHeight('.firstR') - 75 }}></div>
+            {/* first section RIGHT */}
+            <div className={classNames('secondL')}>
+              <div className={classNames(classes.subsection, classes.leftAlign)}>
+                <p>{language.C_1}</p>
+              </div>
+              <div className={classNames(classes.subsection, classes.rightAlign)}>
+                <div></div>
+                <Parallax speed={5}>
+                  <img src={InvasionImage2} alt='Testbild' className={classNames(classes.imgL)} />
+                </Parallax>
+              </div>
             </div>
-            <div id='test' className={classes.section}>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-                itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-                consectetur distinctio nobis tempora voluptatum voluptates?
-              </p>
-            </div>
-            <div className={classes.section}>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-                itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-                consectetur distinctio nobis tempora voluptatum voluptates?
-              </p>
-            </div>
-            <div className={classes.section}>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-                itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-                consectetur distinctio nobis tempora voluptatum voluptates?
-              </p>
-            </div>
-            <div className={classes.section}>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-                itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-                consectetur distinctio nobis tempora voluptatum voluptates?
-              </p>
-            </div>
-            <div className={classes.section}>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-                itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-                consectetur distinctio nobis tempora voluptatum voluptates?
-              </p>
-            </div>
-            <div className={classes.section}>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-                itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-                consectetur distinctio nobis tempora voluptatum voluptates?
-              </p>
+            {/* second section RIGHT */}
+            <div style={{ height: computeHeight('.secondR') }}>
+              <div className={classNames(classes.sticky, 'secondL', 'secondR')}>
+                <div className={classNames(classes.subsection)}>
+                  <p>{language.C_2}</p>
+                </div>
+                <div className={classNames(classes.subsection)}>
+                  <img src={InvasionImage3} alt='Testbild' className={classNames(classes.imgS)} />
+                </div>
+              </div>
             </div>
           </div>
         </div>

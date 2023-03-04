@@ -13,28 +13,46 @@
 .leftSide,
 .rightSide {
   width: 100%;
-}
-
-.section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 20px;
+}
+
+.subsection {
+  display: flex;
+  flex-direction: row;
   gap: 5%;
+  margin: 10px;
+
+  &.leftAlign {
+    justify-content: flex-start;
+  }
+
+  &.rightAlign {
+    justify-content: flex-end;
+  }
+
+  p {
+    width: 70%;
+  }
+
+  .imgL {
+    width: 100%;
+  }
+
+  .imgS {
+    width: 80%;
+  }
 }
 
 .sticky {
-  width: 100%;
   position: sticky;
-  align-self: flex-start;
-  top: 100px;
-  background-color: red;
+  top: 20vh;
 }
 
 .dashed {
   border-right: 3px dashed #bbb;
   color: transparent;
-}
-
-.img {
-  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
