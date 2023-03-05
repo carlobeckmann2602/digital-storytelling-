@@ -112,8 +112,8 @@ const InvasionBoth = (props: Props) => {
               <div className={classNames(classes.subsection, classes.leftAlign)}>
                 <p>{language.B_1}</p>
               </div>
-              <div className={classNames(classes.subsection)}>
-                <p className={classNames(classes.highlight)}>{language.B_2_Quote}</p>
+              <div className={classNames(classes.subsection, classes.rightAlign)}>
+                <p>{language.B_2}</p>
               </div>
               <div className={classNames(classes.subsection, classes.rightAlign)}>
                 <Parallax speed={2}>
@@ -124,7 +124,7 @@ const InvasionBoth = (props: Props) => {
             {/* 2.section RIGHT */}
             <div style={{ height: computeHeight('.thirdR', 450) }}>
               <div className={classNames(classes.section, classes.sticky, 'secondL', 'thirdR')}>
-                <div className={classNames(classes.subsection)}>
+                <div className={classNames(classes.subsection, classes.leftAlign)}>
                   <p>{language.B_3}</p>
                 </div>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
@@ -140,7 +140,7 @@ const InvasionBoth = (props: Props) => {
                 <p>{language.B_1}</p>
               </div>
               <div className={classNames(classes.subsection)}>
-                <p className={classNames(classes.highlight)}>{language.B_2_Quote}</p>
+                <p className={classNames(classes.highlight)}>{language.B_2}</p>
               </div>
               <div className={classNames(classes.subsection, classes.rightAlign)}>
                 <Parallax speed={2}>
