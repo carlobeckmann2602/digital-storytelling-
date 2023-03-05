@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 /* TODO: Zu vorherigem Kapitel??? */
 export const C_1 =
   'Auf der Suche nach seinem Bruder fährt Chum Mey einige Stunden durch Phnomh Penh. Seine Suche bleibt vergeblich, stattdessen sieht er auf seiner Reise durch die Stadt viele umgekippte und brennende Autos. Immer wieder hört er schweres Artilleriefeuer, unter dessen Einschlägen mehrere dutzend Häuser in Flammen aufgehen.'

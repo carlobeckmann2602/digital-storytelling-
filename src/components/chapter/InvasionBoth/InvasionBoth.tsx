@@ -9,6 +9,7 @@ import InvasionImage2 from '@/assets/img/InvasionBoth_Invasion2_c_Claude_Juvenal
 import InvasionImage3 from '@/assets/img/InvasionBoth_Invasion3_c_Roland_Neveu.png'
 import InvasionImage4 from '@/assets/img/InvasionBoth_Invasion4_c_.png'
 import { Parallax } from 'react-scroll-parallax'
+import Quotation from '../../Quotation/Quotation'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -22,6 +23,8 @@ const InvasionBoth = (props: Props) => {
   useEffect(() => {
     onScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [onScreen])
+
+  const citationProp = { quote: language.B_7_Quote, citation: 'Bou Meng' }
 
   /* Formula (all elements must have the same idKey):
   (Height of own sticky-container)
@@ -73,7 +76,7 @@ const InvasionBoth = (props: Props) => {
             <div style={{ height: computeHeight('.secondL', 450) }}>
               <div className={classNames(classes.section, classes.sticky, 'firstR', 'secondL')}>
                 <div className={classNames(classes.subsection)}>
-                  <p className={classNames(classes.bigP)}>{language.C_4_Quote}</p>
+                  <p className={classNames(classes.highlight)}>{language.C_4_Quote}</p>
                 </div>
               </div>
             </div>
@@ -110,7 +113,7 @@ const InvasionBoth = (props: Props) => {
                 <p>{language.B_1}</p>
               </div>
               <div className={classNames(classes.subsection)}>
-                <p className={classNames(classes.bigP)}>{language.B_2_Quote}</p>
+                <p className={classNames(classes.highlight)}>{language.B_2_Quote}</p>
               </div>
               <div className={classNames(classes.subsection, classes.rightAlign)}>
                 <Parallax speed={2}>
@@ -137,7 +140,7 @@ const InvasionBoth = (props: Props) => {
                 <p>{language.B_1}</p>
               </div>
               <div className={classNames(classes.subsection)}>
-                <p className={classNames(classes.bigP)}>{language.B_2_Quote}</p>
+                <p className={classNames(classes.highlight)}>{language.B_2_Quote}</p>
               </div>
               <div className={classNames(classes.subsection, classes.rightAlign)}>
                 <Parallax speed={2}>
@@ -147,13 +150,7 @@ const InvasionBoth = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className={classNames(classes.subsection)}>
-          <p className={classNames(classes.test)}>„</p>
-          <span className={classNames(classes.quote)}>
-            <p>{language.B_7_Quote}</p>
-          </span>
-          <p className={classNames(classes.test)}>“</p>
-        </div>
+        <Quotation {...citationProp}></Quotation>
       </div>
     </div>
   )

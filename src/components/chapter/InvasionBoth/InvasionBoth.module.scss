@@ -68,7 +68,7 @@
   margin-bottom: 0;
 }
 
-.bigP {
+.highlight {
   display: block;
   padding: 0 20px;
   // font-family: InriaSerif-Italic;
@@ -76,27 +76,21 @@
   width: 100%;
 }
 
-.quote {
-  content: '';
-}
+.quoteWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 50px;
 
-.quote::before {
-  content: '';
-  font-family: InriaSerif-Bold;
-  font-size: 5em;
-  color: red;
-}
+  .quotationMark {
+    font-family: InriaSerif-Bold;
+    font-size: 8em;
+    margin: 0 0;
+  }
 
-.quote > p {
-  font-family: InriaSerif-Italic;
-  font-size: 3em;
-}
-
-.test {
-  display: block;
-  content: '';
-  // font-family: InriaSerif-Bold;
-  // font-size: 10em;
-  // color: red;
-  // margin: 0 0;
+  p {
+    font-family: InriaSerif-Italic;
+    font-size: 2.5em;
+  }
 }
