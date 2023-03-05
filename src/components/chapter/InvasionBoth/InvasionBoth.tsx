@@ -7,6 +7,7 @@ import * as language from './InvasionBoth_lang'
 import InvasionImage1 from '@/assets/img/InvasionBoth_Invasion1_c_Roland_Neveu.png'
 import InvasionImage2 from '@/assets/img/InvasionBoth_Invasion2_c_Claude_Juvenal.jpg'
 import InvasionImage3 from '@/assets/img/InvasionBoth_Invasion3_c_Roland_Neveu.png'
+import InvasionImage4 from '@/assets/img/InvasionBoth_Invasion4_c_.png'
 import { Parallax } from 'react-scroll-parallax'
 
 interface Props {
@@ -26,9 +27,9 @@ const InvasionBoth = (props: Props) => {
   (Height of own sticky-container)
   + (Height of Content of other sides container)
   + (Height of next sticky-container of other side) */
-  const computeHeight = (idKey: string) => {
+  const computeHeight = (idKey: string, offset = 0) => {
     const elements = document.querySelectorAll(idKey)
-    let height = 0
+    let height = offset
     elements.forEach((elem) => (height += elem.getBoundingClientRect().height))
     return height
   }
@@ -46,83 +47,112 @@ const InvasionBoth = (props: Props) => {
         <img src={InvasionImage1} alt='Testbild' className={classes.imgL} />
         <div className={classes.splitScreenWrapper}>
           <div className={classNames(classes.leftSide)}>
-            {/* first section LEFT */}
-            <div className='firstR'>
+            {/* 1.section LEFT */}
+            <div className={classNames(classes.section, 'firstR')}>
               <div className={classNames(classes.subsection, classes.leftAlign)}>
                 <p>{language.C_1}</p>
               </div>
               <div className={classNames(classes.subsection, classes.rightAlign)}>
-                <Parallax speed={5}>
-                  <img src={InvasionImage2} alt='Testbild' className={classNames(classes.imgL)} />
+                <Parallax speed={3}>
+                  <img src={InvasionImage2} alt='Testbild' className={classNames(classes.imgS)} />
                 </Parallax>
               </div>
-            </div>
-            {/* second section LEFT */}
-            <div style={{ height: computeHeight('.secondL') }}>
-              <div className={classNames(classes.sticky, 'firstR', 'secondL')}>
-                <div className={classNames(classes.subsection)}>
-                  <p>{language.C_2}</p>
-                </div>
-                <div className={classNames(classes.subsection)}>
+              <div className={classNames(classes.subsection, classes.rightAlign)}>
+                <p>{language.C_2}</p>
+              </div>
+              <div className={classNames(classes.subsection, classes.rightAlign)}>
+                <Parallax speed={3}>
                   <img src={InvasionImage3} alt='Testbild' className={classNames(classes.imgS)} />
+                </Parallax>
+              </div>
+              <div className={classNames(classes.subsection, classes.leftAlign)}>
+                <p>{language.C_3}</p>
+              </div>
+            </div>
+            {/* 2.section LEFT */}
+            <div style={{ height: computeHeight('.secondL', 450) }}>
+              <div className={classNames(classes.section, classes.sticky, 'firstR', 'secondL')}>
+                <div className={classNames(classes.subsection)}>
+                  <p className={classNames(classes.bigP)}>{language.C_4_Quote}</p>
                 </div>
               </div>
             </div>
-            {/* third section LEFT */}
-            <div className={classNames('secondR')}>
-              <div className={classes.subsection}>
-                <Parallax speed={0}>
-                  <p>
-                    DREIIIIIILorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt,
-                    recusandae natus itaque fugit quod optio earum excepturi quae est quibusdam eius
-                    deleniti hic, ea consectetur distinctio nobis tempora voluptatum voluptates?
-                  </p>
-                </Parallax>
+            {/* 3.section LEFT */}
+            <div className={classNames(classes.section, 'thirdR')}>
+              <div className={classNames(classes.subsection, classes.rightAlign)}>
+                <p>{language.C_5}</p>
               </div>
-              <div className={classes.subsection}>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae
-                  natus itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti
-                  hic, ea consectetur distinctio nobis tempora voluptatum voluptates?
-                </p>
+              <div className={classNames(classes.subsection, classes.leftAlign)}>
+                <p>{language.C_6}</p>
               </div>
-              <div id='test' className={classes.subsection}>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae
-                  natus itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti
-                  hic, ea consectetur distinctio nobis tempora voluptatum voluptates?
-                </p>
+            </div>
+            {/* 4.section LEFT */}
+            <div style={{ height: computeHeight('.fourthL') }}>
+              <div className={classNames(classes.section, classes.sticky, 'thirdR', 'fourthL')}>
+                <div className={classNames(classes.subsection, classes.rightAlign)}>
+                  {/* <Parallax speed={3}> */}
+                  <img src={InvasionImage4} alt='Testbild' className={classNames(classes.imgS)} />
+                  {/* </Parallax> */}
+                </div>
+                <div className={classNames(classes.subsection, classes.leftAlign)}>
+                  <p>{language.C_7}</p>
+                </div>
               </div>
             </div>
           </div>
           <hr className={classes.dashed}></hr>
           <div className={classes.rightSide}>
             {/* Offset container for first section */}
-            <div style={{ height: computeHeight('.firstR') - 75 }}></div>
-            {/* first section RIGHT */}
-            <div className={classNames('secondL')}>
+            <div style={{ height: computeHeight('.firstR', 300) }}></div>
+            {/* 1.section RIGHT */}
+            <div className={classNames(classes.section, 'secondL')}>
               <div className={classNames(classes.subsection, classes.leftAlign)}>
-                <p>{language.C_1}</p>
+                <p>{language.B_1}</p>
+              </div>
+              <div className={classNames(classes.subsection)}>
+                <p className={classNames(classes.bigP)}>{language.B_2_Quote}</p>
               </div>
               <div className={classNames(classes.subsection, classes.rightAlign)}>
-                <div></div>
-                <Parallax speed={5}>
-                  <img src={InvasionImage2} alt='Testbild' className={classNames(classes.imgL)} />
+                <Parallax speed={2}>
+                  <img src={InvasionImage2} alt='Testbild' className={classNames(classes.imgS)} />
                 </Parallax>
               </div>
             </div>
-            {/* second section RIGHT */}
-            <div style={{ height: computeHeight('.secondR') }}>
-              <div className={classNames(classes.sticky, 'secondL', 'secondR')}>
+            {/* 2.section RIGHT */}
+            <div style={{ height: computeHeight('.thirdR', 450) }}>
+              <div className={classNames(classes.section, classes.sticky, 'secondL', 'thirdR')}>
                 <div className={classNames(classes.subsection)}>
-                  <p>{language.C_2}</p>
+                  <p>{language.B_3}</p>
                 </div>
-                <div className={classNames(classes.subsection)}>
-                  <img src={InvasionImage3} alt='Testbild' className={classNames(classes.imgS)} />
+                <div className={classNames(classes.subsection, classes.rightAlign)}>
+                  {/* <Parallax speed={2}> */}
+                  <img src={InvasionImage2} alt='Testbild' className={classNames(classes.imgS)} />
+                  {/* </Parallax> */}
                 </div>
               </div>
             </div>
+            {/* 3.section RIGHT */}
+            <div className={classNames(classes.section, 'fourthL')}>
+              <div className={classNames(classes.subsection, classes.leftAlign)}>
+                <p>{language.B_1}</p>
+              </div>
+              <div className={classNames(classes.subsection)}>
+                <p className={classNames(classes.bigP)}>{language.B_2_Quote}</p>
+              </div>
+              <div className={classNames(classes.subsection, classes.rightAlign)}>
+                <Parallax speed={2}>
+                  <img src={InvasionImage2} alt='Testbild' className={classNames(classes.imgS)} />
+                </Parallax>
+              </div>
+            </div>
           </div>
+        </div>
+        <div className={classNames(classes.subsection)}>
+          <p className={classNames(classes.test)}>„</p>
+          <span className={classNames(classes.quote)}>
+            <p>{language.B_7_Quote}</p>
+          </span>
+          <p className={classNames(classes.test)}>“</p>
         </div>
       </div>
     </div>
