@@ -8,6 +8,7 @@ import * as language from './ChildhoodC_lang'
 import sampleGlücklich from '@/assets/img/sample_glücklich.png'
 import sampleArbeit from '@/assets/img/sample_hand.png'
 import sampleBedruckt from '@/assets/img/sample_bedruckt.png'
+import InfoI from '@/assets/img/info_i.png'
 
 
 interface Props {
@@ -53,7 +54,11 @@ const ChildhoodC = (props: Props) => {
           <img src={sampleBedruckt} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_10J}</p>
+          <p>{language.c_10J}
+            <button className={classes.infobutton}>
+              <img src={InfoI} className={classes.info} />
+          </button>
+          </p>
         </Parallax>
       </div>
     </div>
