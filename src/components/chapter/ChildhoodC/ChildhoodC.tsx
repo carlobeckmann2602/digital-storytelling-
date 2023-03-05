@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Parallax } from 'react-scroll-parallax'
 import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
+import { AnimatePresence, motion } from "framer-motion"
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodC.module.scss'
 import * as language from './ChildhoodC_lang'
@@ -55,9 +56,12 @@ const ChildhoodC = (props: Props) => {
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
           <p>{language.c_10J}
-            <button className={classes.infobutton}>
-              <img src={InfoI} className={classes.info} />
-          </button>
+            <motion.button
+              whileHover={{ scale: 1.6 }}
+              whileTap={{ scale: 1.2 }}
+              className={classes.infobutton}>
+                <img src={InfoI} className={classes.info} />
+            </motion.button>
           </p>
         </Parallax>
       </div>
