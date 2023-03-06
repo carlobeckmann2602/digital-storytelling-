@@ -1,8 +1,14 @@
 import React, { useEffect } from 'react'
+import { Parallax } from 'react-scroll-parallax'
 import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './PreInvasionC.module.scss'
+import * as language from './PreInvasionC_lang'
+import sampleSorge from '@/assets/img/sample_sorge.png'
+import sampleHappy from '@/assets/img/sample_happy.png'
+import sampleLove from '@/assets/img/sample_love.png'
+import sampleFight from '@/assets/img/sample_fight.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -26,14 +32,37 @@ const PreInvasionC = (props: Props) => {
           </h2>
         </div>
       </div>
-      <div className='chapter-body-wrapper'>
-        <div className={classes.section}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-            itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-            consectetur distinctio nobis tempora voluptatum voluptates?
-          </p>
-        </div>
+      <div className={classes.section}>
+        <Parallax speed={5} translateX={['-100px', '-10px']}>
+          <img src={sampleSorge} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <Parallax speed={5} translateX={['-10px', '-100px']}>
+          <p>{language.c_1950}</p>
+        </Parallax>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={5} translateX={['-100px', '-10px']}>
+          <img src={sampleHappy} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <Parallax speed={5} translateX={['-10px', '-100px']}>
+          <p>{language.c_study}</p>
+        </Parallax>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={5} translateX={['-100px', '-10px']}>
+          <img src={sampleLove} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <Parallax speed={5} translateX={['-10px', '-100px']}>
+          <p>{language.c_heirat}</p>
+        </Parallax>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={5} translateX={['-100px', '-10px']}>
+          <img src={sampleFight} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <Parallax speed={5} translateX={['-10px', '-100px']}>
+          <p>{language.c_werkstatt}</p>
+        </Parallax>
       </div>
     </div>
   )
