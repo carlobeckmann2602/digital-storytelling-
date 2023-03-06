@@ -28,13 +28,11 @@ import InvasionBoth from './components/chapter/InvasionBoth/InvasionBoth'
 function App() {
   const [currentChapter, setCurrentChapter] = useState<Chapter>('TITLE')
 
-  // TODO: Do not show sidebar when on landingpage
   return (
     <ParallaxProvider>
       <div className='app'>
         <div className='chapters'>
           <div className='sidebars'>
-            <SidebarLeft currentChapter={currentChapter} />
             <SidebarRight currentChapter={currentChapter} />
           </div>
           <div className='chapter-content'>

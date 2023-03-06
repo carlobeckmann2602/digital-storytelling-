@@ -4,13 +4,18 @@
   position: absolute;
   right: 0;
   top: 0;
-  width: 240px;
+  width: 200px;
   height: 100vh;
   background-color: $sidebar-color;
 
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.place {
+  margin-top: 30px;
 }
 
 .timeline {
@@ -19,13 +24,14 @@
   flex: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   overflow: hidden;
 
   .date {
     display: block;
     font-size: 16px;
     line-height: 24px;
-    margin: 5px;
+    margin: 4px;
     padding: 0;
     color: $context-timeline-color;
     text-decoration: none;

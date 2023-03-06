@@ -13,6 +13,7 @@ function SidebarRight(props: SidebarProps) {
 
   return (
     <div className='sidebarRight'>
+      <span className='place'>{CHAPTERS.get(props.currentChapter)?.place}</span>
       <Timeline currentChapter={props.currentChapter} />
     </div>
   )
