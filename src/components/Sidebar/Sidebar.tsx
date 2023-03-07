@@ -1,5 +1,5 @@
-import { Chapter, CHAPTERS } from '../helpers/constants'
-import './SidebarRight.scss'
+import { Chapter, CHAPTERS } from '../../helpers/constants'
+import './Sidebar.scss'
 import { useState } from 'react'
 import classNames from 'classnames'
 import { motion } from 'framer-motion'
@@ -8,11 +8,11 @@ interface SidebarProps {
   currentChapter: Chapter
 }
 
-function SidebarRight(props: SidebarProps) {
+function Sidebar(props: SidebarProps) {
   const [expandTimeline, setExpandTimeline] = useState(false)
 
   return (
-    <div className='sidebarRight'>
+    <div className='sidebar'>
       <span className='place'>{CHAPTERS.get(props.currentChapter)?.place}</span>
       <Timeline currentChapter={props.currentChapter} />
     </div>
@@ -135,4 +135,4 @@ function SidebarRight(props: SidebarProps) {
   }
 }
 
-export default SidebarRight
+export default Sidebar
