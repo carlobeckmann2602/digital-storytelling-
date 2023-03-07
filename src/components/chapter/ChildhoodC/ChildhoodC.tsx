@@ -10,7 +10,7 @@ import sampleGlücklich from '@/assets/img/sample_glücklich.png'
 import sampleArbeit from '@/assets/img/sample_hand.png'
 import sampleBedruckt from '@/assets/img/sample_bedruckt.png'
 import InfoI from '@/assets/img/info_i.png'
-
+import Modal from '../../Modal/Modal'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -24,6 +24,14 @@ const ChildhoodC = (props: Props) => {
   useEffect(() => {
     onScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [onScreen])
+
+  const openModal = () => {
+    return (
+      <Modal>
+        <p>TEST</p>
+      </Modal>
+    )
+  }
 
   return (
     <div id={CHAPTER_ID}>
@@ -55,13 +63,11 @@ const ChildhoodC = (props: Props) => {
           <img src={sampleBedruckt} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_10J}
-            <motion.button
-              whileHover={{ scale: 1.6 }}
-              whileTap={{ scale: 1.2 }}
-              className={classes.infobutton}>
-                <img src={InfoI} className={classes.info} />
-            </motion.button>
+          <p>
+            {language.c_10J}
+            <Modal>
+              <p>TEST</p>
+            </Modal>
           </p>
         </Parallax>
       </div>
