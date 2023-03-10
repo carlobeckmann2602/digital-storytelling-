@@ -24,8 +24,6 @@ const InvasionBoth = (props: Props) => {
     onScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [onScreen])
 
-  const citationProp = { quote: language.B_7_Quote, citation: 'Bou Meng' }
-
   /* Formula (all elements must have the same idKey):
   (Height of own sticky-container)
   + (Height of Content of other sides container)
@@ -150,7 +148,7 @@ const InvasionBoth = (props: Props) => {
             </div>
           </div>
         </div>
-        <Quotation {...citationProp}></Quotation>
+        <Quotation quote={language.B_7_Quote} citation={'Bou Meng'} colorCode={'bou'}></Quotation>
       </div>
     </div>
   )
