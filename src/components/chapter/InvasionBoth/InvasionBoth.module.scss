@@ -76,21 +76,17 @@
   width: 100%;
 }
 
-.quoteWrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 0 50px;
+.center {
+  display: block;
+  margin: 0 auto;
+}
 
-  .quotationMark {
-    font-family: InriaSerif-Bold;
-    font-size: 8em;
-    margin: 0 0;
-  }
+.spacerL {
+  display: block;
+  height: 500px;
+}
 
-  p {
-    font-family: InriaSerif-Italic;
-    font-size: 2.5em;
-  }
+.spacerM {
+  display: block;
+  height: 300px;
 }

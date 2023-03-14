@@ -89,7 +89,7 @@ const InvasionBoth = (props: Props) => {
               </div>
             </div>
             {/* 4.section LEFT */}
-            <div style={{ height: computeHeight('.fourthL') }}>
+            <div style={{ height: computeHeight('.fourthL', 450) }}>
               <div className={classNames(classes.section, classes.sticky, 'thirdR', 'fourthL')}>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
                   {/* <Parallax speed={3}> */}
@@ -99,6 +99,39 @@ const InvasionBoth = (props: Props) => {
                 <div className={classNames(classes.subsection, classes.leftAlign)}>
                   <p>{language.C_7}</p>
                 </div>
+              </div>
+            </div>
+            {/* 5.section LEFT */}
+            <div className={classNames(classes.section, 'fifthR')}>
+              <div className={classNames(classes.subsection, classes.rightAlign)}>
+                {/* <Parallax speed={3}> */}
+                <img src={Placeholder} alt='Testbild' className={classNames(classes.imgL)} />
+                {/* </Parallax> */}
+              </div>
+              <div className={classNames(classes.subsection, classes.leftAlign)}>
+                <p>{language.C_8}</p>
+              </div>
+              <div className={classNames(classes.spacerM)}></div>
+              <div className={classNames(classes.subsection, classes.center)}>
+                <Parallax speed={-5}>
+                  <p className={classNames(classes.highlight)}>{language.C_8_1}</p>
+                </Parallax>
+              </div>
+              <div className={classNames(classes.spacerL)}></div>
+              <div className={classNames(classes.subsection, classes.center)}>
+                <Parallax speed={-5}>
+                  <p className={classNames(classes.highlight)}>{language.C_8_2}</p>
+                </Parallax>
+              </div>
+              <div className={classNames(classes.spacerL)}></div>
+              <div className={classNames(classes.subsection, classes.center)}>
+                <Parallax speed={-5}>
+                  <p className={classNames(classes.highlight)}>{language.C_8_3}</p>
+                </Parallax>
+              </div>
+              <div className={classNames(classes.spacerM)}></div>
+              <div className={classNames(classes.subsection)}>
+                <p>{language.C_9}</p>
               </div>
             </div>
           </div>
@@ -136,10 +169,10 @@ const InvasionBoth = (props: Props) => {
             {/* 3.section RIGHT */}
             <div className={classNames(classes.section, 'fourthL')}>
               <div className={classNames(classes.subsection, classes.leftAlign)}>
-                <p>{language.B_1}</p>
+                <p>{language.B_4}</p>
               </div>
-              <div className={classNames(classes.subsection)}>
-                <p className={classNames(classes.highlight)}>{language.B_2}</p>
+              <div className={classNames(classes.subsection, classes.rightAlign)}>
+                <p>{language.B_5}</p>
               </div>
               <div className={classNames(classes.subsection, classes.rightAlign)}>
                 <Parallax speed={2}>
@@ -147,8 +180,17 @@ const InvasionBoth = (props: Props) => {
                 </Parallax>
               </div>
             </div>
+            {/* 4.section RIGHT */}
+            <div style={{ height: computeHeight('.fifthR', 150) }}>
+              <div className={classNames(classes.section, classes.sticky, 'fourthL', 'fifthR')}>
+                <div className={classNames(classes.subsection)}>
+                  <p>{language.B_6}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div className={classNames(classes.spacerS)}></div>
         <Quotation quote={language.B_7_Quote} citation={'Bou Meng'} colorCode={'bou'}></Quotation>
       </div>
     </div>
