@@ -5,6 +5,7 @@ import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './Template.module.scss'
 import TestImage from '@/assets/img/template-1.jpg'
+import StackingCards from '../../StackingCards/StackingCards'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -37,6 +38,12 @@ const Template = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'>
+        <StackingCards>
+          <img src={TestImage} alt='Testbild' />
+          <img src={TestImage} alt='Testbild' />
+          <img src={TestImage} alt='Testbild' />
+          <img src={TestImage} alt='Testbild' />
+        </StackingCards>
         <div className={classes.section}>
           <Parallax speed={-5}>
             <p>

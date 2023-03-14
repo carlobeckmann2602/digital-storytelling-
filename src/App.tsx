@@ -3,9 +3,6 @@ import { useState } from 'react'
 import ChildhoodC from './components/chapter/ChildhoodC/ChildhoodC'
 import ChildhoodB from './components/chapter/ChildhoodB/ChildhoodB'
 import Template from './components/chapter/Template/Template'
-import SidebarLeft from './components/SidebarLeft'
-import SidebarRight from './components/SidebarRight'
-import PrisonModelCanvas from './components/landingpage/PrisonModelCanvas'
 import { Chapter } from './helpers/constants'
 import './App.scss'
 import HistoricalBackground from './components/chapter/HistoricalBackground/HistoricalBackground'
@@ -24,18 +21,17 @@ import LiberationFromPrisonBackground from './components/chapter/LiberationFromP
 import EscapeFromPrisonBoth from './components/chapter/EscapeFromPrisonBoth/EscapeFromPrisonBoth'
 import OutlookBackground from './components/chapter/OutlookBackground/OutlookBackground'
 import InvasionBoth from './components/chapter/InvasionBoth/InvasionBoth'
+import Sidebar from './components/Sidebar/Sidebar'
 
 function App() {
   const [currentChapter, setCurrentChapter] = useState<Chapter>('TITLE')
 
-  // TODO: Do not show sidebar when on landingpage
   return (
     <ParallaxProvider>
       <div className='app'>
         <div className='chapters'>
-          <div className='sidebars'>
-            <SidebarLeft currentChapter={currentChapter} />
-            <SidebarRight currentChapter={currentChapter} />
+          <div className='sidebarWrapper'>
+            <Sidebar currentChapter={currentChapter} />
           </div>
           <div className='chapter-content'>
             <Template setCurrentChapter={setCurrentChapter} />

@@ -1,0 +1,21 @@
+.innerWrapper {
+  width: fit-content;
+  height: fit-content;
+}
+
+.outerWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  top: 200px;
+  display: flex;
+  position: sticky;
+  transform-origin: center center;
+  box-shadow: $drop-shadow-s;
+  border: 3px solid white;
+}
