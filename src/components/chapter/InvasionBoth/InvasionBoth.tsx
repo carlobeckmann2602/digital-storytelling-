@@ -8,6 +8,7 @@ import InvasionImage1 from '@/assets/img/InvasionBoth_Invasion1_c_Roland_Neveu.p
 import InvasionImage2 from '@/assets/img/InvasionBoth_Invasion2_c_Claude_Juvenal.jpg'
 import InvasionImage3 from '@/assets/img/InvasionBoth_Invasion3_c_Roland_Neveu.png'
 import InvasionImage4 from '@/assets/img/InvasionBoth_Invasion4_c_.png'
+import Placeholder from '@/assets/img/Placeholder.png'
 import { Parallax } from 'react-scroll-parallax'
 import Quotation from '../../Quotation/Quotation'
 
@@ -115,7 +116,7 @@ const InvasionBoth = (props: Props) => {
               </div>
               <div className={classNames(classes.subsection, classes.rightAlign)}>
                 <Parallax speed={2}>
-                  <img src={InvasionImage2} alt='Testbild' className={classNames(classes.imgS)} />
+                  <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
                 </Parallax>
               </div>
             </div>
@@ -127,7 +128,7 @@ const InvasionBoth = (props: Props) => {
                 </div>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
                   {/* <Parallax speed={2}> */}
-                  <img src={InvasionImage2} alt='Testbild' className={classNames(classes.imgS)} />
+                  <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
                   {/* </Parallax> */}
                 </div>
               </div>
@@ -142,7 +143,7 @@ const InvasionBoth = (props: Props) => {
               </div>
               <div className={classNames(classes.subsection, classes.rightAlign)}>
                 <Parallax speed={2}>
-                  <img src={InvasionImage2} alt='Testbild' className={classNames(classes.imgS)} />
+                  <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
                 </Parallax>
               </div>
             </div>
