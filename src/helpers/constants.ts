@@ -18,7 +18,10 @@ export const CHAPTERS = new Map([
     'INVASION_BACKGROUND',
     { time: 'XXXX - YZYZ', title: 'Einordnung: Einnahme Phnomh Penhs', place: 'Beispielort3' },
   ],
-  ['INVASION_BOTH', { time: 'XXXX - YZYZ', title: 'Einnahme Phnomh Penhs', place: 'Beispielort3' }],
+  [
+    'INVASION_BOTH',
+    { time: '17.04.1975', title: 'Der 17. April: Einnahme Phnomh Penhs', place: 'Phnomh Penh' },
+  ],
   [
     'AFTER_INVASION_B',
     { time: 'XXXX - YZYZ', title: 'Bou Mengs Leben nach der Einnahme', place: 'Beispielort3' },
