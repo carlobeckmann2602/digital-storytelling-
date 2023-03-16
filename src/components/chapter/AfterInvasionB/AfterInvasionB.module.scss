@@ -6,6 +6,45 @@
 
 .section {
   display: flex;
-  align-items: center;
-  gap: 5%;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10%;
+  padding: 0 7%;
+
+  &.leftAlign {
+    justify-content: flex-start;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  &.rightAlign {
+    justify-content: flex-end;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  .imgL {
+    width: 100%;
+  }
+
+  .imgS {
+    width: 80%;
+  }
+}
+
+.sectionColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10%;
+
+  p {
+    text-align: justify;
+  }
 }
