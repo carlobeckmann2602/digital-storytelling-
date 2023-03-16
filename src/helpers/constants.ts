@@ -24,7 +24,7 @@ export const CHAPTERS = new Map([
   ],
   [
     'AFTER_INVASION_B',
-    { time: 'XXXX - YZYZ', title: 'Bou Mengs Leben nach der Einnahme', place: 'Beispielort3' },
+    { time: '1975 - 1976', title: 'Bou Mengs Leben nach der Einnahme', place: 'Phnomh Penh' },
   ],
   [
     'AFTER_INVASION_C',

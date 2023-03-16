@@ -3,6 +3,13 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './AfterInvasionB.module.scss'
+import * as language from './AfterInvasionB_lang'
+import { Parallax } from 'react-scroll-parallax'
+import FieldImage1 from '@/assets/img/AfterInvasionB_Field1_c_the_Tuol_Sleng_Museum_of_Genocide.jpg'
+import FieldImage2 from '@/assets/img/AfterInvasionB_Field2_c_the_Tuol_Sleng_Museum_of_Genocide.jpg'
+import FieldImage3 from '@/assets/img/AfterInvasionB_Field3_c_the_Tuol_Sleng_Museum_of_Genocide.jpg'
+import UniformImage from '@/assets/img/AfterInvasionB_Uniform_c_Pictures_from_History_Kontributor.jpg'
+import Quotation from '../../Quotation/Quotation'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -27,12 +34,40 @@ const AfterInvasionB = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'>
-        <div className={classes.section}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-            itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-            consectetur distinctio nobis tempora voluptatum voluptates?
-          </p>
+        <div className={classNames(classes.section)}>
+          <p>{language.T1_Ankunft}</p>
+        </div>
+        <div className={classNames(classes.section)}>
+          <div className={classNames(classes.sectionColumn)}>
+            {/* <p>{language.T1_Ankunft}</p> */}
+            <p>{language.T2_Kinder}</p>
+            <p>{language.T3_Bio}</p>
+          </div>
+          <Parallax speed={5}>
+            <img src={UniformImage} alt='Testbild' />
+          </Parallax>
+        </div>
+        <div className={classNames(classes.section)}>
+          <Parallax speed={5}>
+            <img src={FieldImage1} alt='Testbild' />
+          </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Plantage}</p>
+        </div>
+        <div className={classNames(classes.section)}>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Straflager}</p>
+          <Parallax speed={5}>
+            <img src={FieldImage2} alt='Testbild' />
+          </Parallax>
+        </div>
+        <Quotation quote={language.Q1_Plantage} citation={'Bou Meng'} colorCode={'bou'}></Quotation>
+        <div className={classNames(classes.section)}>
+          <Parallax speed={5}>
+            <img src={FieldImage3} alt='Testbild' />
+          </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T6_Verschwinden}</p>
+        </div>
+        <div className={classNames(classes.section)}>
+          <p>{language.T7_Angst}</p>
         </div>
       </div>
     </div>

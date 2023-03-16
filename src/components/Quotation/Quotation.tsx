@@ -10,7 +10,7 @@ interface QuotationProps {
 
 const Quotation = (props: QuotationProps) => {
   return (
-    <Parallax speed={-5}>
+    <Parallax speed={-3}>
       <div className={classes.outerWrapper}>
         <p
           className={classNames(classes.quotationMark, {
