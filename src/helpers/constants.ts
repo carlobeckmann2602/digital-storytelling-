@@ -28,7 +28,7 @@ export const CHAPTERS = new Map([
   ],
   [
     'AFTER_INVASION_C',
-    { time: 'XXXX - YZYZ', title: 'Chum Meys Leben nach der Einnahme', place: 'Beispielort3' },
+    { time: '1975 - 1976', title: 'Chum Meys Leben nach der Einnahme', place: 'Phnomh Penh' },
   ],
   ['ARREST_B', { time: 'XXXX - YZYZ', title: 'Festnahme Bou Mengs', place: 'Beispielort3' }],
   ['ARREST_C', { time: 'XXXX - YZYZ', title: 'Festnahme Chum Meys', place: 'Beispielort3' }],
