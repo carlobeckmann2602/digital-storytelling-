@@ -27,36 +27,34 @@ const ChildhoodB = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
-        </p>
+        <div>
+          <p>
+            Es war etwa das Jahr 1941, als ein kleiner Junge Namens Bou Mong-Seang in eine arme
+            Familie hinein geboren wurde.
+          </p>
+        </div>
+        <div>
+          <p>
+            Im Kindesalter brachten ihn seine Eltern in die Pagode zu den Mönchen. Dort verbrachte
+            er seine Kindheit und lernte dabei Lesen und Schreiben. Während dieser Zeit entdeckte er
+            auch seine Leidenschaft für das Malen.
+          </p>
+        </div>
+        <div>
+          <p>
+            Nach seiner Zeit bei dem Mönchen zog Bou Mong nach Battambang. Dort arbeitete er in
+            einer Tischlerei und lernt nebenbei, wie man Farben herstellt und verbessert seine
+            Malfähigkeiten weiter.
+          </p>
+        </div>
+        <div>
+          <p>
+            Um das Jahr 1967 zog Bou Mong wieder zurück in seine Heimat. Dort arbeitete er zunächst
+            in verschiedenen Kinos und malte z.B. Bilder für die Filme. Später eröffnete er einen
+            eigenen Laden, wo er dann auch Bilder für den Kundenauftrag anfertigte. Immer wieder
+            bekam er z.B. durch einen Bombenabwurf die Auswirkungen des Vietnamkrieges mit.
+          </p>
+        </div>
       </div>
     </div>
   )
