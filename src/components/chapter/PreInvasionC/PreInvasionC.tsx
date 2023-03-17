@@ -4,6 +4,12 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './PreInvasionC.module.scss'
+import * as language from './PreInvasionC_lang'
+import sampleSorge from '@/assets/img/sample_sorge.png'
+import sampleHappy from '@/assets/img/sample_happy.png'
+import sampleLove from '@/assets/img/sample_love.png'
+import sampleFight from '@/assets/img/sample_fight.png'
+import sampleFlucht from '@/assets/img/sample_flucht.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -26,6 +32,38 @@ const PreInvasionC = (props: Props) => {
             {CHAPTERS.get(CHAPTER_ID)?.title}
           </h2>
         </div>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={5} translateX={['-100px', '-10px']}>
+          <img src={sampleSorge} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <Parallax speed={5} translateX={['-10px', '-100px']}>
+          <p>{language.c_uberfalle_khmer}</p>
+        </Parallax>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={5} translateX={['-100px', '-10px']}>
+          <img src={sampleFight} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <Parallax speed={5} translateX={['-10px', '-100px']}>
+          <p>{language.c_uberfall_militar}</p>
+        </Parallax>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={5} translateX={['-100px', '-10px']}>
+          <img src={sampleFlucht} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <Parallax speed={5} translateX={['-10px', '-100px']}>
+          <p>{language.c_flucht}</p>
+        </Parallax>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={5} translateX={['-100px', '-10px']}>
+          <img src={sampleFight} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <Parallax speed={5} translateX={['-10px', '-100px']}>
+          <p>{language.c_werkstatt}</p>
+        </Parallax>
       </div>
     </div>
   )
