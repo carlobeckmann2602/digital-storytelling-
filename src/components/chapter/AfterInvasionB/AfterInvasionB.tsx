@@ -39,7 +39,6 @@ const AfterInvasionB = (props: Props) => {
         </div>
         <div className={classNames(classes.section)}>
           <div className={classNames(classes.sectionColumn)}>
-            {/* <p>{language.T1_Ankunft}</p> */}
             <p>{language.T2_Kinder}</p>
             <p>{language.T3_Bio}</p>
           </div>
