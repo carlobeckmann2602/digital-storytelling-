@@ -34,7 +34,10 @@ export const CHAPTERS = new Map([
     'ARREST_B',
     { time: '16.08.1977', title: 'Die Kunstschule', place: 'Ländliche Region vor Phnomh Penh' },
   ],
-  ['ARREST_C', { time: 'XXXX - YZYZ', title: 'Festnahme Chum Meys', place: 'Beispielort3' }],
+  [
+    'ARREST_C',
+    { time: '1977 - 1978', title: 'Eine verhängnisvolle Reparatur', place: 'Phnomh Penh' },
+  ],
   [
     'DICTATORSHIP_BACKGROUND',
     { time: 'XXXX - YZYZ', title: 'Einordnung: Diktatur', place: 'Beispielort3' },
