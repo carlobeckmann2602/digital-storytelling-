@@ -3,6 +3,11 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodB.module.scss'
+import * as language from './ChildhoodB_lang'
+import { Parallax } from 'react-scroll-parallax'
+import sampleHappy from '@/assets/img/sample_happy.png'
+import sampleHand from '@/assets/img/sample_hand.png'
+import sampleSorge from '@/assets/img/sample_sorge.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -26,35 +31,29 @@ const ChildhoodB = (props: Props) => {
           </h2>
         </div>
       </div>
-      <div className='chapter-body-wrapper'>
-        <div>
-          <p>
-            Es war etwa das Jahr 1941, als ein kleiner Junge Namens Bou Mong-Seang in eine arme
-            Familie hinein geboren wurde.
-          </p>
-        </div>
-        <div>
-          <p>
-            Im Kindesalter brachten ihn seine Eltern in die Pagode zu den Mönchen. Dort verbrachte
-            er seine Kindheit und lernte dabei Lesen und Schreiben. Während dieser Zeit entdeckte er
-            auch seine Leidenschaft für das Malen.
-          </p>
-        </div>
-        <div>
-          <p>
-            Nach seiner Zeit bei dem Mönchen zog Bou Mong nach Battambang. Dort arbeitete er in
-            einer Tischlerei und lernt nebenbei, wie man Farben herstellt und verbessert seine
-            Malfähigkeiten weiter.
-          </p>
-        </div>
-        <div>
-          <p>
-            Um das Jahr 1967 zog Bou Mong wieder zurück in seine Heimat. Dort arbeitete er zunächst
-            in verschiedenen Kinos und malte z.B. Bilder für die Filme. Später eröffnete er einen
-            eigenen Laden, wo er dann auch Bilder für den Kundenauftrag anfertigte. Immer wieder
-            bekam er z.B. durch einen Bombenabwurf die Auswirkungen des Vietnamkrieges mit.
-          </p>
-        </div>
+      <div className={classes.section}>
+        <Parallax speed={10}>
+          <img src={sampleHappy} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <p>{language.b_geburt}</p>
+      </div>
+      <div className={classes.section}>
+        <p>{language.b_pagode}</p>
+        <Parallax speed={10}>
+          <img src={sampleHand} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={10}>
+          <img src={sampleHappy} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <p>{language.b_tischler}</p>
+      </div>
+      <div className={classes.section}>
+        <p>{language.b_heimat}</p>
+        <Parallax speed={10}>
+          <img src={sampleSorge} alt='Austauschbild' className={classes.img} />
+        </Parallax>
       </div>
     </div>
   )

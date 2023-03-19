@@ -1,5 +1,3 @@
-import exp from 'constants'
-
 export const b_erste_kontakte =
   'Im laufe der Zeit kam Bou Mong immer wieder in Kontakt mit der Revolution. Eines Tages im Jahre 1970 kam ein Kunde ohne Auftrag in sein Geschäft und bat ihn, sich der Revolution anzuschließen. Er lehnte ab, weil er keine Ambitionen hatte, politisch aktiv zu werden.'
 export const b_ansprache =
