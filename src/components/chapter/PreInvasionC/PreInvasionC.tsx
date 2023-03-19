@@ -9,6 +9,7 @@ import sampleSorge from '@/assets/img/sample_sorge.png'
 import sampleHappy from '@/assets/img/sample_happy.png'
 import sampleLove from '@/assets/img/sample_love.png'
 import sampleFight from '@/assets/img/sample_fight.png'
+import sampleFlucht from '@/assets/img/sample_flucht.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -37,23 +38,23 @@ const PreInvasionC = (props: Props) => {
           <img src={sampleSorge} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_1950}</p>
+          <p>{language.c_uberfalle_khmer}</p>
         </Parallax>
       </div>
       <div className={classes.section}>
         <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleHappy} alt='Austauschbild' className={classes.img} />
+          <img src={sampleFight} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_study}</p>
+          <p>{language.c_uberfall_militar}</p>
         </Parallax>
       </div>
       <div className={classes.section}>
         <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleLove} alt='Austauschbild' className={classes.img} />
+          <img src={sampleFlucht} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_heirat}</p>
+          <p>{language.c_flucht}</p>
         </Parallax>
       </div>
       <div className={classes.section}>
