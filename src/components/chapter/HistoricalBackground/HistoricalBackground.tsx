@@ -29,9 +29,15 @@ const HistoricalBackground = (props: Props) => {
       <div className='chapter-body-wrapper'>
         <div className={classes.section}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-            itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-            consectetur distinctio nobis tempora voluptatum voluptates?
+            Zu dieser Zeit, genauer gesagt am 11. März 1967, brach im Bezirk Samlaut in der Provinz
+            Battambang ein Aufstand aus. Dieser Samlaut-Aufstand gilt als der Beginn des
+            Kambodschanischen Bürgerkriegs. In diesem Krieg standen auf der einen Seite die
+            Nationalen Einheitsfront von Kampuchea (FUNK) und die Kommunistischen Partei Kampucheas
+            (auch Rote Khmer genannt) unter der Führung von Pol Pot. Auf der anderen Seite stand die
+            Regierungstruppe der Republik Khmer. Während dieser Zeit wird der Prinz Norodom Sihanouk
+            durch den General Lon Nol gestürzt, welcher keiner Partei angehörig war. Während die
+            Städte durch Lon Nols Regierungskräfte kontrolliert wurden, wohin ländliche Gebiete
+            unter Kontrolle der roten Khmer standen.
           </p>
         </div>
       </div>
