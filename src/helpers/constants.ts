@@ -44,7 +44,11 @@ export const CHAPTERS = new Map([
   ['PRISON_C', { time: 'XXXX - YZYZ', title: 'Chum Mey im Gefängnis', place: 'Beispielort3' }],
   [
     'LIBERATION_FROM_PRISON_BACKGROUND',
-    { time: 'XXXX - YZYZ', title: 'Einordnung: Befreiung des Gefängnisses', place: 'Beispielort3' },
+    {
+      time: '07.01.1979',
+      title: 'Sturz der Roten Khmer & Befreiung des Gefängnisses durch vietnamesische Truppen',
+      place: 'Phnom Penh',
+    },
   ],
   [
     'ESCAPE_FROM_PRISON_BOTH',

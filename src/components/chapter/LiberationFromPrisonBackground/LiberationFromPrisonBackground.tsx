@@ -3,6 +3,12 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './LiberationFromPrisonBackground.module.scss'
+import * as language from './LiberationFromPrisonBackground_lang'
+import { Parallax } from 'react-scroll-parallax'
+import ArmyImage1 from '@/assets/img/LiberationFromPrisonBackground_army1_07_01_1979.jpg'
+import ArmyImage2 from '@/assets/img/LiberationFromPrisonBackground_army2_07_01_1979.jpg'
+import GerilliaImage from '@/assets/img/LiberationFromPrisonBackground_Gerillia_Soldaten.jpg'
+import PlaceholderImage from '@/assets/img/Placeholder.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -27,12 +33,34 @@ const LiberationFromPrisonBackground = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'>
-        <div className={classes.section}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-            itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-            consectetur distinctio nobis tempora voluptatum voluptates?
+        <div className={classNames(classes.section)}>
+          <Parallax speed={5}>
+            <img src={ArmyImage1} alt='Testbild' />
+          </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Einmarsch}</p>
+        </div>
+        <div className={classNames(classes.section)}>
+          <p>{language.T2_NeuerStaat}</p>
+        </div>
+        <div className={classNames(classes.section)}>
+          <Parallax speed={5}>
+            <img src={ArmyImage2} alt='Testbild' />
+          </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T3_RoteKhmer}</p>
+        </div>
+        <div className={classNames(classes.section)}>
+          <p>{language.T4_Wiederaufbau}</p>
+        </div>
+        <div className={classNames(classes.section)}>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>
+            {language.T5_Widerstandsgruppen}
           </p>
+          <Parallax speed={5}>
+            <img src={GerilliaImage} alt='Testbild' />
+          </Parallax>
+        </div>
+        <div className={classNames(classes.section)}>
+          <p>{language.T6_Gefaengnis}</p>
         </div>
       </div>
     </div>
