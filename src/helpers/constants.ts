@@ -46,7 +46,7 @@ export const CHAPTERS = new Map([
     'LIBERATION_FROM_PRISON_BACKGROUND',
     {
       time: '07.01.1979',
-      title: 'Sturz der Roten Khmer & Befreiung des Gefängnisses durch vietnamesische Truppen',
+      title: 'Sturz der Roten Khmer & Befreiung des Gefängnisses',
       place: 'Phnom Penh',
     },
   ],
