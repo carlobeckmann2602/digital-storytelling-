@@ -22,9 +22,12 @@ import EscapeFromPrisonBoth from './components/chapter/EscapeFromPrisonBoth/Esca
 import OutlookBackground from './components/chapter/OutlookBackground/OutlookBackground'
 import InvasionBoth from './components/chapter/InvasionBoth/InvasionBoth'
 import Sidebar from './components/Sidebar/Sidebar'
+import MuteButton from './components/MuteButton/MuteButton'
 
 function App() {
   const [currentChapter, setCurrentChapter] = useState<Chapter>('TITLE')
+
+  const [soundEnabled, setSoundEnabled] = useState(false)
 
   return (
     <ParallaxProvider>
@@ -33,6 +36,7 @@ function App() {
           <div className='sidebarWrapper'>
             <Sidebar currentChapter={currentChapter} />
           </div>
+          <MuteButton soundEnabledGlobal={soundEnabled} setSoundEnabledGlobal={setSoundEnabled} />
           <div className='chapter-content'>
             <Template setCurrentChapter={setCurrentChapter} />
             <ChildhoodC setCurrentChapter={setCurrentChapter} />
@@ -45,7 +49,7 @@ function App() {
             <AfterInvasionB setCurrentChapter={setCurrentChapter} />
             <AfterInvasionC setCurrentChapter={setCurrentChapter} />
             <ArrestB setCurrentChapter={setCurrentChapter} />
-            <ArrestC setCurrentChapter={setCurrentChapter} />
+            <ArrestC setCurrentChapter={setCurrentChapter} soundEnabled={soundEnabled} />
             <DictatorshipBackground setCurrentChapter={setCurrentChapter} />
             <PrisonLifeBackground setCurrentChapter={setCurrentChapter} />
             <PrisonB setCurrentChapter={setCurrentChapter} />
