@@ -3,6 +3,8 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './HistoricalBackground.module.scss'
+import TestImage from '@/assets/img/template-1.jpg'
+import StackingCards from '../../StackingCards/StackingCards'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -28,6 +30,12 @@ const HistoricalBackground = (props: Props) => {
       </div>
       <div className='chapter-body-wrapper'>
         <div className={classes.section}>
+          <StackingCards>
+            <img src={TestImage} alt='Testbild' />
+            <img src={TestImage} alt='Testbild' />
+            <img src={TestImage} alt='Testbild' />
+            <img src={TestImage} alt='Testbild' />
+          </StackingCards>
           <p>
             Zu dieser Zeit, genauer gesagt am 11. März 1967, brach im Bezirk Samlaut in der Provinz
             Battambang ein Aufstand aus. Dieser Samlaut-Aufstand gilt als der Beginn des
