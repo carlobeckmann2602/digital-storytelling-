@@ -2,15 +2,13 @@ import React, { useEffect } from 'react'
 import { Parallax } from 'react-scroll-parallax'
 import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
-import { AnimatePresence, motion } from "framer-motion"
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodC.module.scss'
 import * as language from './ChildhoodC_lang'
 import sampleGlücklich from '@/assets/img/sample_glücklich.png'
 import sampleArbeit from '@/assets/img/sample_hand.png'
 import sampleBedruckt from '@/assets/img/sample_bedruckt.png'
-import InfoI from '@/assets/img/info_i.png'
-
+import Modal from '../../Modal/Modal'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -55,13 +53,16 @@ const ChildhoodC = (props: Props) => {
           <img src={sampleBedruckt} alt='Austauschbild' className={classes.img} />
         </Parallax>
         <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_10J}
-            <motion.button
-              whileHover={{ scale: 1.6 }}
-              whileTap={{ scale: 1.2 }}
-              className={classes.infobutton}>
-                <img src={InfoI} className={classes.info} />
-            </motion.button>
+          <p>
+            {language.c_10J}
+            <Modal>
+              <p>TEST</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis doloremque
+                asperiores, at quidem voluptates aperiam eum veritatis eaque debitis harum ipsam
+                expedita! Eligendi aperiam laboriosam facere corrupti iste temporibus quaerat.
+              </p>
+            </Modal>
           </p>
         </Parallax>
       </div>
