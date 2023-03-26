@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import { ReactElement, useState } from 'react'
 import classes from './Modal.module.scss'
-import InfoI from '@/assets/img/info_i_32.png'
-import classNames from 'classnames'
+import { ReactComponent as InfoI } from '@/assets/img/icons/info-i.svg'
+import { ReactComponent as CloseIcon } from '@/assets/img/icons/close-icon.svg'
 
 interface ModalProps {
   children: ReactElement | ReactElement[]
@@ -13,31 +13,34 @@ function Modal(props: ModalProps) {
 
   const renderOpenModal = () => {
     return (
-      <div className={classes.outerWrapper}>
+      <motion.div style={{ scale: 0 }} animate={{ scale: 1 }} className={classes.openModalWrapper}>
         <motion.button
-          whileHover={{ scale: 1.6 }}
-          whileTap={{ scale: 1.2 }}
-          className={classNames(classes.infobutton, classes.buttonOpen)}
+          animate={{ scale: 1.4, translateX: '3px' }}
+          className={classes.infoButton}
           onClick={() => setIsOpen(false)}
         >
-          <img src={InfoI} className={classes.info} />
+          <InfoI className={classes.infoIcon} />
         </motion.button>
-        <div className={classes.wrapper}>
-          <div className={classes.bubble}>{props.children}</div>
+        <div className={classes.bubbleWrapper}>
+          <div className={classes.bubble}>
+            <button className={classes.closeBtn} onClick={() => setIsOpen(false)}>
+              <CloseIcon className={classes.closeIcon} />
+            </button>
+            <div className={classes.childrenWrapper}>{props.children}</div>
+          </div>
         </div>
-      </div>
+      </motion.div>
     )
   }
 
   const renderClosedModal = () => {
     return (
       <motion.button
-        whileHover={{ scale: 1.6 }}
-        whileTap={{ scale: 1.2 }}
-        className={classes.infobutton}
+        className={classes.infoButton}
         onClick={() => setIsOpen(true)}
+        animate={{ translateX: '-3px', translateY: '3px' }}
       >
-        <img src={InfoI} className={classes.info} />
+        <InfoI className={classes.infoIcon} />
       </motion.button>
     )
   }
