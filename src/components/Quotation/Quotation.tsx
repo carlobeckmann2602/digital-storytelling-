@@ -5,7 +5,7 @@ import classes from './Quotation.module.scss'
 interface QuotationProps {
   quote: string
   citation: string
-  colorCode: 'bou' | 'chum'
+  colorCode: 'bou' | 'chum' | 'none'
 }
 
 const Quotation = (props: QuotationProps) => {
