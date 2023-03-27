@@ -4,9 +4,9 @@ import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './HistoricalBackground.module.scss'
 import TestImage from '@/assets/img/template-1.jpg'
-import khmerRouge from '@/assets/img/Khmer-Rouge-Guerrilla-soldiers.jpg'
-import LonNol from '@/assets/img/Lon-Nol-courtesy-of-mekong.jpg'
-import Mao from '@/assets/img/Mao_Sihanouk.jpg'
+import khmerRouge from '@/assets/img/HistoricalBackground_Khmer-Rouge-Guerrilla-soldiers.jpg'
+import LonNol from '@/assets/img/HistoricalBackground_Lon-Nol-courtesy-of-mekong.jpg'
+import Mao from '@/assets/img/HistoricalBackground_Mao_Sihanouk.jpg'
 import StackingCards from '../../StackingCards/StackingCards'
 
 interface Props {
