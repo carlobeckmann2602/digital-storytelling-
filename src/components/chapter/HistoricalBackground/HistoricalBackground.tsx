@@ -4,6 +4,9 @@ import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './HistoricalBackground.module.scss'
 import TestImage from '@/assets/img/template-1.jpg'
+import khmerRouge from '@/assets/img/Khmer-Rouge-Guerrilla-soldiers.jpg'
+import LonNol from '@/assets/img/Lon-Nol-courtesy-of-mekong.jpg'
+import Mao from '@/assets/img/Mao_Sihanouk.jpg'
 import StackingCards from '../../StackingCards/StackingCards'
 
 interface Props {
@@ -29,25 +32,24 @@ const HistoricalBackground = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'>
-        <div className={classes.section}>
-          <StackingCards>
-            <img src={TestImage} alt='Testbild' />
-            <img src={TestImage} alt='Testbild' />
-            <img src={TestImage} alt='Testbild' />
-            <img src={TestImage} alt='Testbild' />
-          </StackingCards>
-          <p>
-            Zu dieser Zeit, genauer gesagt am 11. März 1967, brach im Bezirk Samlaut in der Provinz
-            Battambang ein Aufstand aus. Dieser Samlaut-Aufstand gilt als der Beginn des
-            Kambodschanischen Bürgerkriegs. In diesem Krieg standen auf der einen Seite die
-            Nationalen Einheitsfront von Kampuchea (FUNK) und die Kommunistischen Partei Kampucheas
-            (auch Rote Khmer genannt) unter der Führung von Pol Pot. Auf der anderen Seite stand die
-            Regierungstruppe der Republik Khmer. Während dieser Zeit wird der Prinz Norodom Sihanouk
-            durch den General Lon Nol gestürzt, welcher keiner Partei angehörig war. Während die
-            Städte durch Lon Nols Regierungskräfte kontrolliert wurden, wohin ländliche Gebiete
-            unter Kontrolle der roten Khmer standen.
-          </p>
-        </div>
+        <p>
+          Zu dieser Zeit, genauer gesagt am 11. März 1967, brach im Bezirk Samlaut in der Provinz
+          Battambang ein Aufstand aus. Dieser Samlaut-Aufstand gilt als der Beginn des
+          Kambodschanischen Bürgerkriegs. In diesem Krieg standen auf der einen Seite die Nationalen
+          Einheitsfront von Kampuchea (FUNK) und die Kommunistischen Partei Kampucheas (auch Rote
+          Khmer genannt) unter der Führung von Pol Pot. Auf der anderen Seite stand die
+          Regierungstruppe der Republik Khmer. Während dieser Zeit wird der Prinz Norodom Sihanouk
+          durch den General Lon Nol gestürzt, welcher keiner Partei angehörig war. Während die
+          Städte durch Lon Nols Regierungskräfte kontrolliert wurden, wohin ländliche Gebiete unter
+          Kontrolle der roten Khmer standen.
+        </p>
+        <StackingCards>
+          <img src={Mao} alt='Testbild' />
+          <img src={khmerRouge} alt='Testbild' />
+          <img src={LonNol} alt='Testbild' />
+          <img src={TestImage} alt='Testbild' />
+        </StackingCards>
+        <div></div>
       </div>
     </div>
   )
