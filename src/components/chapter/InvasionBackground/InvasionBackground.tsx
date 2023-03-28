@@ -3,6 +3,10 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './InvasionBackground.module.scss'
+import * as language from './InvasionBackground_lang'
+import { Parallax } from 'react-scroll-parallax'
+import Students from '@/assets/img/InvasionBack_Khmer-Rouge-students-working.jpg'
+import Marines from '@/assets/img/InvasionBack_Marines_botschaft.jpg'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -31,16 +35,24 @@ const InvasionBackground = (props: Props) => {
           </h2>
         </div>
       </div>
-      <div className='chapter-body-wrapper'>
-        <div className={classes.section}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-            itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-            consectetur distinctio nobis tempora voluptatum voluptates?
-          </p>
-        </div>
+      <div className={classNames(classes.section)}>
+        <Parallax speed={10}>
+          <img src={Students} style={{ width: '400px' }} alt='Arbeitende Studenten' />
+        </Parallax>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.teil1}</p>
       </div>
-      <div ref={bottomRef}></div>
+      <div className={classNames(classes.section)}>
+        <p style={{ alignSelf: 'center', textAlign: 'center' }}>{language.teil2}</p>
+      </div>
+      <div className={classNames(classes.section)}>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.teil3}</p>
+        <Parallax speed={10}>
+          <img src={Marines} style={{ width: '400px' }} alt='Arbeitende Studenten' />
+        </Parallax>
+      </div>
+      <div className={classNames(classes.section)}>
+        <p style={{ alignSelf: 'center', textAlign: 'center' }}>{language.teil4}</p>
+      </div>
     </div>
   )
 }

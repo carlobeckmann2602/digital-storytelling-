@@ -36,7 +36,7 @@ export const CHAPTERS = new Map([
   [
     'INVASION_BACKGROUND',
     {
-      time: 'XXXX - YZYZ',
+      time: '1975',
       title: 'Einordnung: Einnahme Phnomh Penhs',
       person: 'none',
       place: 'Beispielort3',
