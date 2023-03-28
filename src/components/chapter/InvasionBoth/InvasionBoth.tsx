@@ -19,11 +19,16 @@ interface Props {
 const InvasionBoth = (props: Props) => {
   const CHAPTER_ID: Chapter = 'INVASION_BOTH'
 
-  const ref = React.useRef<HTMLInputElement>(null)
-  const onScreen = useOnScreen(ref, '-350px')
+  const topRef = React.useRef<HTMLInputElement>(null)
+  const bottomRef = React.useRef<HTMLInputElement>(null)
+  const topOnScreen = useOnScreen(topRef, '-350px')
+  const bottomOnScreen = useOnScreen(bottomRef, '-350px')
   useEffect(() => {
-    onScreen && props.setCurrentChapter(CHAPTER_ID)
-  }, [onScreen])
+    topOnScreen && props.setCurrentChapter(CHAPTER_ID)
+  }, [topOnScreen])
+  useEffect(() => {
+    bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
+  }, [bottomOnScreen])
 
   /* Formula (all elements must have the same idKey):
   (Height of own sticky-container)
@@ -38,7 +43,7 @@ const InvasionBoth = (props: Props) => {
 
   return (
     <div id={CHAPTER_ID}>
-      <div ref={ref} className={'header-outer'}>
+      <div ref={topRef} className={'header-outer'}>
         <div className='header-inner'>
           <h2 className={classNames(classes.heading, 'chapter-heading')}>
             {CHAPTERS.get(CHAPTER_ID)?.title}
@@ -193,6 +198,7 @@ const InvasionBoth = (props: Props) => {
         <div className={classNames(classes.spacerS)}></div>
         <Quotation quote={language.B_7_Quote} citation={'Bou Meng'} colorCode={'bou'}></Quotation>
       </div>
+      <div ref={bottomRef}></div>
     </div>
   )
 }

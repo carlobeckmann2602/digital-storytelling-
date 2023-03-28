@@ -18,15 +18,20 @@ interface Props {
 const AfterInvasionB = (props: Props) => {
   const CHAPTER_ID: Chapter = 'AFTER_INVASION_B'
 
-  const ref = React.useRef<HTMLInputElement>(null)
-  const onScreen = useOnScreen(ref, '-350px')
+  const topRef = React.useRef<HTMLInputElement>(null)
+  const bottomRef = React.useRef<HTMLInputElement>(null)
+  const topOnScreen = useOnScreen(topRef, '-350px')
+  const bottomOnScreen = useOnScreen(bottomRef, '-350px')
   useEffect(() => {
-    onScreen && props.setCurrentChapter(CHAPTER_ID)
-  }, [onScreen])
+    topOnScreen && props.setCurrentChapter(CHAPTER_ID)
+  }, [topOnScreen])
+  useEffect(() => {
+    bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
+  }, [bottomOnScreen])
 
   return (
     <div id={CHAPTER_ID}>
-      <div ref={ref} className={'header-outer'}>
+      <div ref={topRef} className={'header-outer'}>
         <div className='header-inner'>
           <h2 className={classNames(classes.heading, 'chapter-heading')}>
             {CHAPTERS.get(CHAPTER_ID)?.title}
@@ -39,7 +44,6 @@ const AfterInvasionB = (props: Props) => {
         </div>
         <div className={classNames(classes.section)}>
           <div className={classNames(classes.sectionColumn)}>
-            {/* <p>{language.T1_Ankunft}</p> */}
             <p>{language.T2_Kinder}</p>
             <p>{language.T3_Bio}</p>
           </div>
@@ -70,6 +74,7 @@ const AfterInvasionB = (props: Props) => {
           <p>{language.T7_Angst}</p>
         </div>
       </div>
+      <div ref={bottomRef}></div>
     </div>
   )
 }

@@ -6,6 +6,53 @@
 
 .section {
   display: flex;
-  align-items: center;
-  gap: 5%;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10%;
+  padding: 0 7%;
+
+  &.leftAlign {
+    justify-content: flex-start;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  &.rightAlign {
+    justify-content: flex-end;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  .imgS {
+    width: 300px;
+  }
+
+  .imgM {
+    width: 400px;
+  }
+}
+
+.sectionColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10%;
+  max-width: 50%;
+
+  p {
+    text-align: justify;
+  }
+}
+
+.highlight {
+  justify-self: center;
+  padding: 0 20px;
+  font-family: 'InriaSerif-Bold';
+  font-size: 1.5em;
 }

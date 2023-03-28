@@ -22,6 +22,7 @@ import EscapeFromPrisonBoth from './components/chapter/EscapeFromPrisonBoth/Esca
 import OutlookBackground from './components/chapter/OutlookBackground/OutlookBackground'
 import InvasionBoth from './components/chapter/InvasionBoth/InvasionBoth'
 import Sidebar from './components/Sidebar/Sidebar'
+import CurrentPersonMarker from './components/CurrentPersonMarker/CurrentPersonMarker'
 
 function App() {
   const [currentChapter, setCurrentChapter] = useState<Chapter>('TITLE')
@@ -29,31 +30,30 @@ function App() {
   return (
     <ParallaxProvider>
       <div className='app'>
-        <div className='chapters'>
-          <div className='sidebarWrapper'>
-            <Sidebar currentChapter={currentChapter} />
-          </div>
-          <div className='chapter-content'>
-            <Template setCurrentChapter={setCurrentChapter} />
-            <ChildhoodC setCurrentChapter={setCurrentChapter} />
-            <ChildhoodB setCurrentChapter={setCurrentChapter} />
-            <HistoricalBackground setCurrentChapter={setCurrentChapter} />
-            <PreInvasionB setCurrentChapter={setCurrentChapter} />
-            <PreInvasionC setCurrentChapter={setCurrentChapter} />
-            <InvasionBackground setCurrentChapter={setCurrentChapter} />{' '}
-            <InvasionBoth setCurrentChapter={setCurrentChapter} />
-            <AfterInvasionB setCurrentChapter={setCurrentChapter} />
-            <AfterInvasionC setCurrentChapter={setCurrentChapter} />
-            <ArrestB setCurrentChapter={setCurrentChapter} />
-            <ArrestC setCurrentChapter={setCurrentChapter} />
-            <DictatorshipBackground setCurrentChapter={setCurrentChapter} />
-            <PrisonLifeBackground setCurrentChapter={setCurrentChapter} />
-            <PrisonB setCurrentChapter={setCurrentChapter} />
-            <PrisonC setCurrentChapter={setCurrentChapter} />
-            <LiberationFromPrisonBackground setCurrentChapter={setCurrentChapter} />
-            <EscapeFromPrisonBoth setCurrentChapter={setCurrentChapter} />
-            <OutlookBackground setCurrentChapter={setCurrentChapter} />
-          </div>
+        <div className='sidebarWrapper'>
+          <Sidebar currentChapter={currentChapter} />
+        </div>
+        <div className='chapter-content'>
+          <CurrentPersonMarker currentChapter={currentChapter} />
+          <Template setCurrentChapter={setCurrentChapter} />
+          <ChildhoodC setCurrentChapter={setCurrentChapter} />
+          <ChildhoodB setCurrentChapter={setCurrentChapter} />
+          <HistoricalBackground setCurrentChapter={setCurrentChapter} />
+          <PreInvasionB setCurrentChapter={setCurrentChapter} />
+          <PreInvasionC setCurrentChapter={setCurrentChapter} />
+          <InvasionBackground setCurrentChapter={setCurrentChapter} />{' '}
+          <InvasionBoth setCurrentChapter={setCurrentChapter} />
+          <AfterInvasionB setCurrentChapter={setCurrentChapter} />
+          <AfterInvasionC setCurrentChapter={setCurrentChapter} />
+          <ArrestB setCurrentChapter={setCurrentChapter} />
+          <ArrestC setCurrentChapter={setCurrentChapter} />
+          <DictatorshipBackground setCurrentChapter={setCurrentChapter} />
+          <PrisonLifeBackground setCurrentChapter={setCurrentChapter} />
+          <PrisonB setCurrentChapter={setCurrentChapter} />
+          <PrisonC setCurrentChapter={setCurrentChapter} />
+          <LiberationFromPrisonBackground setCurrentChapter={setCurrentChapter} />
+          <EscapeFromPrisonBoth setCurrentChapter={setCurrentChapter} />
+          <OutlookBackground setCurrentChapter={setCurrentChapter} />
         </div>
       </div>
     </ParallaxProvider>
