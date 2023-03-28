@@ -28,19 +28,23 @@ const ArrestC = (props: Props) => {
     topOnScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [topOnScreen])
   useEffect(() => {
-    if (onScreen && props.soundEnabled) {
+    bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
+  }, [bottomOnScreen])
+
+  useEffect(() => {
+    if (topOnScreen && props.soundEnabled) {
       props.setCurrentChapter(CHAPTER_ID)
       play()
     } else {
       stop()
     }
-  }, [onScreen, props.soundEnabled])
+  }, [topOnScreen, props.soundEnabled])
 
   const [volume, setVolume] = useState(0.5)
   const [play, { stop }] = useSound(sampleSound, { volume: volume })
 
   return (
-    <div ref={ref} id={CHAPTER_ID}>
+    <div ref={topRef} id={CHAPTER_ID}>
       <div className={'header-outer'}>
         <div className='header-inner'>
           <h2 className={classNames(classes.heading, 'chapter-heading')}>
