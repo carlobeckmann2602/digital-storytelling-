@@ -17,20 +17,24 @@ const Template = (props: Props) => {
   // (see constants.ts)
   const CHAPTER_ID: Chapter = 'TEMPLATE'
 
-  // Ref for the element that we want to detect whether on screen
-  const ref = React.useRef<HTMLInputElement>(null)
-  // Call the hook passing in ref and root margin
+  // Refs for the elements that we want to detect whether on screen
+  const topRef = React.useRef<HTMLInputElement>(null)
+  const bottomRef = React.useRef<HTMLInputElement>(null)
+  // Call the hooks passing in ref and root margin
   // Only considered onScreen if more than 350px of element is visible.
-  const onScreen = useOnScreen(ref, '-350px')
-  // Set current chapter state in App every time onScreen changes
+  const topOnScreen = useOnScreen(topRef, '-350px')
+  const bottomOnScreen = useOnScreen(bottomRef, '-350px') // Set current chapter state in App every time onScreen changes
   // (also on every rerender, which should hopefully be fine)
   useEffect(() => {
-    onScreen && props.setCurrentChapter(CHAPTER_ID)
-  }, [onScreen])
+    topOnScreen && props.setCurrentChapter(CHAPTER_ID)
+  }, [topOnScreen])
+  useEffect(() => {
+    bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
+  }, [bottomOnScreen])
 
   return (
     <div id={CHAPTER_ID}>
-      <div ref={ref} className={'header-outer'}>
+      <div ref={topRef} className={'header-outer'}>
         <div className='header-inner'>
           <h2 className={classNames(classes.heading, 'chapter-heading')}>
             {CHAPTERS.get(CHAPTER_ID)?.title}
@@ -65,6 +69,7 @@ const Template = (props: Props) => {
           </p>
         </div>
       </div>
+      <div ref={bottomRef}></div>
     </div>
   )
 }

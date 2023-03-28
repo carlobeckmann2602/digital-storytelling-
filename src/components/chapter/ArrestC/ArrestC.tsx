@@ -20,8 +20,13 @@ interface Props {
 const ArrestC = (props: Props) => {
   const CHAPTER_ID: Chapter = 'ARREST_C'
 
-  const ref = React.useRef<HTMLInputElement>(null)
-  const onScreen = useOnScreen(ref, '-350px')
+  const topRef = React.useRef<HTMLInputElement>(null)
+  const bottomRef = React.useRef<HTMLInputElement>(null)
+  const topOnScreen = useOnScreen(topRef, '-350px')
+  const bottomOnScreen = useOnScreen(bottomRef, '-350px')
+  useEffect(() => {
+    topOnScreen && props.setCurrentChapter(CHAPTER_ID)
+  }, [topOnScreen])
   useEffect(() => {
     if (onScreen && props.soundEnabled) {
       props.setCurrentChapter(CHAPTER_ID)
@@ -67,6 +72,7 @@ const ArrestC = (props: Props) => {
         </div>
         <p className={classNames(classes.highlight)}>{language.T4_Toul}</p>
       </div>
+      <div ref={bottomRef}></div>
     </div>
   )
 }

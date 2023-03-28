@@ -3,6 +3,10 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './InvasionBackground.module.scss'
+import * as language from './InvasionBackground_lang'
+import { Parallax } from 'react-scroll-parallax'
+import Students from '@/assets/img/InvasionBack_Khmer-Rouge-students-working.jpg'
+import Marines from '@/assets/img/InvasionBack_Marines_botschaft.jpg'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -11,29 +15,43 @@ interface Props {
 const InvasionBackground = (props: Props) => {
   const CHAPTER_ID: Chapter = 'INVASION_BACKGROUND'
 
-  const ref = React.useRef<HTMLInputElement>(null)
-  const onScreen = useOnScreen(ref, '-350px')
+  const topRef = React.useRef<HTMLInputElement>(null)
+  const bottomRef = React.useRef<HTMLInputElement>(null)
+  const topOnScreen = useOnScreen(topRef, '-350px')
+  const bottomOnScreen = useOnScreen(bottomRef, '-350px')
   useEffect(() => {
-    onScreen && props.setCurrentChapter(CHAPTER_ID)
-  }, [onScreen])
+    topOnScreen && props.setCurrentChapter(CHAPTER_ID)
+  }, [topOnScreen])
+  useEffect(() => {
+    bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
+  }, [bottomOnScreen])
 
   return (
     <div id={CHAPTER_ID}>
-      <div ref={ref} className={'header-outer'}>
+      <div ref={topRef} className={'header-outer'}>
         <div className='header-inner'>
           <h2 className={classNames(classes.heading, 'chapter-heading')}>
             {CHAPTERS.get(CHAPTER_ID)?.title}
           </h2>
         </div>
       </div>
-      <div className='chapter-body-wrapper'>
-        <div className={classes.section}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-            itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-            consectetur distinctio nobis tempora voluptatum voluptates?
-          </p>
-        </div>
+      <div className={classNames(classes.section)}>
+        <Parallax speed={10}>
+          <img src={Students} style={{ width: '400px' }} alt='Arbeitende Studenten' />
+        </Parallax>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.teil1}</p>
+      </div>
+      <div className={classNames(classes.section)}>
+        <p style={{ alignSelf: 'center', textAlign: 'center' }}>{language.teil2}</p>
+      </div>
+      <div className={classNames(classes.section)}>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.teil3}</p>
+        <Parallax speed={10}>
+          <img src={Marines} style={{ width: '400px' }} alt='Arbeitende Studenten' />
+        </Parallax>
+      </div>
+      <div className={classNames(classes.section)}>
+        <p style={{ alignSelf: 'center', textAlign: 'center' }}>{language.teil4}</p>
       </div>
     </div>
   )
