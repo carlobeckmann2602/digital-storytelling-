@@ -1,5 +1,8 @@
 export const HEADLINE = 'Beispiel Headline' // TODO: Replace with real language keys
-export const c_1950 = 'Im Jahr 1950 ging Chum Mey nach Phnom Penh. Dort hatte er große Mühe arbeit zu finden, da er niemanden kannte. Er lebte auf der Straße und fand später als Bootsgehilfe eine Arbeit. Kurz darauf fand er Arbeit als Assistent und lernte dann als Mechaniker. Zu dieser Zeit verdiente er kaum Geld und war immer noch sehr arm.'
-export const c_study = ' Vier Jahre später studierte Chum Mey Mechanik in Prey Veng und bekam darauf viel Geld. Zu dieser Zeit reparierte er Fahrzeuge und arbeitete in einer Werkstatt.'
-export const c_heirat = 'Im Jahr 1964 arrangierte ein Arbeitskollege für Chum Mey eine Heirat mit dessen Cousine, die er zuvor erst einmal getroffen hatte. Trotzdem führte er eine sehr glückliche Ehe mit ihr und sie bekamen insgesamt 4 Kinder, welche alle im Krieg starben.'
-export const c_werkstatt = 'Kurz vor der Invasion von den Khmer eröffnete Chum Mey kurz hintereinander zwei Werkstätten. Diese verkaufte er am Ende, um dann für einen General im Militär zu arbeiten und für diesen Traktoren und Autos zu reparieren.'
+export const c_uberfalle_khmer =
+  'In den Jahren 1972 bis 1973 erlebte Chum Mey immer wieder Überfälle der Roten Khmer und Auseinandersetzungen zwischen den Roten Khmer und den Soldaten von Lon Nol. Eines Tages geriet ern selsbt in eine Schießerei und musste sich auf den Boden retten. Durch die ganzen Zerstörungen wurde seine Arbeit erschwert.'
+export const c_uberfall_militar =
+  '1973 wurde eine Militärbasis von den Roten Khmer überfallen. Dabei wurde eine Reihe von Soldaten und deren Familien getötet und die Häuser niedergebrannt. Als Chum Mey zur Militärbasis ging sah er dort viele verbrannte Körper. Informationen über seine Verwandten bekam er allerdings keine, weil Prey Veng von den Roten Khmer eingenommen worden ist und bombadiert wurde. Alle Verbindungen dorthin waren unterbrochen.'
+export const c_flucht = 'Während dieser Zeit flohen viele Menschen nach Pnomh Penh.'
+export const c_werkstatt =
+  'Im Jahr 1974 wurde Kampong Speu, wo Chum Mey sich zu der Zeit aufhielt, von den Roten Khmer eingenommen. Einige der Arbeiter in Chum Meys Werkstatt wurden gezwungen, sich den Roten Khmer anzuschließen. Chum Mey entkam und arbeitet weiter für das Verkehrsministerium. Zu dieser Zeit kam man bereits nur noch per Hubschrauber nach Pnomh Penh.'

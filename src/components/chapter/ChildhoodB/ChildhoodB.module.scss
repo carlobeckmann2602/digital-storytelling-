@@ -1,5 +1,19 @@
 @import '@/App.scss';
 
 .heading {
-  color: $b-timeline-color;
+  color: $c-timeline-color;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+
+.img {
+  width: 50%;
+  height: 50%;
 }

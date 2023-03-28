@@ -8,6 +8,11 @@ import * as language from './ChildhoodC_lang'
 import sampleGlücklich from '@/assets/img/sample_glücklich.png'
 import sampleArbeit from '@/assets/img/sample_hand.png'
 import sampleBedruckt from '@/assets/img/sample_bedruckt.png'
+import InfoI from '@/assets/img/info_i.png'
+import sampleSorge from '@/assets/img/sample_sorge.png'
+import sampleHappy from '@/assets/img/sample_happy.png'
+import sampleLove from '@/assets/img/sample_love.png'
+import sampleFight from '@/assets/img/sample_fight.png'
 import Modal from '../../Modal/Modal'
 
 interface Props {
@@ -69,6 +74,38 @@ const ChildhoodC = (props: Props) => {
               </p>
             </Modal>
           </p>
+        </Parallax>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={5} translateX={['-100px', '-10px']}>
+          <img src={sampleSorge} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <Parallax speed={5} translateX={['-10px', '-100px']}>
+          <p>{language.c_1950}</p>
+        </Parallax>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={5} translateX={['-100px', '-10px']}>
+          <img src={sampleHappy} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <Parallax speed={5} translateX={['-10px', '-100px']}>
+          <p>{language.c_study}</p>
+        </Parallax>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={5} translateX={['-100px', '-10px']}>
+          <img src={sampleLove} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <Parallax speed={5} translateX={['-10px', '-100px']}>
+          <p>{language.c_heirat}</p>
+        </Parallax>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={5} translateX={['-100px', '-10px']}>
+          <img src={sampleFight} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <Parallax speed={5} translateX={['-10px', '-100px']}>
+          <p>{language.c_werkstatt}</p>
         </Parallax>
       </div>
       <div ref={bottomRef}></div>

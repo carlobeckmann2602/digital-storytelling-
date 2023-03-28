@@ -3,6 +3,11 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodB.module.scss'
+import * as language from './ChildhoodB_lang'
+import { Parallax } from 'react-scroll-parallax'
+import sampleHappy from '@/assets/img/sample_happy.png'
+import sampleHand from '@/assets/img/sample_hand.png'
+import sampleSorge from '@/assets/img/sample_sorge.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -31,37 +36,29 @@ const ChildhoodB = (props: Props) => {
           </h2>
         </div>
       </div>
-      <div className='chapter-body-wrapper'>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-          itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-          consectetur distinctio nobis tempora voluptatum voluptates?
-        </p>
+      <div className={classes.section}>
+        <Parallax speed={10}>
+          <img src={sampleHappy} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <p>{language.b_geburt}</p>
+      </div>
+      <div className={classes.section}>
+        <p>{language.b_pagode}</p>
+        <Parallax speed={10}>
+          <img src={sampleHand} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+      </div>
+      <div className={classes.section}>
+        <Parallax speed={10}>
+          <img src={sampleHappy} alt='Austauschbild' className={classes.img} />
+        </Parallax>
+        <p>{language.b_tischler}</p>
+      </div>
+      <div className={classes.section}>
+        <p>{language.b_heimat}</p>
+        <Parallax speed={10}>
+          <img src={sampleSorge} alt='Austauschbild' className={classes.img} />
+        </Parallax>
       </div>
       <div ref={bottomRef}></div>
     </div>
