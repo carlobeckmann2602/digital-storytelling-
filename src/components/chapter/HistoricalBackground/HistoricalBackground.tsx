@@ -49,7 +49,19 @@ const HistoricalBackground = (props: Props) => {
           <img src={LonNol} alt='Testbild' />
           <img src={TestImage} alt='Testbild' />
         </StackingCards>
-        <div></div>
+        <div>
+          <p>
+            Von 1969 bis 1973 wurde Kambodscha von den Amerikanern bombardiert, um die Vorsorgewege
+            zu Vietnam zu zerstören. So wurde das Land mit in den Vietnam Krieg hineingezogen. Da
+            die landwirtschaftlichen Flächen zerstört wurden, wandten sich die Menschen auf dem Land
+            von der USA ab und den Roten Khmer zu, von denen sie Hilfe erwarteten. Auch wenn die
+            Amerikaner 1973 abzogen, nahm der Konflikt zwischen den kommunistischen Roten Khmer und
+            der von den Amerikanern unterstützten Regierung weiter zu. Währenddessen hatten manche
+            Kambodschaner jedoch den Eindruck, dass die Roten Khmer sich immer mehr fanatisierten,
+            da sie jedes Friedensangebot sofort ausschlugen und sich nicht im Geringsten um ihre
+            eigenen Verluste oder zivile Opfer der Kämpfe sorgten.
+          </p>
+        </div>
       </div>
     </div>
   )
