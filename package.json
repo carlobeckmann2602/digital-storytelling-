@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && pagecrypt index.html dist/index.html $PASSWORD",
+    "build": "tsc && vite build && pagecrypt dist/index.html dist/index.html $PASSWORD",
     "preview": "vite preview",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,scss,md,json} --config ./.prettierrc",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
