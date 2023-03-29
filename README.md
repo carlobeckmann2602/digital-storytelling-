@@ -12,3 +12,5 @@
 - Replace all color values for `fill` and `stroke` with either "none" or "currentColor" (e.g. `fill="none" stroke="currentColor"`)
 - Import the icons like this: `import { ReactComponent as CloseIcon } from '@/assets/img/icons/close-icon.svg'`
 - Render them like this: ` <CloseIcon />`
+
+## Deployment
