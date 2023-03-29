@@ -13,7 +13,11 @@ function Sidebar(props: SidebarProps) {
 
   return (
     <div className='sidebar'>
-      <span className='place'>{CHAPTERS.get(props.currentChapter)?.place}</span>
+      <span className='place'>
+        {CHAPTERS.get(props.currentChapter)?.place !== 'none'
+          ? CHAPTERS.get(props.currentChapter)?.place
+          : ''}
+      </span>
       <Timeline currentChapter={props.currentChapter} />
     </div>
   )
@@ -128,6 +132,9 @@ function Sidebar(props: SidebarProps) {
         onMouseLeave={() => setExpandTimeline(false)}
       >
         {Array.from(CHAPTERS).map(([key, value]) => {
+          if (value.time === 'none') {
+            return
+          }
           return renderDate(key, value)
         })}
       </nav>
