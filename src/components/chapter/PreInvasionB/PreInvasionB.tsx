@@ -10,8 +10,8 @@ import sampleRevolution from '@/assets/img/sample_revolution.png'
 import sampleLaufen from '@/assets/img/sample_gehen.png'
 import sampleMalen from '@/assets/img/sample_malen.png'
 import sampleZufrieden from '@/assets/img/sample_zufrieden.png'
-import sampleSorge from '@/assets/img/sample_Sorge.png'
-import sampleFight from '@/assets/img/sample_Fight.png'
+import sampleSorge from '@/assets/img/sample_sorge.png'
+import sampleFight from '@/assets/img/sample_fight.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
