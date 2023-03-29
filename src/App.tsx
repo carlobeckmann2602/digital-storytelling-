@@ -23,6 +23,7 @@ import OutlookBackground from './components/chapter/OutlookBackground/OutlookBac
 import InvasionBoth from './components/chapter/InvasionBoth/InvasionBoth'
 import Sidebar from './components/Sidebar/Sidebar'
 import CurrentPersonMarker from './components/CurrentPersonMarker/CurrentPersonMarker'
+import PrisonModelCanvas from './components/landingpage/PrisonModelCanvas'
 
 function App() {
   const [currentChapter, setCurrentChapter] = useState<Chapter>('TITLE')
@@ -30,6 +31,7 @@ function App() {
   return (
     <ParallaxProvider>
       <div className='app'>
+        <PrisonModelCanvas />
         <div className='sidebarWrapper'>
           <Sidebar currentChapter={currentChapter} />
         </div>

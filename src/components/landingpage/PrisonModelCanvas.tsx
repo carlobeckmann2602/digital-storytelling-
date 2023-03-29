@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { Suspense } from 'react'
 import { PrisonModel } from './PrisonModel'
 import * as language from './PrisonModelCanvas_lang'
+import { Palms } from './PalmModel'
 
 const PrisonModelCanvas = () => {
   return (
@@ -22,6 +23,7 @@ const PrisonModelCanvas = () => {
               damping={0.2} // Friction, higher is faster (default: 4)
             >
               <PrisonModel />
+              <Palms />
             </ScrollControls>
           </Stage>
         </Suspense>
