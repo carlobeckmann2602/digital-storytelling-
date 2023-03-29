@@ -31,7 +31,7 @@ function App() {
   return (
     <ParallaxProvider>
       <div className='app'>
-        <PrisonModelCanvas />
+        <PrisonModelCanvas setCurrentChapter={setCurrentChapter} />
         <div className='sidebarWrapper'>
           <Sidebar currentChapter={currentChapter} />
         </div>

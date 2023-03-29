@@ -1,1 +1,2 @@
-export const LOADING = 'Laden...' // TODO: Replace with real language keys
+export const HEADING = 'Tuol Sleng'
+export const LOADING = 'Laden...'

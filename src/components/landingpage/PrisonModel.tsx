@@ -4,11 +4,8 @@ Command: npx gltfjsx@6.1.4 model.glb --transform --types
 */
 
 import * as THREE from 'three'
-import React, { useRef } from 'react'
-import { useGLTF, useScroll } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei'
 import { GLTF } from 'three-stdlib'
-import { useFrame } from '@react-three/fiber'
-import { Mesh } from 'three'
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -81,19 +78,9 @@ type GLTFResult = GLTF & {
 }
 
 export function PrisonModel(props: JSX.IntrinsicElements['group']) {
-  const scrollPosition = useScroll()
-
-  const ref = React.useRef<Mesh>(null)
-  useFrame(() => {
-    if (ref.current) {
-      // ref.current.rotation.z = scrollPosition ? scrollPosition.offset : 0
-      ref.current.rotation.y = scrollPosition ? scrollPosition.offset / 2 : 0
-    }
-  })
-
   const { nodes, materials } = useGLTF('/prison-model.glb') as GLTFResult
   return (
-    <group {...props} dispose={null} rotation={[0, 0, 0]} ref={ref}>
+    <group {...props} dispose={null}>
       <mesh geometry={nodes.Fenster_27.geometry} material={materials.FensterundTueren} />
       <mesh geometry={nodes.Fenster_29.geometry} material={materials.FensterundTueren} />
       <mesh geometry={nodes.Fenster7.geometry} material={materials.Fenster2} />

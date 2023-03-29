@@ -26,11 +26,11 @@ type GLTFResult = GLTF & {
   }
 }
 
-export function Palms(props: JSX.IntrinsicElements['group']) {
+export function Palm(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/palm-model.glb') as GLTFResult
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]}>
+      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.15}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.initialShadingGroup} />
         <mesh geometry={nodes.Object_3.geometry} material={materials.lambert2SG} />
         <mesh geometry={nodes.Object_4.geometry} material={materials.lambert3SG} />

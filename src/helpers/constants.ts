@@ -1,4 +1,5 @@
 export const CHAPTERS = new Map([
+  ['TITLE', { time: 'none', title: 'Startseite', person: 'none', place: 'none' }],
   [
     'TEMPLATE',
     { time: 'XX.XX.XXXX', title: 'Beispielkapitel', person: 'bou', place: 'Beispielort' },
