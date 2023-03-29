@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 export const T1_Ankunft =
-  'In Phnomh Penh angekommen, werden Bou Meng und seiner Frau Jobs zugeteilt. Zuerst malt er Markierungen zur Identifizierung von Schiffen. Später wird er auch zugehörige Dokumente und technische Zeichnungen für den Unterricht an einer Schule anfertigen.'
+  'In Phnom Penh angekommen, werden Bou Meng und seiner Frau Jobs zugeteilt. Zuerst malt er Markierungen zur Identifizierung von Schiffen. Später wird er auch zugehörige Dokumente und technische Zeichnungen für den Unterricht an einer Schule anfertigen.'
 
 export const T2_Kinder =
   'Seine Kinder dürfen dabei nicht bei ihnen bleiben, sondern kommen in ein Kinderheim. Von anderen Familien in der Umgebung hört er, dass auch ihre Kinder von ihnen getrennt werden. Außerdem bekommen sie einheitliche Kleidung, die von der Organisation Angka ausgegeben werden. Die roten Khmer sprachen oft von Angka, doch viel erfahren Bou Meng und seine Kollegen trotzdem nicht.'

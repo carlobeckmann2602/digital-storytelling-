@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 export const T1_Nachricht =
-  'Es ist der 16. August 1977, als zwei junge Männer auf das Reisfeld zulaufen, auf dem Bou Meng gerade arbeitet. Als sie geradewegs auf ihn zulaufen, merkt er, dass sie offenbar zum ihm möchten und unterbricht seine Arbeit. Sie erzählen ihm, er könne ab sofort an einer Kunstschule in Phnomh Penh lehren.'
+  'Es ist der 16. August 1977, als zwei junge Männer auf das Reisfeld zulaufen, auf dem Bou Meng gerade arbeitet. Als sie geradewegs auf ihn zulaufen, merkt er, dass sie offenbar zum ihm möchten und unterbricht seine Arbeit. Sie erzählen ihm, er könne ab sofort an einer Kunstschule in Phnom Penh lehren.'
 
 export const T2_Aufbruch =
   'Bou Meng ist erleichtert, dass seine Arbeit auf dem Feld endlich ein Ende zu haben scheint. Er und seine Frau sammeln ihr weniges Hab und Gut zusammen machen sich in einem Lastwagen der Roten Khmer in Richtung der Hauptstadt auf.'

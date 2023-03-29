@@ -6,10 +6,10 @@
 
 /* TODO: Zu vorherigem Kapitel??? */
 export const C_1 =
-  'Auf der Suche nach seinem Bruder fährt Chum Mey einige Stunden durch Phnomh Penh. Seine Suche bleibt vergeblich, stattdessen sieht er auf seiner Reise durch die Stadt viele umgekippte und brennende Autos. Durch die Einschläge von schwerem Artilleriefeuer gehen mehrere dutzend Häuser in Flammen auf.'
+  'Auf der Suche nach seinem Bruder fährt Chum Mey einige Stunden durch Phnom Penh. Seine Suche bleibt vergeblich, stattdessen sieht er auf seiner Reise durch die Stadt viele umgekippte und brennende Autos. Durch die Einschläge von schwerem Artilleriefeuer gehen mehrere dutzend Häuser in Flammen auf.'
 
 export const C_2 =
-  'Es ist circa 9 Uhr morgens, als Chum Mey euphorisches Jubeln von der Straße hört. Die roten Khmer fahren mit einem Konvoi aus Lastwagen - teilweise voller Waffen - in Phnomh Penh ein. Chum Mey steht mit Anderen an der Straße und schwenkt eine weiße Fahne.'
+  'Es ist circa 9 Uhr morgens, als Chum Mey euphorisches Jubeln von der Straße hört. Die roten Khmer fahren mit einem Konvoi aus Lastwagen - teilweise voller Waffen - in Phnom Penh ein. Chum Mey steht mit Anderen an der Straße und schwenkt eine weiße Fahne.'
 
 export const C_3 =
   'Um 17 Uhr wandelt sich die Euphorie in Unruhe. Über Durchsagen von vorbeifahrenden Autos geben die roten Khmer bekannt:'
@@ -42,7 +42,7 @@ export const B_1 =
   'Bou Meng arbeitet gerade an einer Druckpresse, als ein Kollege euphorisch in den den Raum stürmt.'
 
 export const B_2 =
-  'Er verkündet: "Wir haben es geschafft, unsere Kameraden haben soeben Phnomh Penh eingenommen!"'
+  'Er verkündet: "Wir haben es geschafft, unsere Kameraden haben soeben Phnom Penh eingenommen!"'
 
 export const B_3 =
   'Bou Meng und seine Kollegen legen die Arbeit nieder und feiern den Sieg. Er freut sich vor allem darüber, endlich seine Familie wiederzusehen zu können.'
