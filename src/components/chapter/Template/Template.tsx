@@ -4,8 +4,8 @@ import { Parallax } from 'react-scroll-parallax'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './Template.module.scss'
-import TestImage from '@/assets/img/template-1.jpg'
-import StackingCards from '../../StackingCards/StackingCards'
+import Chum from '@/assets/img/CurrentPerson_Chum_Mey_Portrait.jpg'
+import Bou from '@/assets/img/CurrentPerson_Bou_Meng_Portrait.jpg'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -42,31 +42,43 @@ const Template = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'>
-        <StackingCards>
-          <img src={TestImage} alt='Testbild' />
-          <img src={TestImage} alt='Testbild' />
-          <img src={TestImage} alt='Testbild' />
-          <img src={TestImage} alt='Testbild' />
-        </StackingCards>
-        <div className={classes.section}>
-          <Parallax speed={-5}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-              itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-              consectetur distinctio nobis tempora voluptatum voluptates?
-            </p>
-          </Parallax>
-          <img src={TestImage} alt='Testbild' />
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus estLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus est
+          </p>
         </div>
         <div className={classes.section}>
-          <Parallax scale={[0.95, 1, 'easeOutBack']}>
-            <img src={TestImage} alt='Testbild' />
-          </Parallax>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-            itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-            consectetur distinctio nobis tempora voluptatum voluptates?
-          </p>
+          <div className={classes.chum}>
+            <p>Chum Mey</p>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+              accusam et ju
+            </p>
+          </div>
+          <div className={classes.bou}>
+            <p>Bou Meng</p>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+              accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est
+            </p>
+          </div>
+        </div>
+        <div className={classes.section}>
+          <div>
+            <img src={Chum} className={classes.bild} alt='Testbild' />
+          </div>
+          <div>
+            <img src={Bou} className={classes.bild} alt='Testbild' />
+          </div>
         </div>
       </div>
       <div ref={bottomRef}></div>
