@@ -1,1 +1,7 @@
 export const HEADLINE = 'Beispiel Headline' // TODO: Replace with real language keys
+export const H1_PrisonLife = 'Test'
+export const T1_PrisonLife = 'Man kann nur noch erahnen dass das Toul Sleng Gefängnis der Roten Khmer früher einmal eine Schule war. Das Gebäude ist von Stacheldrahtzäunen bedeckt, die Fenster sind vergittert und die Türen verbarrikadiert. Selbst die Balkons vom ersten und zweiten Stock sind durch Stacheldraht gesichert und sollen nicht nur dafür sorgen das keiner entkommen kann, sondern auch dass niemand sich das Leben nehmen kann, ohne zuvor ein Geständnis abgelegt zu haben. Niemand kann dieser Hölle entfliehen.'
+
+export const T2_PrisonLife = 'Die Gefangenen werden tagtäglich auf unmenschlichste weise physisch und psychisch misshandelt. Die Gefängniswärter schrecken vor nichts zurück und nutzen ihre Überlegenheit schamlos aus. Die Rote Khmer sah es nicht als Gewinn an einen Gefangenen zu behalten und als keinen Verlust einen Gefangenen zu töten. '
+
+export const T3_PrisonLife = 'Es gab Gefängniszellen die sich 50 Männer teilen mussten. Die meisten von ihnen waren durch die täglichen Misshandlungen und die Unterernährung schwer mitgenommen. Viele von ihnen hatten öffene Wunden, waren unterernährt oder Toiletten gibt es nicht, sondern nur Monitionskisten und Flaschen. Auch waschen dürfen sich die Männer nicht richtig, dafür müssen die nähmlich angekettet bleiben, nur ihre Hosen dürfen sie sich ausziehen.'
