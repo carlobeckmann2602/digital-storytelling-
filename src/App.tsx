@@ -24,6 +24,8 @@ import InvasionBoth from './components/chapter/InvasionBoth/InvasionBoth'
 import Sidebar from './components/Sidebar/Sidebar'
 import CurrentPersonMarker from './components/CurrentPersonMarker/CurrentPersonMarker'
 import PrisonModelCanvas from './components/landingpage/PrisonModelCanvas'
+import Disclaimer from './components/Disclaimer/Disclaimer'
+import * as language from './App_lang'
 
 function App() {
   const [currentChapter, setCurrentChapter] = useState<Chapter>('TITLE')
@@ -31,6 +33,10 @@ function App() {
   return (
     <ParallaxProvider>
       <div className='app'>
+        <Disclaimer>
+          <h1>Disclaimer</h1>
+          <p>{language.DISCLAIMER_TEXT}</p>
+        </Disclaimer>
         <PrisonModelCanvas setCurrentChapter={setCurrentChapter} />
         <div className='sidebarWrapper'>
           <Sidebar currentChapter={currentChapter} />
