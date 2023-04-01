@@ -5,6 +5,7 @@ import * as language from './PrisonModelCanvas_lang'
 import { ModelWrapper } from './ModelWrapper'
 import useOnScreen from '../../helpers/useOnScreenHook'
 import { Chapter } from '../../helpers/constants'
+import classes from './PrisonModelCanvas.module.scss'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -63,6 +64,7 @@ const PrisonModelCanvas = (props: Props) => {
         </Canvas>
         <Loader dataInterpolation={(p) => `${language.LOADING} ${p.toFixed(2)}%`} />
       </div>
+      <div className={classes.scrollDown}>{language.SCROLL_DOWN}</div>
       <div ref={bottomRef} />
     </>
   )
