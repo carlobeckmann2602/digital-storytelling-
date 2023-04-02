@@ -6,32 +6,33 @@ interface QuotationProps {
   quote: string
   citation: string
   colorCode: 'bou' | 'chum' | 'none'
+  paralax?: number
 }
 
-const Quotation = (props: QuotationProps) => {
+const Quotation = ({ quote, citation, colorCode = 'none', paralax = -3 }: QuotationProps) => {
   return (
-    <Parallax speed={-3}>
+    <Parallax speed={paralax}>
       <div className={classes.outerWrapper}>
         <p
           className={classNames(classes.quotationMark, {
-            chum: props.colorCode === 'chum',
-            bou: props.colorCode === 'bou',
+            [classes.chum]: colorCode === 'chum',
+            [classes.bou]: colorCode === 'bou',
           })}
         >
           „
         </p>
-        <p className={classNames(classes.quote)}>{props.quote}</p>
+        <p className={classNames(classes.quote)}>{quote}</p>
         <p
           className={classNames(classes.quotationMark, {
-            chum: props.colorCode === 'chum',
-            bou: props.colorCode === 'bou',
+            [classes.chum]: colorCode === 'chum',
+            [classes.bou]: colorCode === 'bou',
           })}
         >
           “
         </p>
       </div>
-      {props.citation && props.citation.trim() != '' && (
-        <p className={classNames(classes.citation)}>{`- ${props.citation}`}</p>
+      {citation && citation.trim() != '' && (
+        <p className={classNames(classes.citation)}>{`- ${citation}`}</p>
       )}
     </Parallax>
   )

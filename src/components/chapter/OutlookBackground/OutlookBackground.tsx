@@ -105,6 +105,7 @@ const OutlookBackground = (props: Props) => {
               quote={language.Q1_Gericht}
               citation={'Chum Mey'}
               colorCode={'chum'}
+              paralax={0}
             ></Quotation>
           </div>
         </div>
