@@ -1,11 +1,129 @@
 @import '@/App.scss';
 
 .heading {
-  color: $context-timeline-color;
+  color: $c-timeline-color;
 }
 
 .section {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10%;
+  padding: 0 7%;
+
+  &.leftAlign {
+    justify-content: flex-start;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  &.rightAlign {
+    justify-content: flex-end;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  .imgS {
+    width: 300px;
+  }
+
+  .imgM {
+    width: 500px;
+  }
+}
+
+.sectionColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  max-width: 50%;
+
+  p {
+    text-align: justify;
+  }
+}
+
+.sectionColumn2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .headerText {
+    justify-self: center;
+    font-family: 'InriaSerif-Bold';
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .text {
+    text-align: justify;
+  }
+}
+
+.sectionColumnImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   gap: 5%;
+  width: 100%;
+
+  img {
+    width: 200px;
+  }
+}
+
+.highlight {
+  justify-self: center;
+  padding: 100px 300px;
+  font-family: 'InriaSerif-Bold';
+  font-size: 1.5em;
+}
+
+.quoteContainer {
+  height: 1000px;
+
+  div {
+    position: sticky;
+    top: 30vh;
+  }
+}
+
+.spacer {
+  display: block;
+  height: 400px;
+}
+
+.backButton {
+  cursor: pointer;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s ease-in-out 0s;
+
+  &:hover {
+    color: $highlight-color;
+    transform: scale(1.2);
+  }
+
+  .arrowIcon {
+    width: 2em;
+    height: 2em;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
 }
