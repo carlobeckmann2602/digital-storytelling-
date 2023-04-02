@@ -128,7 +128,7 @@ export const CHAPTERS = new Map([
   ],
   [
     'OUTLOOK_BACKGROUND',
-    { time: 'XXXX - YZYZ', title: 'Ausblick', person: 'none', place: 'Beispielort3' },
+    { time: '1979 - heute', title: 'Aufarbeitung', person: 'none', place: '' },
   ],
 ])
 
