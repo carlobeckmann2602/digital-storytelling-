@@ -1,8 +1,5 @@
 export const CHAPTERS = new Map([
-  [
-    'TEMPLATE',
-    { time: 'XX.XX.XXXX', title: 'Beispielkapitel', person: 'bou', place: 'Beispielort' },
-  ],
+  ['TEMPLATE', { time: 'XX.XX.XXXX', title: 'Einführung', person: 'bou', place: 'Beispielort' }],
   [
     'CHILDHOOD_C',
     { time: '1931 - 1949', title: 'Kindheit von Chum Mey', person: 'chum', place: 'Beispielort2' },

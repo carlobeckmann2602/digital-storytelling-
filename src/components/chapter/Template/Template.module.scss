@@ -5,7 +5,25 @@
 }
 
 .section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.bou {
   align-items: center;
-  gap: 5%;
+}
+
+.chum {
+  align-items: center;
+}
+
+.bild {
+width: 32vw;
+}
+
+.intro {
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
 }

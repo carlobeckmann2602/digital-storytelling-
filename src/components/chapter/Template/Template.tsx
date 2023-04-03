@@ -4,8 +4,8 @@ import { Parallax } from 'react-scroll-parallax'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './Template.module.scss'
-import TestImage from '@/assets/img/template-1.jpg'
-import StackingCards from '../../StackingCards/StackingCards'
+import Chum from '@/assets/img/CurrentPerson_Chum_Mey_Portrait.jpg'
+import Bou from '@/assets/img/CurrentPerson_Bou_Meng_Portrait.jpg'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -42,31 +42,36 @@ const Template = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'>
-        <StackingCards>
-          <img src={TestImage} alt='Testbild' />
-          <img src={TestImage} alt='Testbild' />
-          <img src={TestImage} alt='Testbild' />
-          <img src={TestImage} alt='Testbild' />
-        </StackingCards>
-        <div className={classes.section}>
-          <Parallax speed={-5}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-              itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-              consectetur distinctio nobis tempora voluptatum voluptates?
-            </p>
-          </Parallax>
-          <img src={TestImage} alt='Testbild' />
+        <div className={classes.intro}>
+          <p>
+            Willkommen auf unserer Webseite, die Ihnen die Geschichte von zwei Überlebenden des
+            S21-Gefängnisses in Kambodscha erzählt. Das S21-Gefängnis, auch bekannt als Tuol Sleng,
+            war ein Ort des Schreckens während der Herrschaft der Roten Khmer in den späten 1970er
+            Jahren. Tausende unschuldiger Menschen wurden inhaftiert, gefoltert und ermordet,
+            während das Regime versuchte, eine utopische Gesellschaft zu schaffen. Hier erfahren Sie
+            mehr über das Leben von Chum Mey und Bou Meng, die beide das S21-Gefängnis überlebt
+            haben und nun ihre Erfahrungen und ihr Leben danach teilen. Auch wenn beide diese Zeit
+            auf unterschiedlichste Art erlebten, waren sie beide Zeugen für die Grausamkeiten, die
+            während dieser Zeit in Kambodscha begangen wurden.
+          </p>
         </div>
         <div className={classes.section}>
-          <Parallax scale={[0.95, 1, 'easeOutBack']}>
-            <img src={TestImage} alt='Testbild' />
-          </Parallax>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-            itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-            consectetur distinctio nobis tempora voluptatum voluptates?
-          </p>
+          <div className={classes.chum}>
+            <p>Chum Mey</p>
+            <p>Ein Mechaniker und Arbeiter für das Verkehrsministerium.</p>
+          </div>
+          <div className={classes.bou}>
+            <p>Bou Meng</p>
+            <p>Ein Maler und Anhänger der Revolution.</p>
+          </div>
+        </div>
+        <div className={classes.section}>
+          <div>
+            <img src={Chum} className={classes.bild} alt='Testbild' />
+          </div>
+          <div>
+            <img src={Bou} className={classes.bild} alt='Testbild' />
+          </div>
         </div>
       </div>
       <div ref={bottomRef}></div>
