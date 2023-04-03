@@ -53,6 +53,7 @@ const InvasionBackground = (props: Props) => {
       <div className={classNames(classes.section)}>
         <p style={{ alignSelf: 'center', textAlign: 'center' }}>{language.teil4}</p>
       </div>
+      <div ref={bottomRef}></div>
     </div>
   )
 }
