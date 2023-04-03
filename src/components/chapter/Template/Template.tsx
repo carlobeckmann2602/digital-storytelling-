@@ -42,34 +42,27 @@ const Template = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'>
-        <div>
+        <div className={classes.intro}>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-            sanctus estLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus est
+            Willkommen auf unserer Webseite, die Ihnen die Geschichte von zwei Überlebenden des
+            S21-Gefängnisses in Kambodscha erzählt. Das S21-Gefängnis, auch bekannt als Tuol Sleng,
+            war ein Ort des Schreckens während der Herrschaft der Roten Khmer in den späten 1970er
+            Jahren. Tausende unschuldiger Menschen wurden inhaftiert, gefoltert und ermordet,
+            während das Regime versuchte, eine utopische Gesellschaft zu schaffen. Hier erfahren Sie
+            mehr über das Leben von Chum Mey und Bou Meng, die beide das S21-Gefängnis überlebt
+            haben und nun ihre Erfahrungen und ihr Leben danach teilen. Auch wenn beide diese Zeit
+            auf unterschiedlichste Art erlebten, waren sie beide Zeugen für die Grausamkeiten, die
+            während dieser Zeit in Kambodscha begangen wurden.
           </p>
         </div>
         <div className={classes.section}>
           <div className={classes.chum}>
             <p>Chum Mey</p>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-              accusam et ju
-            </p>
+            <p>Ein Mechaniker und Arbeiter für das Verkehrsministerium.</p>
           </div>
           <div className={classes.bou}>
             <p>Bou Meng</p>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-              accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est
-            </p>
+            <p>Ein Maler und Anhänger der Revolution.</p>
           </div>
         </div>
         <div className={classes.section}>
