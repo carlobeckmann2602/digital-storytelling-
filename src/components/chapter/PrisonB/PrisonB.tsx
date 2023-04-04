@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './PrisonB.module.scss'
+import * as language from './PrisonB_lang'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -34,9 +35,46 @@ const PrisonB = (props: Props) => {
       <div className='chapter-body-wrapper'>
         <div className={classes.section}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-            itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-            consectetur distinctio nobis tempora voluptatum voluptates?
+            <div className='chapter-body-wrapper'>
+              <div className={classes.section}>
+                <div className={classNames(classes.section)}>
+                  <div className={classNames(classes.sectionColumn)}>
+                    <p className={classNames(classes.headerText)}>{language.H1_PrisionB}</p>
+                    <p className={classNames(classes.text)}> {language.T1_PrisionB}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='chapter-body-wrapper'>
+              <div className={classes.section}>
+                <div className={classNames(classes.section)}>
+                  <div className={classNames(classes.sectionColumn)}>
+                    <p className={classNames(classes.headerText)}>{language.H1_PrisionB}</p>
+                    <p className={classNames(classes.text)}> {language.T2_PrisionB}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='chapter-body-wrapper'>
+              <div className={classes.section}>
+                <div className={classNames(classes.section)}>
+                  <div className={classNames(classes.sectionColumn)}>
+                    <p className={classNames(classes.headerText)}>{language.H1_PrisionB}</p>
+                    <p className={classNames(classes.text)}> {language.T3_PrisionB}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='chapter-body-wrapper'>
+              <div className={classes.section}>
+                <div className={classNames(classes.section)}>
+                  <div className={classNames(classes.sectionColumn)}>
+                    <p className={classNames(classes.headerText)}>{language.H1_PrisionB}</p>
+                    <p className={classNames(classes.text)}> {language.T4_PrisionB}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </p>
         </div>
       </div>

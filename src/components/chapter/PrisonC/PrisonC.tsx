@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './PrisonC.module.scss'
+import * as language from './PrisonC_lang'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -33,11 +34,19 @@ const PrisonC = (props: Props) => {
       </div>
       <div className='chapter-body-wrapper'>
         <div className={classes.section}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, recusandae natus
-            itaque fugit quod optio earum excepturi quae est quibusdam eius deleniti hic, ea
-            consectetur distinctio nobis tempora voluptatum voluptates?
-          </p>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.text)}> {language.T1_PrisionC}</p>
+          </div>
+        </div>
+        <div className={classes.section}>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.text)}> {language.T2_PrisionC}</p>
+          </div>
+        </div>
+        <div className={classes.section}>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.text)}> {language.T3_PrisionC}</p>
+          </div>
         </div>
       </div>
       <div ref={bottomRef}></div>
