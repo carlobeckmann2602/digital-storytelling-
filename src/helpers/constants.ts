@@ -117,10 +117,10 @@ export const CHAPTERS = new Map([
   [
     'ESCAPE_FROM_PRISON_BOTH',
     {
-      time: 'XXXX - YZYZ',
+      time: '1979 - 1980',
       title: 'Flucht aus dem Gefängnis',
       person: 'both',
-      place: 'Beispielort3',
+      place: 'S-21 – Phnom Penh',
     },
   ],
   [
