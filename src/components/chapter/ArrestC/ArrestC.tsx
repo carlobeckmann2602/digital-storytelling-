@@ -34,6 +34,7 @@ const ArrestC = (props: Props) => {
   useEffect(() => {
     if (topOnScreen && props.soundEnabled) {
       props.setCurrentChapter(CHAPTER_ID)
+      // console.log(topRef.current?.getBoundingClientRect())
       play()
     } else {
       stop()
@@ -43,7 +44,26 @@ const ArrestC = (props: Props) => {
   const [volume, setVolume] = useState(0.5)
   const [play, { stop }] = useSound(sampleSound, { volume: volume })
 
+  const adaptVolume = () => {
+    const top1 = topRef.current!.getBoundingClientRect().top
+    console.log('getBoundingClientRect' + top1)
+    const top2 = topRef.current!.offsetTop
+    console.log('offsetTop' + top2)
+    const scroll = Math.abs(top1 - top2)
+    console.log(scroll)
+  }
+
+  // window.addEventListener("onscroll", (event) => {console.log(event.currentTarget?.scrollTop)});
+
+  // const handleScroll = event: UIEvent<HTMLDivElement, UIEvent> => {
+  //   console.log(event.currentTarget.scrollTop)
+  // }
+  // topRef.current?.onscroll = (e) => {
+  //   e.target?.addEventListener
+  // }
+
   return (
+    // <div ref={topRef} id={CHAPTER_ID} onScroll={handleScroll}>
     <div ref={topRef} id={CHAPTER_ID}>
       <div className={'header-outer'}>
         <div className='header-inner'>
