@@ -28,23 +28,20 @@
   display: flex;
   flex-direction: row;
   gap: 5%;
+  justify-content: center;
+  text-align: justify;
 
   &.leftAlign {
     justify-content: flex-start;
-
-    p {
-      width: 70%;
-      text-align: justify;
-    }
   }
 
   &.rightAlign {
     justify-content: flex-end;
+  }
 
-    p {
-      width: 70%;
-      text-align: justify;
-    }
+  p {
+    width: 80%;
+    text-align: justify;
   }
 
   .imgL {

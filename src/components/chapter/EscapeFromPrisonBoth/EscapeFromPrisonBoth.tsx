@@ -49,10 +49,15 @@ const EscapeFromPrisonBoth = (props: Props) => {
       </div>
       <div className='chapter-body-wrapper'>
         <div className={classes.section}>
+          <p>{language.Intro}</p>
+        </div>
+        <div className={classes.section}>
           <div className={classes.splitScreenWrapper}>
             <div className={classNames(classes.leftSide)}>
+              {/* Offset container for first section */}
+              <div style={{ height: computeHeight('.right-first', 0) }}></div>
               {/* 1.section LEFT */}
-              <div className={classNames(classes.section, 'firstR')}>
+              <div className={classNames(classes.section, 'left-first')}>
                 <div className={classNames(classes.subsection, classes.leftAlign)}>
                   <p>{language.C_1}</p>
                 </div>
@@ -61,133 +66,114 @@ const EscapeFromPrisonBoth = (props: Props) => {
                     <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
                   </Parallax>
                 </div>
-                <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  <p>{language.C_1}</p>
+                <div className={classNames(classes.subsection, classes.leftAlign)}>
+                  <p>{language.C_2}</p>
+                </div>
+                <div className={classNames(classes.subsection, classes.leftAlign)}>
+                  <p>{language.C_3}</p>
                 </div>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
                   <Parallax speed={3}>
                     <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
                   </Parallax>
                 </div>
-                <div className={classNames(classes.subsection, classes.leftAlign)}>
-                  <p>{language.C_1}</p>
-                </div>
               </div>
-              {/* 2.section LEFT */}
-              <div style={{ height: computeHeight('.secondL', 450) }}>
-                <div className={classNames(classes.section, classes.sticky, 'firstR', 'secondL')}>
-                  <div className={classNames(classes.subsection)}>
-                    <p className={classNames(classes.highlight)}>{language.C_1}</p>
-                  </div>
-                </div>
-              </div>
-              {/* 3.section LEFT */}
-              <div className={classNames(classes.section, 'thirdR')}>
-                <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  <p>{language.C_1}</p>
-                </div>
-                <div className={classNames(classes.subsection, classes.leftAlign)}>
-                  <p>{language.C_1}</p>
-                </div>
-              </div>
-              {/* 4.section LEFT */}
-              <div style={{ height: computeHeight('.fourthL', 450) }}>
-                <div className={classNames(classes.section, classes.sticky, 'thirdR', 'fourthL')}>
-                  <div className={classNames(classes.subsection, classes.rightAlign)}>
-                    {/* <Parallax speed={3}> */}
-                    <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
-                    {/* </Parallax> */}
-                  </div>
+              <div style={{ height: computeHeight('.right-second', 0) }}>
+                <div
+                  className={classNames(
+                    classes.section,
+                    classes.sticky,
+                    'left-first',
+                    'right-second',
+                  )}
+                >
                   <div className={classNames(classes.subsection, classes.leftAlign)}>
-                    <p>{language.C_1}</p>
+                    <p>{language.C_4}</p>
                   </div>
                 </div>
               </div>
-              {/* 5.section LEFT */}
-              <div className={classNames(classes.section, 'fifthR')}>
-                <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  {/* <Parallax speed={3}> */}
-                  <img src={Placeholder} alt='Testbild' className={classNames(classes.imgL)} />
-                  {/* </Parallax> */}
-                </div>
+              <div className={classNames(classes.section, 'left-second')}>
                 <div className={classNames(classes.subsection, classes.leftAlign)}>
-                  <p>{language.C_1}</p>
+                  <p>{language.C_5}</p>
                 </div>
-                <div className={classNames(classes.spacerM)}></div>
-                <div className={classNames(classes.subsection, classes.center)}>
-                  <Parallax speed={-5}>
-                    <p className={classNames(classes.highlight)}>{language.C_1}</p>
-                  </Parallax>
-                </div>
-                <div className={classNames(classes.spacerL)}></div>
-                <div className={classNames(classes.subsection, classes.center)}>
-                  <Parallax speed={-5}>
-                    <p className={classNames(classes.highlight)}>{language.C_1}</p>
-                  </Parallax>
-                </div>
-                <div className={classNames(classes.spacerL)}></div>
-                <div className={classNames(classes.subsection, classes.center)}>
-                  <Parallax speed={-5}>
-                    <p className={classNames(classes.highlight)}>{language.C_1}</p>
-                  </Parallax>
-                </div>
-                <div className={classNames(classes.spacerM)}></div>
-                <div className={classNames(classes.subsection)}>
-                  <p>{language.C_1}</p>
+              </div>
+              <div style={{ height: computeHeight('.left-second', 0) }}>
+                <div
+                  className={classNames(
+                    classes.section,
+                    classes.sticky,
+                    'left-second',
+                    'right-third',
+                  )}
+                >
+                  <div className={classNames(classes.subsection, classes.leftAlign)}>
+                    <p>{language.C_6}</p>
+                  </div>
                 </div>
               </div>
             </div>
             <hr className={classes.dashed}></hr>
             <div className={classes.rightSide}>
-              {/* Offset container for first section */}
-              <div style={{ height: computeHeight('.firstR', 300) }}></div>
               {/* 1.section RIGHT */}
-              <div className={classNames(classes.section, 'secondL')}>
-                <div className={classNames(classes.subsection, classes.leftAlign)}>
-                  <p>{language.B_1}</p>
-                </div>
+              <div className={classNames(classes.section, 'right-first')}>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
                   <p>{language.B_1}</p>
                 </div>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  <Parallax speed={2}>
+                  <Parallax speed={3}>
                     <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
                   </Parallax>
                 </div>
               </div>
-              {/* 2.section RIGHT */}
-              <div style={{ height: computeHeight('.thirdR', 450) }}>
-                <div className={classNames(classes.section, classes.sticky, 'secondL', 'thirdR')}>
-                  <div className={classNames(classes.subsection, classes.leftAlign)}>
-                    <p>{language.B_1}</p>
-                  </div>
+              <div style={{ height: computeHeight('.left-first', 0) }}>
+                <div
+                  className={classNames(
+                    classes.section,
+                    classes.sticky,
+                    'right-first',
+                    'left-first',
+                  )}
+                >
                   <div className={classNames(classes.subsection, classes.rightAlign)}>
-                    {/* <Parallax speed={2}> */}
-                    <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
-                    {/* </Parallax> */}
+                    <p>{language.B_2}</p>
                   </div>
                 </div>
               </div>
-              {/* 3.section RIGHT */}
-              <div className={classNames(classes.section, 'fourthL')}>
-                <div className={classNames(classes.subsection, classes.leftAlign)}>
-                  <p>{language.B_1}</p>
+              <div className={classNames(classes.section, 'right-second')}>
+                <div className={classNames(classes.subsection, classes.rightAlign)}>
+                  <p>{language.B_3}</p>
                 </div>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  <p>{language.B_1}</p>
+                  <p>{language.B_4}</p>
                 </div>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  <Parallax speed={2}>
+                  <Parallax speed={3}>
                     <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
                   </Parallax>
                 </div>
               </div>
-              {/* 4.section RIGHT */}
-              <div style={{ height: computeHeight('.fifthR', 150) }}>
-                <div className={classNames(classes.section, classes.sticky, 'fourthL', 'fifthR')}>
-                  <div className={classNames(classes.subsection)}>
-                    <p>{language.B_1}</p>
+              <div style={{ height: computeHeight('.left-second', 0) }}>
+                <div
+                  className={classNames(
+                    classes.section,
+                    classes.sticky,
+                    'right-second',
+                    'left-second',
+                  )}
+                >
+                  <div className={classNames(classes.subsection, classes.rightAlign)}>
+                    <p>{language.B_5}</p>
                   </div>
+                </div>
+              </div>
+              <div className={classNames(classes.section, 'right-third')}>
+                <div className={classNames(classes.subsection, classes.rightAlign)}>
+                  <Parallax speed={3}>
+                    <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
+                  </Parallax>
+                </div>
+                <div className={classNames(classes.subsection, classes.rightAlign)}>
+                  <p>{language.B_6}</p>
                 </div>
               </div>
             </div>
