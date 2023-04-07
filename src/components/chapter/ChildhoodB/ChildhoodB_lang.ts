@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 export const b_geburt =
   'Es war etwa das Jahr 1941, als ein kleiner Junge Namens Bou Mong-Seang in eine arme Familie hinein geboren wurde.'
 

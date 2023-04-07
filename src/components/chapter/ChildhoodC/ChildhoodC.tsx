@@ -42,70 +42,56 @@ const ChildhoodC = (props: Props) => {
         </div>
       </div>
       <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleGlücklich} alt='Austauschbild' className={classes.img} />
+        <Parallax speed={5}>
+          <img src={sampleGlücklich} style={{ width: '200px' }} alt='Testbild' />
         </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.geburt_c}</p>
+        <p>{language.geburt_c}</p>
+      </div>
+      <div className={classes.section}>
+        <p>{language.dorf_geburt}</p>
+        <Parallax speed={5}>
+          <img src={sampleArbeit} style={{ width: '200px' }} alt='Testbild' />
         </Parallax>
       </div>
       <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleArbeit} alt='Austauschbild' className={classes.img} />
+        <Parallax speed={5}>
+          <img src={sampleBedruckt} style={{ width: '200px' }} alt='Testbild' />
         </Parallax>
-        <Parallax speed={0} translateX={['-10px', '-100px']}>
-          <p>{language.dorf_geburt}</p>
+        <p>
+          {language.c_10J}
+          <Modal>
+            <p>TEST</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis doloremque
+              asperiores, at quidem voluptates aperiam eum veritatis eaque debitis harum ipsam
+              expedita! Eligendi aperiam laboriosam facere corrupti iste temporibus quaerat.
+            </p>
+          </Modal>
+        </p>
+      </div>
+      <div className={classes.section}>
+        <p>{language.c_1950}</p>
+        <Parallax speed={5}>
+          <img src={sampleSorge} style={{ width: '200px' }} alt='Testbild' />
         </Parallax>
       </div>
       <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleBedruckt} alt='Austauschbild' className={classes.img} />
+        <Parallax speed={5}>
+          <img src={sampleHappy} style={{ width: '200px' }} alt='Testbild' />
         </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>
-            {language.c_10J}
-            <Modal>
-              <p>TEST</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis doloremque
-                asperiores, at quidem voluptates aperiam eum veritatis eaque debitis harum ipsam
-                expedita! Eligendi aperiam laboriosam facere corrupti iste temporibus quaerat.
-              </p>
-            </Modal>
-          </p>
+        <p>{language.c_study}</p>
+      </div>
+      <div className={classes.section}>
+        <p>{language.c_heirat}</p>
+        <Parallax speed={5}>
+          <img src={sampleLove} style={{ width: '200px' }} alt='Testbild' />
         </Parallax>
       </div>
       <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleSorge} alt='Austauschbild' className={classes.img} />
+        <Parallax speed={5}>
+          <img src={sampleFight} style={{ width: '200px' }} alt='Testbild' />
         </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_1950}</p>
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleHappy} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_study}</p>
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleLove} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_heirat}</p>
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleFight} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_werkstatt}</p>
-        </Parallax>
+        <p>{language.c_werkstatt}</p>
       </div>
       <div ref={bottomRef}></div>
     </div>

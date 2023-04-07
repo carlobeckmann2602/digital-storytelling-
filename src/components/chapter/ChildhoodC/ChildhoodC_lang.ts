@@ -1,7 +1,11 @@
-export const HEADLINE = 'Beispiel Headline' // TODO: Replace with real language keys
-export const geburt_c = 'Es war ein Samstag im November 1931, als ein kleiner Junge namens Chum Mey in Thaot Croh geboren wurde.'
-export const dorf_geburt = 'In diesem Dorf in der Prey Veng Provinz lebte er mit seinen 5 Brüdern und 2 Schwestern und arbeitete zusammen mit seinen Eltern auf der Reisfarm. In die Schule ging er allerdings nicht.'
-export const c_10J = 'Als Chum Mey 10 Jahre alt war, starben seine Eltern und er zog mit seinen Geschwistern zu seinem ältesten Bruder nach Ba Phnom und arbeitete dort wieder auf einer Farm. Nachdem kurze Zeit später der älteste Bruder starb, brachen schwere Zeiten für die Familie an, da die Ernte nicht genug zum Leben war.'
+/* eslint-disable camelcase */
+
+export const geburt_c =
+  'Es war ein Samstag im November 1931, als ein kleiner Junge namens Chum Mey in Thaot Croh geboren wurde.'
+export const dorf_geburt =
+  'In diesem Dorf in der Prey Veng Provinz lebte er mit seinen 5 Brüdern und 2 Schwestern und arbeitete zusammen mit seinen Eltern auf der Reisfarm. In die Schule ging er allerdings nicht.'
+export const c_10J =
+  'Als Chum Mey 10 Jahre alt war, starben seine Eltern und er zog mit seinen Geschwistern zu seinem ältesten Bruder nach Ba Phnom und arbeitete dort wieder auf einer Farm. Nachdem kurze Zeit später der älteste Bruder starb, brachen schwere Zeiten für die Familie an, da die Ernte nicht genug zum Leben war.'
 export const c_1950 =
   'Im Jahr 1950 ging Chum Mey nach Phnom Penh. Dort hatte er große Mühe arbeit zu finden, da er niemanden kannte. Er lebte auf der Straße und fand später als Bootsgehilfe eine Arbeit. Kurz darauf fand er Arbeit als Assistent und lernte dann als Mechaniker. Zu dieser Zeit verdiente er kaum Geld und war immer noch sehr arm.'
 export const c_study =
