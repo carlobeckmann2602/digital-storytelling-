@@ -10,7 +10,8 @@ $highlight-color: rgb(238, 56, 32);
 $drop-shadow-s: 3px 3px 3px rgba(0, 0, 0, 0.2);
 $drop-shadow-m: 5px 5px 5px rgba(0, 0, 0, 0.333);
 
-$primary-fontfamily: InriaSerif-Regular, system-ui, Avenir, Helvetica, Arial, sans-serif;
+$primary-fontfamily: Montserrat-Regular, system-ui, Avenir, Helvetica, Arial, sans-serif;
+$secondary-fontfamily: InriaSerif-Regular, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
 @font-face {
   font-family: 'InriaSerif-Bold';
@@ -34,4 +35,28 @@ $primary-fontfamily: InriaSerif-Regular, system-ui, Avenir, Helvetica, Arial, sa
   font-weight: bold;
   src: local('InriaSerif-BoldItalic'),
     url(@/assets/fonts/InriaSerif-BoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Montserrat-Bold'), url(@/assets/fonts/Montserrat-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  src: local('Montserrat-Regular'), url(@/assets/fonts/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-Italic';
+  font-style: italic;
+  src: local('Montserrat-Italic'), url(@/assets/fonts/Montserrat-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-BoldItalic';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Montserrat-BoldItalic'),
+    url(@/assets/fonts/Montserrat-BoldItalic.ttf) format('truetype');
 }
