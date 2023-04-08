@@ -20,7 +20,12 @@ export const CHAPTERS = new Map([
   ],
   [
     'HISTORICAL_BACKGROUND',
-    { time: '1967 - 1973', title: 'Historische Umstände', person: 'none', place: 'Beispielort3' },
+    {
+      time: '1967 - 1973',
+      title: 'Kambodscha: Zwischen Unabhängigkeit & Unterdrückung',
+      person: 'none',
+      place: 'Beispielort3',
+    },
   ],
   [
     'PRE_INVASION_B',
