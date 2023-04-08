@@ -40,7 +40,7 @@ export const CHAPTERS = new Map([
     'PRE_INVASION_C',
     {
       time: '1970 - 1974',
-      title: 'Chum Meys Leben vor der Invasion',
+      title: 'Chum Meys Weg nach Phnom Penh',
       person: 'chum',
       place: 'Beispielort3',
     },

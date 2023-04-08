@@ -5,11 +5,7 @@ import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './PreInvasionC.module.scss'
 import * as language from './PreInvasionC_lang'
-import sampleSorge from '@/assets/img/sample_sorge.png'
-import sampleHappy from '@/assets/img/sample_happy.png'
-import sampleLove from '@/assets/img/sample_love.png'
-import sampleFight from '@/assets/img/sample_fight.png'
-import sampleFlucht from '@/assets/img/sample_flucht.png'
+import PlaceholderImage from '@/assets/img/Placeholder.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -39,36 +35,22 @@ const PreInvasionC = (props: Props) => {
         </div>
       </div>
       <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleSorge} alt='Austauschbild' className={classes.img} />
+        <Parallax speed={5}>
+          <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
         </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_uberfalle_khmer}</p>
+        <p style={{ textAlign: 'justify' }}>{language.T1_Ueberfaelle}</p>
+      </div>
+      <div className={classes.section}>
+        <p style={{ textAlign: 'justify' }}>{language.T2_Militaer}</p>
+        <Parallax speed={5}>
+          <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
         </Parallax>
       </div>
       <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleFight} alt='Austauschbild' className={classes.img} />
+        <Parallax speed={5}>
+          <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
         </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_uberfall_militar}</p>
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleFlucht} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_flucht}</p>
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleFight} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_werkstatt}</p>
-        </Parallax>
+        <p style={{ textAlign: 'justify' }}>{language.T3_Werkstatt}</p>
       </div>
       <div ref={bottomRef}></div>
     </div>

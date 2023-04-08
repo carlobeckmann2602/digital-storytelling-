@@ -6,14 +6,38 @@
 
 .section {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10%;
+  padding: 0 7%;
+
+  &.leftAlign {
+    justify-content: flex-start;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  &.rightAlign {
+    justify-content: flex-end;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  .imgS {
+    width: 300px;
+  }
+
+  .imgM {
+    width: 500px;
+  }
 }
 
 .img {
-  width: 40%;
-  height: 40%;
+  width: 400px;
 }
