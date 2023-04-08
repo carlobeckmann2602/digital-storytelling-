@@ -2,7 +2,12 @@ export const CHAPTERS = new Map([
   ['TEMPLATE', { time: 'Einführung', title: 'Einführung', person: 'bou', place: 'Beispielort' }],
   [
     'CHILDHOOD_C',
-    { time: '1931 - 1949', title: 'Kindheit von Chum Mey', person: 'chum', place: 'Beispielort2' },
+    {
+      time: '1931 - 1949',
+      title: 'Chum Mey: Vom Bauer zum Mechaniker',
+      person: 'chum',
+      place: 'Beispielort2',
+    },
   ],
   [
     'CHILDHOOD_B',

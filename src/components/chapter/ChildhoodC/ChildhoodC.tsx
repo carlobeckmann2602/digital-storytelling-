@@ -5,13 +5,7 @@ import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodC.module.scss'
 import * as language from './ChildhoodC_lang'
-import sampleGlücklich from '@/assets/img/sample_glücklich.png'
-import sampleArbeit from '@/assets/img/sample_hand.png'
-import sampleBedruckt from '@/assets/img/sample_bedruckt.png'
-import sampleSorge from '@/assets/img/sample_sorge.png'
-import sampleHappy from '@/assets/img/sample_happy.png'
-import sampleLove from '@/assets/img/sample_love.png'
-import sampleFight from '@/assets/img/sample_fight.png'
+import PlaceholderImage from '@/assets/img/Placeholder.png'
 import Modal from '../../Modal/Modal'
 
 interface Props {
@@ -43,55 +37,36 @@ const ChildhoodC = (props: Props) => {
       </div>
       <div className={classes.section}>
         <Parallax speed={5}>
-          <img src={sampleGlücklich} style={{ width: '200px' }} alt='Testbild' />
+          <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
         </Parallax>
-        <p>{language.geburt_c}</p>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Geburt}</p>
       </div>
       <div className={classes.section}>
-        <p>{language.dorf_geburt}</p>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Kindheit}</p>
         <Parallax speed={5}>
-          <img src={sampleArbeit} style={{ width: '200px' }} alt='Testbild' />
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5}>
-          <img src={sampleBedruckt} style={{ width: '200px' }} alt='Testbild' />
-        </Parallax>
-        <p>
-          {language.c_10J}
-          <Modal>
-            <p>TEST</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis doloremque
-              asperiores, at quidem voluptates aperiam eum veritatis eaque debitis harum ipsam
-              expedita! Eligendi aperiam laboriosam facere corrupti iste temporibus quaerat.
-            </p>
-          </Modal>
-        </p>
-      </div>
-      <div className={classes.section}>
-        <p>{language.c_1950}</p>
-        <Parallax speed={5}>
-          <img src={sampleSorge} style={{ width: '200px' }} alt='Testbild' />
+          <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
         </Parallax>
       </div>
       <div className={classes.section}>
         <Parallax speed={5}>
-          <img src={sampleHappy} style={{ width: '200px' }} alt='Testbild' />
+          <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
         </Parallax>
-        <p>{language.c_study}</p>
+        <div className={classNames(classes.sectionColumn)}>
+          <p> {language.T3_Hauptstadt}</p>
+          <p> {language.T4_Mechaniker}</p>
+        </div>
       </div>
       <div className={classes.section}>
-        <p>{language.c_heirat}</p>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Heirat}</p>
         <Parallax speed={5}>
-          <img src={sampleLove} style={{ width: '200px' }} alt='Testbild' />
+          <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
         </Parallax>
       </div>
       <div className={classes.section}>
         <Parallax speed={5}>
-          <img src={sampleFight} style={{ width: '200px' }} alt='Testbild' />
+          <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
         </Parallax>
-        <p>{language.c_werkstatt}</p>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T6_Unruhen}</p>
       </div>
       <div ref={bottomRef}></div>
     </div>

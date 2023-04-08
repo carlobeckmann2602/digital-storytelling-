@@ -6,11 +6,36 @@
 
 .section {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10%;
+  padding: 0 7%;
+
+  &.leftAlign {
+    justify-content: flex-start;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  &.rightAlign {
+    justify-content: flex-end;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  .imgS {
+    width: 300px;
+  }
+
+  .imgM {
+    width: 500px;
+  }
 }
 
 .img {
@@ -21,6 +46,18 @@
 .info {
   width: 100%;
   height: 100%;
+}
+
+.sectionColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10%;
+  max-width: 50%;
+
+  p {
+    text-align: justify;
+  }
 }
 
 .infobutton {
