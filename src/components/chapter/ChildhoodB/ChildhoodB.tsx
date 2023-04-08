@@ -5,9 +5,6 @@ import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodB.module.scss'
 import * as language from './ChildhoodB_lang'
 import { Parallax } from 'react-scroll-parallax'
-import sampleHappy from '@/assets/img/sample_happy.png'
-import sampleHand from '@/assets/img/sample_hand.png'
-import sampleSorge from '@/assets/img/sample_sorge.png'
 import PlaceholderImage from '@/assets/img/Placeholder.png'
 
 interface Props {

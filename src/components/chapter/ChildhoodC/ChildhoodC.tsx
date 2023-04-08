@@ -66,7 +66,16 @@ const ChildhoodC = (props: Props) => {
         <Parallax speed={5}>
           <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
         </Parallax>
-        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T6_Unruhen}</p>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>
+          {language.T6_Unruhen}
+          <Modal>
+            <p>TODO Armut</p>
+            <p>
+              Kurz erklären, woher die Unzufriedenheit im Land kommt und warum es Unruhen gibt
+              (ausführlich wird's dann in der Einordnung)...
+            </p>
+          </Modal>
+        </p>
       </div>
       <div ref={bottomRef}></div>
     </div>
