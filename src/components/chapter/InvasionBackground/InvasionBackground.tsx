@@ -36,22 +36,31 @@ const InvasionBackground = (props: Props) => {
         </div>
       </div>
       <div className={classNames(classes.section)}>
-        <Parallax speed={10}>
-          <img src={Students} style={{ width: '400px' }} alt='Arbeitende Studenten' />
-        </Parallax>
-        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.teil1}</p>
-      </div>
-      <div className={classNames(classes.section)}>
-        <p style={{ alignSelf: 'center', textAlign: 'center' }}>{language.teil2}</p>
-      </div>
-      <div className={classNames(classes.section)}>
-        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.teil3}</p>
-        <Parallax speed={10}>
-          <img src={Marines} style={{ width: '400px' }} alt='Arbeitende Studenten' />
+        <div className={classNames(classes.sectionColumn)}>
+          <p className={classNames(classes.headerText)}>{language.H1_Zuflucht}</p>
+          <p className={classNames(classes.text)}> {language.T1_Zuflucht}</p>
+        </div>
+        <Parallax speed={5}>
+          <img src={Students} className={classNames(classes.imgS)} alt='Testbild' />
         </Parallax>
       </div>
       <div className={classNames(classes.section)}>
-        <p style={{ alignSelf: 'center', textAlign: 'center' }}>{language.teil4}</p>
+        <Parallax speed={5}>
+          <img src={Marines} className={classNames(classes.imgS)} alt='Testbild' />
+        </Parallax>
+        <div className={classNames(classes.sectionColumn)}>
+          <p className={classNames(classes.headerText)}>{language.H2_Ruecktritt}</p>
+          <p className={classNames(classes.text)}> {language.T2_Ruecktritt}</p>
+        </div>
+      </div>
+      <div className={classNames(classes.section)}>
+        <div className={classNames(classes.sectionColumn)}>
+          <p className={classNames(classes.headerText)}>{language.H3_April}</p>
+          <p className={classNames(classes.text)}> {language.T3_April}</p>
+        </div>
+        <Parallax speed={5}>
+          <img src={Marines} className={classNames(classes.imgS)} alt='Testbild' />
+        </Parallax>
       </div>
       <div ref={bottomRef}></div>
     </div>
