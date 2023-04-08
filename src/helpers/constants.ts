@@ -11,7 +11,12 @@ export const CHAPTERS = new Map([
   ],
   [
     'CHILDHOOD_B',
-    { time: '1941 - 1967', title: 'Kindheit von Bou Meng', person: 'bou', place: 'Beispielort3' },
+    {
+      time: '1941 - 1967',
+      title: 'Der Maler Bou Mong-Seang',
+      person: 'bou',
+      place: 'Beispielort3',
+    },
   ],
   [
     'HISTORICAL_BACKGROUND',
