@@ -55,7 +55,6 @@ const HistoricalBackground = (props: Props) => {
             <img src={TestImage} alt='Testbild' />
           </StackingCards>
         </div>
-
         <div className={classNames(classes.section)}>
           <Parallax speed={5}>
             <img src={PlaceholderImage} className={classNames(classes.imgS)} alt='Testbild' />

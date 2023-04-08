@@ -35,32 +35,34 @@ const InvasionBackground = (props: Props) => {
           </h2>
         </div>
       </div>
-      <div className={classNames(classes.section)}>
-        <div className={classNames(classes.sectionColumn)}>
-          <p className={classNames(classes.headerText)}>{language.H1_Zuflucht}</p>
-          <p className={classNames(classes.text)}> {language.T1_Zuflucht}</p>
+      <div className='chapter-body-wrapper'>
+        <div className={classNames(classes.section)}>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.headerText)}>{language.H1_Zuflucht}</p>
+            <p className={classNames(classes.text)}> {language.T1_Zuflucht}</p>
+          </div>
+          <Parallax speed={5}>
+            <img src={Students} className={classNames(classes.imgS)} alt='Testbild' />
+          </Parallax>
         </div>
-        <Parallax speed={5}>
-          <img src={Students} className={classNames(classes.imgS)} alt='Testbild' />
-        </Parallax>
-      </div>
-      <div className={classNames(classes.section)}>
-        <Parallax speed={5}>
-          <img src={Marines} className={classNames(classes.imgS)} alt='Testbild' />
-        </Parallax>
-        <div className={classNames(classes.sectionColumn)}>
-          <p className={classNames(classes.headerText)}>{language.H2_Ruecktritt}</p>
-          <p className={classNames(classes.text)}> {language.T2_Ruecktritt}</p>
+        <div className={classNames(classes.section)}>
+          <Parallax speed={5}>
+            <img src={Marines} className={classNames(classes.imgS)} alt='Testbild' />
+          </Parallax>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.headerText)}>{language.H2_Ruecktritt}</p>
+            <p className={classNames(classes.text)}> {language.T2_Ruecktritt}</p>
+          </div>
         </div>
-      </div>
-      <div className={classNames(classes.section)}>
-        <div className={classNames(classes.sectionColumn)}>
-          <p className={classNames(classes.headerText)}>{language.H3_April}</p>
-          <p className={classNames(classes.text)}> {language.T3_April}</p>
+        <div className={classNames(classes.section)}>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.headerText)}>{language.H3_April}</p>
+            <p className={classNames(classes.text)}> {language.T3_April}</p>
+          </div>
+          <Parallax speed={5}>
+            <img src={Marines} className={classNames(classes.imgS)} alt='Testbild' />
+          </Parallax>
         </div>
-        <Parallax speed={5}>
-          <img src={Marines} className={classNames(classes.imgS)} alt='Testbild' />
-        </Parallax>
       </div>
       <div ref={bottomRef}></div>
     </div>

@@ -35,47 +35,49 @@ const ChildhoodC = (props: Props) => {
           </h2>
         </div>
       </div>
-      <div className={classes.section}>
-        <Parallax speed={5}>
-          <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
-        </Parallax>
-        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Geburt}</p>
-      </div>
-      <div className={classes.section}>
-        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Kindheit}</p>
-        <Parallax speed={5}>
-          <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5}>
-          <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
-        </Parallax>
-        <div className={classNames(classes.sectionColumn)}>
-          <p> {language.T3_Hauptstadt}</p>
-          <p> {language.T4_Mechaniker}</p>
+      <div className='chapter-body-wrapper'>
+        <div className={classes.section}>
+          <Parallax speed={5}>
+            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+          </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Geburt}</p>
         </div>
-      </div>
-      <div className={classes.section}>
-        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Heirat}</p>
-        <Parallax speed={5}>
-          <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5}>
-          <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
-        </Parallax>
-        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>
-          {language.T6_Unruhen}
-          <Modal>
-            <p>TODO Armut</p>
-            <p>
-              Kurz erklären, woher die Unzufriedenheit im Land kommt und warum es Unruhen gibt
-              (ausführlich wird's dann in der Einordnung)...
-            </p>
-          </Modal>
-        </p>
+        <div className={classes.section}>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Kindheit}</p>
+          <Parallax speed={5}>
+            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+          </Parallax>
+        </div>
+        <div className={classes.section}>
+          <Parallax speed={5}>
+            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+          </Parallax>
+          <div className={classNames(classes.sectionColumn)}>
+            <p> {language.T3_Hauptstadt}</p>
+            <p> {language.T4_Mechaniker}</p>
+          </div>
+        </div>
+        <div className={classes.section}>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Heirat}</p>
+          <Parallax speed={5}>
+            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+          </Parallax>
+        </div>
+        <div className={classes.section}>
+          <Parallax speed={5}>
+            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+          </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>
+            {language.T6_Unruhen}
+            <Modal>
+              <p>TODO Armut</p>
+              <p>
+                Kurz erklären, woher die Unzufriedenheit im Land kommt und warum es Unruhen gibt
+                (ausführlich wird's dann in der Einordnung)...
+              </p>
+            </Modal>
+          </p>
+        </div>
       </div>
       <div ref={bottomRef}></div>
     </div>
