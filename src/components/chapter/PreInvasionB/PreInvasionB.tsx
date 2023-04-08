@@ -5,13 +5,8 @@ import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './PreInvasionB.module.scss'
 import * as language from './PreInvasionB_lang'
 import { Parallax } from 'react-scroll-parallax'
-import sampleHand from '@/assets/img/sample_hand.png'
-import sampleRevolution from '@/assets/img/sample_revolution.png'
-import sampleLaufen from '@/assets/img/sample_gehen.png'
-import sampleMalen from '@/assets/img/sample_malen.png'
-import sampleZufrieden from '@/assets/img/sample_zufrieden.png'
-import sampleSorge from '@/assets/img/sample_Sorge.png'
-import sampleFight from '@/assets/img/sample_Fight.png'
+import PlaceholderImage from '@/assets/img/Placeholder.png'
+import Modal from '../../Modal/Modal'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -42,45 +37,41 @@ const PreInvasionB = (props: Props) => {
       </div>
       <div className={classes.section}>
         <Parallax speed={10}>
-          <img src={sampleHand} alt='Austauschbild' className={classes.img} />
+          <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
         </Parallax>
-        <p>{language.b_erste_kontakte}</p>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Kontakt}</p>
       </div>
       <div className={classes.section}>
-        <p>{language.b_ansprache}</p>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>
+          {language.T2_Ansprache}
+          <Modal>
+            <p>TODO Rede</p>
+            <p>
+              Kurzer Kontext dazu, warum Sihanouk im Exil ist und ggf. worum es in der Rede ging...
+            </p>
+          </Modal>
+        </p>
         <Parallax speed={10}>
-          <img src={sampleRevolution} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={10}>
-          <img src={sampleLaufen} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <p>{language.b_aufbruch}</p>
-      </div>
-      <div className={classes.section}>
-        <p>{language.b_maler}</p>
-        <Parallax speed={10}>
-          <img src={sampleMalen} alt='Austauschbild' className={classes.img} />
+          <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
         </Parallax>
       </div>
       <div className={classes.section}>
         <Parallax speed={10}>
-          <img src={sampleZufrieden} alt='Austauschbild' className={classes.img} />
+          <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
         </Parallax>
-        <p>{language.b_biographie}</p>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T3_Maler}</p>
       </div>
       <div className={classes.section}>
-        <p>{language.b_bomabadiert}</p>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Biographie}</p>
         <Parallax speed={10}>
-          <img src={sampleSorge} alt='Austauschbild' className={classes.img} />
+          <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
         </Parallax>
       </div>
       <div className={classes.section}>
         <Parallax speed={10}>
-          <img src={sampleFight} alt='Austauschbild' className={classes.img} />
+          <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
         </Parallax>
-        <p>{language.b_druckerei}</p>
+        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Druckerei}</p>
       </div>
       <div ref={bottomRef}></div>
     </div>

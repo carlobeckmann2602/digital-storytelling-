@@ -31,7 +31,7 @@ export const CHAPTERS = new Map([
     'PRE_INVASION_B',
     {
       time: '1970 - 1973',
-      title: 'Bou Mengs Leben vor der Invasion',
+      title: 'Bou Mong-Seangs Weg zur Revolution',
       person: 'bou',
       place: 'Beispielort3',
     },
