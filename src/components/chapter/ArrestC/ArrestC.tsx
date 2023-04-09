@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
@@ -31,39 +31,31 @@ const ArrestC = (props: Props) => {
     bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [bottomOnScreen])
 
+  const [play, { sound, stop }] = useSound(sampleSound, {
+    interrupt: true,
+    loop: true,
+  })
+
+  const timeout = () =>
+    setTimeout(() => {
+      stop()
+    }, 1000)
+
   useEffect(() => {
     if (topOnScreen && props.soundEnabled) {
+      clearTimeout(timeout())
       props.setCurrentChapter(CHAPTER_ID)
-      // console.log(topRef.current?.getBoundingClientRect())
       play()
+      sound.fade(0, 0.5, 1000)
     } else {
-      stop()
+      if (sound) {
+        sound.fade(0.5, 0, 1000)
+        timeout()
+      }
     }
   }, [topOnScreen, props.soundEnabled])
 
-  const [volume, setVolume] = useState(0.5)
-  const [play, { stop }] = useSound(sampleSound, { volume: volume })
-
-  const adaptVolume = () => {
-    const top1 = topRef.current!.getBoundingClientRect().top
-    console.log('getBoundingClientRect' + top1)
-    const top2 = topRef.current!.offsetTop
-    console.log('offsetTop' + top2)
-    const scroll = Math.abs(top1 - top2)
-    console.log(scroll)
-  }
-
-  // window.addEventListener("onscroll", (event) => {console.log(event.currentTarget?.scrollTop)});
-
-  // const handleScroll = event: UIEvent<HTMLDivElement, UIEvent> => {
-  //   console.log(event.currentTarget.scrollTop)
-  // }
-  // topRef.current?.onscroll = (e) => {
-  //   e.target?.addEventListener
-  // }
-
   return (
-    // <div ref={topRef} id={CHAPTER_ID} onScroll={handleScroll}>
     <div ref={topRef} id={CHAPTER_ID}>
       <div className={'header-outer'}>
         <div className='header-inner'>
@@ -76,7 +68,7 @@ const ArrestC = (props: Props) => {
         <div className={classNames(classes.section, classes.leftAlign)}>
           <p> {language.T1_Arbeit}</p>
         </div>
-        <div className={classNames(classes.section)}>
+        <div id={CHAPTER_ID} className={classNames(classes.section)}>
           <Parallax speed={5}>
             <img src={ArrestImage} className={classNames(classes.imgM)} alt='Testbild' />
           </Parallax>
