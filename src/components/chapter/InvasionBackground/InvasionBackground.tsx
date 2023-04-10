@@ -37,7 +37,12 @@ const InvasionBackground = (props: Props) => {
       </div>
       <div className={classNames(classes.section)}>
         <Parallax speed={10}>
-          <img src={Students} style={{ width: '400px' }} alt='Arbeitende Studenten' />
+          <img
+            src={Students}
+            style={{ width: '400px' }}
+            title='Arbeitende Studenten, Quelle: https://conflictfood.com/geschichte-kambodschas-1/'
+            alt='Arbeitende Studenten'
+          />
         </Parallax>
         <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.teil1}</p>
       </div>
@@ -47,7 +52,12 @@ const InvasionBackground = (props: Props) => {
       <div className={classNames(classes.section)}>
         <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.teil3}</p>
         <Parallax speed={10}>
-          <img src={Marines} style={{ width: '400px' }} alt='Arbeitende Studenten' />
+          <img
+            src={Marines}
+            style={{ width: '400px' }}
+            title='US-Marines bei der Evakuierung der Amerikanischen Botschaft am 12. April 1975, Quelle: https://de.wikipedia.org/wiki/Kambodschanischer_Bürgerkrieg#/media/Datei:Marines_deploy_at_LZ_Hotel.jpg'
+            alt='Arbeitende Studenten'
+          />
         </Parallax>
       </div>
       <div className={classNames(classes.section)}>

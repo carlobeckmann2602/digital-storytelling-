@@ -51,7 +51,12 @@ const InvasionBoth = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'>
-        <img src={InvasionImage1} alt='Testbild' className={classes.imgL} />
+        <img
+          src={InvasionImage1}
+          alt='Testbild'
+          className={classes.imgL}
+          title='Einmarsch der roten Khmer in Phnomh Penh, Quelle: https://api.time.com/wp-content/uploads/2015/04/cambodia.jpeg'
+        />
         <div className={classes.splitScreenWrapper}>
           <div className={classNames(classes.leftSide)}>
             {/* 1.section LEFT */}
@@ -61,7 +66,12 @@ const InvasionBoth = (props: Props) => {
               </div>
               <div className={classNames(classes.subsection, classes.rightAlign)}>
                 <Parallax speed={3}>
-                  <img src={InvasionImage2} alt='Testbild' className={classNames(classes.imgS)} />
+                  <img
+                    src={InvasionImage2}
+                    alt='Testbild'
+                    className={classNames(classes.imgS)}
+                    title='Kambodschanische Einwohner warten in einer Straße von Phnom Penh, während das Benzindepot brennt, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/cambodian-inhabitants-wait-in-a-street-of-phnom-penh-nachrichtenfoto/457589602?adppopup=true'
+                  />
                 </Parallax>
               </div>
               <div className={classNames(classes.subsection, classes.rightAlign)}>
@@ -69,7 +79,12 @@ const InvasionBoth = (props: Props) => {
               </div>
               <div className={classNames(classes.subsection, classes.rightAlign)}>
                 <Parallax speed={3}>
-                  <img src={InvasionImage3} alt='Testbild' className={classNames(classes.imgS)} />
+                  <img
+                    src={InvasionImage3}
+                    alt='Testbild'
+                    className={classNames(classes.imgS)}
+                    title='Bürger feiern den Einmarsch der Roten Khmer, Quelle: https://www.ushmm.org/api/phpThumb/phpThumb.php?src=/m/img/2524135-CAM-054.jpg&w=1100&hash=a2f35cbd572701c89f4b0f8e3d525d26'
+                  />
                 </Parallax>
               </div>
               <div className={classNames(classes.subsection, classes.leftAlign)}>
@@ -98,7 +113,12 @@ const InvasionBoth = (props: Props) => {
               <div className={classNames(classes.section, classes.sticky, 'thirdR', 'fourthL')}>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
                   {/* <Parallax speed={3}> */}
-                  <img src={InvasionImage4} alt='Testbild' className={classNames(classes.imgS)} />
+                  <img
+                    src={InvasionImage4}
+                    alt='Testbild'
+                    className={classNames(classes.imgS)}
+                    title='Menschen fliehen aus Phnomh Penh, Quelle: https://www.pulitzer.org/cms/sites/default/files/content/fleeing_2.jpg'
+                  />
                   {/* </Parallax> */}
                 </div>
                 <div className={classNames(classes.subsection, classes.leftAlign)}>

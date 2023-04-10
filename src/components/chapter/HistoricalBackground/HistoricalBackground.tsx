@@ -49,10 +49,26 @@ const HistoricalBackground = (props: Props) => {
           Kontrolle der roten Khmer standen.
         </p>
         <StackingCards>
-          <img src={Mao} alt='Testbild' />
-          <img src={khmerRouge} alt='Testbild' />
-          <img src={LonNol} alt='Testbild' />
-          <img src={TestImage} alt='Testbild' />
+          <img
+            src={Mao}
+            title='Mao Zedong (links), Prinz Sihanouk (Mitte) und Liu Shaoqi (rechts) bei einem Treffen in Peking (1965), Quelle: https://de.wikipedia.org/wiki/Kambodschanischer_Bürgerkrieg#/media/Datei:Mao_Sihanouk.jpg'
+            alt='Testbild'
+          />
+          <img
+            src={khmerRouge}
+            title='Khmer Rouge Guerrilla Soldaten, Quelle: https://www.voacambodia.com/a/cambodia-author-examines-extreme-militarism/2495640.html'
+            alt='Testbild'
+          />
+          <img
+            src={LonNol}
+            title='Soldaten aufbruchbereit, Quelle: https://vietnamtheartofwar.com/1970/03/18/18-macrh-1970-cambodian-coup/'
+            alt='Testbild'
+          />
+          <img
+            src={TestImage}
+            title='Abtrünnige Kämpfer der Roten Khmer sitzen hinter einem Ring von kambodschanischen Regierungssoldaten, Quelle: https://www1.wdr.de/radio/wdr5/sendungen/zeitzeichen/zeitzeichen-rote-khmer-kambodscha-kampf-gegen-sihanouk-100.html'
+            alt='Testbild'
+          />
         </StackingCards>
         <div>
           <p>

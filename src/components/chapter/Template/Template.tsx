@@ -67,10 +67,20 @@ const Template = (props: Props) => {
         </div>
         <div className={classes.section}>
           <div>
-            <img src={Chum} className={classes.bild} alt='Testbild' />
+            <img
+              src={Chum}
+              className={classes.bild}
+              title='Chum Mey, Quelle: https://en.wikipedia.org/wiki/Chum_Mey#/media/File:Chum_Mey_-_Book_Signing.jpg'
+              alt='Testbild'
+            />
           </div>
           <div>
-            <img src={Bou} className={classes.bild} alt='Testbild' />
+            <img
+              src={Bou}
+              className={classes.bild}
+              title='Bou Meng, Quelle: https://www.bbc.com/news/magazine-33096971'
+              alt='Testbild'
+            />
           </div>
         </div>
       </div>
