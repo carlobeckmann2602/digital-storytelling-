@@ -1,6 +1,17 @@
-import { Center, Loader, ScrollControls, Sky, Stage, Text3D } from '@react-three/drei'
+/* eslint-disable react/no-unknown-property */
+import {
+  Backdrop,
+  Center,
+  Loader,
+  ScrollControls,
+  Sky,
+  SpotLight,
+  Stage,
+  Text3D,
+  useFBX,
+} from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import { Suspense, useEffect, useRef } from 'react'
+import { Suspense, useEffect, useMemo, useRef } from 'react'
 import * as language from './PrisonModelCanvas_lang'
 import { ModelWrapper } from './ModelWrapper'
 import useOnScreen from '../../helpers/useOnScreenHook'
@@ -25,25 +36,20 @@ const PrisonModelCanvas = (props: Props) => {
     bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [bottomOnScreen])
 
-  const fontUrl = './3dfont.json'
-
   return (
     <>
       <div ref={topRef} />
       <div className={'prison-model'}>
-        <Canvas gl={{ logarithmicDepthBuffer: true }}>
-          <Center top disableY disableZ>
-            <Text3D font={fontUrl} position={[0, 2, -1]}>
-              {language.HEADING}
-              <meshPhysicalMaterial />
-            </Text3D>
-          </Center>
-          <Sky distance={450000} sunPosition={[0, 1, 0]} inclination={0} azimuth={0.25} />
-          <Suspense fallback={null}>
+        <Suspense fallback={null}>
+          <Canvas
+            style={{ background: '#000322' }}
+            resize={{ scroll: false }}
+            gl={{ logarithmicDepthBuffer: true }}
+          >
             <Stage
-              adjustCamera={0.05}
+              adjustCamera={0.7}
               preset='rembrandt'
-              intensity={0.3}
+              intensity={0.4}
               environment='lobby'
               shadows='accumulative'
             >
@@ -60,8 +66,8 @@ const PrisonModelCanvas = (props: Props) => {
                 <ModelWrapper />
               </ScrollControls>
             </Stage>
-          </Suspense>
-        </Canvas>
+          </Canvas>
+        </Suspense>
         <Loader dataInterpolation={(p) => `${language.LOADING} ${p.toFixed(2)}%`} />
       </div>
       <div className={classes.scrollDown}>{language.SCROLL_DOWN}</div>
