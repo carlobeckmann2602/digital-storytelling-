@@ -1,5 +1,5 @@
 export const CHAPTERS = new Map([
-  ['TEMPLATE', { time: 'Einführung', title: 'Einführung', person: 'bou', place: 'Beispielort' }],
+  ['TEMPLATE', { time: 'Einführung', title: 'Einführung', person: 'none', place: 'Beispielort' }],
   [
     'CHILDHOOD_C',
     {
