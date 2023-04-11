@@ -34,48 +34,46 @@ const PrisonB = (props: Props) => {
       </div>
       <div className='chapter-body-wrapper'>
         <div className={classes.section}>
-          <p>
-            <div className='chapter-body-wrapper'>
-              <div className={classes.section}>
-                <div className={classNames(classes.section)}>
-                  <div className={classNames(classes.sectionColumn)}>
-                    <p className={classNames(classes.headerText)}>{language.H1_PrisionB}</p>
-                    <p className={classNames(classes.text)}> {language.T1_PrisionB}</p>
-                  </div>
+          <div className='chapter-body-wrapper'>
+            <div className={classes.section}>
+              <div className={classNames(classes.section)}>
+                <div className={classNames(classes.sectionColumn)}>
+                  <p className={classNames(classes.headerText)}>{language.H1_PrisionB}</p>
+                  <p className={classNames(classes.text)}> {language.T1_PrisionB}</p>
                 </div>
               </div>
             </div>
-            <div className='chapter-body-wrapper'>
-              <div className={classes.section}>
-                <div className={classNames(classes.section)}>
-                  <div className={classNames(classes.sectionColumn)}>
-                    <p className={classNames(classes.headerText)}>{language.H1_PrisionB}</p>
-                    <p className={classNames(classes.text)}> {language.T2_PrisionB}</p>
-                  </div>
+          </div>
+          <div className='chapter-body-wrapper'>
+            <div className={classes.section}>
+              <div className={classNames(classes.section)}>
+                <div className={classNames(classes.sectionColumn)}>
+                  <p className={classNames(classes.headerText)}>{language.H1_PrisionB}</p>
+                  <p className={classNames(classes.text)}> {language.T2_PrisionB}</p>
                 </div>
               </div>
             </div>
-            <div className='chapter-body-wrapper'>
-              <div className={classes.section}>
-                <div className={classNames(classes.section)}>
-                  <div className={classNames(classes.sectionColumn)}>
-                    <p className={classNames(classes.headerText)}>{language.H1_PrisionB}</p>
-                    <p className={classNames(classes.text)}> {language.T3_PrisionB}</p>
-                  </div>
+          </div>
+          <div className='chapter-body-wrapper'>
+            <div className={classes.section}>
+              <div className={classNames(classes.section)}>
+                <div className={classNames(classes.sectionColumn)}>
+                  <p className={classNames(classes.headerText)}>{language.H1_PrisionB}</p>
+                  <p className={classNames(classes.text)}> {language.T3_PrisionB}</p>
                 </div>
               </div>
             </div>
-            <div className='chapter-body-wrapper'>
-              <div className={classes.section}>
-                <div className={classNames(classes.section)}>
-                  <div className={classNames(classes.sectionColumn)}>
-                    <p className={classNames(classes.headerText)}>{language.H1_PrisionB}</p>
-                    <p className={classNames(classes.text)}> {language.T4_PrisionB}</p>
-                  </div>
+          </div>
+          <div className='chapter-body-wrapper'>
+            <div className={classes.section}>
+              <div className={classNames(classes.section)}>
+                <div className={classNames(classes.sectionColumn)}>
+                  <p className={classNames(classes.headerText)}>{language.H1_PrisionB}</p>
+                  <p className={classNames(classes.text)}> {language.T4_PrisionB}</p>
                 </div>
               </div>
             </div>
-          </p>
+          </div>
         </div>
       </div>
       <div ref={bottomRef}></div>
