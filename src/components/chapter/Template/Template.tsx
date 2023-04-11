@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import classNames from 'classnames'
-import { Parallax } from 'react-scroll-parallax'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './Template.module.scss'
