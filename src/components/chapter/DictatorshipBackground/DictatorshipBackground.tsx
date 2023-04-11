@@ -51,7 +51,12 @@ const DictatorshipBackground = (props: Props) => {
             <p className={classNames(classes.text)}> {language.T2_Deportation}</p>
           </div>
           <Parallax speed={5}>
-            <img src={UniformImage} className={classNames(classes.imgS)} alt='Testbild' />
+            <img
+              src={UniformImage}
+              className={classNames(classes.imgS)}
+              title='Rote Khmer Tanzgruppe, Quelle: http://d.dccam.org/Archives/Photographs/Stilled_Lives/Koy-Thoun3.jpg'
+              alt='Testbild'
+            />
           </Parallax>
         </div>
         <Quotation
@@ -61,7 +66,12 @@ const DictatorshipBackground = (props: Props) => {
         ></Quotation>
         <div className={classNames(classes.section)}>
           <Parallax style={{ paddingTop: 70 }} speed={5}>
-            <img src={PolPotImage} className={classNames(classes.imgM)} alt='Testbild' />
+            <img
+              src={PolPotImage}
+              className={classNames(classes.imgM)}
+              title='Portrait von Pol Pot, Quelle: https://commons.wikimedia.org/wiki/File:Pol_Pot.jpg'
+              alt='Testbild'
+            />
           </Parallax>
           <div className={classNames(classes.sectionColumn2)}>
             <p className={classNames(classes.headerText)}>{language.H3_Jahresplan}</p>
@@ -74,12 +84,22 @@ const DictatorshipBackground = (props: Props) => {
             <p className={classNames(classes.text)}> {language.T4_Verfolgung}</p>
           </div>
           <Parallax speed={5}>
-            <img src={TempleImage} className={classNames(classes.imgM)} alt='Testbild' />
+            <img
+              src={TempleImage}
+              className={classNames(classes.imgM)}
+              title='Die Roten Khmer verfolgten buddhistische Mönche und zerstörten häufig religiöse Bilder und Strukturen, Quelle: https://www.ushmm.org/genocide-prevention/countries/cambodia/case-study/violence/khmer-rouge-revolution'
+              alt='Testbild'
+            />
           </Parallax>
         </div>
         <div className={classNames(classes.section)}>
           <Parallax speed={5}>
-            <img src={LaborImage} className={classNames(classes.imgM)} alt='Testbild' />
+            <img
+              src={LaborImage}
+              className={classNames(classes.imgM)}
+              title='Kambodschaner arbeiten 1976 an einem Bewässerungsprojekt, Quelle: https://www.ushmm.org/genocide-prevention/countries/cambodia/case-study/violence/forced-labor-and-collectivization'
+              alt='Testbild'
+            />
           </Parallax>
           <div className={classNames(classes.sectionColumn)}>
             <p className={classNames(classes.headerText)}>{language.H5_Lager}</p>

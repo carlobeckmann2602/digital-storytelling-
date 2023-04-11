@@ -40,7 +40,12 @@ const AfterInvasionC = (props: Props) => {
       <div className='chapter-body-wrapper'>
         <div className={classNames(classes.section)}>
           <Parallax speed={5}>
-            <img src={MarchImage} className={classNames(classes.imgS)} alt='Testbild' />
+            <img
+              src={MarchImage}
+              className={classNames(classes.imgS)}
+              alt='Testbild'
+              title='Tausende von Menschen strömen auf dem Monivong-Boulevard ins Zentrum von Phnom Penh, Quelle: https://api.time.com/wp-content/uploads/2019/01/gettyimages-158676320.jpg'
+            />
           </Parallax>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Reise}</p>
         </div>
@@ -56,14 +61,24 @@ const AfterInvasionC = (props: Props) => {
         </div>
         <div className={classNames(classes.section)}>
           <Parallax speed={5}>
-            <img src={BikeImage} className={classNames(classes.imgM)} alt='Testbild' />
+            <img
+              src={BikeImage}
+              className={classNames(classes.imgM)}
+              alt='Testbild'
+              title='Eine Straße in Phnom Penh, Quelle: https://www.pinterest.de/pin/545217098632521379/'
+            />
           </Parallax>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Arbeit}</p>
         </div>
         <div className={classNames(classes.section)}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Arbeit2}</p>
           <Parallax speed={5}>
-            <img src={FactoryImage} className={classNames(classes.imgM)} alt='Testbild' />
+            <img
+              src={FactoryImage}
+              className={classNames(classes.imgM)}
+              alt='Testbild'
+              title='Kader der Roten Khmer bei der Arbeit in einer Textilfabrik, Quelle: https://www.researchgate.net/figure/Khmer-Rouge-cadre-working-in-a-textile-factory-source-Documentation-Center-of-Cambodia_fig5_275319887'
+            />
           </Parallax>
         </div>
       </div>

@@ -49,10 +49,10 @@ const HistoricalBackground = (props: Props) => {
             <p className={classNames(classes.text)}> {language.T1_Unabhaengigkeit}</p>
           </div>
           <StackingCards>
-            <img src={Mao} alt='Testbild' />
-            <img src={khmerRouge} alt='Testbild' />
-            <img src={LonNol} alt='Testbild' />
-            <img src={TestImage} alt='Testbild' />
+            <img src={Mao} alt='Testbild' title='Mao Zedong (links), Prinz Sihanouk (Mitte) und Liu Shaoqi (rechts) bei einem Treffen in Peking (1965), Quelle: https://de.wikipedia.org/wiki/Kambodschanischer_Bürgerkrieg#/media/Datei:Mao_Sihanouk.jpg' />
+            <img src={khmerRouge} alt='Testbild' title='Khmer Rouge Guerrilla Soldaten, Quelle: https://www.voacambodia.com/a/cambodia-author-examines-extreme-militarism/2495640.html' />
+            <img src={LonNol} alt='Testbild' title='Soldaten aufbruchbereit, Quelle: https://vietnamtheartofwar.com/1970/03/18/18-macrh-1970-cambodian-coup/' />
+            <img src={TestImage} alt='Testbild' title='Abtrünnige Kämpfer der Roten Khmer sitzen hinter einem Ring von kambodschanischen Regierungssoldaten, Quelle: https://www1.wdr.de/radio/wdr5/sendungen/zeitzeichen/zeitzeichen-rote-khmer-kambodscha-kampf-gegen-sihanouk-100.html' />
           </StackingCards>
         </div>
         <div className={classNames(classes.section)}>

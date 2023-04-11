@@ -48,25 +48,41 @@ const AfterInvasionB = (props: Props) => {
             <p>{language.T3_Bio}</p>
           </div>
           <Parallax speed={5}>
-            <img src={UniformImage} alt='Testbild' />
+            <img
+              src={UniformImage}
+              alt='Testbild'
+              title='Mam Nay, ranghöchster Vernehmungsbeamter der Roten Khmer, führt eine Gruppe von Kaderleuten der Roten Khmer an, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/mam-nay-a-tall-thin-pock-faced-former-science-teacher-nachrichtenfoto/1354465680?adppopup=true'
+            />
           </Parallax>
         </div>
         <div className={classNames(classes.section)}>
           <Parallax speed={5}>
-            <img src={FieldImage1} alt='Testbild' />
+            <img
+              src={FieldImage1}
+              alt='Testbild'
+              title='Ein Propagandafoto zeigt Reisbauern bei der Arbeit in einem Gemeinschaftsbetrieb außerhalb von Phnom Penh, Quelle: http://www.tuolsleng.com/detail.php?photographsPage=9&photosPage=111'
+            />
           </Parallax>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Plantage}</p>
         </div>
         <div className={classNames(classes.section)}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Straflager}</p>
           <Parallax speed={5}>
-            <img src={FieldImage2} alt='Testbild' />
+            <img
+              src={FieldImage2}
+              alt='Testbild'
+              title='Rote-Khmer-Bauern auf einem Propagandafoto, außerhalb von Phnom Penh, Quelle: http://www.tuolsleng.com/detail.php?photographsPage=7&photosPage=73'
+            />
           </Parallax>
         </div>
         <Quotation quote={language.Q1_Plantage} citation={'Bou Meng'} colorCode={'bou'}></Quotation>
         <div className={classNames(classes.section)}>
           <Parallax speed={5}>
-            <img src={FieldImage3} alt='Testbild' />
+            <img
+              src={FieldImage3}
+              alt='Testbild'
+              title='Bauern auf einem Propagandafoto, in einem Reisfeld außerhalb von Phnom Penh, Quelle: http://www.tuolsleng.com/detail.php?photographsPage=7&photosPage=80'
+            />
           </Parallax>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T6_Verschwinden}</p>
         </div>

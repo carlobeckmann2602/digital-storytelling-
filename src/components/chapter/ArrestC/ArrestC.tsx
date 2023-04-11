@@ -71,7 +71,12 @@ const ArrestC = (props: Props) => {
         </div>
         <div id={CHAPTER_ID} className={classNames(classes.section)}>
           <Parallax speed={5}>
-            <img src={ArrestImage} className={classNames(classes.imgM)} alt='Testbild' />
+            <img
+              src={ArrestImage}
+              className={classNames(classes.imgM)}
+              title='Verhaftung von zukünftigen Gefangenen; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
+              alt='Testbild'
+            />
           </Parallax>
           <p style={{ textAlign: 'justify' }}> {language.T2_Verhaftung}</p>
         </div>
@@ -80,11 +85,21 @@ const ArrestC = (props: Props) => {
           <div className={classNames(classes.sectionColumn)}>
             <p>{language.T3_Gefaengnis}</p>
             <Parallax style={{ paddingTop: '20%' }} speed={5}>
-              <img src={Fotograph2Image} style={{ width: '400px' }} alt='Testbild' />
+              <img
+                src={Fotograph2Image}
+                style={{ width: '400px' }}
+                title='Gefangenen-Fotografie bei Ankunft im Gefängnis; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
+                alt='Testbild'
+              />
             </Parallax>
           </div>
           <Parallax speed={5}>
-            <img src={FotographImage} style={{ width: '400px' }} alt='Testbild' />
+            <img
+              src={FotographImage}
+              style={{ width: '400px' }}
+              title='Gefangenen-Fotografie bei Ankunft im Gefängnis; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
+              alt='Testbild'
+            />
           </Parallax>
         </div>
         <p className={classNames(classes.highlight)}>{language.T4_Toul}</p>

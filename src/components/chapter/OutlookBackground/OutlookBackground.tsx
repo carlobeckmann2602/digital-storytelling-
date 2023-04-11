@@ -60,6 +60,7 @@ const OutlookBackground = (props: Props) => {
             src={MuseumImage}
             style={{ width: '80%' }}
             className={classNames(classes.imgM)}
+            title='Bilder aller Gefangenen im Museum, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/tuol-sleng-red-khmer-genocide-museum-in-phnom-penh-nachrichtenfoto/170479420?adppopup=true'
             alt='Testbild'
           />
         </Parallax>
@@ -70,19 +71,36 @@ const OutlookBackground = (props: Props) => {
           </div>
           <div className={classNames(classes.sectionColumnImg)}>
             <Parallax style={{ alignSelf: 'flex-end' }} speed={5}>
-              <img src={Painting1Image} alt='Testbild' />
+              <img
+                src={Painting1Image}
+                alt='Testbild'
+                title='Verhaftung von zukünftigen Gefangenen; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
+              />
             </Parallax>
             <Parallax style={{ alignSelf: 'flex-start' }} speed={9}>
-              <img src={Painting2Image} alt='Testbild' />
+              <img
+                src={Painting2Image}
+                alt='Testbild'
+                title='Bou Meng und seine Frau im S-21-Gefängnis mit verbundenen Augen; gemalt von Bou Meng, Quelle: http://d.dccam.org/Archives/Photographs/Photos/Bou_Meng/Thumbnails/picture01.png'
+              />
             </Parallax>
             <Parallax style={{ alignSelf: 'flex-end' }} speed={7}>
-              <img src={Painting3Image} alt='Testbild' />
+              <img
+                src={Painting3Image}
+                alt='Testbild'
+                title='Leben der Gefangenen im Gefängnis, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
+              />
             </Parallax>
           </div>
         </div>
         <div className={classNames(classes.section)}>
           <Parallax speed={5}>
-            <img src={Trial2Image} style={{ width: '500px' }} alt='Testbild' />
+            <img
+              src={Trial2Image}
+              style={{ width: '500px' }}
+              title='Gerichtssaal während der Urteilsverlesung im Prozess gegen den Chef des S-21-Gefängnisses der Roten Khmer, Kaing Guek Eav, alias Duch, in Phnom Penh am 26. Juli 2010, Quelle: https://www.abc.net.au/news/2013-10-16/an-closing-statements-to-begin-in-khmer-rouge-trial/5025896'
+              alt='Testbild'
+            />
           </Parallax>
           <div className={classNames(classes.sectionColumn2)}>
             <p className={classNames(classes.headerText)}>{language.H3_Aufarbeitung}</p>
@@ -95,7 +113,12 @@ const OutlookBackground = (props: Props) => {
             <p className={classNames(classes.text)}> {language.T4_Verhandlung}</p>
           </div>
           <Parallax speed={5}>
-            <img src={TrialImage} className={classNames(classes.imgM)} alt='Testbild' />
+            <img
+              src={TrialImage}
+              className={classNames(classes.imgM)}
+              title=', Quelle: '
+              alt='Testbild'
+            />
           </Parallax>
         </div>
         <div className={classNames(classes.spacer)}></div>

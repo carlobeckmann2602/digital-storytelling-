@@ -42,12 +42,12 @@ const InvasionBackground = (props: Props) => {
             <p className={classNames(classes.text)}> {language.T1_Zuflucht}</p>
           </div>
           <Parallax speed={5}>
-            <img src={Students} className={classNames(classes.imgS)} alt='Testbild' />
+            <img src={Students} className={classNames(classes.imgS)} alt='Testbild' title='Arbeitende Studenten, Quelle: https://conflictfood.com/geschichte-kambodschas-1/' />
           </Parallax>
         </div>
         <div className={classNames(classes.section)}>
           <Parallax speed={5}>
-            <img src={Marines} className={classNames(classes.imgS)} alt='Testbild' />
+            <img src={Marines} className={classNames(classes.imgS)} alt='Testbild' title='US-Marines bei der Evakuierung der Amerikanischen Botschaft am 12. April 1975, Quelle: https://de.wikipedia.org/wiki/Kambodschanischer_Bürgerkrieg#/media/Datei:Marines_deploy_at_LZ_Hotel.jpg' />
           </Parallax>
           <div className={classNames(classes.sectionColumn)}>
             <p className={classNames(classes.headerText)}>{language.H2_Ruecktritt}</p>
@@ -60,7 +60,7 @@ const InvasionBackground = (props: Props) => {
             <p className={classNames(classes.text)}> {language.T3_April}</p>
           </div>
           <Parallax speed={5}>
-            <img src={Marines} className={classNames(classes.imgS)} alt='Testbild' />
+            <img src={Marines} className={classNames(classes.imgS)} alt='Testbild' title='US-Marines bei der Evakuierung der Amerikanischen Botschaft am 12. April 1975, Quelle: https://de.wikipedia.org/wiki/Kambodschanischer_Bürgerkrieg#/media/Datei:Marines_deploy_at_LZ_Hotel.jpg' />
           </Parallax>
         </div>
       </div>
