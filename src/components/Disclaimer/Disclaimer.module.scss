@@ -1,0 +1,65 @@
+.closeBtn {
+  background-color: $white;
+  color: $text-color;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  align-self: flex-end;
+
+  .closeIcon {
+    width: 2em;
+    height: 2em;
+
+    &:hover {
+      color: $highlight-color;
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+  z-index: 102;
+
+  .pseudoWrapper {
+    position: fixed;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(50vh - 150px);
+    left: 0;
+    right: 0;
+
+    text-align: center;
+
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: $drop-shadow-s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .childrenWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

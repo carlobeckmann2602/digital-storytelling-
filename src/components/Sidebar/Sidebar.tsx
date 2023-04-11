@@ -14,7 +14,6 @@ function Sidebar(props: SidebarProps) {
 
   return (
     <div className='sidebar'>
-      {/* <span className='place'>{CHAPTERS.get(props.currentChapter)?.place}</span> */}
       <Navbar currentChapter={props.currentChapter} />
       <Timeline currentChapter={props.currentChapter} />
     </div>
@@ -128,6 +127,9 @@ function Sidebar(props: SidebarProps) {
     return (
       <nav className='timeline'>
         {Array.from(CHAPTERS).map(([key, value]) => {
+          if (value.time === 'none') {
+            return
+          }
           return renderDate(key, value)
         })}
       </nav>
