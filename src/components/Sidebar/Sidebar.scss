@@ -6,7 +6,7 @@
   top: 0;
   width: 200px;
   height: 100vh;
-  background-color: $sidebar-color;
+  //background-color: $sidebar-color;
 
   display: flex;
   flex-direction: column;
@@ -15,10 +15,12 @@
 }
 
 .place {
+  font-family: $secondary-fontfamily;
   margin-top: 30px;
 }
 
 .timeline {
+  font-family: $secondary-fontfamily;
   color: $context-timeline-color;
   padding: 30px 10px;
   flex: 100%;

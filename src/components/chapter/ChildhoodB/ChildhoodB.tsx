@@ -5,9 +5,7 @@ import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodB.module.scss'
 import * as language from './ChildhoodB_lang'
 import { Parallax } from 'react-scroll-parallax'
-import sampleHappy from '@/assets/img/sample_happy.png'
-import sampleHand from '@/assets/img/sample_hand.png'
-import sampleSorge from '@/assets/img/sample_sorge.png'
+import PlaceholderImage from '@/assets/img/Placeholder.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -36,29 +34,31 @@ const ChildhoodB = (props: Props) => {
           </h2>
         </div>
       </div>
-      <div className={classes.section}>
-        <Parallax speed={10}>
-          <img src={sampleHappy} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <p>{language.b_geburt}</p>
-      </div>
-      <div className={classes.section}>
-        <p>{language.b_pagode}</p>
-        <Parallax speed={10}>
-          <img src={sampleHand} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={10}>
-          <img src={sampleHappy} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <p>{language.b_tischler}</p>
-      </div>
-      <div className={classes.section}>
-        <p>{language.b_heimat}</p>
-        <Parallax speed={10}>
-          <img src={sampleSorge} alt='Austauschbild' className={classes.img} />
-        </Parallax>
+      <div className='chapter-body-wrapper'>
+        <div className={classes.section}>
+          <Parallax speed={10}>
+            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
+          </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Geburt}</p>
+        </div>
+        <div className={classes.section}>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Pagode}</p>
+          <Parallax speed={10}>
+            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
+          </Parallax>
+        </div>
+        <div className={classes.section}>
+          <Parallax speed={10}>
+            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
+          </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T3_Tischler}</p>
+        </div>
+        <div className={classes.section}>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Heimat}</p>
+          <Parallax speed={10}>
+            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
+          </Parallax>
+        </div>
       </div>
       <div ref={bottomRef}></div>
     </div>

@@ -1,11 +1,12 @@
-export const b_geburt =
-  'Es war etwa das Jahr 1941, als ein kleiner Junge Namens Bou Mong-Seang in eine arme Familie hinein geboren wurde.'
+/* eslint-disable camelcase */
+export const T1_Geburt =
+  'Bou Mong-Seang wird etwa im Jahr 1941 in eine arme Familie hineingeboren. Schon im Kindesalter bringen seine Eltern ihn in eine Pagode, wo er von nun an seine Kindheit verbringt und unter Mönchen aufwächst. Dort lernt er Lesen und Schreiben und entdeckt zu dieser Zeit auch seine Leidenschaft für das Malen.'
 
-export const b_pagode =
-  'Im Kindesalter brachten ihn seine Eltern in die Pagode zu den Mönchen. Dort verbrachte er seine Kindheit und lernte dabei Lesen und Schreiben. Während dieser Zeit entdeckte er auch seine Leidenschaft für das Malen.'
+export const T2_Pagode =
+  'In seiner Jugend endet seine Zeit bei den Mönchen, und Bou Mong-Seang verschlägt es nach Battambang. Dort arbeitet er in einer Tischlerei und lernt nebenbei, wie man Farben herstellt. So verbessert er seine Fähigkeiten in der Malerei immer weiter.'
 
-export const b_tischler =
-  'Nach seiner Zeit bei dem Mönchen zog Bou Mong nach Battambang. Dort arbeitete er in einer Tischlerei und lernt nebenbei, wie man Farben herstellt und verbessert seine Malfähigkeiten weiter.'
+export const T3_Tischler =
+  'Um das Jahr 1967 zieht Bou Mong-Seang wieder zurück in seine Heimat. Dort arbeitet er zunächst in verschiedenen Kinos und malt unter anderem Bilder zur Bewerbung der gezeigten Filme. Später eröffnet er einen eigenen Laden, wo er nun auch Auftragsarbeiten anfertigt.'
 
-export const b_heimat =
-  'Um das Jahr 1967 zog Bou Mong wieder zurück in seine Heimat. Dort arbeitete er zunächst in verschiedenen Kinos und malte z.B. Bilder für die Filme. Später eröffnete er einen eigenen Laden, wo er dann auch Bilder für den Kundenauftrag anfertigte. Immer wieder bekam er z.B. durch einen Bombenabwurf die Auswirkungen des Vietnamkrieges mit.'
+export const T4_Heimat =
+  'Auch er bekommt im Laufe der Zeit immer wieder die Auswirkungen der Unruhen im Land und des Vietnamkriegs zu spüren. Die lauten Proteste, bewaffneten Kämpfer und die immer häufigeren Bombeneinschläge bereiten ihm zunehmend Sorgen. Doch vorerst konzentriert er sich weiterhin auf seinen Laden und das Malen.'

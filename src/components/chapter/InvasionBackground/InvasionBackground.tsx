@@ -35,33 +35,34 @@ const InvasionBackground = (props: Props) => {
           </h2>
         </div>
       </div>
-      <div className={classNames(classes.section)}>
-        <Parallax speed={10}>
-          <img
-            src={Students}
-            style={{ width: '400px' }}
-            title='Arbeitende Studenten, Quelle: https://conflictfood.com/geschichte-kambodschas-1/'
-            alt='Arbeitende Studenten'
-          />
-        </Parallax>
-        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.teil1}</p>
-      </div>
-      <div className={classNames(classes.section)}>
-        <p style={{ alignSelf: 'center', textAlign: 'center' }}>{language.teil2}</p>
-      </div>
-      <div className={classNames(classes.section)}>
-        <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.teil3}</p>
-        <Parallax speed={10}>
-          <img
-            src={Marines}
-            style={{ width: '400px' }}
-            title='US-Marines bei der Evakuierung der Amerikanischen Botschaft am 12. April 1975, Quelle: https://de.wikipedia.org/wiki/Kambodschanischer_Bürgerkrieg#/media/Datei:Marines_deploy_at_LZ_Hotel.jpg'
-            alt='Arbeitende Studenten'
-          />
-        </Parallax>
-      </div>
-      <div className={classNames(classes.section)}>
-        <p style={{ alignSelf: 'center', textAlign: 'center' }}>{language.teil4}</p>
+      <div className='chapter-body-wrapper'>
+        <div className={classNames(classes.section)}>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.headerText)}>{language.H1_Zuflucht}</p>
+            <p className={classNames(classes.text)}> {language.T1_Zuflucht}</p>
+          </div>
+          <Parallax speed={5}>
+            <img src={Students} className={classNames(classes.imgS)} alt='Testbild' title='Arbeitende Studenten, Quelle: https://conflictfood.com/geschichte-kambodschas-1/' />
+          </Parallax>
+        </div>
+        <div className={classNames(classes.section)}>
+          <Parallax speed={5}>
+            <img src={Marines} className={classNames(classes.imgS)} alt='Testbild' title='US-Marines bei der Evakuierung der Amerikanischen Botschaft am 12. April 1975, Quelle: https://de.wikipedia.org/wiki/Kambodschanischer_Bürgerkrieg#/media/Datei:Marines_deploy_at_LZ_Hotel.jpg' />
+          </Parallax>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.headerText)}>{language.H2_Ruecktritt}</p>
+            <p className={classNames(classes.text)}> {language.T2_Ruecktritt}</p>
+          </div>
+        </div>
+        <div className={classNames(classes.section)}>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.headerText)}>{language.H3_April}</p>
+            <p className={classNames(classes.text)}> {language.T3_April}</p>
+          </div>
+          <Parallax speed={5}>
+            <img src={Marines} className={classNames(classes.imgS)} alt='Testbild' title='US-Marines bei der Evakuierung der Amerikanischen Botschaft am 12. April 1975, Quelle: https://de.wikipedia.org/wiki/Kambodschanischer_Bürgerkrieg#/media/Datei:Marines_deploy_at_LZ_Hotel.jpg' />
+          </Parallax>
+        </div>
       </div>
       <div ref={bottomRef}></div>
     </div>

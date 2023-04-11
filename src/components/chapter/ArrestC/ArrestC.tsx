@@ -2,6 +2,9 @@ import React, { useEffect } from 'react'
 import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
+// Documentation & Source: https://github.com/joshwcomeau/use-sound
+import useSound from 'use-sound'
+import sampleSound from '@/assets/sounds/sample_sound.mp3'
 import classes from './ArrestC.module.scss'
 import * as language from './ArrestC_lang'
 import { Parallax } from 'react-scroll-parallax'
@@ -11,6 +14,8 @@ import Fotograph2Image from '@/assets/img/ArrestC_Painting_Fotograph2_c_Vann_Nat
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
+  soundEnabled: boolean
+  fadingTime: number
 }
 
 const ArrestC = (props: Props) => {
@@ -27,9 +32,33 @@ const ArrestC = (props: Props) => {
     bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [bottomOnScreen])
 
+  const [play, { sound, stop }] = useSound(sampleSound, {
+    interrupt: true,
+    loop: true,
+  })
+
+  const timeout = () =>
+    setTimeout(() => {
+      stop()
+    }, props.fadingTime)
+
+  useEffect(() => {
+    if (topOnScreen && props.soundEnabled) {
+      clearTimeout(timeout())
+      props.setCurrentChapter(CHAPTER_ID)
+      play()
+      sound.fade(0, 0.5, props.fadingTime)
+    } else {
+      if (sound) {
+        sound.fade(0.5, 0, props.fadingTime)
+        timeout()
+      }
+    }
+  }, [topOnScreen, props.soundEnabled])
+
   return (
-    <div id={CHAPTER_ID}>
-      <div ref={topRef} className={'header-outer'}>
+    <div ref={topRef} id={CHAPTER_ID}>
+      <div className={'header-outer'}>
         <div className='header-inner'>
           <h2 className={classNames(classes.heading, 'chapter-heading')}>
             {CHAPTERS.get(CHAPTER_ID)?.title}
@@ -40,7 +69,7 @@ const ArrestC = (props: Props) => {
         <div className={classNames(classes.section, classes.leftAlign)}>
           <p> {language.T1_Arbeit}</p>
         </div>
-        <div className={classNames(classes.section)}>
+        <div id={CHAPTER_ID} className={classNames(classes.section)}>
           <Parallax speed={5}>
             <img
               src={ArrestImage}

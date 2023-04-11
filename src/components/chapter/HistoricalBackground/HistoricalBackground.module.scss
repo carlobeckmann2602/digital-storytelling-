@@ -6,6 +6,75 @@
 
 .section {
   display: flex;
-  align-items: center;
-  gap: 5%;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10%;
+  padding: 0 7%;
+
+  &.leftAlign {
+    justify-content: flex-start;
+
+    // p {
+    //   width: 40%;
+    //   text-align: justify;
+    // }
+  }
+
+  &.rightAlign {
+    justify-content: flex-end;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  .imgS {
+    width: 400px;
+  }
+
+  .imgM {
+    width: 500px;
+  }
+}
+
+.sectionColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .headerText {
+    justify-self: center;
+    font-family: 'InriaSerif-Bold';
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .text {
+    text-align: justify;
+  }
+}
+
+.sectionColumn2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .headerText {
+    justify-self: center;
+    font-family: 'InriaSerif-Bold';
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .text {
+    text-align: justify;
+  }
+}
+
+.highlight {
+  justify-self: center;
+  padding: 100px 300px;
+  font-family: 'InriaSerif-Bold';
+  font-size: 1.5em;
 }

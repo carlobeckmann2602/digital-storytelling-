@@ -5,13 +5,7 @@ import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodC.module.scss'
 import * as language from './ChildhoodC_lang'
-import sampleGlücklich from '@/assets/img/sample_glücklich.png'
-import sampleArbeit from '@/assets/img/sample_hand.png'
-import sampleBedruckt from '@/assets/img/sample_bedruckt.png'
-import sampleSorge from '@/assets/img/sample_sorge.png'
-import sampleHappy from '@/assets/img/sample_happy.png'
-import sampleLove from '@/assets/img/sample_love.png'
-import sampleFight from '@/assets/img/sample_fight.png'
+import PlaceholderImage from '@/assets/img/Placeholder.png'
 import Modal from '../../Modal/Modal'
 
 interface Props {
@@ -41,71 +35,49 @@ const ChildhoodC = (props: Props) => {
           </h2>
         </div>
       </div>
-      <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleGlücklich} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.geburt_c}</p>
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleArbeit} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <Parallax speed={0} translateX={['-10px', '-100px']}>
-          <p>{language.dorf_geburt}</p>
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleBedruckt} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>
-            {language.c_10J}
+      <div className='chapter-body-wrapper'>
+        <div className={classes.section}>
+          <Parallax speed={5}>
+            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+          </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Geburt}</p>
+        </div>
+        <div className={classes.section}>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Kindheit}</p>
+          <Parallax speed={5}>
+            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+          </Parallax>
+        </div>
+        <div className={classes.section}>
+          <Parallax speed={5}>
+            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+          </Parallax>
+          <div className={classNames(classes.sectionColumn)}>
+            <p> {language.T3_Hauptstadt}</p>
+            <p> {language.T4_Mechaniker}</p>
+          </div>
+        </div>
+        <div className={classes.section}>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Heirat}</p>
+          <Parallax speed={5}>
+            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+          </Parallax>
+        </div>
+        <div className={classes.section}>
+          <Parallax speed={5}>
+            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+          </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>
+            {language.T6_Unruhen}
             <Modal>
-              <p>TEST</p>
+              <p>TODO Armut</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis doloremque
-                asperiores, at quidem voluptates aperiam eum veritatis eaque debitis harum ipsam
-                expedita! Eligendi aperiam laboriosam facere corrupti iste temporibus quaerat.
+                Kurz erklären, woher die Unzufriedenheit im Land kommt und warum es Unruhen gibt
+                (ausführlich wird's dann in der Einordnung)...
               </p>
             </Modal>
           </p>
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleSorge} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_1950}</p>
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleHappy} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_study}</p>
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleLove} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_heirat}</p>
-        </Parallax>
-      </div>
-      <div className={classes.section}>
-        <Parallax speed={5} translateX={['-100px', '-10px']}>
-          <img src={sampleFight} alt='Austauschbild' className={classes.img} />
-        </Parallax>
-        <Parallax speed={5} translateX={['-10px', '-100px']}>
-          <p>{language.c_werkstatt}</p>
-        </Parallax>
+        </div>
       </div>
       <div ref={bottomRef}></div>
     </div>

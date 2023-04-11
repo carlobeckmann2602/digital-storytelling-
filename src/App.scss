@@ -53,6 +53,7 @@
 }
 
 .chapter-heading {
+  font-family: $secondary-fontfamily;
   font-size: 40px;
 }
 
@@ -68,7 +69,7 @@
   position: sticky;
   top: 0;
   height: 100%;
-  z-index: 100;
+  z-index: 200;
 }
 
 .prison-model {
