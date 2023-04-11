@@ -40,7 +40,11 @@ const LiberationFromPrisonBackground = (props: Props) => {
       <div className='chapter-body-wrapper'>
         <div className={classNames(classes.section)}>
           <Parallax speed={5}>
-            <img src={ArmyImage1} alt='Testbild' />
+            <img
+              src={ArmyImage1}
+              title='Einzug vietnamesischer Soldaten in Phnom Penh im Januar 1979, Quelle: https://en.wikipedia.org/wiki/Cambodian–Vietnamese_War'
+              alt='Testbild'
+            />
           </Parallax>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Einmarsch}</p>
         </div>
@@ -49,7 +53,11 @@ const LiberationFromPrisonBackground = (props: Props) => {
         </div>
         <div className={classNames(classes.section)}>
           <Parallax speed={5}>
-            <img src={ArmyImage2} alt='Testbild' />
+            <img
+              src={ArmyImage2}
+              title='Soldaten befreien Hauptstadt Phnom Penh, Quelle: https://vovworld.vn/de-DE/politische-aktualitat/sieg-des-kampfes-zur-verteidigung-der-sudwestgrenze-und-sturz-des-regimes-der-roten-khmer-meilenstein-in-der-vietnamkambodschabeziehung-714024.vov#&gid=1&pid=1'
+              alt='Testbild'
+            />
           </Parallax>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T3_RoteKhmer}</p>
         </div>
