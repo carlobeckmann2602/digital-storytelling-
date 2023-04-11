@@ -3,6 +3,7 @@ import './Sidebar.scss'
 import { useState } from 'react'
 import classNames from 'classnames'
 import { motion } from 'framer-motion'
+import Navbar from './Navbar/Navbar'
 
 interface SidebarProps {
   currentChapter: Chapter
@@ -13,7 +14,8 @@ function Sidebar(props: SidebarProps) {
 
   return (
     <div className='sidebar'>
-      <span className='place'>{CHAPTERS.get(props.currentChapter)?.place}</span>
+      {/* <span className='place'>{CHAPTERS.get(props.currentChapter)?.place}</span> */}
+      <Navbar currentChapter={props.currentChapter} />
       <Timeline currentChapter={props.currentChapter} />
     </div>
   )
@@ -102,6 +104,8 @@ function Sidebar(props: SidebarProps) {
           variants={animationVariant()}
           animate={animateStyles}
           initial={initialStyles}
+          onMouseEnter={() => setExpandTimeline(true)}
+          onMouseLeave={() => setExpandTimeline(false)}
         >
           <a
             href={`#${key}`}
@@ -122,11 +126,7 @@ function Sidebar(props: SidebarProps) {
     }
 
     return (
-      <nav
-        className='timeline'
-        onMouseEnter={() => setExpandTimeline(true)}
-        onMouseLeave={() => setExpandTimeline(false)}
-      >
+      <nav className='timeline'>
         {Array.from(CHAPTERS).map(([key, value]) => {
           return renderDate(key, value)
         })}
