@@ -15,6 +15,7 @@ import Fotograph2Image from '@/assets/img/ArrestC_Painting_Fotograph2_c_Vann_Nat
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
   soundEnabled: boolean
+  fadingTime: number
 }
 
 const ArrestC = (props: Props) => {
@@ -39,17 +40,17 @@ const ArrestC = (props: Props) => {
   const timeout = () =>
     setTimeout(() => {
       stop()
-    }, 1000)
+    }, props.fadingTime)
 
   useEffect(() => {
     if (topOnScreen && props.soundEnabled) {
       clearTimeout(timeout())
       props.setCurrentChapter(CHAPTER_ID)
       play()
-      sound.fade(0, 0.5, 1000)
+      sound.fade(0, 0.5, props.fadingTime)
     } else {
       if (sound) {
-        sound.fade(0.5, 0, 1000)
+        sound.fade(0.5, 0, props.fadingTime)
         timeout()
       }
     }

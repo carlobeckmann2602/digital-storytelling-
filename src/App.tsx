@@ -3,7 +3,7 @@ import { useState } from 'react'
 import ChildhoodC from './components/chapter/ChildhoodC/ChildhoodC'
 import ChildhoodB from './components/chapter/ChildhoodB/ChildhoodB'
 import Template from './components/chapter/Template/Template'
-import { Chapter } from './helpers/constants'
+import { Chapter, FADINGTIME } from './helpers/constants'
 import './App.scss'
 import HistoricalBackground from './components/chapter/HistoricalBackground/HistoricalBackground'
 import PreInvasionB from './components/chapter/PreInvasionB/PreInvasionB'
@@ -36,7 +36,7 @@ function App() {
         <div className='sidebarWrapper'>
           <Sidebar currentChapter={currentChapter} />
         </div>
-          <MuteButton soundEnabledGlobal={soundEnabled} setSoundEnabledGlobal={setSoundEnabled} />
+        <MuteButton soundEnabledGlobal={soundEnabled} setSoundEnabledGlobal={setSoundEnabled} />
         <div className='chapter-content'>
           <CurrentPersonMarker currentChapter={currentChapter} />
           <Template setCurrentChapter={setCurrentChapter} />
@@ -50,7 +50,11 @@ function App() {
           <AfterInvasionB setCurrentChapter={setCurrentChapter} />
           <AfterInvasionC setCurrentChapter={setCurrentChapter} />
           <ArrestB setCurrentChapter={setCurrentChapter} />
-          <ArrestC setCurrentChapter={setCurrentChapter} soundEnabled={soundEnabled} />
+          <ArrestC
+            setCurrentChapter={setCurrentChapter}
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+          />
           <DictatorshipBackground setCurrentChapter={setCurrentChapter} />
           <PrisonLifeBackground setCurrentChapter={setCurrentChapter} />
           <PrisonB setCurrentChapter={setCurrentChapter} />
