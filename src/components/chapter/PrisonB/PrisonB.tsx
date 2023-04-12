@@ -44,7 +44,7 @@ const PrisonB = (props: Props) => {
               src={EscortingPainting}
               alt='Testbild'
               className={classNames(classes.imgM)}
-              title='Kambodschanische Einwohner warten in einer Straße von Phnom Penh, während das Benzindepot brennt, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/cambodian-inhabitants-wait-in-a-street-of-phnom-penh-nachrichtenfoto/457589602?adppopup=true'
+              title='Ein Anhänger der Roten Khmer eskortiert Bou Meng zum Gefängnisleiter "Dutch"; gemalt von Bou Meng (2004), Quelle: http://d.dccam.org/Archives/Photographs/Bou_Meng.htm'
             />
           </Parallax>
           <div className={classNames(classes.sectionColumn)}>
@@ -63,7 +63,7 @@ const PrisonB = (props: Props) => {
             <img
               src={ConfessionPainting}
               alt='Testbild'
-              title='Kambodschanische Einwohner warten in einer Straße von Phnom Penh, während das Benzindepot brennt, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/cambodian-inhabitants-wait-in-a-street-of-phnom-penh-nachrichtenfoto/457589602?adppopup=true'
+              title='Die Roten Khmer erzwingen ein Geständnis von Bou Meng; gemalt von Bou Meng (2004), Quelle: http://d.dccam.org/Archives/Photographs/Bou_Meng.htm'
             />
           </Parallax>
         </div>
@@ -73,7 +73,7 @@ const PrisonB = (props: Props) => {
               src={PaintPainting}
               alt='Testbild'
               className={classNames(classes.imgS)}
-              title='Kambodschanische Einwohner warten in einer Straße von Phnom Penh, während das Benzindepot brennt, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/cambodian-inhabitants-wait-in-a-street-of-phnom-penh-nachrichtenfoto/457589602?adppopup=true'
+              title='Bou Meng malt den Anführer der Roten Khmer, Pol Pot; gemalt von Bou Meng (2004), Quelle: http://d.dccam.org/Archives/Photographs/Bou_Meng.htm'
             />
           </Parallax>
           <div className={classNames(classes.sectionColumn2)}>
@@ -86,7 +86,7 @@ const PrisonB = (props: Props) => {
             <img
               src={Paint2Painting}
               alt='Testbild'
-              title='Kambodschanische Einwohner warten in einer Straße von Phnom Penh, während das Benzindepot brennt, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/cambodian-inhabitants-wait-in-a-street-of-phnom-penh-nachrichtenfoto/457589602?adppopup=true'
+              title='Bou Meng und andere Gefangene fertigen unter der Beobachtung von Anhängern der Roten Khmer Gemälde und Skulpturen von Pol Pot an; gemalt von Bou Meng (2004), Quelle: http://d.dccam.org/Archives/Photographs/Bou_Meng.htm'
             />
           </Parallax>
         </div>

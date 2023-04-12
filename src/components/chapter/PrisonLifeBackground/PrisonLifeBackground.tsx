@@ -95,7 +95,7 @@ const PrisonLifeBackground = (props: Props) => {
               src={Torture3Image}
               className={classNames(classes.imgM)}
               alt='Testbild'
-              title='Folter durch Ertränkung in Eimern;  gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
+              title='Folter durch Ertränkung in Eimern; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
             />
           </Parallax>
           <div className={classNames(classes.sectionColumn)}>
