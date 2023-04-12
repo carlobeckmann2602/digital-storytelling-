@@ -1,17 +1,11 @@
 /* eslint-disable react/no-unknown-property */
 import {
-  Backdrop,
-  Center,
   Loader,
   ScrollControls,
-  Sky,
-  SpotLight,
   Stage,
-  Text3D,
-  useFBX,
 } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import { Suspense, useEffect, useMemo, useRef } from 'react'
+import { Suspense, useEffect, useRef } from 'react'
 import * as language from './PrisonModelCanvas_lang'
 import { ModelWrapper } from './ModelWrapper'
 import useOnScreen from '../../helpers/useOnScreenHook'

@@ -1,3 +1,3 @@
 export const HEADING = 'Tuol Sleng'
 export const LOADING = 'Laden...'
-export const SCROLL_DOWN = '‹ Scroll down to explore ›'
+export const SCROLL_DOWN = '‹ Scrolle, um mehr herauszufinden... ›'
