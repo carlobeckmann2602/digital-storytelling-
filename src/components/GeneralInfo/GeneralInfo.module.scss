@@ -1,0 +1,20 @@
+@import '@/App.scss';
+
+.heading {
+  color: $context-timeline-color;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: calc(112px - 100vh);
+  z-index: 99;
+}
+
+.dark {
+  background-color: #000322;
+  color: $bg-color;
+}

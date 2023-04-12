@@ -48,9 +48,16 @@ function Navbar(props: NavbarProps) {
       <div className={sidemenu ? 'nav-overlay active' : 'nav-overlay'} onClick={showSidemenu}></div>
       <nav className={sidemenu ? 'nav-menu active' : 'nav-menu'}>
         <ul className='nav-menu-items' onClick={showSidemenu}>
-          <li className='navbar-toggle'>
-            <span>Menü</span>
-            <BsArrowRight className='icon' />
+          <li>
+            <ul className='header-items'>
+              <li>
+                <a href='#GENERAL_INFO'>Projektinformationen</a>
+              </li>
+              <li className='navbar-toggle'>
+                <span>Menü</span>
+                <BsArrowRight className='icon' />
+              </li>
+            </ul>
           </li>
           <li>
             <ul className='title-items'>
@@ -59,16 +66,7 @@ function Navbar(props: NavbarProps) {
               })}
             </ul>
           </li>
-          <li>
-            <ul className='page-items'>
-              <li>
-                <a href='#'>Allgemeine Informationen</a>
-              </li>
-              <li>
-                <a href='#'>Mitwirkende</a>
-              </li>
-            </ul>
-          </li>
+          <li></li>
         </ul>
       </nav>
     </>

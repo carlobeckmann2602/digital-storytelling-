@@ -125,7 +125,7 @@ function Sidebar(props: SidebarProps) {
     }
 
     return (
-      <nav className='timeline'>
+      <nav className={currentKey === 'GENERAL_INFO' ? 'timeline hidden' : 'timeline'}>
         {Array.from(CHAPTERS).map(([key, value]) => {
           if (value.time === 'none') {
             return

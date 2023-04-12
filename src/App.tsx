@@ -26,6 +26,7 @@ import CurrentPersonMarker from './components/CurrentPersonMarker/CurrentPersonM
 import MuteButton from './components/MuteButton/MuteButton'
 import PrisonModelCanvas from './components/landingpage/PrisonModelCanvas'
 import Disclaimer from './components/Disclaimer/Disclaimer'
+import GeneralInfo from './components/GeneralInfo/GeneralInfo'
 import * as language from './App_lang'
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
           <EscapeFromPrisonBoth setCurrentChapter={setCurrentChapter} />
           <OutlookBackground setCurrentChapter={setCurrentChapter} />
         </div>
+        <GeneralInfo setCurrentChapter={setCurrentChapter} />
       </div>
     </ParallaxProvider>
   )

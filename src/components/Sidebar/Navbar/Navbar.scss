@@ -72,6 +72,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
     list-style: none;
     font-size: 18px;
     margin: 0;
@@ -83,7 +84,6 @@
 
     .navbar-toggle {
       font-size: 24px;
-      margin-bottom: 30px;
     }
 
     .title-items {
@@ -112,14 +112,14 @@
       }
     }
 
-    .page-items {
-      font-size: 16px;
+    .header-items {
+      font-size: 12px;
       list-style: none;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       gap: 10px;
       padding-inline-start: 0;
-      margin-top: 30px;
 
       a {
         color: $context-timeline-color;
