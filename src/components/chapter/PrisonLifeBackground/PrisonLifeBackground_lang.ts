@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 export const H1_PrisonLife = 'Das Gefängnis und Folterzentrum S-21'
 export const T1_PrisonLife =
-  'Es lässt sich nur noch  erahnen, dass das Toul Sleng Gefängnis der Roten Khmer früher einmal eine Schule war. Unter der Herrschaft der Roten Khmer wurde das  Gebäude mit Stacheldraht bedeckt, die Fenster vergittert und die Türen verbarrikadiert. Selbst die Balkons im ersten und zweiten Stock wurden durch Stacheldraht gesichert. Dieser sollte  nicht nur dafür sorgen, dass niemand entkommen kann, sondern auch Suizidversuche  ohne vorheriges  Geständnis verhindern. Hier wurden Menschen inhaftiert, verhört und gefoltert, bevor sie zur Hinrichtung gebracht wurden.'
+  'Es lässt sich nur noch  erahnen, dass das Toul Sleng Gefängnis der Roten Khmer früher einmal eine Schule war. Unter der Herrschaft der Roten Khmer wurde das  Gebäude mit Stacheldraht bedeckt, die Fenster vergittert und die Türen verbarrikadiert. Selbst die Balkons im ersten und zweiten Stock wurden durch Stacheldraht gesichert. Dieser sollte nicht nur dafür sorgen, dass niemand entkommen kann, sondern auch Suizidversuche ohne vorheriges  Geständnis verhindern. Hier wurden Menschen inhaftiert, verhört und gefoltert, bevor sie zur Hinrichtung gebracht wurden.'
 
 export const H2_PrisonLife = 'Tägliche Misshandlung'
 export const T2_PrisonLife =
@@ -10,16 +10,26 @@ export const T2_PrisonLife =
 export const H3_PrisonLife = 'Folter in Tuol Sleng'
 export const T3_PrisonLife =
   'Die Folter in Tuol Sleng war Teil eines systematischen Versuchs, die Gefangenen dazu zu bringen, Geständnisse abzulegen und Informationen preiszugeben. Im Folgenden werden einige der Foltermethoden aus dem Gefängnis aufgelistet.'
+
+export const H3_1_PrisonLife = 'Ertränkung:'
 export const T3_1_PrisonLife =
-  'Elektroschocks: Gefangene wurden mit Stromschlägen gefoltert, indem man ihnen Elektroden an verschiedenen Stellen des Körpers anbrachte. Häufig wurden die Elektroden an sensiblen Stellen des Körpers befestigt, wie zum Beispiel Fingern, Zehen, Ohren oder auch Genitalien.'
+  ' Gefangene wurden in Eimer oder Tanks mit Wasser getaucht, bis sie fast ertrunken waren, bevor sie wieder herausgezogen wurden. Die aus dieser Foltermethode resultierenden Gesundheitsprobleme sind  verheerend: Von Atemwegserkrankungen über Herz-Kreislauf-Erkrankungen bis hin zu Organversagen oder Hirnschäden können vielfältige Folgen auftreten.'
+
+export const H3_2_PrisonLife = 'Elektroschocks:'
 export const T3_2_PrisonLife =
-  'Ertränkung: Gefangene wurden in Eimer oder Tanks mit Wasser getaucht, bis sie fast ertrunken waren, bevor sie wieder herausgezogen wurden. Die aus dieser Foltermethode resultierenden Gesundheitsprobleme sind  verheerend: Von Atemwegserkrankungen über Herz-Kreislauf-Erkrankungen bis hin zu Organversagen oder Hirnschäden können vielfältige Folgen auftreten.'
+  ' Gefangene wurden mit Stromschlägen gefoltert, indem man ihnen Elektroden an verschiedenen Stellen des Körpers anbrachte. Häufig wurden die Elektroden an sensiblen Stellen des Körpers befestigt, wie zum Beispiel Fingern, Zehen, Ohren oder auch Genitalien.'
+
+export const H3_3_PrisonLife = 'Zwangsernährung:'
 export const T3_3_PrisonLife =
-  'Schlafentzug: Gefangene wurden gezwungen, tagelang ohne Schlaf auszukommen, um sie zu zermürben und zu brechen. Schlafentzug kann körperliche Symptome wie Kopfschmerzen oder Herz-Kreislauf-Probleme, aber auch psychische Symptome wie Halluzinationen und Verwirrtheit verursachen.'
+  ' Gefangene wurden zwangsernährt, indem ihnen durch eine Nasensonde Nahrung oder Flüssigkeiten direkt in den Magen gepumpt wurden. Dies wurde oft mit rohem Reis, Salzwasser oder anderen unverdaulichen Substanzen durchgeführt und verursacht starke Schmerzen. Diese Methode zielt vor allem auf eine psychische Folter ab. Die Opfer erlebten ein Gefühl der Machtlosigkeit, Demut und Entfremdung, auch so sollten sie gefügiger werden.'
+
+export const H3_4_PrisonLife = 'Schlafentzug:'
 export const T3_4_PrisonLife =
-  'Zwangsernährung: Gefangene wurden zwangsernährt, indem ihnen durch eine Nasensonde Nahrung oder Flüssigkeiten direkt in den Magen gepumpt wurden. Dies wurde oft mit rohem Reis, Salzwasser oder anderen unverdaulichen Substanzen durchgeführt und verursacht starke Schmerzen. Diese Methode zielt vor allem auf eine psychische Folter ab. Die Opfer erlebten ein Gefühl der Machtlosigkeit, Demut und Entfremdung, auch so sollten sie gefügiger werden.'
+  ' Gefangene wurden gezwungen, tagelang ohne Schlaf auszukommen, um sie zu zermürben und zu brechen. Schlafentzug kann körperliche Symptome wie Kopfschmerzen oder Herz-Kreislauf-Probleme, aber auch psychische Symptome wie Halluzinationen und Verwirrtheit verursachen.'
+
+export const H3_5_PrisonLife = 'Verwendung von chirurgischen Werkzeugen:'
 export const T3_5_PrisonLife =
-  'Verwendung von chirurgischen Werkzeugen: Gefangene wurden mit chirurgischen Werkzeugen wie Zangen, Messern und Sägen gefoltert. Diese Art der Folter umfasst unter anderem das Abreißen von  Körperteilen wie Finger- und Zehennägel, aber auch Brustwarzen. Außerdem wurden den Opfern Gifte oder unangenehme Substanzen verabreicht. Zu den gewaltätigsten Arten der Folter gehörte die teilweise Häutung von Opfern.'
+  ' Gefangene wurden mit chirurgischen Werkzeugen wie Zangen, Messern und Sägen gefoltert. Diese Art der Folter umfasst unter anderem das Abreißen von  Körperteilen wie Finger- und Zehennägel, aber auch Brustwarzen. Außerdem wurden den Opfern Gifte oder unangenehme Substanzen verabreicht. Zu den gewaltätigsten Arten der Folter gehörte die teilweise Häutung von Opfern.'
 
 export const T4_PrisonLife =
   'Durch alle hier beschriebenen Foltermethoden erleiden die Opfer außerdem Traumata, die ein Leben lang anhalten und deren Alltag stark beeinträchtigen können. Die Erfahrungen der kambodschanischen Bevölkerung aus der Zeit des Terrorregimes prägen bis heute das Leben im Land: Ein großer Teil der Bevölkerung leidet unter Angststörungen, die Selbstmordrate in Kambodscha ist die höchste der Region und das Gewaltpotential hoch.'
