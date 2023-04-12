@@ -44,8 +44,10 @@ function App() {
         <PrisonModelCanvas setCurrentChapter={setCurrentChapter} />
         <div className='sidebarWrapper'>
           <Sidebar currentChapter={currentChapter} />
+          <div className='mute-btn-wrapper'>
+            <MuteButton soundEnabledGlobal={soundEnabled} setSoundEnabledGlobal={setSoundEnabled} />
+          </div>
         </div>
-        <MuteButton soundEnabledGlobal={soundEnabled} setSoundEnabledGlobal={setSoundEnabled} />
         <div className='chapter-content'>
           <CurrentPersonMarker currentChapter={currentChapter} />
           <Template setCurrentChapter={setCurrentChapter} />

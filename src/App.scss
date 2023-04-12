@@ -70,6 +70,13 @@
   top: 0;
   height: 100%;
   z-index: 200;
+
+  .mute-btn-wrapper {
+    position: relative;
+    left: 0;
+    width: fit-content;
+    padding: 12px;
+  }
 }
 
 .prison-model {
