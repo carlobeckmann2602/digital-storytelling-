@@ -9,7 +9,7 @@ export const C_1 =
   'Auf der Suche nach seinem Bruder fährt Chum Mey einige Stunden durch Phnom Penh. Seine Suche bleibt vergeblich, stattdessen sieht er auf seiner Reise durch die Stadt viele umgekippte und brennende Autos. Durch die Einschläge von schwerem Artilleriefeuer gehen mehrere dutzend Häuser in Flammen auf.'
 
 export const C_2 =
-  'Es ist circa 9 Uhr morgens, als Chum Mey euphorisches Jubeln von der Straße hört. Die roten Khmer fahren mit einem Konvoi aus Lastwagen - teilweise voller Waffen - in Phnom Penh ein. Chum Mey steht mit Anderen an der Straße und schwenkt eine weiße Fahne.'
+  'Es ist circa 9 Uhr morgens, als Chum Mey euphorisches Jubeln von der Straße hört. Die roten Khmer fahren mit einem Konvoi aus Lastwagen - teilweise voller Waffen - in Phnom Penh ein. Chum Mey steht mit anderen an der Straße und schwenkt eine weiße Fahne.'
 
 export const C_3 =
   'Um 17 Uhr wandelt sich die Euphorie in Unruhe. Über Durchsagen von vorbeifahrenden Autos geben die roten Khmer bekannt:'
@@ -18,10 +18,7 @@ export const C_4_Quote =
   'Die Amerikaner planen die Bombardierung der Stadt. Wir bitten alle Bürger, die Stadt umgehend zu verlassen! Ihr könnt in weniger als 72 Stunden zu euren Häusern zurückkehren!'
 
 export const C_5 =
-  'Chum Mey beschließt, die Stadt mit seiner Familie zu verlassen. Er hat dabei jedoch ein ungutes Gefühl.'
-
-export const C_6 =
-  'Getrieben von den roten Khmer macht Chum Mey sich gemeinsam mit vielen anderen auf den Weg aus der Stadt.'
+  'Chum Mey beschließt, die Stadt mit seiner Familie zu verlassen. Er hat dabei jedoch ein ungutes Gefühl. Getrieben von den roten Khmer macht Chum Mey sich gemeinsam mit vielen anderen auf den Weg aus der Stadt.'
 
 export const C_7 = 'Im Licht des nächsten Tages macht er eine grausame Entdeckung...'
 
@@ -33,7 +30,7 @@ export const C_8_2 = 'Arbeiter'
 export const C_8_3 = 'Lehrer'
 
 export const C_9 =
-  'Chum Mey ist entsetzt über die Greultaten und dessen Ausmaße. Er entsorgt daraufhin ein Bild, dass ihn in Militäruniform zeigt, um als ehemaliger Militärangehöriger nicht in das Visir der roten Khmer zu geraten.'
+  'Chum Mey ist entsetzt über die Gräueltaten und deren Ausmaße. Er entsorgt daraufhin ein Bild, das ihn in Militäruniform zeigt, um als ehemaliger Militärangehöriger nicht ins Visier der Roten Khmer zu geraten.'
 
 /* ------------------------------------------------------------------------------ */
 /*                              Bou Meng                                          */

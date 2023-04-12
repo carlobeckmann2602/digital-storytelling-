@@ -104,9 +104,6 @@ const InvasionBoth = (props: Props) => {
               <div className={classNames(classes.subsection, classes.rightAlign)}>
                 <p>{language.C_5}</p>
               </div>
-              <div className={classNames(classes.subsection, classes.leftAlign)}>
-                <p>{language.C_6}</p>
-              </div>
             </div>
             {/* 4.section LEFT */}
             <div style={{ height: computeHeight('.fourthL', 450) }}>

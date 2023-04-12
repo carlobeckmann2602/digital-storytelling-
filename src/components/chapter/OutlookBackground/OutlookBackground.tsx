@@ -116,7 +116,7 @@ const OutlookBackground = (props: Props) => {
             <img
               src={TrialImage}
               className={classNames(classes.imgM)}
-              title=', Quelle: '
+              title='Schüler verfolgen den Prozess gegen den Chef des S-21-Gefängnisses der Roten Khmer im Fernsehen, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/students-watch-a-live-broacast-of-the-appeal-trial-nachrichtenfoto/138111019'
               alt='Testbild'
             />
           </Parallax>

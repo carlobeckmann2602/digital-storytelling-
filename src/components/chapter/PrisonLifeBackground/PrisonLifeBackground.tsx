@@ -42,31 +42,28 @@ const PrisonLifeBackground = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className='chapter-body-wrapper'>
-        <div className={classes.section}>
-          <div className={classNames(classes.section)}>
-            <div className={classNames(classes.sectionColumn)}>
-              <p className={classNames(classes.headerText)}>{language.H2_PrisonLife}</p>
-              <p className={classNames(classes.text)}> {language.T2_PrisonLife}</p>
-            </div>
+      <div className={classes.section}>
+        <div className={classNames(classes.section)}>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.headerText)}>{language.H2_PrisonLife}</p>
+            <p className={classNames(classes.text)}> {language.T2_PrisonLife}</p>
           </div>
         </div>
       </div>
-      <div className='chapter-body-wrapper'>
-        <div className={classes.section}>
-          <div className={classNames(classes.section)}>
+      <div className={classes.section}>
+        <div>
+          <div className={classes.section}>
             <div className={classNames(classes.sectionColumn)}>
               <p className={classNames(classes.headerText)}>{language.H3_PrisonLife}</p>
-              <p className={classNames(classes.text)}> {language.T3_PrisonLife}</p>
+              <p className={classNames(classes.text)}>{language.T3_PrisonLife}</p>
+              <p className={classNames(classes.text)}>{language.T3_1_PrisonLife}</p>
+              <p className={classNames(classes.text)}>{language.T3_2_PrisonLife}</p>
+              <p className={classNames(classes.text)}>{language.T3_3_PrisonLife}</p>
+              <p className={classNames(classes.text)}>{language.T3_4_PrisonLife}</p>
+              <p className={classNames(classes.text)}>{language.T3_5_PrisonLife}</p>
+              <p className={classNames(classes.text)}>{language.T4_PrisonLife}</p>
             </div>
           </div>
-        </div>
-        <div>
-          <p className={classNames(classes.text)}> {language.T3_1_PrisonLife}</p>
-          <p className={classNames(classes.text)}> {language.T3_2_PrisonLife}</p>
-          <p className={classNames(classes.text)}> {language.T3_3_PrisonLife}</p>
-          <p className={classNames(classes.text)}> {language.T3_4_PrisonLife}</p>
-          <p className={classNames(classes.text)}> {language.T3_5_PrisonLife}</p>
         </div>
       </div>
       <div ref={bottomRef}></div>

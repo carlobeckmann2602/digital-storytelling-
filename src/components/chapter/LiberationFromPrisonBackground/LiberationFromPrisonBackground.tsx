@@ -48,9 +48,9 @@ const LiberationFromPrisonBackground = (props: Props) => {
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Einmarsch}</p>
         </div>
         <div className={classNames(classes.section)}>
-          <p>{language.T2_NeuerStaat}</p>
-        </div>
-        <div className={classNames(classes.section)}>
+          <p style={{ alignSelf: 'center', textAlign: 'justify', maxWidth: '50%' }}>
+            {language.T3_RoteKhmer}
+          </p>
           <Parallax speed={5}>
             <img
               src={ArmyImage2}
@@ -58,15 +58,8 @@ const LiberationFromPrisonBackground = (props: Props) => {
               alt='Testbild'
             />
           </Parallax>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T3_RoteKhmer}</p>
         </div>
         <div className={classNames(classes.section)}>
-          <p>{language.T4_Wiederaufbau}</p>
-        </div>
-        <div className={classNames(classes.section)}>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>
-            {language.T5_Widerstandsgruppen}
-          </p>
           <Parallax speed={5}>
             <img
               src={VietnameseFighters}
@@ -74,6 +67,9 @@ const LiberationFromPrisonBackground = (props: Props) => {
               alt='Testbild'
             />
           </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify', maxWidth: '50%' }}>
+            {language.T4_Wiederaufbau}
+          </p>
         </div>
         <div className={classNames(classes.section)}>
           <p>{language.T6_Gefaengnis}</p>

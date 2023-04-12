@@ -4,7 +4,7 @@ export const CHAPTERS = new Map([
     'CHILDHOOD_C',
     {
       time: '1931 - 1949',
-      title: 'Chum Mey: Vom Bauer zum Mechaniker',
+      title: 'Chum Mey: Vom Bauern zum Mechaniker',
       person: 'chum',
       place: 'Beispielort2',
     },

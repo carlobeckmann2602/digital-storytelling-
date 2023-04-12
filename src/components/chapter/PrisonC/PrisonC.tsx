@@ -35,17 +35,17 @@ const PrisonC = (props: Props) => {
       <div className='chapter-body-wrapper'>
         <div className={classes.section}>
           <div className={classNames(classes.sectionColumn)}>
-            <p className={classNames(classes.text)}> {language.T1_PrisionC}</p>
+            <p className={classNames(classes.text)}> {language.T1_PrisonC}</p>
           </div>
         </div>
         <div className={classes.section}>
           <div className={classNames(classes.sectionColumn)}>
-            <p className={classNames(classes.text)}> {language.T2_PrisionC}</p>
+            <p className={classNames(classes.text)}> {language.T2_PrisonC}</p>
           </div>
         </div>
         <div className={classes.section}>
           <div className={classNames(classes.sectionColumn)}>
-            <p className={classNames(classes.text)}> {language.T3_PrisionC}</p>
+            <p className={classNames(classes.text)}> {language.T3_PrisonC}</p>
           </div>
         </div>
       </div>

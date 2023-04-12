@@ -2,7 +2,7 @@
 
 export const H1_Museum = 'Das Tuol Sleng Genocide Museum'
 export const T1_Museum =
-  'Nach Beendigung der Herrschaft der Roten Khmer konnten ab März 1979 kambodschanische und vietnamesischen Vertreter das Gefängnis Tuol Sleng besichtigen und mit der Aufarbeitung der dortigen Verbrechen beginnen. Schließlich wurde am 13. Juli 1980 das Tuol Sleng Genocide Museum in den Räumlichkeiten des ehemaligen Gefängnisses für die Öffentlichkeit zugänglich gemacht. Die Museumsverwaltung datiert die Eröffnung hierbei bereits auf den 19. August 1979 zurück, dem Tag, an dem unter anderem Pol Pot von einem Volkstribunal zu Tode verurteilt wurde.'
+  'Nach dem Ende der Herrschaft der Roten Khmer konnten ab März 1979 kambodschanische und vietnamesischen Vertreter das Gefängnis Tuol Sleng besichtigen und mit der Aufarbeitung der dortigen Verbrechen beginnen. Schließlich wurde am 13. Juli 1980 das Tuol Sleng Genocide Museum in den Räumlichkeiten des ehemaligen Gefängnisses für die Öffentlichkeit zugänglich gemacht. Die Museumsverwaltung datiert die Eröffnung hierbei bereits auf den 19. August 1979 zurück, dem Tag, an dem unter anderem Pol Pot von einem Volkstribunal zu Tode verurteilt wurde.'
 
 export const H2_Besuch = 'Museumsarbeit'
 export const T2_Besuch =
