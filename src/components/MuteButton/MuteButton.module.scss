@@ -7,9 +7,10 @@
   z-index: 99999;
   border-radius: 50%;
   border: 0;
-  box-shadow: $drop-shadow-s;
+  background: none;
 
-  img {
+  .icon {
+    color: $context-timeline-color;
     height: 40px;
     width: 40px;
   }

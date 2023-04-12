@@ -1,6 +1,8 @@
 import classNames from 'classnames'
 import { useState } from 'react'
 import classes from './MuteButton.module.scss'
+import { BsVolumeMuteFill } from 'react-icons/bs'
+import { BsVolumeUpFill } from 'react-icons/bs'
 
 interface MuteButtonProps {
   soundEnabledGlobal: boolean
@@ -19,7 +21,7 @@ function MuteButton(props: MuteButtonProps) {
           props.setSoundEnabledGlobal(false)
         }}
       >
-        <img src='src/assets/img/icon_unmute.png' alt='test' />
+        <BsVolumeUpFill className={classNames(classes.icon)} />
       </button>
     )
   }
@@ -31,7 +33,7 @@ function MuteButton(props: MuteButtonProps) {
         props.setSoundEnabledGlobal(true)
       }}
     >
-      <img src='src/assets/img/icon_mute.png' alt='test' />
+      <BsVolumeMuteFill className={classNames(classes.icon)} />
     </button>
   )
 }
