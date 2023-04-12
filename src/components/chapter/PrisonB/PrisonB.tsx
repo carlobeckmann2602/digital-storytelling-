@@ -4,6 +4,11 @@ import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './PrisonB.module.scss'
 import * as language from './PrisonB_lang'
+import { Parallax } from 'react-scroll-parallax'
+import ConfessionPainting from '@/assets/img/PrisonB_Confession_c_Bou_Meng_2004_DC-Cam_Archives.png'
+import EscortingPainting from '@/assets/img/PrisonB_Escorting_c_Bou_Meng_2004_DC-Cam_Archives.png'
+import PaintPainting from '@/assets/img/PrisonB_Paint_c_Bou_Meng_2004_DC-Cam_Archives.png'
+import Paint2Painting from '@/assets/img/PrisonB_Paint2_c_Bou_Meng_2004_DC-Cam_Archives.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -32,43 +37,58 @@ const PrisonB = (props: Props) => {
           </h2>
         </div>
       </div>
-      <div className={classes.section}>
-        <div className='chapter-body-wrapper'>
-          <div className={classes.section}>
-            <div className={classNames(classes.section)}>
-              <div className={classNames(classes.sectionColumn)}>
-                <p className={classNames(classes.text)}> {language.T1_PrisonB}</p>
-              </div>
-            </div>
+      <div className='chapter-body-wrapper'>
+        <div className={classNames(classes.section)}>
+          <Parallax speed={5}>
+            <img
+              src={EscortingPainting}
+              alt='Testbild'
+              className={classNames(classes.imgM)}
+              title='Kambodschanische Einwohner warten in einer Straße von Phnom Penh, während das Benzindepot brennt, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/cambodian-inhabitants-wait-in-a-street-of-phnom-penh-nachrichtenfoto/457589602?adppopup=true'
+            />
+          </Parallax>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.text)}> {language.T1_PrisonB}</p>
           </div>
-          <div className={classes.section}>
-            <div className={classNames(classes.section)}>
-              <div className={classNames(classes.sectionColumn)}>
-                <p className={classNames(classes.text)}> {language.T2_PrisonB}</p>
-              </div>
-            </div>
+        </div>
+        <div className={classNames(classes.section)}>
+          <p className={classNames(classes.text)}> {language.T2_PrisonB}</p>
+        </div>
+        <div className={classNames(classes.section)}>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.text)}> {language.T3_PrisonB}</p>
+            <p className={classNames(classes.text)}> {language.T4_PrisonB}</p>
           </div>
-          <div className={classes.section}>
-            <div className={classNames(classes.section)}>
-              <div className={classNames(classes.sectionColumn)}>
-                <p className={classNames(classes.text)}> {language.T3_PrisonB}</p>
-              </div>
-            </div>
+          <Parallax style={{ padding: '5% 0' }} speed={5}>
+            <img
+              src={ConfessionPainting}
+              alt='Testbild'
+              title='Kambodschanische Einwohner warten in einer Straße von Phnom Penh, während das Benzindepot brennt, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/cambodian-inhabitants-wait-in-a-street-of-phnom-penh-nachrichtenfoto/457589602?adppopup=true'
+            />
+          </Parallax>
+        </div>
+        <div className={classNames(classes.section)}>
+          <Parallax speed={3}>
+            <img
+              src={PaintPainting}
+              alt='Testbild'
+              className={classNames(classes.imgS)}
+              title='Kambodschanische Einwohner warten in einer Straße von Phnom Penh, während das Benzindepot brennt, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/cambodian-inhabitants-wait-in-a-street-of-phnom-penh-nachrichtenfoto/457589602?adppopup=true'
+            />
+          </Parallax>
+          <div className={classNames(classes.sectionColumn2)}>
+            <p className={classNames(classes.text)}> {language.T5_PrisonB}</p>
+            <p className={classNames(classes.text)}> {language.T6_PrisonB}</p>
           </div>
-          <div className={classes.section}>
-            <div className={classNames(classes.section)}>
-              <div className={classNames(classes.sectionColumn)}>
-                <p className={classNames(classes.text)}> {language.T4_PrisonB}</p>
-              </div>
-            </div>
-          </div>
-          <div className={classes.section}>
-            <div className={classNames(classes.section)}>
-              <div className={classNames(classes.sectionColumn)}>
-                <p className={classNames(classes.text)}> {language.T5_PrisonB}</p>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div style={{ paddingLeft: '35%' }}>
+          <Parallax speed={3}>
+            <img
+              src={Paint2Painting}
+              alt='Testbild'
+              title='Kambodschanische Einwohner warten in einer Straße von Phnom Penh, während das Benzindepot brennt, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/cambodian-inhabitants-wait-in-a-street-of-phnom-penh-nachrichtenfoto/457589602?adppopup=true'
+            />
+          </Parallax>
         </div>
       </div>
       <div ref={bottomRef}></div>
