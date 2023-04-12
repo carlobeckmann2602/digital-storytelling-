@@ -69,7 +69,7 @@ const ChildhoodC = (props: Props) => {
           </Parallax>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>
             {language.T6_Unruhen}
-            <Modal>
+            <Modal direction='LEFT'>
               <p>TODO Armut</p>
               <p>
                 Kurz erklären, woher die Unzufriedenheit im Land kommt und warum es Unruhen gibt

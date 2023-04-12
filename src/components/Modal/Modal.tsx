@@ -3,8 +3,10 @@ import { ReactElement, useState } from 'react'
 import classes from './Modal.module.scss'
 import { ReactComponent as InfoI } from '@/assets/img/icons/info-i.svg'
 import { ReactComponent as CloseIcon } from '@/assets/img/icons/close-icon.svg'
+import classNames from 'classnames'
 
 interface ModalProps {
+  direction: 'LEFT' | 'RIGHT'
   children: ReactElement | ReactElement[]
 }
 
@@ -21,8 +23,18 @@ function Modal(props: ModalProps) {
         >
           <InfoI className={classes.infoIcon} />
         </motion.button>
-        <div className={classes.bubbleWrapper}>
-          <div className={classes.bubble}>
+        <div
+          className={classNames(classes.bubbleWrapper, {
+            [classes.right]: props.direction === 'RIGHT',
+            [classes.left]: props.direction === 'LEFT',
+          })}
+        >
+          <div
+            className={classNames(classes.bubble, {
+              [classes.right]: props.direction === 'RIGHT',
+              [classes.left]: props.direction === 'LEFT',
+            })}
+          >
             <button className={classes.closeBtn} onClick={() => setIsOpen(false)}>
               <CloseIcon className={classes.closeIcon} />
             </button>

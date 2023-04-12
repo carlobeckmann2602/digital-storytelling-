@@ -45,7 +45,7 @@ const PreInvasionB = (props: Props) => {
         <div className={classes.section}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>
             {language.T2_Ansprache}
-            <Modal>
+            <Modal direction='RIGHT'>
               <p>TODO Rede</p>
               <p>
                 Kurzer Kontext dazu, warum Sihanouk im Exil ist und ggf. worum es in der Rede
