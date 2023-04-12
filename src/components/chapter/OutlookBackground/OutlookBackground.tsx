@@ -9,11 +9,9 @@ import Quotation from '../../Quotation/Quotation'
 import TrialImage from '@/assets/img/OutlookBackground_trial_c_bbc_gettyImages.png'
 import Trial2Image from '@/assets/img/OutlookBackground_Trial2_c_AFP_Photo_ECCC_Mark_Peters.jpg'
 import MuseumImage from '@/assets/img/OutlookBackground_museum_c_bbc_gettyImages.png'
-import { ReactComponent as ArrowIcon } from '@/assets/img/icons/arrow-up-icon.svg'
 import Painting1Image from '@/assets/img/OutlookBackground_Painting_Arresting_c_Vann_Nath_khmerrougeincambodia.png'
 import Painting2Image from '@/assets/img/OutlookBackground_Painting_Blindfolded_c_Bou_Meng_2004_DC-Cam_Archives.png'
 import Painting3Image from '@/assets/img/OutlookBackground_Painting_Prisoners_c_Vann_Nath_khmerrougeincambodia.jpg'
-import { motion } from 'framer-motion'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -32,14 +30,6 @@ const OutlookBackground = (props: Props) => {
   useEffect(() => {
     bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [bottomOnScreen])
-
-  const scrollToTop = () => {
-    console.log('test')
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  }
 
   return (
     <div id={CHAPTER_ID}>
@@ -134,17 +124,6 @@ const OutlookBackground = (props: Props) => {
         </div>
         <div className={classNames(classes.spacer)}></div>
         <Quotation quote={language.Q2_Nacht} citation={'Chum Mey'} colorCode={'chum'}></Quotation>
-        <div style={{ height: '100px' }}></div>
-        <motion.div style={{ scale: 0 }} animate={{ scale: 1 }} className={classes.buttonWrapper}>
-          <motion.button
-            animate={{ scale: 1.4, translateX: '3px' }}
-            className={classes.backButton}
-            onClick={() => scrollToTop()}
-          >
-            <ArrowIcon className={classes.arrowIcon} />
-            <p>Zurück zum Anfang</p>
-          </motion.button>
-        </motion.div>
       </div>
       <div ref={bottomRef}></div>
     </div>

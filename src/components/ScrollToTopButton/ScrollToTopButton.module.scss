@@ -1,0 +1,29 @@
+.btnWrapper {
+  background-color: none;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backButton {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+
+  transition: 0.2s ease-in-out 0s;
+
+  &:hover {
+    color: $highlight-color;
+    transform: scale(1.2);
+  }
+
+  .arrowIcon {
+    width: 2em;
+    height: 2em;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+}

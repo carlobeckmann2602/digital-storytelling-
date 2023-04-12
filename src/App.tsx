@@ -28,6 +28,7 @@ import PrisonModelCanvas from './components/landingpage/PrisonModelCanvas'
 import Disclaimer from './components/Disclaimer/Disclaimer'
 import GeneralInfo from './components/GeneralInfo/GeneralInfo'
 import * as language from './App_lang'
+import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton'
 
 function App() {
   const [currentChapter, setCurrentChapter] = useState<Chapter>('TITLE')
@@ -75,6 +76,7 @@ function App() {
           <OutlookBackground setCurrentChapter={setCurrentChapter} />
         </div>
         <GeneralInfo setCurrentChapter={setCurrentChapter} />
+        <ScrollToTopButton />
       </div>
     </ParallaxProvider>
   )

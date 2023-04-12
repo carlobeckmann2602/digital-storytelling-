@@ -1,8 +1,7 @@
 import classNames from 'classnames'
 import { useState } from 'react'
 import classes from './MuteButton.module.scss'
-import { BsVolumeMuteFill } from 'react-icons/bs'
-import { BsVolumeUpFill } from 'react-icons/bs'
+import { BsVolumeMuteFill, BsVolumeUpFill } from 'react-icons/bs'
 
 interface MuteButtonProps {
   soundEnabledGlobal: boolean
