@@ -7,8 +7,7 @@ import * as language from './LiberationFromPrisonBackground_lang'
 import { Parallax } from 'react-scroll-parallax'
 import ArmyImage1 from '@/assets/img/LiberationFromPrisonBackground_army1_07_01_1979.jpg'
 import ArmyImage2 from '@/assets/img/LiberationFromPrisonBackground_army2_07_01_1979.jpg'
-import GerilliaImage from '@/assets/img/LiberationFromPrisonBackground_Gerillia_Soldaten.jpg'
-import PlaceholderImage from '@/assets/img/Placeholder.png'
+import VietnameseFighters from '@/assets/img/LiberationFromPrisonBackground_vietnamese-fighters_07_01_1979.jpg'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -55,7 +54,7 @@ const LiberationFromPrisonBackground = (props: Props) => {
           <Parallax speed={5}>
             <img
               src={ArmyImage2}
-              title='Soldaten befreien Hauptstadt Phnom Penh, Quelle: https://vovworld.vn/de-DE/politische-aktualitat/sieg-des-kampfes-zur-verteidigung-der-sudwestgrenze-und-sturz-des-regimes-der-roten-khmer-meilenstein-in-der-vietnamkambodschabeziehung-714024.vov#&gid=1&pid=1'
+              title='Soldaten befreien Hauptstadt Phnom Penh, Quelle: https://www.khmertimeskh.com/501214068/victorious-day-kingdom-rejoice-january-7-1979/'
               alt='Testbild'
             />
           </Parallax>
@@ -69,7 +68,11 @@ const LiberationFromPrisonBackground = (props: Props) => {
             {language.T5_Widerstandsgruppen}
           </p>
           <Parallax speed={5}>
-            <img src={GerilliaImage} alt='Testbild' />
+            <img
+              src={VietnameseFighters}
+              title='Vietnamese volunteer soldiers in Phnom Penh after the overthrow of the Khmer Rouge, Quelle: https://www.khmertimeskh.com/501214068/victorious-day-kingdom-rejoice-january-7-1979/'
+              alt='Testbild'
+            />
           </Parallax>
         </div>
         <div className={classNames(classes.section)}>
