@@ -34,7 +34,9 @@ const GeneralInfo = (props: Props) => {
     <div id={CHAPTER_ID} className={classes.heading}>
       <div ref={topRef} className={'header-outer'}>
         <div className='header-inner'>
-          <h2 className={classNames(classes.heading, 'chapter-heading')}>{language.HEADLINE}</h2>
+          <h2 className={classNames(classes.heading, 'chapter-heading')}>
+            {CHAPTERS.get(CHAPTER_ID)?.title}
+          </h2>
         </div>
       </div>
       <div className='chapter-body-wrapper'></div>

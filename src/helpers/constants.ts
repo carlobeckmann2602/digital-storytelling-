@@ -157,6 +157,15 @@ export const CHAPTERS = new Map([
     'OUTLOOK_BACKGROUND',
     { time: '1979 - heute', title: 'Aufarbeitung', person: 'none', place: '' },
   ],
+  [
+    'GENERAL_INFO',
+    {
+      time: 'none',
+      title: 'Allgemeine Projektinformationen',
+      person: 'none',
+      place: '',
+    },
+  ],
 ])
 
 export type Chapter =

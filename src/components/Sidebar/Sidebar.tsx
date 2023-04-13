@@ -15,7 +15,9 @@ function Sidebar(props: SidebarProps) {
   return (
     <div className='sidebar'>
       <Navbar currentChapter={props.currentChapter} />
-      <Timeline currentChapter={props.currentChapter} />
+      {props.currentChapter !== 'GENERAL_INFO' ? (
+        <Timeline currentChapter={props.currentChapter} />
+      ) : null}
     </div>
   )
 
@@ -24,11 +26,56 @@ function Sidebar(props: SidebarProps) {
   }
 
   function Timeline(props: TimelineProps) {
-    const currentKey = props.currentChapter
     const chaptersKeys = Array.from(CHAPTERS.keys())
-    const indexOfCurrentKey = chaptersKeys.findIndex((value) => value === currentKey)
-    const prevKey = chaptersKeys[indexOfCurrentKey - 1]
-    const nextKey = chaptersKeys[indexOfCurrentKey + 1]
+    const currentChapter = props.currentChapter
+
+    let indexOfCurrentKey = chaptersKeys.findIndex((value) => value === currentChapter)
+    let currentKey = chaptersKeys[indexOfCurrentKey]
+    let currentChapterTimeEmpty = CHAPTERS.get(currentKey)?.time === 'none'
+
+    while (currentChapterTimeEmpty) {
+      const currentChapter = CHAPTERS.get(currentKey)
+      if (currentChapter?.time !== 'none') {
+        currentChapterTimeEmpty = false
+        currentKey = chaptersKeys[indexOfCurrentKey]
+        break
+      } else {
+        indexOfCurrentKey = indexOfCurrentKey - 1
+        currentKey = chaptersKeys[indexOfCurrentKey]
+      }
+    }
+
+    let indexOfPrevKey = indexOfCurrentKey - 1
+    let prevKey = chaptersKeys[indexOfPrevKey]
+    let prevChapterTimeEmpty = CHAPTERS.get(prevKey)?.time === 'none'
+
+    while (prevChapterTimeEmpty) {
+      const prevChapter = CHAPTERS.get(prevKey)
+      if (prevChapter?.time !== 'none') {
+        prevChapterTimeEmpty = false
+        prevKey = chaptersKeys[indexOfPrevKey]
+        break
+      } else {
+        indexOfPrevKey = indexOfPrevKey - 1
+        prevKey = chaptersKeys[indexOfPrevKey]
+      }
+    }
+
+    let indexOfNextKey = indexOfCurrentKey + 1
+    let nextKey = chaptersKeys[indexOfNextKey]
+    let nextChapterTimeEmpty = CHAPTERS.get(nextKey)?.time === 'none'
+
+    while (nextChapterTimeEmpty) {
+      const nextChapter = CHAPTERS.get(nextKey)
+      if (nextChapter?.time !== 'none') {
+        nextChapterTimeEmpty = false
+        nextKey = chaptersKeys[indexOfNextKey]
+        break
+      } else {
+        indexOfNextKey = indexOfNextKey + 1
+        nextKey = chaptersKeys[indexOfNextKey]
+      }
+    }
 
     const ANIMATION_DURATION = 0.8
     const variantsCurrentDate = {

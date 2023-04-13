@@ -1,1 +1,1 @@
-export const HEADLINE = 'Allgemeine Projektinformationen' // TODO: Replace with real language keys
+export const BLA = 'BLA' // TODO: Replace with real language keys
