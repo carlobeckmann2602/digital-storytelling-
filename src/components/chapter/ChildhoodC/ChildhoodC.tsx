@@ -6,6 +6,7 @@ import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodC.module.scss'
 import * as language from './ChildhoodC_lang'
 import PlaceholderImage from '@/assets/img/Placeholder.png'
+import Prey_Veng from '@/assets/img/ChildhoodC_Rice_field_Prey_Veng.jpg'
 import Modal from '../../Modal/Modal'
 
 interface Props {
@@ -38,7 +39,12 @@ const ChildhoodC = (props: Props) => {
       <div className='chapter-body-wrapper'>
         <div className={classes.section}>
           <Parallax speed={5}>
-            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+            <img
+              src={Prey_Veng}
+              title='Aktuelles Bild der Provinz Prey Veng, Quelle: https://de.wikipedia.org/wiki/Prey_Veng_(Provinz)'
+              style={{ width: '400px' }}
+              alt='Testbild'
+            />
           </Parallax>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Geburt}</p>
         </div>

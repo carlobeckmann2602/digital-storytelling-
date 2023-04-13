@@ -7,8 +7,11 @@ import * as language from './HistoricalBackground_lang'
 import TestImage from '@/assets/img/template-1.jpg'
 import PlaceholderImage from '@/assets/img/Placeholder.png'
 import khmerRouge from '@/assets/img/HistoricalBackground_Khmer-Rouge-Guerrilla-soldiers.jpg'
-import LonNol from '@/assets/img/HistoricalBackground_Lon-Nol-courtesy-of-mekong.jpg'
+import Soldiers from '@/assets/img/HistoricalBackground_Lon-Nol-courtesy-of-mekong.jpg'
 import Mao from '@/assets/img/HistoricalBackground_Mao_Sihanouk.jpg'
+import Sihanouk from '@/assets/img/HistoricalBackground_Sihanouk.jpg'
+import LonNol from '@/assets/img/HistoricalBackground_Lon_Nol.jpg'
+import VietnamKrieg from '@/assets/img/HistoricalBackground_Vietnam_Krieg.jpg'
 import StackingCards from '../../StackingCards/StackingCards'
 import { Parallax } from 'react-scroll-parallax'
 
@@ -65,7 +68,7 @@ const HistoricalBackground = (props: Props) => {
               title='Khmer Rouge Guerrilla Soldaten, Quelle: https://www.voacambodia.com/a/cambodia-author-examines-extreme-militarism/2495640.html'
             />
             <img
-              src={LonNol}
+              src={Soldiers}
               alt='Testbild'
               title='Soldaten aufbruchbereit, Quelle: https://vietnamtheartofwar.com/1970/03/18/18-macrh-1970-cambodian-coup/'
             />
@@ -78,7 +81,12 @@ const HistoricalBackground = (props: Props) => {
         </div>
         <div className={classNames(classes.section)}>
           <Parallax speed={5}>
-            <img src={PlaceholderImage} className={classNames(classes.imgS)} alt='Testbild' />
+            <img
+              src={Sihanouk}
+              className={classNames(classes.imgS)}
+              alt='Testbild'
+              title='Prinz Norodom Sihanouk, Quelle: https://de.alphahistory.com/Vietnamkrieg/norodom-sihanouk/'
+            />
           </Parallax>
           <div className={classNames(classes.sectionColumn)}>
             <p className={classNames(classes.headerText)}>{language.H2_Prinz}</p>
@@ -91,12 +99,22 @@ const HistoricalBackground = (props: Props) => {
             <p className={classNames(classes.text)}> {language.T3_Aufstand}</p>
           </div>
           <Parallax speed={5}>
-            <img src={PlaceholderImage} className={classNames(classes.imgS)} alt='Testbild' />
+            <img
+              src={LonNol}
+              className={classNames(classes.imgS)}
+              alt='Testbild'
+              title='General Lon Nol, Quelle: https://en.wikipedia.org/wiki/Lon_Nol'
+            />
           </Parallax>
         </div>
         <div className={classNames(classes.section)}>
           <Parallax speed={5}>
-            <img src={PlaceholderImage} className={classNames(classes.imgS)} alt='Testbild' />
+            <img
+              src={VietnamKrieg}
+              className={classNames(classes.imgS)}
+              alt='Testbild'
+              title='B-52-Bomber der US Air Force genutzt im Vietnam Krieg, Quelle: https://www.spiegel.de/fotostrecke/vietnam-krieg-fotostrecke-107851.html'
+            />
           </Parallax>
           <div className={classNames(classes.sectionColumn)}>
             <p className={classNames(classes.headerText)}>{language.H4_Vietnam}</p>
