@@ -4,7 +4,7 @@ export const CHAPTERS = new Map([
     'CHILDHOOD_C',
     {
       time: '1931 - 1949',
-      title: 'Chum Mey: Vom Bauern zum Mechaniker',
+      title: 'Chum Mey – Vom Bauer zum Mechaniker',
       person: 'chum',
       place: 'Beispielort2',
     },
@@ -21,7 +21,7 @@ export const CHAPTERS = new Map([
   [
     'HISTORICAL_BACKGROUND',
     {
-      time: '1967 - 1973',
+      time: 'none',
       title: 'Kambodscha: Zwischen Unabhängigkeit & Unterdrückung',
       person: 'none',
       place: 'Beispielort3',
@@ -30,7 +30,7 @@ export const CHAPTERS = new Map([
   [
     'PRE_INVASION_B',
     {
-      time: '1970 - 1973',
+      time: '1967 - 1974',
       title: 'Bou Mong-Seangs Weg zur Revolution',
       person: 'bou',
       place: 'Beispielort3',
@@ -39,7 +39,7 @@ export const CHAPTERS = new Map([
   [
     'PRE_INVASION_C',
     {
-      time: '1970 - 1974',
+      time: 'none',
       title: 'Chum Meys Weg nach Phnom Penh',
       person: 'chum',
       place: 'Beispielort3',
@@ -48,7 +48,7 @@ export const CHAPTERS = new Map([
   [
     'INVASION_BACKGROUND',
     {
-      time: '1975',
+      time: '1974 - 1975',
       title: 'Einordnung: Einnahme Phnomh Penhs',
       person: 'none',
       place: 'Beispielort3',
@@ -57,7 +57,7 @@ export const CHAPTERS = new Map([
   [
     'INVASION_BOTH',
     {
-      time: '17.04.1975',
+      time: 'none',
       title: 'Der 17. April: Einnahme Phnomh Penhs',
       person: 'both',
       place: 'Phnomh Penh',
@@ -67,7 +67,7 @@ export const CHAPTERS = new Map([
     'AFTER_INVASION_B',
     {
       time: '1975 - 1976',
-      title: 'Bou Mengs Leben nach der Einnahme',
+      title: 'Die Reisfelder der Roten Khmer',
       person: 'bou',
       place: 'Phnomh Penh',
     },
@@ -75,8 +75,8 @@ export const CHAPTERS = new Map([
   [
     'AFTER_INVASION_C',
     {
-      time: '1975 - 1976',
-      title: 'Chum Meys Leben nach der Einnahme',
+      time: 'none',
+      title: 'Zwischen Leid und Gehorsam',
       person: 'chum',
       place: 'Phnomh Penh',
     },
@@ -84,7 +84,7 @@ export const CHAPTERS = new Map([
   [
     'ARREST_B',
     {
-      time: '16.08.1977',
+      time: '1976 - 1979',
       title: 'Die Kunstschule',
       person: 'bou',
       place: 'Ländliche Region vor Phnomh Penh',
@@ -93,7 +93,7 @@ export const CHAPTERS = new Map([
   [
     'ARREST_C',
     {
-      time: '1977 - 1978',
+      time: 'none',
       title: 'Eine verhängnisvolle Reparatur',
       person: 'chum',
       place: 'Phnomh Penh',
@@ -101,30 +101,45 @@ export const CHAPTERS = new Map([
   ],
   [
     'DICTATORSHIP_BACKGROUND',
-    { time: 'XXXX - YZYZ', title: 'Einordnung: Diktatur', person: 'none', place: 'Beispielort3' },
+    {
+      time: 'none',
+      title: 'Die Diktatur der Roten Khmer',
+      person: 'none',
+      place: 'Beispielort3',
+    },
   ],
   [
     'PRISON_LIFE_BACKGROUND',
     {
-      time: 'XXXX - YZYZ',
-      title: 'Einordnung: Leben im Gefängnis',
+      time: 'none',
+      title: 'Das Leben im Gefängnis S-21',
       person: 'none',
       place: 'Beispielort3',
     },
   ],
   [
     'PRISON_B',
-    { time: 'XXXX - YZYZ', title: 'Bou Meng im Gefängnis', person: 'bou', place: 'Beispielort3' },
+    {
+      time: 'none',
+      title: 'Bou Mengs Malereien aus Leid und Blut',
+      person: 'bou',
+      place: 'Beispielort3',
+    },
   ],
   [
     'PRISON_C',
-    { time: 'XXXX - YZYZ', title: 'Chum Mey im Gefängnis', person: 'chum', place: 'Beispielort3' },
+    {
+      time: 'none',
+      title: 'Chum Mey im Abgrund von Tuol Sleng',
+      person: 'chum',
+      place: 'Beispielort3',
+    },
   ],
   [
     'LIBERATION_FROM_PRISON_BACKGROUND',
     {
-      time: '07.01.1979',
-      title: 'Sturz der Roten Khmer & Befreiung des Gefängnisses',
+      time: '1979 - 1980',
+      title: 'Der Sturz der Roten Khmer',
       person: 'none',
       place: 'Phnom Penh',
     },
@@ -132,8 +147,8 @@ export const CHAPTERS = new Map([
   [
     'ESCAPE_FROM_PRISON_BOTH',
     {
-      time: '1979 - 1980',
-      title: 'Flucht aus dem Gefängnis',
+      time: 'none',
+      title: 'Eine Flucht voller Gefahren',
       person: 'both',
       place: 'S-21 – Phnom Penh',
     },
