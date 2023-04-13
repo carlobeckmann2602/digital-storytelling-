@@ -7,6 +7,9 @@ import classes from './ChildhoodC.module.scss'
 import * as language from './ChildhoodC_lang'
 import PlaceholderImage from '@/assets/img/Placeholder.png'
 import Prey_Veng from '@/assets/img/ChildhoodC_Rice_field_Prey_Veng.jpg'
+import Wedding from '@/assets/img/ChildhoodC_Wedding.png'
+import ChildrenInRicefield from '@/assets/img/ChildhoodC_ChildrenInRicefield.png'
+import ManRepairingMotorbike from '@/assets/img/ChildhoodC_ManRepairingMotorbike.png'
 import Modal from '../../Modal/Modal'
 
 interface Props {
@@ -51,12 +54,22 @@ const ChildhoodC = (props: Props) => {
         <div className={classes.section}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Kindheit}</p>
           <Parallax speed={5}>
-            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+            <img
+              src={ChildrenInRicefield}
+              style={{ width: '400px' }}
+              alt='Testbild'
+              title='KI-generiertes Bild (labs.openai.com)'
+            />
           </Parallax>
         </div>
         <div className={classes.section}>
           <Parallax speed={5}>
-            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+            <img
+              src={ManRepairingMotorbike}
+              style={{ width: '400px' }}
+              alt='Testbild'
+              title='KI-generiertes Bild (labs.openai.com)'
+            />
           </Parallax>
           <div className={classNames(classes.sectionColumn)}>
             <p> {language.T3_Hauptstadt}</p>
@@ -66,7 +79,12 @@ const ChildhoodC = (props: Props) => {
         <div className={classes.section}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Heirat}</p>
           <Parallax speed={5}>
-            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
+            <img
+              src={Wedding}
+              style={{ width: '400px' }}
+              alt='Testbild'
+              title='KI-generiertes Bild (labs.openai.com)'
+            />
           </Parallax>
         </div>
         <div className={classes.section}>
