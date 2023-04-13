@@ -4,6 +4,10 @@ import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './PrisonC.module.scss'
 import * as language from './PrisonC_lang'
+import { Parallax } from 'react-scroll-parallax'
+import Torture1Image from '@/assets/img/PrisonC_Torture1_c_Vann_Nath_khmerrougeincambodia.jpg'
+import Torture2Image from '@/assets/img/PrisonC_Torture2_c_Vann_Nath_khmerrougeincambodia.jpg'
+import Torture3Image from '@/assets/img/PrisonC_Torture3_c_Vann_Nath_khmerrougeincambodia.jpg'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -37,8 +41,24 @@ const PrisonC = (props: Props) => {
           <div className={classNames(classes.sectionColumn)}>
             <p className={classNames(classes.text)}> {language.T1_PrisonC}</p>
           </div>
+          <Parallax speed={5}>
+            <img
+              src={Torture1Image}
+              alt='Testbild'
+              className={classNames(classes.imgS)}
+              title='Folter eines Gefangenen mit Werkzeugen; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
+            />
+          </Parallax>
         </div>
         <div className={classes.section}>
+          <Parallax speed={5}>
+            <img
+              src={Torture2Image}
+              alt='Testbild'
+              className={classNames(classes.imgM)}
+              title='Ein Gefangener der Roten Khmer wird außerhalb des Gefängnisses ausgepeitscht; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
+            />
+          </Parallax>
           <div className={classNames(classes.sectionColumn)}>
             <p className={classNames(classes.text)}> {language.T2_PrisonC}</p>
           </div>
@@ -46,6 +66,20 @@ const PrisonC = (props: Props) => {
         <div className={classes.section}>
           <div className={classNames(classes.sectionColumn)}>
             <p className={classNames(classes.text)}> {language.T3_PrisonC}</p>
+          </div>
+          <Parallax speed={5}>
+            <img
+              src={Torture3Image}
+              alt='Testbild'
+              className={classNames(classes.imgS)}
+              title='Ein Gefangener der Roten Khmer wird ausgepeitscht; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
+            />
+          </Parallax>
+        </div>
+        <div className={classes.spacer} />
+        <div className={classes.section}>
+          <div className={classNames(classes.sectionColumn)}>
+            <p className={classNames(classes.text)}> {language.T4_PrisonC}</p>
           </div>
         </div>
       </div>
