@@ -12,18 +12,18 @@
 
   &.leftAlign {
     justify-content: flex-start;
+    align-items: center;
 
     p {
-      width: 40%;
       text-align: justify;
     }
   }
 
   &.rightAlign {
     justify-content: flex-end;
+    align-items: center;
 
     p {
-      width: 40%;
       text-align: justify;
     }
   }

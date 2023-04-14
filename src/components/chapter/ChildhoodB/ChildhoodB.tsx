@@ -49,13 +49,11 @@ const ChildhoodB = (props: Props) => {
           </Parallax>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Geburt}</p>
         </div>
-        <div className={classes.section}>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Pagode}</p>
-          <Parallax speed={10}>
-            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
-          </Parallax>
-        </div>
-        <div className={classes.section}>
+        <div className={classNames(classes.section, classes.rightAlign)}>
+          <div className={classes.sectionColumn}>
+            <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Pagode}</p>
+            <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T3_Tischler}</p>
+          </div>
           <Parallax speed={10}>
             <img
               src={YoungManDrawing}
@@ -64,7 +62,6 @@ const ChildhoodB = (props: Props) => {
               title='KI-generiertes Bild (labs.openai.com)'
             />
           </Parallax>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T3_Tischler}</p>
         </div>
         <div className={classes.section}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Heimat}</p>

@@ -6,6 +6,7 @@ import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './PreInvasionC.module.scss'
 import * as language from './PreInvasionC_lang'
 import PlaceholderImage from '@/assets/img/Placeholder.png'
+import KhmerRougeAttack from '@/assets/img/PreInvasionC_KhmerRougeAttack.jpg'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -35,16 +36,18 @@ const PreInvasionC = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'>
-        <div className={classes.section}>
+        <div className={classNames(classes.section, classes.rightAlign)}>
+          <div className={classes.sectionColumn}>
+            <p>{language.T1_Ueberfaelle}</p>
+            <p>{language.T2_Militaer}</p>
+          </div>
           <Parallax speed={5}>
-            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
-          </Parallax>
-          <p style={{ textAlign: 'justify' }}>{language.T1_Ueberfaelle}</p>
-        </div>
-        <div className={classes.section}>
-          <p style={{ textAlign: 'justify' }}>{language.T2_Militaer}</p>
-          <Parallax speed={5}>
-            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
+            <img
+              src={KhmerRougeAttack}
+              alt='Testbild'
+              className={classes.img}
+              title='Phnom Penh nach einem Angriff der Roten Khmer (1974), Quelle: https://www.ushmm.org/genocide-prevention/countries/cambodia/case-study/background/war-closes-in'
+            />
           </Parallax>
         </div>
         <div className={classes.section}>

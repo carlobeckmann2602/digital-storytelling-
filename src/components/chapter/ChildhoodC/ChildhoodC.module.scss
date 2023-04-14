@@ -14,7 +14,6 @@
     justify-content: flex-start;
 
     p {
-      width: 40%;
       text-align: justify;
     }
   }
@@ -23,7 +22,6 @@
     justify-content: flex-end;
 
     p {
-      width: 40%;
       text-align: justify;
     }
   }
@@ -50,9 +48,8 @@
 .sectionColumn {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 10%;
-  max-width: 50%;
+  justify-content: flex-start;
+  max-width: 45%;
 
   p {
     text-align: justify;

@@ -5,7 +5,6 @@ import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodC.module.scss'
 import * as language from './ChildhoodC_lang'
-import PlaceholderImage from '@/assets/img/Placeholder.png'
 import Prey_Veng from '@/assets/img/ChildhoodC_Rice_field_Prey_Veng.jpg'
 import Wedding from '@/assets/img/ChildhoodC_Wedding.png'
 import ChildrenInRicefield from '@/assets/img/ChildhoodC_ChildrenInRicefield.png'
@@ -62,7 +61,7 @@ const ChildhoodC = (props: Props) => {
             />
           </Parallax>
         </div>
-        <div className={classes.section}>
+        <div className={classNames(classes.section, classes.leftAlign)}>
           <Parallax speed={5}>
             <img
               src={ManRepairingMotorbike}
@@ -76,8 +75,20 @@ const ChildhoodC = (props: Props) => {
             <p> {language.T4_Mechaniker}</p>
           </div>
         </div>
-        <div className={classes.section}>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Heirat}</p>
+        <div className={classNames(classes.section, classes.rightAlign)}>
+          <div className={classes.sectionColumn}>
+            <p>{language.T5_Heirat}</p>
+            <p>
+              {language.T6_Unruhen}
+              <Modal direction='LEFT'>
+                <p>TODO Armut</p>
+                <p>
+                  Kurz erklären, woher die Unzufriedenheit im Land kommt und warum es Unruhen gibt
+                  (ausführlich wird's dann in der Einordnung)...
+                </p>
+              </Modal>
+            </p>
+          </div>
           <Parallax speed={5}>
             <img
               src={Wedding}
@@ -86,21 +97,6 @@ const ChildhoodC = (props: Props) => {
               title='KI-generiertes Bild (labs.openai.com)'
             />
           </Parallax>
-        </div>
-        <div className={classes.section}>
-          <Parallax speed={5}>
-            <img src={PlaceholderImage} style={{ width: '400px' }} alt='Testbild' />
-          </Parallax>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>
-            {language.T6_Unruhen}
-            <Modal direction='LEFT'>
-              <p>TODO Armut</p>
-              <p>
-                Kurz erklären, woher die Unzufriedenheit im Land kommt und warum es Unruhen gibt
-                (ausführlich wird's dann in der Einordnung)...
-              </p>
-            </Modal>
-          </p>
         </div>
       </div>
       <div ref={bottomRef}></div>
