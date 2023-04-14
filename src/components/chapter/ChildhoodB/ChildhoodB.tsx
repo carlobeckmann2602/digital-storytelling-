@@ -6,6 +6,8 @@ import classes from './ChildhoodB.module.scss'
 import * as language from './ChildhoodB_lang'
 import { Parallax } from 'react-scroll-parallax'
 import PlaceholderImage from '@/assets/img/Placeholder.png'
+import BoyWithPagoda from '@/assets/img/ChildhoodB_BoyWithPagoda.png'
+import YoungManDrawing from '@/assets/img/ChildhoodB_YoungManDrawing.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -44,12 +46,22 @@ const ChildhoodB = (props: Props) => {
         <div className={classes.section}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Pagode}</p>
           <Parallax speed={10}>
-            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
+            <img
+              src={BoyWithPagoda}
+              alt='Testbild'
+              className={classes.img}
+              title='KI-generiertes Bild (labs.openai.com)'
+            />
           </Parallax>
         </div>
         <div className={classes.section}>
           <Parallax speed={10}>
-            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
+            <img
+              src={YoungManDrawing}
+              alt='Testbild'
+              className={classes.img}
+              title='KI-generiertes Bild (labs.openai.com)'
+            />
           </Parallax>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T3_Tischler}</p>
         </div>

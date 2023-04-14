@@ -12,7 +12,7 @@ export const T4_Mechaniker =
   'Kurz darauf wechselt er seine Arbeitsstelle und beginnt eine Lehre als Mechaniker. Auch zu dieser Zeit verdient er noch kaum Geld, trotzdem soll sich diese Entscheidung später als wegweisend für sein weiteres Leben herausstellen. Vier Jahre später beginnt Chum Mey aufbauend auf seine Ausbildung ein Mechanikstudium in Prey Veng. Anschließend arbeitet er in einer Werkstatt und repariert verschiedenste Fahrzeuge. Dadurch kommt er erstmals in seinem Leben zu etwas Geld.'
 
 export const T5_Heirat =
-  'Im Jahr 1964 arrangiert ein Arbeitskollege für Chum Mey eine Heirat mit dessen Cousine. Diese hatte er zuvor erst einmal getroffen, trotzdem führen sie von nun an eine sehr glückliche Ehe. In den folgenden Ehejahren gründen sie eine Familie und bekommen vier Kinder.Mit seinem angesparten Geld eröffnet Chum Mey kurz hintereinander zwei Werkstätten. Es sieht so aus, als würde das Leben es gut mit ihm meinen.'
+  'Im Jahr 1964 arrangiert ein Arbeitskollege für Chum Mey eine Heirat mit dessen Cousine. Diese hatte er zuvor erst einmal getroffen, trotzdem führen sie von nun an eine sehr glückliche Ehe. In den folgenden Ehejahren gründen sie eine Familie und bekommen vier Kinder. Mit seinem angesparten Geld eröffnet Chum Mey kurz hintereinander zwei Werkstätten. Es sieht so aus, als würde das Leben es gut mit ihm meinen.'
 
 export const T6_Unruhen =
   'Doch die Unruhen im Land nehmen immer weiter zu, und auch Chum Mey bekommt die Auswirkungen davon zu spüren. Schließlich sieht er sich gezwungen, die Werkstätten wieder zu verkaufen, um für einen General im Militär zu arbeiten und Traktoren sowie Autos zu reparieren.'

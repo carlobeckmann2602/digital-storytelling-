@@ -6,6 +6,7 @@ import classes from './PreInvasionB.module.scss'
 import * as language from './PreInvasionB_lang'
 import { Parallax } from 'react-scroll-parallax'
 import PlaceholderImage from '@/assets/img/Placeholder.png'
+import ManDrawingLenin from '@/assets/img/PreInvasionB_ManDrawingLenin.png'
 import Modal from '../../Modal/Modal'
 
 interface Props {
@@ -59,7 +60,12 @@ const PreInvasionB = (props: Props) => {
         </div>
         <div className={classes.section}>
           <Parallax speed={10}>
-            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
+            <img
+              src={ManDrawingLenin}
+              alt='Testbild'
+              className={classes.img}
+              title='KI-generiertes Bild (labs.openai.com)'
+            />
           </Parallax>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T3_Maler}</p>
         </div>
