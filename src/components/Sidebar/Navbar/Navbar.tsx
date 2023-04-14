@@ -27,7 +27,10 @@ function Navbar(props: NavbarProps) {
   function renderNavItem(
     key: string,
     value: { time: string; title: string; place: string; person: string },
-  ): JSX.Element {
+  ): JSX.Element | null {
+    if (key === 'GENERAL_INFO' || key === 'TEMPLATE') {
+      return null
+    }
     return (
       <li
         key={key}
