@@ -8,6 +8,7 @@ import { Parallax } from 'react-scroll-parallax'
 import PlaceholderImage from '@/assets/img/Placeholder.png'
 import BoyWithPagoda from '@/assets/img/ChildhoodB_BoyWithPagoda.png'
 import YoungManDrawing from '@/assets/img/ChildhoodB_YoungManDrawing.png'
+import SouthVietnameseTroopsInCambodia from '@/assets/img/ChildhoodB_SouthVietnameseTroopsInCambodia.jpg'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -39,19 +40,19 @@ const ChildhoodB = (props: Props) => {
       <div className='chapter-body-wrapper'>
         <div className={classes.section}>
           <Parallax speed={10}>
-            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
-          </Parallax>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Geburt}</p>
-        </div>
-        <div className={classes.section}>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Pagode}</p>
-          <Parallax speed={10}>
             <img
               src={BoyWithPagoda}
               alt='Testbild'
               className={classes.img}
               title='KI-generiertes Bild (labs.openai.com)'
             />
+          </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Geburt}</p>
+        </div>
+        <div className={classes.section}>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Pagode}</p>
+          <Parallax speed={10}>
+            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
           </Parallax>
         </div>
         <div className={classes.section}>
@@ -68,7 +69,12 @@ const ChildhoodB = (props: Props) => {
         <div className={classes.section}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Heimat}</p>
           <Parallax speed={10}>
-            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
+            <img
+              src={SouthVietnameseTroopsInCambodia}
+              alt='Testbild'
+              className={classes.img}
+              title='Südvietnamesische Truppen werden nach einer Militäroperation in der Nähe von Prey Veng (Kambodscha) von einem Hubschrauber geborgen, Quelle: https://www.historynet.com/nixons-cambodian-incursion/'
+            />
           </Parallax>
         </div>
       </div>
