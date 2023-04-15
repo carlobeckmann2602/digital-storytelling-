@@ -122,8 +122,6 @@ const OutlookBackground = (props: Props) => {
             ></Quotation>
           </div>
         </div>
-        <div className={classNames(classes.spacer)}></div>
-        <Quotation quote={language.Q2_Nacht} citation={'Chum Mey'} colorCode={'chum'}></Quotation>
       </div>
       <div ref={bottomRef}></div>
     </div>

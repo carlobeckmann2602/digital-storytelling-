@@ -10,6 +10,7 @@ import FieldImage2 from '@/assets/img/AfterInvasionB_Field2_c_the_Tuol_Sleng_Mus
 import FieldImage3 from '@/assets/img/AfterInvasionB_Field3_c_the_Tuol_Sleng_Museum_of_Genocide.jpg'
 import UniformImage from '@/assets/img/AfterInvasionB_Uniform_c_Pictures_from_History_Kontributor.jpg'
 import Quotation from '../../Quotation/Quotation'
+import Modal from '../../Modal/Modal'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -44,7 +45,13 @@ const AfterInvasionB = (props: Props) => {
         </div>
         <div className={classNames(classes.section)}>
           <div className={classNames(classes.sectionColumn)}>
-            <p>{language.T2_Kinder}</p>
+            <p>
+              {language.T2_Kinder}
+              <Modal direction='RIGHT'>
+                <p>Die Organisation Angka</p>
+                <p>{language.I1_Angka}</p>
+              </Modal>
+            </p>
             <p>{language.T3_Bio}</p>
           </div>
           <Parallax speed={5}>

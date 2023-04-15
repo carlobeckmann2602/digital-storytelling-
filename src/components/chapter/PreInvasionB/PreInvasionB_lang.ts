@@ -5,6 +5,9 @@ export const T1_Kontakt =
 export const T2_Ansprache =
   'Nach dem ansonsten gewöhnlichen Arbeitstag hört er sich eine Ansprache von Prinz Sihanouk aus Peking an, in der er um die Unterstützung der Revolution zur Befreiung des Landes sowie Herstellung der Unabhängigkeit und des Friedens bittet. Er kann nicht genau sagen, was es war, aber die Rede bringt Bou Mong-Seang zum Nachdenken. Nur einige Stunden nach der Rede entschließt er sich, sich nun doch der Revolution anzuschließen.'
 
+export const I1_Exil =
+  'Nach dem Sturz von Sihanouk durch seinen Offizier Lon Nol verbündet er sich mit seinen früheren Gegnern, den Roten Khmer. In seinen Reden, die er im Exil hält, motiviert er die Kambodschaner, sich den Roten Khmer anzuschließen, um mit deren Hilfe letztendlich zurück an die Macht zu gelangen.'
+
 export const T3_Maler =
   'Daraufhin machen sich Bou Mong-Seang und seine Frau auf den Weg in den Dschungel "Marxist", um sich - wie viele andere Dorfbewohner auch - der Revolution anzuschließen. Die Reise dorthin ist kompliziert und anstrengend. Am Lager der Revolutionsbewegung angekommen, werden Bou Mong-Seang und seine Frau als Maler und Malerin für Propagandaschriften eingesetzt, um Marx, Engels, Lenin und die Revolutionsflaggen mit Hammer und Sichel zu malen.'
 

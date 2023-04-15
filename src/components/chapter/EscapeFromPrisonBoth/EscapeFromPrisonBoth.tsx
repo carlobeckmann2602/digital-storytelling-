@@ -5,8 +5,6 @@ import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './EscapeFromPrisonBoth.module.scss'
 import * as language from './EscapeFromPrisonBoth_lang'
 import { Parallax } from 'react-scroll-parallax'
-
-import EscapeFromPrisopnImage1 from '@/assets/img/InvasionBoth_Invasion1_c_Roland_Neveu.png'
 import Placeholder from '@/assets/img/Placeholder.png'
 
 interface Props {

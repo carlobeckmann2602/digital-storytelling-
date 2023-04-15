@@ -6,7 +6,7 @@ export const T2_Aufbruch =
   'Bou Meng ist erleichtert, dass seine Arbeit auf dem Feld endlich ein Ende zu haben scheint. Er und seine Frau sammeln ihr bescheidenes Hab und Gut zusammen und machen sich in einem Lastwagen der Roten Khmer in Richtung Hauptstadt auf.'
 
 export const T3_Verdacht =
-  'Sie fahren Stunde um Stunde durch die Landschaft, doch die Stadt scheint nicht näher zu kommen. Als Bou Meng den Blick zur untergehenden Sonne schweifen lässt, stutzt er. Die Sonne geht links der Straße unter, doch auf dem Weg nach Süden, zur Hauptstadt, müsste sie sich eigentlich rechts der Straße untergehen. Das kann nur eines bedeuten: Sie fahren in die falsche Richtung. Keine Hauptstadt. Keine Kunstschule.'
+  'Sie fahren Stunde um Stunde durch die Landschaft, doch die Stadt scheint nicht näher zu kommen. Als Bou Meng den Blick zur untergehenden Sonne schweifen lässt, stutzt er. Die Sonne geht links der Straße unter, doch auf dem Weg nach Süden, zur Hauptstadt, müsste sie sich eigentlich rechts der Straße untergehen. Das kann nur eines bedeuten: Sie fahren in die falsche Richtung. Keine Hauptstadt. Keine Kunstschule. Er traut sich fast nicht, seine Entdeckung anzusprechen, doch als er sich schließlich dazu durchringt, antworten seine Begleiter nur mit einem gleichgültigen Blick. Die ganze Fahrt über schweigen sie, und Chum Mey nun auch.'
 
 export const T4_Verhaftung =
   'Bei Anbruch der Nacht halten sie vor einem großen Gebäude, das vollständig von einem Stacheldrahtzaun umgeben ist. Vier Männer mit Waffen kommen auf das Auto zu und zerren ihn und seine Frau aus dem Auto. Ihnen werden Handschellen und Augenbinden angelegt, dann werden sie in das Gebäude gebracht.'

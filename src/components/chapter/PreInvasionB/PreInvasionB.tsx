@@ -44,11 +44,8 @@ const PreInvasionB = (props: Props) => {
             <p style={{ alignSelf: 'center', textAlign: 'justify' }}>
               {language.T2_Ansprache}
               <Modal direction='RIGHT'>
-                <p>TODO Rede</p>
-                <p>
-                  Kurzer Kontext dazu, warum Sihanouk im Exil ist und ggf. worum es in der Rede
-                  ging...
-                </p>
+                <p>Sihanouk an der Seite der Roten Khmer</p>
+                <p>{language.I1_Exil}</p>
               </Modal>
             </p>
           </div>
