@@ -52,9 +52,9 @@ function App() {
         <div className='chapter-content'>
           <CurrentPersonMarker currentChapter={currentChapter} />
           <Template setCurrentChapter={setCurrentChapter} />
+          <HistoricalBackground setCurrentChapter={setCurrentChapter} />
           <ChildhoodC setCurrentChapter={setCurrentChapter} />
           <ChildhoodB setCurrentChapter={setCurrentChapter} />
-          <HistoricalBackground setCurrentChapter={setCurrentChapter} />
           <PreInvasionB setCurrentChapter={setCurrentChapter} />
           <PreInvasionC setCurrentChapter={setCurrentChapter} />
           <InvasionBackground setCurrentChapter={setCurrentChapter} />{' '}

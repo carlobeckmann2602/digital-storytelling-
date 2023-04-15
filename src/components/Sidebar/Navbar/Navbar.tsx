@@ -2,8 +2,7 @@ import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import './Navbar.scss'
 import { useState } from 'react'
 import classNames from 'classnames'
-import { BsArrowLeft } from 'react-icons/bs'
-import { BsArrowRight } from 'react-icons/bs'
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 
 interface NavbarProps {
   currentChapter: Chapter

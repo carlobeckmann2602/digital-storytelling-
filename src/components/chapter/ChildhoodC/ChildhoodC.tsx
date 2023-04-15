@@ -5,11 +5,10 @@ import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodC.module.scss'
 import * as language from './ChildhoodC_lang'
-import Prey_Veng from '@/assets/img/ChildhoodC_Rice_field_Prey_Veng.jpg'
+import PreyVeng from '@/assets/img/ChildhoodC_Rice_field_Prey_Veng.jpg'
 import Wedding from '@/assets/img/ChildhoodC_Wedding.png'
 import ChildrenInRicefield from '@/assets/img/ChildhoodC_ChildrenInRicefield.png'
 import ManRepairingMotorbike from '@/assets/img/ChildhoodC_ManRepairingMotorbike.png'
-import Modal from '../../Modal/Modal'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -42,7 +41,7 @@ const ChildhoodC = (props: Props) => {
         <div className={classes.section}>
           <Parallax speed={5}>
             <img
-              src={Prey_Veng}
+              src={PreyVeng}
               title='Aktuelles Bild der Provinz Prey Veng, Quelle: https://de.wikipedia.org/wiki/Prey_Veng_(Provinz)'
               style={{ width: '400px' }}
               alt='Testbild'
@@ -61,11 +60,11 @@ const ChildhoodC = (props: Props) => {
             />
           </Parallax>
         </div>
-        <div className={classNames(classes.section, classes.leftAlign)}>
+        <div className={classNames(classes.section)}>
           <Parallax speed={5}>
             <img
               src={ManRepairingMotorbike}
-              style={{ width: '400px' }}
+              style={{ width: '500px' }}
               alt='Testbild'
               title='KI-generiertes Bild (labs.openai.com)'
             />
@@ -75,19 +74,9 @@ const ChildhoodC = (props: Props) => {
             <p> {language.T4_Mechaniker}</p>
           </div>
         </div>
-        <div className={classNames(classes.section, classes.rightAlign)}>
+        <div className={classNames(classes.section)}>
           <div className={classes.sectionColumn}>
             <p>{language.T5_Heirat}</p>
-            <p>
-              {language.T6_Unruhen}
-              <Modal direction='LEFT'>
-                <p>TODO Armut</p>
-                <p>
-                  Kurz erklären, woher die Unzufriedenheit im Land kommt und warum es Unruhen gibt
-                  (ausführlich wird's dann in der Einordnung)...
-                </p>
-              </Modal>
-            </p>
           </div>
           <Parallax speed={5}>
             <img

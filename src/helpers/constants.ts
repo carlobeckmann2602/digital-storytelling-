@@ -1,6 +1,15 @@
 export const CHAPTERS = new Map([
   ['TEMPLATE', { time: 'Einführung', title: 'Einführung', person: 'none', place: 'Beispielort' }],
   [
+    'HISTORICAL_BACKGROUND',
+    {
+      time: 'none',
+      title: 'Kambodscha: Zwischen Unabhängigkeit & Unterdrückung',
+      person: 'none',
+      place: 'Beispielort3',
+    },
+  ],
+  [
     'CHILDHOOD_C',
     {
       time: '1931 - 1964',
@@ -15,15 +24,6 @@ export const CHAPTERS = new Map([
       time: '1941 - 1967',
       title: 'Der Maler Bou Mong-Seang',
       person: 'bou',
-      place: 'Beispielort3',
-    },
-  ],
-  [
-    'HISTORICAL_BACKGROUND',
-    {
-      time: 'none',
-      title: 'Kambodscha: Zwischen Unabhängigkeit & Unterdrückung',
-      person: 'none',
       place: 'Beispielort3',
     },
   ],

@@ -47,14 +47,14 @@ const HistoricalBackground = (props: Props) => {
           className={classNames(classes.section)}
           style={{ marginTop: '1000px', marginBottom: '400px' }}
         >
-          <div
-            style={{ position: 'sticky', top: '500px' }}
-            className={classNames(classes.sectionColumn)}
-          >
-            <Parallax speed={-40}>
+          <div>
+            <div
+              style={{ position: 'sticky', top: '20vh' }}
+              className={classNames(classes.sectionColumn)}
+            >
               <p className={classNames(classes.headerText)}>{language.H1_Unabhaengigkeit}</p>
               <p className={classNames(classes.text)}> {language.T1_Unabhaengigkeit}</p>
-            </Parallax>
+            </div>
           </div>
           <StackingCards>
             <img
