@@ -40,6 +40,8 @@ const GeneralInfo = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'></div>
+      <p> {language.allgemeineInfos}</p>
+      <p>{language.warning}</p>
       <div ref={bottomRef}></div>
     </div>
   )
