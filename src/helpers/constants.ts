@@ -13,7 +13,7 @@ export const CHAPTERS = new Map([
     'CHILDHOOD_C',
     {
       time: '1931 - 1964',
-      title: 'Chum Mey – Vom Bauern zum Mechaniker',
+      title: 'Chum Mey – Vom Bauer zum Mechaniker',
       person: 'chum',
       place: 'Beispielort2',
     },

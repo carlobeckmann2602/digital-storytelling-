@@ -27,6 +27,7 @@
 .subsection {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 5%;
 
   &.leftAlign {
@@ -49,6 +50,7 @@
 
   .imgL {
     width: 100%;
+    max-width: 400px;
   }
 
   .imgS {
@@ -71,23 +73,22 @@
 }
 
 .highlight {
-  display: block;
   padding: 0 20px;
   font-size: 1.5em;
-  width: 100%;
 }
 
 .center {
   display: block;
+  text-align: justify;
   margin: 0 auto;
 }
 
 .spacerL {
   display: block;
-  height: 500px;
+  height: 300px;
 }
 
 .spacerM {
   display: block;
-  height: 300px;
+  height: 100px;
 }
