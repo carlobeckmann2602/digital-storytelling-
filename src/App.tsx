@@ -61,10 +61,26 @@ function App() {
             fadingTime={FADINGTIME}
             setCurrentChapter={setCurrentChapter}
           />
-          <ChildhoodC soundEnabled={soundEnabled} setCurrentChapter={setCurrentChapter} />
-          <ChildhoodB fadingTime={FADINGTIME} setCurrentChapter={setCurrentChapter} />
-          <PreInvasionB soundEnabled={soundEnabled} setCurrentChapter={setCurrentChapter} />
-          <PreInvasionC fadingTime={FADINGTIME} setCurrentChapter={setCurrentChapter} />
+          <ChildhoodC
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <ChildhoodB
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <PreInvasionB
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <PreInvasionC
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
           <InvasionBackground
             soundEnabled={soundEnabled}
             fadingTime={FADINGTIME}
@@ -75,8 +91,16 @@ function App() {
             fadingTime={FADINGTIME}
             setCurrentChapter={setCurrentChapter}
           />
-          <AfterInvasionB soundEnabled={soundEnabled} setCurrentChapter={setCurrentChapter} />
-          <AfterInvasionC fadingTime={FADINGTIME} setCurrentChapter={setCurrentChapter} />
+          <AfterInvasionB
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <AfterInvasionC
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
           <ArrestB
             soundEnabled={soundEnabled}
             fadingTime={FADINGTIME}
@@ -97,8 +121,16 @@ function App() {
             fadingTime={FADINGTIME}
             setCurrentChapter={setCurrentChapter}
           />
-          <PrisonB soundEnabled={soundEnabled} setCurrentChapter={setCurrentChapter} />
-          <PrisonC fadingTime={FADINGTIME} setCurrentChapter={setCurrentChapter} />
+          <PrisonB
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <PrisonC
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
           <LiberationFromPrisonBackground
             soundEnabled={soundEnabled}
             fadingTime={FADINGTIME}
