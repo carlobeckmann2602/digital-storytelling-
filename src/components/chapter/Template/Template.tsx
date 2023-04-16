@@ -44,11 +44,11 @@ const Template = (props: Props) => {
         <div className={classes.intro}>
           <p>
             Willkommen auf unserer Webseite, die Ihnen die Geschichte von zwei Überlebenden des
-            S21-Gefängnisses in Kambodscha erzählt. Das S21-Gefängnis, auch bekannt als Tuol Sleng,
-            war ein Ort des Schreckens während der Herrschaft der Roten Khmer in den späten 1970er
-            Jahren. Tausende unschuldiger Menschen wurden inhaftiert, gefoltert und ermordet,
+            S-21-Gefängnisses in Kambodscha erzählt. Das S-21-Gefängnis, auch bekannt als Tuol
+            Sleng, war ein Ort des Schreckens während der Herrschaft der Roten Khmer in den späten
+            1970er Jahren. Tausende unschuldiger Menschen wurden inhaftiert, gefoltert und ermordet,
             während das Regime versuchte, eine utopische Gesellschaft zu schaffen. Hier erfahren Sie
-            mehr über das Leben von Chum Mey und Bou Meng, die beide das S21-Gefängnis überlebt
+            mehr über das Leben von Chum Mey und Bou Meng, die beide das S-21-Gefängnis überlebt
             haben und nun ihre Erfahrungen und ihr Leben danach teilen. Auch wenn beide diese Zeit
             auf unterschiedlichste Art erlebten, waren sie beide Zeugen für die Grausamkeiten, die
             während dieser Zeit in Kambodscha begangen wurden.
