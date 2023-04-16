@@ -12,6 +12,7 @@ export default function useOnScreen(ref: React.RefObject<HTMLDivElement>, rootMa
       },
       {
         rootMargin,
+        threshold: 0,
       },
     )
     if (ref.current) {
