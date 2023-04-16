@@ -49,7 +49,7 @@ export const CHAPTERS = new Map([
     'INVASION_BACKGROUND',
     {
       time: '1974 - 1975',
-      title: 'Einordnung: Einnahme Phnomh Penhs',
+      title: 'Die Machtübernahme der Roten Khmer',
       person: 'none',
       place: 'Beispielort3',
     },
@@ -58,7 +58,7 @@ export const CHAPTERS = new Map([
     'INVASION_BOTH',
     {
       time: 'none',
-      title: 'Der 17. April: Einnahme Phnomh Penhs',
+      title: 'Der 17. April: Einnahme Phnom Penhs',
       person: 'both',
       place: 'Phnomh Penh',
     },
