@@ -1,1 +1,2 @@
-export const DISCLAIMER_TEXT = 'Disclaimer Text hier'
+export const DISCLAIMER_TEXT =
+  'Diese Website enthält Informationen über Gewalt und Folter, die auf einige Personen verstörend wirken können. Lesen Sie bitte nur weiter, wenn Sie sich emotional und mental stabil fühlen und bereit sind, sich mit diesen Themen auseinanderzusetzen. Bitte beachten Sie auch, dass die Informationen hier nur zu Bildungszwecken und nicht zur Ermutigung oder Befürwortung von Gewalt oder Folter dienen. Jegliche Form von Gewalt und Folter ist inakzeptabel und illegal.'
