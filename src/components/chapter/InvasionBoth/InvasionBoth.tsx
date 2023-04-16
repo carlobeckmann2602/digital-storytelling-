@@ -15,9 +15,13 @@ import CorpsesImage1 from '@/assets/img/InvasionBoth_Corpses2_c_Bettmann.png'
 import CorpsesImage2 from '@/assets/img/InvasionBoth_Corpses_c_Patrick_Chauvel.png'
 import CorpsesImage3 from '@/assets/img/InvasionBoth_Corpses3_c_KillingFieldsMuseum.png'
 import Quotation from '../../Quotation/Quotation'
+import useSound from 'use-sound'
+import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
+  soundEnabled: boolean
+  fadingTime: number
 }
 
 const InvasionBoth = (props: Props) => {
@@ -34,6 +38,28 @@ const InvasionBoth = (props: Props) => {
     bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [bottomOnScreen])
 
+  // ---------------------- SOUND IMPLEMENTATION ---------------------- //
+  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+    interrupt: true,
+    loop: true,
+  })
+
+  useEffect(() => {
+    if (topOnScreen && props.soundEnabled) {
+      props.setCurrentChapter(CHAPTER_ID)
+      play()
+      sound.fade(0, 0.5, props.fadingTime)
+    } else {
+      if (sound && (!topOnScreen || !props.soundEnabled)) {
+        sound.once('fade', () => {
+          stop()
+        })
+        sound.fade(0.5, 0, props.fadingTime)
+      }
+    }
+  }, [topOnScreen, props.soundEnabled])
+  // ---------------------- SOUND IMPLEMENTATION ---------------------- //
+
   /* Formula (all elements must have the same idKey):
   (Height of own sticky-container)
   + (Height of Content of other sides container)
@@ -46,8 +72,8 @@ const InvasionBoth = (props: Props) => {
   }
 
   return (
-    <div id={CHAPTER_ID}>
-      <div ref={topRef} className={'header-outer'}>
+    <div ref={topRef} id={CHAPTER_ID}>
+      <div className={'header-outer'}>
         <div className='header-inner'>
           <h2 className={classNames(classes.heading, 'chapter-heading')}>
             {CHAPTERS.get(CHAPTER_ID)?.title}

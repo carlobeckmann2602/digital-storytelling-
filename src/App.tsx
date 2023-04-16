@@ -51,29 +51,69 @@ function App() {
         </div>
         <div className='chapter-content'>
           <CurrentPersonMarker currentChapter={currentChapter} />
-          <Template setCurrentChapter={setCurrentChapter} />
-          <HistoricalBackground setCurrentChapter={setCurrentChapter} />
-          <ChildhoodC setCurrentChapter={setCurrentChapter} />
-          <ChildhoodB setCurrentChapter={setCurrentChapter} />
-          <PreInvasionB setCurrentChapter={setCurrentChapter} />
-          <PreInvasionC setCurrentChapter={setCurrentChapter} />
-          <InvasionBackground setCurrentChapter={setCurrentChapter} />{' '}
-          <InvasionBoth setCurrentChapter={setCurrentChapter} />
-          <AfterInvasionB setCurrentChapter={setCurrentChapter} />
-          <AfterInvasionC setCurrentChapter={setCurrentChapter} />
-          <ArrestB setCurrentChapter={setCurrentChapter} />
+          <Template
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <HistoricalBackground
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <ChildhoodC soundEnabled={soundEnabled} setCurrentChapter={setCurrentChapter} />
+          <ChildhoodB fadingTime={FADINGTIME} setCurrentChapter={setCurrentChapter} />
+          <PreInvasionB soundEnabled={soundEnabled} setCurrentChapter={setCurrentChapter} />
+          <PreInvasionC fadingTime={FADINGTIME} setCurrentChapter={setCurrentChapter} />
+          <InvasionBackground
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <InvasionBoth
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <AfterInvasionB soundEnabled={soundEnabled} setCurrentChapter={setCurrentChapter} />
+          <AfterInvasionC fadingTime={FADINGTIME} setCurrentChapter={setCurrentChapter} />
+          <ArrestB
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
           <ArrestC
             setCurrentChapter={setCurrentChapter}
             soundEnabled={soundEnabled}
             fadingTime={FADINGTIME}
           />
-          <DictatorshipBackground setCurrentChapter={setCurrentChapter} />
-          <PrisonLifeBackground setCurrentChapter={setCurrentChapter} />
-          <PrisonB setCurrentChapter={setCurrentChapter} />
-          <PrisonC setCurrentChapter={setCurrentChapter} />
-          <LiberationFromPrisonBackground setCurrentChapter={setCurrentChapter} />
-          <EscapeFromPrisonBoth setCurrentChapter={setCurrentChapter} />
-          <OutlookBackground setCurrentChapter={setCurrentChapter} />
+          <DictatorshipBackground
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <PrisonLifeBackground
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <PrisonB soundEnabled={soundEnabled} setCurrentChapter={setCurrentChapter} />
+          <PrisonC fadingTime={FADINGTIME} setCurrentChapter={setCurrentChapter} />
+          <LiberationFromPrisonBackground
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <EscapeFromPrisonBoth
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
+          <OutlookBackground
+            soundEnabled={soundEnabled}
+            fadingTime={FADINGTIME}
+            setCurrentChapter={setCurrentChapter}
+          />
         </div>
         <GeneralInfo setCurrentChapter={setCurrentChapter} />
         <ScrollToTopButton />

@@ -8,9 +8,13 @@ import { Parallax } from 'react-scroll-parallax'
 import Torture1Image from '@/assets/img/PrisonC_Torture1_c_Vann_Nath_khmerrougeincambodia.jpg'
 import Torture2Image from '@/assets/img/PrisonC_Torture2_c_Vann_Nath_khmerrougeincambodia.jpg'
 import Torture3Image from '@/assets/img/PrisonC_Torture3_c_Vann_Nath_khmerrougeincambodia.jpg'
+import useSound from 'use-sound'
+import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
+  soundEnabled: boolean
+  fadingTime: number
 }
 
 const PrisonC = (props: Props) => {
@@ -27,9 +31,31 @@ const PrisonC = (props: Props) => {
     bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [bottomOnScreen])
 
+  // ---------------------- SOUND IMPLEMENTATION ---------------------- //
+  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+    interrupt: true,
+    loop: true,
+  })
+
+  useEffect(() => {
+    if (topOnScreen && props.soundEnabled) {
+      props.setCurrentChapter(CHAPTER_ID)
+      play()
+      sound.fade(0, 0.5, props.fadingTime)
+    } else {
+      if (sound && (!topOnScreen || !props.soundEnabled)) {
+        sound.once('fade', () => {
+          stop()
+        })
+        sound.fade(0.5, 0, props.fadingTime)
+      }
+    }
+  }, [topOnScreen, props.soundEnabled])
+  // ---------------------- SOUND IMPLEMENTATION ---------------------- //
+
   return (
-    <div id={CHAPTER_ID}>
-      <div ref={topRef} className={'header-outer'}>
+    <div ref={topRef} id={CHAPTER_ID}>
+      <div className={'header-outer'}>
         <div className='header-inner'>
           <h2 className={classNames(classes.heading, 'chapter-heading')}>
             {CHAPTERS.get(CHAPTER_ID)?.title}

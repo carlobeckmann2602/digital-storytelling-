@@ -2,15 +2,14 @@ import React, { useEffect } from 'react'
 import classNames from 'classnames'
 import { Chapter, CHAPTERS } from '../../../helpers/constants'
 import useOnScreen from '../../../helpers/useOnScreenHook'
-// Documentation & Source: https://github.com/joshwcomeau/use-sound
 import useSound from 'use-sound'
-import sampleSound from '@/assets/sounds/sample_sound.mp3'
 import classes from './ArrestC.module.scss'
 import * as language from './ArrestC_lang'
 import { Parallax } from 'react-scroll-parallax'
 import ArrestImage from '@/assets/img/ArrestC_Painting_Arresting_c_Vann_Nath_khmerrougeincambodia.png'
 import FotographImage from '@/assets/img/ArrestC_Painting_Fotograph_c_Vann_Nath_khmerrougeincambodia.png'
 import Fotograph2Image from '@/assets/img/ArrestC_Painting_Fotograph2_c_Vann_Nath_khmerrougeincambodia.jpg'
+import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -32,29 +31,27 @@ const ArrestC = (props: Props) => {
     bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [bottomOnScreen])
 
-  const [play, { sound, stop }] = useSound(sampleSound, {
+  // ---------------------- SOUND IMPLEMENTATION ---------------------- //
+  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
     interrupt: true,
     loop: true,
   })
 
-  const timeout = () =>
-    setTimeout(() => {
-      stop()
-    }, props.fadingTime)
-
   useEffect(() => {
     if (topOnScreen && props.soundEnabled) {
-      clearTimeout(timeout())
       props.setCurrentChapter(CHAPTER_ID)
       play()
       sound.fade(0, 0.5, props.fadingTime)
     } else {
-      if (sound) {
+      if (sound && (!topOnScreen || !props.soundEnabled)) {
+        sound.once('fade', () => {
+          stop()
+        })
         sound.fade(0.5, 0, props.fadingTime)
-        timeout()
       }
     }
   }, [topOnScreen, props.soundEnabled])
+  // ---------------------- SOUND IMPLEMENTATION ---------------------- //
 
   return (
     <div ref={topRef} id={CHAPTER_ID}>

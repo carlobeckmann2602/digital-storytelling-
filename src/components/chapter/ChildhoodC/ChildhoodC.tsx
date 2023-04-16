@@ -9,9 +9,13 @@ import PreyVeng from '@/assets/img/ChildhoodC_Rice_field_Prey_Veng.jpg'
 import Wedding from '@/assets/img/ChildhoodC_Wedding.png'
 import ChildrenInRicefield from '@/assets/img/ChildhoodC_ChildrenInRicefield.png'
 import ManRepairingMotorbike from '@/assets/img/ChildhoodC_ManRepairingMotorbike.png'
+import useSound from 'use-sound'
+import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
+  soundEnabled: boolean
+  fadingTime: number
 }
 
 const ChildhoodC = (props: Props) => {
@@ -28,9 +32,31 @@ const ChildhoodC = (props: Props) => {
     bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [bottomOnScreen])
 
+  // ---------------------- SOUND IMPLEMENTATION ---------------------- //
+  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+    interrupt: true,
+    loop: true,
+  })
+
+  useEffect(() => {
+    if (topOnScreen && props.soundEnabled) {
+      props.setCurrentChapter(CHAPTER_ID)
+      play()
+      sound.fade(0, 0.5, props.fadingTime)
+    } else {
+      if (sound && (!topOnScreen || !props.soundEnabled)) {
+        sound.once('fade', () => {
+          stop()
+        })
+        sound.fade(0.5, 0, props.fadingTime)
+      }
+    }
+  }, [topOnScreen, props.soundEnabled])
+  // ---------------------- SOUND IMPLEMENTATION ---------------------- //
+
   return (
-    <div id={CHAPTER_ID}>
-      <div ref={topRef} className={'header-outer'}>
+    <div ref={topRef} id={CHAPTER_ID}>
+      <div className={'header-outer'}>
         <div className='header-inner'>
           <h2 className={classNames(classes.heading, 'chapter-heading')}>
             {CHAPTERS.get(CHAPTER_ID)?.title}

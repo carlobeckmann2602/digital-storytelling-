@@ -5,13 +5,16 @@ import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './ChildhoodB.module.scss'
 import * as language from './ChildhoodB_lang'
 import { Parallax } from 'react-scroll-parallax'
-import PlaceholderImage from '@/assets/img/Placeholder.png'
 import BoyWithPagoda from '@/assets/img/ChildhoodB_BoyWithPagoda.png'
 import YoungManDrawing from '@/assets/img/ChildhoodB_YoungManDrawing.png'
 import SouthVietnameseTroopsInCambodia from '@/assets/img/ChildhoodB_SouthVietnameseTroopsInCambodia.jpg'
+import useSound from 'use-sound'
+import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
+  soundEnabled: boolean
+  fadingTime: number
 }
 
 const ChildhoodB = (props: Props) => {
@@ -28,9 +31,31 @@ const ChildhoodB = (props: Props) => {
     bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [bottomOnScreen])
 
+  // ---------------------- SOUND IMPLEMENTATION ---------------------- //
+  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+    interrupt: true,
+    loop: true,
+  })
+
+  useEffect(() => {
+    if (topOnScreen && props.soundEnabled) {
+      props.setCurrentChapter(CHAPTER_ID)
+      play()
+      sound.fade(0, 0.5, props.fadingTime)
+    } else {
+      if (sound && (!topOnScreen || !props.soundEnabled)) {
+        sound.once('fade', () => {
+          stop()
+        })
+        sound.fade(0.5, 0, props.fadingTime)
+      }
+    }
+  }, [topOnScreen, props.soundEnabled])
+  // ---------------------- SOUND IMPLEMENTATION ---------------------- //
+
   return (
-    <div id={CHAPTER_ID}>
-      <div ref={topRef} className={'header-outer'}>
+    <div ref={topRef} id={CHAPTER_ID}>
+      <div className={'header-outer'}>
         <div className='header-inner'>
           <h2 className={classNames(classes.heading, 'chapter-heading')}>
             {CHAPTERS.get(CHAPTER_ID)?.title}

@@ -191,4 +191,4 @@ export type Chapter =
   | 'OUTLOOK_BACKGROUND'
   | 'GENERAL_INFO'
 
-export const FADINGTIME = 2000
+export const FADINGTIME = 1000
