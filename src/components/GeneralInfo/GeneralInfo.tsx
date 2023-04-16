@@ -39,9 +39,17 @@ const GeneralInfo = (props: Props) => {
           </h2>
         </div>
       </div>
-      <div className='chapter-body-wrapper'></div>
-      <p> {language.allgemeineInfos}</p>
-      <p>{language.warning}</p>
+      <div className='chapter-body-wrapper'>
+        <div className={classNames(classes.sectionColumn2)}>
+          <p className={classNames(classes.headerText)}>{language.header1}</p>
+          <p className={classNames(classes.text)}> {language.allgemeineInfos}</p>
+        </div>
+        <div className={classNames(classes.sectionColumn1)}>
+          <p className={classNames(classes.headerText)}>{language.header2}</p>
+          <p className={classNames(classes.text)}>{language.warning}</p>
+        </div>
+      </div>
+
       <div ref={bottomRef}></div>
     </div>
   )

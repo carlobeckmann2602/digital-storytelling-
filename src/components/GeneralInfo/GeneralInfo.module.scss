@@ -4,17 +4,71 @@
   color: $context-timeline-color;
 }
 
-.header {
-  height: 100vh;
+.section {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  top: calc(112px - 100vh);
-  z-index: 99;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10%;
+
+  &.leftAlign {
+    justify-content: flex-start;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  &.rightAlign {
+    justify-content: flex-end;
+
+    p {
+      width: 40%;
+      text-align: justify;
+    }
+  }
+
+  .imgS {
+    width: 300px;
+  }
+
+  .imgM {
+    width: 500px;
+  }
 }
 
-.dark {
-  background-color: #000322;
-  color: $bg-color;
+.sectionColumn2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+
+  .headerText {
+    justify-self: center;
+    font-family: 'InriaSerif-Bold';
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .text {
+    text-align: justify;
+  }
+}
+.sectionColumn1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-left: 50%;
+
+  .headerText {
+    justify-self: center;
+    font-family: 'InriaSerif-Bold';
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .text {
+    text-align: justify;
+  }
 }
