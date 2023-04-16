@@ -45,7 +45,7 @@
   position: sticky;
 
   // hack to make transition between full screen heading and sticky header possible
-  top: calc(80px + 32px - 100vh);
+  top: calc(70px + 32px - 100vh);
   // hack to make this possible with <Parallax> too
   z-index: 99;
   // hack to prevent underlying elements to shine through
@@ -54,8 +54,7 @@
   background-color: $bg-color;
   background: linear-gradient(
     to bottom,
-    $bg-color 93%,
-    $bg-color-trans50 95%,
+    $bg-color 98%,
     $bg-color-trans100 100%
   );
 }
