@@ -23,4 +23,4 @@ export const T6_Verschwinden =
   'Auch wenn ihm ein paar Gesichter mit der Zeit immer vertrauter werden, sind die Bekanntschaften nie von langer Dauer. An einem Tag teilt er mit jemandem noch sein Essen, am nächsten Tag erscheint dieser nicht mehr zur Arbeit. Was mit ihnen passiert ist, weiß niemand. Anstelle der verschwundenen Insassen tauchen täglich neue Gesichter auf, die Bou Meng zuvor noch nie gesehen hat.'
 
 export const T7_Angst =
-  'So vergehen Tage, Wochen, Monate. Unter den unmenschlichen Bedingungen schläft er jeden Abend mit der Angst ein, am nächsten Morgen selbst eine der verschwundenen Personen zu sein. Gleichzeitig fragt er sich immer wieder, was er falsch gemacht hatte, um so ins Visir der roten Khmer geraten...'
+  'So vergehen Tage, Wochen, Monate. Unter den unmenschlichen Bedingungen schläft er jeden Abend mit der Angst ein, am nächsten Morgen selbst eine der verschwundenen Personen zu sein. Gleichzeitig fragt er sich immer wieder, was er falsch gemacht hatte, um so ins Visir der roten Khmer zu geraten...'
