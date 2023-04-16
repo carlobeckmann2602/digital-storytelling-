@@ -44,7 +44,7 @@ const PrisonLifeBackground = (props: Props) => {
         <div className={classes.section}>
           <div className={classNames(classes.sectionColumn2)}>
             <p className={classNames(classes.headerText)}>{language.H1_PrisonLife}</p>
-            <p className={classNames(classes.text)}> {language.T1_PrisonLife}</p>
+            <p className={classNames(classes.textCenter)}> {language.T1_PrisonLife}</p>
           </div>
           <Parallax speed={5}>
             <img
@@ -72,7 +72,7 @@ const PrisonLifeBackground = (props: Props) => {
         <div className={classes.section}>
           <div className={classNames(classes.sectionColumn2)}>
             <p className={classNames(classes.headerText)}>{language.H3_PrisonLife}</p>
-            <p className={classNames(classes.textCenter)}>{language.T3_PrisonLife}</p>
+            <p className={classNames(classes.text)}>{language.T3_PrisonLife}</p>
           </div>
         </div>
         <div className={classNames(classes.section)}>
@@ -148,7 +148,7 @@ const PrisonLifeBackground = (props: Props) => {
           </p>
         </div>
         <div className={classes.section}>
-          <p className={classNames(classes.textCenter)}>{language.T4_PrisonLife}</p>
+          <p className={classNames(classes.text)}>{language.T4_PrisonLife}</p>
         </div>
       </div>
       <div ref={bottomRef}></div>
