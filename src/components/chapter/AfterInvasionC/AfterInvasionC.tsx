@@ -8,7 +8,6 @@ import { Parallax } from 'react-scroll-parallax'
 import BikeImage from '@/assets/img/AfterInvasionC_Bike_c_unknown.jpg'
 import MarchImage from '@/assets/img/AfterInvasionC_March_c_Roland_Neveu_LightRocket_Getty_Images.png'
 import FactoryImage from '@/assets/img/AfterInvasionC_Factory_c_Documentation_Center_of_Cambodia.png'
-import Placeholder from '@/assets/img/Placeholder.png'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -42,24 +41,21 @@ const AfterInvasionC = (props: Props) => {
           <Parallax speed={5}>
             <img
               src={MarchImage}
-              className={classNames(classes.imgS)}
+              className={classNames(classes.imgM)}
               alt='Testbild'
               title='Tausende von Menschen strömen auf dem Monivong-Boulevard ins Zentrum von Phnom Penh, Quelle: https://api.time.com/wp-content/uploads/2019/01/gettyimages-158676320.jpg'
             />
           </Parallax>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Reise}</p>
-        </div>
-        {/* TODO: Add foodstep illustration?? */}
-        <div className={classNames(classes.section)}>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Verlust}</p>
-          <Parallax speed={5}>
-            <img src={Placeholder} style={{ width: '400px' }} alt='Testbild' />
-          </Parallax>
+          <div className={classNames(classes.sectionColumn)}>
+            <p>{language.T1_Reise}</p>
+            <p>{language.T2_Verlust}</p>
+          </div>
         </div>
         <div className={classNames(classes.section)}>
           <p className={classNames(classes.highlight)}>{language.T3_Durchsage}</p>
         </div>
         <div className={classNames(classes.section)}>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Arbeit}</p>
           <Parallax speed={5}>
             <img
               src={BikeImage}
@@ -68,10 +64,8 @@ const AfterInvasionC = (props: Props) => {
               title='Eine Straße in Phnom Penh, Quelle: https://www.pinterest.de/pin/545217098632521379/'
             />
           </Parallax>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Arbeit}</p>
         </div>
         <div className={classNames(classes.section)}>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Arbeit2}</p>
           <Parallax speed={5}>
             <img
               src={FactoryImage}
@@ -80,6 +74,7 @@ const AfterInvasionC = (props: Props) => {
               title='Kader der Roten Khmer bei der Arbeit in einer Textilfabrik, Quelle: https://www.researchgate.net/figure/Khmer-Rouge-cadre-working-in-a-textile-factory-source-Documentation-Center-of-Cambodia_fig5_275319887'
             />
           </Parallax>
+          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Arbeit2}</p>
         </div>
       </div>
       <div ref={bottomRef}></div>
