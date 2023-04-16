@@ -56,32 +56,31 @@ const Template = (props: Props) => {
         </div>
         <div className={classes.section}>
           <div className={classes.chum}>
-            <p>Chum Mey</p>
+            <h2>Chum Mey</h2>
             <p>Ein Mechaniker und Arbeiter für das Verkehrsministerium.</p>
+            <div>
+              <img
+                src={Chum}
+                className={classNames(classes.bild, classes.chumBild)}
+                title='Chum Mey, Quelle: https://en.wikipedia.org/wiki/Chum_Mey#/media/File:Chum_Mey_-_Book_Signing.jpg'
+                alt='Testbild'
+              />
+            </div>
           </div>
           <div className={classes.bou}>
-            <p>Bou Meng</p>
+            <h2>Bou Meng</h2>
             <p>Ein Maler und Anhänger der Revolution.</p>
+            <div>
+              <img
+                src={Bou}
+                className={classNames(classes.bild, classes.bouBild)}
+                title='Bou Meng, Quelle: https://www.bbc.com/news/magazine-33096971'
+                alt='Testbild'
+              />
+            </div>
           </div>
         </div>
-        <div className={classes.section}>
-          <div>
-            <img
-              src={Chum}
-              className={classes.bild}
-              title='Chum Mey, Quelle: https://en.wikipedia.org/wiki/Chum_Mey#/media/File:Chum_Mey_-_Book_Signing.jpg'
-              alt='Testbild'
-            />
-          </div>
-          <div>
-            <img
-              src={Bou}
-              className={classes.bild}
-              title='Bou Meng, Quelle: https://www.bbc.com/news/magazine-33096971'
-              alt='Testbild'
-            />
-          </div>
-        </div>
+        <div className={classes.section}></div>
       </div>
       <div ref={bottomRef}></div>
     </div>
