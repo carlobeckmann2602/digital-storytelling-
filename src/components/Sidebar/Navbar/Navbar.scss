@@ -57,6 +57,7 @@
   top: 0;
   right: -100%;
   transition: ease-in-out 850ms;
+  overflow-y: scroll;
 
   a {
     text-decoration: none;
@@ -129,6 +130,36 @@
 
       a {
         color: $context-timeline-color;
+      }
+    }
+  }
+
+  .legend {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    font-size: 14px;
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .box {
+        width: 10px;
+        height: 10px;
+      }
+
+      .chum-color {
+        background-color: $c-timeline-color;
+      }
+
+      .bou-color {
+        background-color: $b-timeline-color;
+      }
+
+      .other-color {
+        background-color: $context-timeline-color;
       }
     }
   }

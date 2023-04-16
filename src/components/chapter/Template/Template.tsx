@@ -80,7 +80,18 @@ const Template = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className={classes.section}></div>
+        <div className={classNames(classes.legend)}>
+          <div className={classNames(classes.legendHeading)}>Farblegende</div>
+          <div className={classNames(classes.legendItem)}>
+            <div className={classNames(classes.box, classes.chumColor)}></div> Chum Mey
+          </div>
+          <div className={classNames(classes.legendItem)}>
+            <div className={classNames(classes.box, classes.bouColor)}></div> Bou Meng
+          </div>
+          <div className={classNames(classes.legendItem)}>
+            <div className={classNames(classes.box, classes.otherColor)}></div> Einordung/Beide
+          </div>
+        </div>
       </div>
       <div ref={bottomRef}></div>
     </div>

@@ -68,7 +68,17 @@ function Navbar(props: NavbarProps) {
               })}
             </ul>
           </li>
-          <li></li>
+          <li className='legend'>
+            <div className='legend-item'>
+              <div className='box chum-color'></div> Chum Mey
+            </div>
+            <div className='legend-item'>
+              <div className='box bou-color'></div> Bou Meng
+            </div>
+            <div className='legend-item'>
+              <div className='box other-color'></div> Einordung/Beide
+            </div>
+          </li>
         </ul>
       </nav>
     </>

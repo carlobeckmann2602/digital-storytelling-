@@ -38,6 +38,7 @@
   // hack to prevent underlying elements to shine through
   width: calc(100vw - 200px - 32px);
   padding-right: 200px;
+  max-width: 1920px;
 
   display: flex;
   align-items: center;
@@ -52,11 +53,7 @@
   margin-left: -2px;
 
   background-color: $bg-color;
-  background: linear-gradient(
-    to bottom,
-    $bg-color 98%,
-    $bg-color-trans100 100%
-  );
+  background: linear-gradient(to bottom, $bg-color 98%, $bg-color-trans100 100%);
 }
 
 .chapter-heading {

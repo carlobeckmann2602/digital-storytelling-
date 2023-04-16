@@ -39,3 +39,39 @@
   margin-left: 15%;
   margin-right: 15%;
 }
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+
+  .legendHeading {
+    font-size: 1.5em;
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  .legendItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .box {
+      width: 15px;
+      height: 15px;
+    }
+
+    .chumColor {
+      background-color: $c-timeline-color;
+    }
+
+    .bouColor {
+      background-color: $b-timeline-color;
+    }
+
+    .otherColor {
+      background-color: $context-timeline-color;
+    }
+  }
+}
