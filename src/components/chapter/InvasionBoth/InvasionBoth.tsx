@@ -16,7 +16,8 @@ import CorpsesImage2 from '@/assets/img/InvasionBoth_Corpses_c_Patrick_Chauvel.p
 import CorpsesImage3 from '@/assets/img/InvasionBoth_Corpses3_c_KillingFieldsMuseum.png'
 import Quotation from '../../Quotation/Quotation'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import VictorySongSound from '@/assets/sounds/background_music_khmerrougePropagandaCheer.mp3'
+import VictorySongDisSound from '@/assets/sounds/background_music_khmerrougePropaganda_distorted.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -29,8 +30,10 @@ const InvasionBoth = (props: Props) => {
 
   const topRef = React.useRef<HTMLInputElement>(null)
   const bottomRef = React.useRef<HTMLInputElement>(null)
+  const breakRef = React.useRef<HTMLInputElement>(null)
   const topOnScreen = useOnScreen(topRef, '-350px')
   const bottomOnScreen = useOnScreen(bottomRef, '-350px')
+  const breakRefOnScreen = useOnScreen(breakRef, '-350px')
   useEffect(() => {
     topOnScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [topOnScreen])
@@ -38,8 +41,8 @@ const InvasionBoth = (props: Props) => {
     bottomOnScreen && props.setCurrentChapter(CHAPTER_ID)
   }, [bottomOnScreen])
 
-  // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  // ---------------------- SOUND IMPLEMENTATION 1 ---------------------- //
+  const [, { sound: sound1 }] = useSound(VictorySongSound, {
     interrupt: true,
     loop: true,
   })
@@ -47,18 +50,52 @@ const InvasionBoth = (props: Props) => {
   useEffect(() => {
     if (topOnScreen && props.soundEnabled) {
       props.setCurrentChapter(CHAPTER_ID)
-      play()
-      sound.fade(0, 0.5, props.fadingTime)
-    } else {
-      if (sound && (!topOnScreen || !props.soundEnabled)) {
-        sound.once('fade', () => {
-          stop()
-        })
-        sound.fade(0.5, 0, props.fadingTime)
-      }
+      sound1.play()
+      sound1.fade(0, 0.3, props.fadingTime)
     }
+    // else {
+    //   if (sound && (!topOnScreen || !props.soundEnabled)) {
+    //     sound.once('fade', () => {
+    //       stop()
+    //     })
+    //     sound.fade(0.4, 0, props.fadingTime)
+    //   }
+    // }
   }, [topOnScreen, props.soundEnabled])
-  // ---------------------- SOUND IMPLEMENTATION ---------------------- //
+
+  useEffect(() => {
+    if (sound1 && (breakRefOnScreen || !props.soundEnabled)) {
+      sound1.once('fade', () => {
+        sound1.stop()
+      })
+      sound1.fade(0.3, 0, props.fadingTime)
+    }
+  }, [breakRefOnScreen, props.soundEnabled])
+  // ---------------------- SOUND IMPLEMENTATION 1 ---------------------- //
+
+  // ---------------------- SOUND IMPLEMENTATION 2 ---------------------- //
+  const [, { sound: sound2 }] = useSound(VictorySongDisSound, {
+    interrupt: true,
+    loop: true,
+  })
+
+  useEffect(() => {
+    if (breakRefOnScreen && props.soundEnabled) {
+      props.setCurrentChapter(CHAPTER_ID)
+      sound2.play()
+      sound2.fade(0, 0.3, props.fadingTime)
+    }
+  }, [breakRefOnScreen, props.soundEnabled])
+
+  useEffect(() => {
+    if (sound2 && (bottomOnScreen || !props.soundEnabled)) {
+      sound2.once('fade', () => {
+        sound2.stop()
+      })
+      sound2.fade(0.3, 0, props.fadingTime)
+    }
+  }, [bottomOnScreen, props.soundEnabled])
+  // ---------------------- SOUND IMPLEMENTATION 2 ---------------------- //
 
   /* Formula (all elements must have the same idKey):
   (Height of own sticky-container)
@@ -153,7 +190,7 @@ const InvasionBoth = (props: Props) => {
             </div>
             {/* 5.section LEFT */}
             <div className={classNames(classes.section, 'fifthR')}>
-              <div className={classNames(classes.subsection, classes.rightAlign)}>
+              <div ref={breakRef} className={classNames(classes.subsection, classes.rightAlign)}>
                 <p>{language.C_8}</p>
               </div>
               <div className={classNames(classes.spacerL)}></div>
