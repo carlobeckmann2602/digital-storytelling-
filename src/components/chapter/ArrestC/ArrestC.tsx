@@ -9,7 +9,7 @@ import { Parallax } from 'react-scroll-parallax'
 import ArrestImage from '@/assets/img/ArrestC_Painting_Arresting_c_Vann_Nath_khmerrougeincambodia.png'
 import FotographImage from '@/assets/img/ArrestC_Painting_Fotograph_c_Vann_Nath_khmerrougeincambodia.png'
 import Fotograph2Image from '@/assets/img/ArrestC_Painting_Fotograph2_c_Vann_Nath_khmerrougeincambodia.jpg'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import TensionSound from '@/assets/sounds/background_music_tension.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -32,7 +32,7 @@ const ArrestC = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(TensionSound, {
     interrupt: true,
     loop: true,
   })

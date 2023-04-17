@@ -11,7 +11,7 @@ import ArrestImage from '@/assets/img/ArrestB_Painting_Arrest_c_Bou_Meng_2004_DC
 import BlindfoldedImage from '@/assets/img/ArrestB_Painting_Blindfolded_c_Bou_Meng_2004_DC-Cam_Archives.png'
 import PrisonImage from '@/assets/img/ArrestB_Prison_c_DC-Cam_Archives.jpg'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import TensionSound from '@/assets/sounds/background_music_tension.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -34,7 +34,7 @@ const ArrestB = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(TensionSound, {
     interrupt: true,
     loop: true,
   })

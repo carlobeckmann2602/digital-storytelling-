@@ -10,7 +10,7 @@ import SihanoukSpeech from '@/assets/img/PreInvasionB_PrinceSihanoukSpeech.jpg'
 import Bombing from '@/assets/img/PreInvasionB_Bombing.jpg'
 import Modal from '../../Modal/Modal'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import JungleSound from '@/assets/sounds/background_ambient_jungle.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -33,7 +33,7 @@ const PreInvasionB = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(JungleSound, {
     interrupt: true,
     loop: true,
   })

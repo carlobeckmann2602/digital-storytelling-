@@ -9,7 +9,7 @@ import BoyWithPagoda from '@/assets/img/ChildhoodB_BoyWithPagoda.png'
 import YoungManDrawing from '@/assets/img/ChildhoodB_YoungManDrawing.png'
 import SouthVietnameseTroopsInCambodia from '@/assets/img/ChildhoodB_SouthVietnameseTroopsInCambodia.jpg'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditionalFlute.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void

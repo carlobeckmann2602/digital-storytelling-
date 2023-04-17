@@ -9,7 +9,7 @@ import Torture1Image from '@/assets/img/PrisonC_Torture1_c_Vann_Nath_khmerrougei
 import Torture2Image from '@/assets/img/PrisonC_Torture2_c_Vann_Nath_khmerrougeincambodia.jpg'
 import Torture3Image from '@/assets/img/PrisonC_Torture3_c_Vann_Nath_khmerrougeincambodia.jpg'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import TensionSound from '@/assets/sounds/background_music_tension.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -32,7 +32,7 @@ const PrisonC = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(TensionSound, {
     interrupt: true,
     loop: true,
   })

@@ -9,7 +9,7 @@ import ArmyImage1 from '@/assets/img/LiberationFromPrisonBackground_army1_07_01_
 import ArmyImage2 from '@/assets/img/LiberationFromPrisonBackground_army2_07_01_1979.jpg'
 import VietnameseFighters from '@/assets/img/LiberationFromPrisonBackground_vietnamese-fighters_07_01_1979.jpg'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import MysteryGunfireSound from '@/assets/sounds/background_ambient_gunfiremystery.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -32,7 +32,7 @@ const LiberationFromPrisonBackground = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(MysteryGunfireSound, {
     interrupt: true,
     loop: true,
   })

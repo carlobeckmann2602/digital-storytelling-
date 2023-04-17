@@ -10,7 +10,7 @@ import EscortingPainting from '@/assets/img/PrisonB_Escorting_c_Bou_Meng_2004_DC
 import PaintPainting from '@/assets/img/PrisonB_Paint_c_Bou_Meng_2004_DC-Cam_Archives.png'
 import Paint2Painting from '@/assets/img/PrisonB_Paint2_c_Bou_Meng_2004_DC-Cam_Archives.png'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import TensionSound from '@/assets/sounds/background_music_tension.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -33,7 +33,7 @@ const PrisonB = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(TensionSound, {
     interrupt: true,
     loop: true,
   })

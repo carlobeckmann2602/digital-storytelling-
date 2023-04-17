@@ -9,7 +9,7 @@ import BikeImage from '@/assets/img/AfterInvasionC_Bike_c_unknown.jpg'
 import MarchImage from '@/assets/img/AfterInvasionC_March_c_Roland_Neveu_LightRocket_Getty_Images.png'
 import FactoryImage from '@/assets/img/AfterInvasionC_Factory_c_Documentation_Center_of_Cambodia.png'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import WorkshopSound from '@/assets/sounds/background_ambient_workshop.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -32,7 +32,7 @@ const AfterInvasionC = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(WorkshopSound, {
     interrupt: true,
     loop: true,
   })

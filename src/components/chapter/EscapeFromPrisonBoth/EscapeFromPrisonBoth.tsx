@@ -7,7 +7,7 @@ import * as language from './EscapeFromPrisonBoth_lang'
 import { Parallax } from 'react-scroll-parallax'
 import Placeholder from '@/assets/img/Placeholder.png'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import GunfireSound from '@/assets/sounds/background_ambient_distantGunfireRain.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -30,7 +30,7 @@ const EscapeFromPrisonBoth = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(GunfireSound, {
     interrupt: true,
     loop: true,
   })

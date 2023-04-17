@@ -10,7 +10,7 @@ import Wedding from '@/assets/img/ChildhoodC_Wedding.png'
 import ChildrenInRicefield from '@/assets/img/ChildhoodC_ChildrenInRicefield.png'
 import ManRepairingMotorbike from '@/assets/img/ChildhoodC_ManRepairingMotorbike.png'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import VillagemarketSound from '@/assets/sounds/background_ambient_villagemarket.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -33,7 +33,7 @@ const ChildhoodC = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(VillagemarketSound, {
     interrupt: true,
     loop: true,
   })

@@ -13,7 +13,7 @@ import Torture3Image from '@/assets/img/PrisonLifeBackground_Torture3_c_Vann_Nat
 import Torture4Image from '@/assets/img/PrisonLifeBackground_Torture4_c_Vann_Nath_khmerrougeincambodia.png'
 import Torture5Image from '@/assets/img/PrisonLifeBackground_Torture5_c_Vann_Nath_khmerrougeincambodia.png'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import AmbientSound from '@/assets/sounds/background_ambient_mystery.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -36,7 +36,7 @@ const PrisonLifeBackground = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(AmbientSound, {
     interrupt: true,
     loop: true,
   })

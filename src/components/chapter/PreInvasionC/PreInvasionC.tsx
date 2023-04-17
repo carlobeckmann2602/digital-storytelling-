@@ -8,7 +8,7 @@ import * as language from './PreInvasionC_lang'
 import PlaceholderImage from '@/assets/img/Placeholder.png'
 import KhmerRougeAttack from '@/assets/img/PreInvasionC_KhmerRougeAttack.jpg'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import WarSound from '@/assets/sounds/background_ambient_war_bomberGunfire.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -31,7 +31,7 @@ const PreInvasionC = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(WarSound, {
     interrupt: true,
     loop: true,
   })

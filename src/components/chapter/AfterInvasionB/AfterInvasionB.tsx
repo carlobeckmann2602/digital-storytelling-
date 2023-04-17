@@ -12,7 +12,7 @@ import UniformImage from '@/assets/img/AfterInvasionB_Uniform_c_Pictures_from_Hi
 import Quotation from '../../Quotation/Quotation'
 import Modal from '../../Modal/Modal'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import FieldworkSound from '@/assets/sounds/background_ambient_fieldwork.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -35,7 +35,7 @@ const AfterInvasionB = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(FieldworkSound, {
     interrupt: true,
     loop: true,
   })

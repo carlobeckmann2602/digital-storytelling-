@@ -11,7 +11,7 @@ import TempleImage from '@/assets/img/DictatorshipBackground_Temple_c_CambridgeU
 import LaborImage from '@/assets/img/DictatorshipBackground_ForcedLabor_c_ushmm.jpg'
 import Quotation from '../../Quotation/Quotation'
 import useSound from 'use-sound'
-import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
+import AmbientSound from '@/assets/sounds/background_ambient_mystery.mp3'
 
 interface Props {
   setCurrentChapter: (chapter: Chapter) => void
@@ -34,7 +34,7 @@ const DictatorshipBackground = (props: Props) => {
   }, [bottomOnScreen])
 
   // ---------------------- SOUND IMPLEMENTATION ---------------------- //
-  const [play, { sound, stop }] = useSound(BackgroundTraditionalSound, {
+  const [play, { sound, stop }] = useSound(AmbientSound, {
     interrupt: true,
     loop: true,
   })
