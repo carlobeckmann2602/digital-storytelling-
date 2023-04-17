@@ -4,6 +4,14 @@
   color: $context-timeline-color;
 }
 
+.content {
+  max-width: 1920px;
+  padding: 0 216px 0 16px;
+  margin: auto;
+  margin-bottom: 5%;
+  color: $text-color;
+}
+
 .section {
   display: flex;
   flex-direction: row;
