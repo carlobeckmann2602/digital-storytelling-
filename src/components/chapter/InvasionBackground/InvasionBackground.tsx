@@ -7,6 +7,7 @@ import * as language from './InvasionBackground_lang'
 import { Parallax } from 'react-scroll-parallax'
 import Students from '@/assets/img/InvasionBack_Khmer-Rouge-students-working.jpg'
 import Marines from '@/assets/img/InvasionBack_Marines_botschaft.jpg'
+import Soldiers from '@/assets/img/InvasionBack_Soldiers.jpg'
 import PlaceholderImage from '@/assets/img/Placeholder.png'
 import useSound from 'use-sound'
 import BackgroundTraditionalSound from '@/assets/sounds/background_music_traditional.mp3'
@@ -97,7 +98,12 @@ const InvasionBackground = (props: Props) => {
             <p className={classNames(classes.text)}> {language.T3_April}</p>
           </div>
           <Parallax speed={5}>
-            <img src={PlaceholderImage} alt='Austauschbild' className={classes.imgS} />
+            <img
+              src={Soldiers}
+              alt='Testbild'
+              className={classes.imgS}
+              title='Jubelende Soldaten am 12. April 1975 in Phnom Penh, Quelle: https://web.archive.org/web/20170214075500/https://rnbk.info/2011/11/12/the-fall-of-phnom-penh-1975/'
+            />
           </Parallax>
         </div>
       </div>

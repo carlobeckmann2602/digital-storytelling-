@@ -6,6 +6,7 @@ import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './PreInvasionC.module.scss'
 import * as language from './PreInvasionC_lang'
 import PlaceholderImage from '@/assets/img/Placeholder.png'
+import ChumEmptyWarStreet from '@/assets/img/PreInvasionC_ChumEmptyWarStreet.png'
 import KhmerRougeAttack from '@/assets/img/PreInvasionC_KhmerRougeAttack.jpg'
 import useSound from 'use-sound'
 import WarSound from '@/assets/sounds/background_ambient_war_bomberGunfire.mp3'
@@ -78,7 +79,12 @@ const PreInvasionC = (props: Props) => {
         </div>
         <div className={classes.section}>
           <Parallax speed={5}>
-            <img src={PlaceholderImage} alt='Austauschbild' className={classes.img} />
+            <img
+              src={ChumEmptyWarStreet}
+              alt='Testbild'
+              title='KI-generiertes Bild (labs.openai.com)'
+              className={classes.img}
+            />
           </Parallax>
           <p style={{ textAlign: 'justify' }}>{language.T3_Werkstatt}</p>
         </div>

@@ -5,7 +5,11 @@ import useOnScreen from '../../../helpers/useOnScreenHook'
 import classes from './EscapeFromPrisonBoth.module.scss'
 import * as language from './EscapeFromPrisonBoth_lang'
 import { Parallax } from 'react-scroll-parallax'
-import Placeholder from '@/assets/img/Placeholder.png'
+import BouTiedUp from '@/assets/img/EscapeFromPrisonBoth_BouTiedUp.png'
+import BouEatingBerries from '@/assets/img/EscapeFromPrisonBoth_BouEatingBerries.png'
+import BouDrawingLenin from '@/assets/img/EscapeFromPrisonBoth_BouDrawingLenin.png'
+import ChumLeavingPrison from '@/assets/img/EscapeFromPrisonBoth_ChumLeavingPrison.png'
+import ChumHiking from '@/assets/img/EscapeFromPrisonBoth_ChumHiking.png'
 import useSound from 'use-sound'
 import GunfireSound from '@/assets/sounds/background_ambient_distantGunfireRain.mp3'
 
@@ -87,7 +91,12 @@ const EscapeFromPrisonBoth = (props: Props) => {
                 </div>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
                   <Parallax speed={3}>
-                    <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
+                    <img
+                      src={ChumLeavingPrison}
+                      alt='Testbild'
+                      className={classNames(classes.imgS)}
+                      title='KI-generiertes Bild (labs.openai.com)'
+                    />
                   </Parallax>
                 </div>
                 <div className={classNames(classes.subsection, classes.leftAlign)}>
@@ -98,7 +107,12 @@ const EscapeFromPrisonBoth = (props: Props) => {
                 </div>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
                   <Parallax speed={3}>
-                    <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
+                    <img
+                      src={ChumHiking}
+                      alt='Testbild'
+                      className={classNames(classes.imgS)}
+                      title='KI-generiertes Bild (labs.openai.com)'
+                    />
                   </Parallax>
                 </div>
               </div>
@@ -145,7 +159,12 @@ const EscapeFromPrisonBoth = (props: Props) => {
                 </div>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
                   <Parallax speed={3}>
-                    <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
+                    <img
+                      src={BouTiedUp}
+                      alt='Testbild'
+                      className={classNames(classes.imgS)}
+                      title='KI-generiertes Bild (labs.openai.com)'
+                    />
                   </Parallax>
                 </div>
               </div>
@@ -168,12 +187,17 @@ const EscapeFromPrisonBoth = (props: Props) => {
                   <p>{language.B_3}</p>
                 </div>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  <p>{language.B_4}</p>
+                  <Parallax speed={3}>
+                    <img
+                      src={BouEatingBerries}
+                      alt='Testbild'
+                      className={classNames(classes.imgS)}
+                      title='KI-generiertes Bild (labs.openai.com)'
+                    />
+                  </Parallax>
                 </div>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  <Parallax speed={3}>
-                    <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
-                  </Parallax>
+                  <p>{language.B_4}</p>
                 </div>
               </div>
               <div style={{ height: computeHeight('.left-second', 0) }}>
@@ -193,7 +217,12 @@ const EscapeFromPrisonBoth = (props: Props) => {
               <div className={classNames(classes.section, 'right-third')}>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
                   <Parallax speed={3}>
-                    <img src={Placeholder} alt='Testbild' className={classNames(classes.imgS)} />
+                    <img
+                      src={BouDrawingLenin}
+                      alt='Testbild'
+                      className={classNames(classes.imgS)}
+                      title='KI-generiertes Bild (labs.openai.com)'
+                    />
                   </Parallax>
                 </div>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
