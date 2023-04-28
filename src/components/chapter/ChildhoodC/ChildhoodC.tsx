@@ -88,7 +88,7 @@ const ChildhoodC = (props: Props) => {
             />
           </Parallax>
         </div>
-        <div className={classNames(classes.section)}>
+        <div className={classes.section}>
           <Parallax speed={5}>
             <img
               src={ManRepairingMotorbike}
@@ -98,16 +98,16 @@ const ChildhoodC = (props: Props) => {
               className={classes.rotateLeft}
             />
           </Parallax>
-          <div className={classNames(classes.sectionColumn)}>
+          <div className={classes.sectionColumn}>
             <p> {language.T3_Hauptstadt}</p>
             <p> {language.T4_Mechaniker}</p>
           </div>
         </div>
-        <div className={classNames(classes.section)}>
+        <div className={classes.section}>
           <div className={classes.sectionColumn}>
             <p>{language.T5_Heirat}</p>
           </div>
-          <div className={classes.imgContainer}>
+          <div className={classNames('imgContainerWithTape', 'tape1')}>
             <img
               src={Wedding}
               style={{ width: '400px' }}
