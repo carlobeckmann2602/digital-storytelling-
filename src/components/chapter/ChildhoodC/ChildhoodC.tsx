@@ -107,17 +107,15 @@ const ChildhoodC = (props: Props) => {
           <div className={classes.sectionColumn}>
             <p>{language.T5_Heirat}</p>
           </div>
-          <Parallax speed={15}>
-            <div className={classes.imgContainer}>
-              <img
-                src={Wedding}
-                style={{ width: '400px' }}
-                alt='Testbild'
-                title='KI-generiertes Bild (labs.openai.com)'
-                className={classes.tape}
-              />
-            </div>
-          </Parallax>
+          <div className={classes.imgContainer}>
+            <img
+              src={Wedding}
+              style={{ width: '400px' }}
+              alt='Testbild'
+              title='KI-generiertes Bild (labs.openai.com)'
+              className={classes.tape}
+            />
+          </div>
         </div>
       </div>
       <div ref={bottomRef}></div>

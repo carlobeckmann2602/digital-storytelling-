@@ -1,7 +1,7 @@
 @import '@/App.scss';
 
 $randomNumberRight: random(3);
-$randomNumberLeft: random(5) - 8;
+$randomNumberLeft: random(5) - 5;
 
 .heading {
   color: $c-timeline-color;
