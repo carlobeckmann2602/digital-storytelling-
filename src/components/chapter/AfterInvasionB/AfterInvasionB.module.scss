@@ -1,5 +1,16 @@
 @import '@/App.scss';
 
+$randomNumberRight: random(3);
+$randomNumberLeft: random(3) - 3;
+img {
+  &.rotateLeft {
+    transform: rotate($randomNumberLeft + deg);
+  }
+  &.rotateRight {
+    transform: rotate($randomNumberRight + deg);
+  }
+}
+
 .heading {
   color: $b-timeline-color;
 }
@@ -9,6 +20,7 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 10%;
+  margin: 2.5% 0 2.5% 0;
 
   &.leftAlign {
     justify-content: flex-start;
@@ -40,8 +52,8 @@
 .sectionColumn {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 10%;
+  justify-content: center;
+  gap: 5%;
 
   p {
     text-align: justify;

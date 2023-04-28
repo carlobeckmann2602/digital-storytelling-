@@ -8,11 +8,8 @@ export const T2_Kinder =
 export const I1_Angka =
   'Die Roten Khmer nutzten die Scheinorganisation Angka padevat (kurz Angka, deutsch: revolutionäre Organisation), um ihre Handlungen geheim zu halten und zu rechtfertigen. Den Kambodschanern wurde die Zugehörigkeit von Angka zu der KPK bzw. den Roten Khmer lange verschwiegen und stattdessen als allwissende Macht vermittelt. Hierdurch sollten die Kambodschaner dazu angehalten werden, gehorsam zu sein und keine kritischen Fragen zu stellen.'
 
-export const T3_Bio =
-  'Bou Meng muss immer wieder seine Biographie aufschreiben und darin die Namen seiner Verwandten sowie seine Rolle in der Revolution angeben. Deshalb bekommt er langsam das Gefühl, dass die Roten Khmer ihm seine Herkunftsgeschichte nicht glauben. Doch da sie ihm keine Rückmeldung geben, hält er es für das Beste, sich nicht zu viele Gedanken darüber zu machen.'
-
 export const T4_Plantage =
-  'Eines Tages werden seine Frau und er für die Arbeit auf eine Reisplantage beordert. Dort bekommen sie kaum Essen und müssen von Sonnenauf- bis -untergang schwere körperliche Arbeit verrichten. Es ist heiß und die Arbeit auf dem Feld ist sehr anstregend.'
+  'Bou Meng muss immer wieder seine Biographie aufschreiben und darin die Namen seiner Verwandten sowie seine Rolle in der Revolution angeben. Deshalb bekommt er langsam das Gefühl, dass die Roten Khmer ihm seine Herkunftsgeschichte nicht glauben. Doch da sie ihm keine Rückmeldung geben, hält er es für das Beste, sich nicht zu viele Gedanken darüber zu machen. Eines Tages werden seine Frau und er für die Arbeit auf eine Reisplantage beordert. Dort bekommen sie kaum Essen und müssen von Sonnenauf- bis -untergang schwere körperliche Arbeit verrichten. Es ist heiß und die Arbeit auf dem Feld ist sehr anstregend.'
 
 export const Q1_Plantage =
   'My hands and shoulder became paralyzed. My life was miserable and worse than animals. I never heard of anyone escaping from that work site.'

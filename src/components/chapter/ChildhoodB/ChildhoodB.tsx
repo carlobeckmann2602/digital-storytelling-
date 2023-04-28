@@ -65,24 +65,24 @@ const ChildhoodB = (props: Props) => {
       <div className='chapter-body-wrapper'>
         <div className={classes.section}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Geburt}</p>
-          <Parallax speed={10}>
+          <Parallax speed={5}>
             <img
               src={BoyWithPagoda}
               alt='Testbild'
-              className={classes.img}
+              className={classNames(classes.img, classes.rotateRight)}
               title='KI-generiertes Bild (labs.openai.com)'
             />
           </Parallax>
         </div>
         <div className={classNames(classes.section, classes.rightAlign)}>
-          <Parallax speed={10}>
+          <div className={classNames('imgContainerWithTape', 'tape4')}>
             <img
               src={YoungManDrawing}
               alt='Testbild'
-              className={classes.img}
+              className={classNames(classes.img, classes.rotateLeft)}
               title='KI-generiertes Bild (labs.openai.com)'
             />
-          </Parallax>
+          </div>
           <div className={classes.sectionColumn}>
             <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Pagode}</p>
             <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T3_Tischler}</p>
@@ -90,11 +90,15 @@ const ChildhoodB = (props: Props) => {
         </div>
         <div className={classes.section}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Heimat}</p>
-          <Parallax speed={10}>
+          <Parallax
+            speed={15}
+            easing='easeOutExpo'
+            rootMargin={{ top: 0, right: 100, bottom: 4000, left: 100 }}
+          >
             <img
               src={SouthVietnameseTroopsInCambodia}
               alt='Testbild'
-              className={classes.img}
+              className={classNames(classes.img, classes.rotateRight)}
               title='Südvietnamesische Truppen werden nach einer Militäroperation in der Nähe von Prey Veng (Kambodscha) von einem Hubschrauber geborgen, Quelle: https://www.historynet.com/nixons-cambodian-incursion/'
             />
           </Parallax>

@@ -1,5 +1,16 @@
 @import '@/App.scss';
 
+$randomNumberRight: random(3);
+$randomNumberLeft: random(3) - 3;
+img {
+  &.rotateLeft {
+    transform: rotate($randomNumberLeft + deg);
+  }
+  &.rotateRight {
+    transform: rotate($randomNumberRight + deg);
+  }
+}
+
 .heading {
   color: $b-timeline-color;
 }
@@ -9,6 +20,24 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 10%;
+  margin: 2.5% 0 2.5% 0;
+
+  &.lessGap {
+    gap: 5%;
+
+    .imgM {
+      width: 33.3%;
+      height: auto;
+    }
+
+    .sectionColumn {
+      width: 33.3%;
+    }
+  }
+
+  p {
+    text-align: justify;
+  }
 
   &.leftAlign {
     justify-content: flex-start;
@@ -28,6 +57,11 @@
     }
   }
 
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+
   .imgS {
     width: 300px;
   }
@@ -35,13 +69,17 @@
   .imgM {
     width: 400px;
   }
+
+  .imgL {
+    width: 600px;
+  }
 }
 
 .sectionColumn {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 10%;
+  justify-content: center;
+  gap: 5%;
   max-width: 50%;
 
   p {

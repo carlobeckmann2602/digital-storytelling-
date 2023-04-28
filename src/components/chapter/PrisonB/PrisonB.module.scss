@@ -1,5 +1,16 @@
 @import '@/App.scss';
 
+$randomNumberRight: random(3);
+$randomNumberLeft: random(3) - 3;
+img {
+  &.rotateLeft {
+    transform: rotate($randomNumberLeft + deg);
+  }
+  &.rotateRight {
+    transform: rotate($randomNumberRight + deg);
+  }
+}
+
 .heading {
   color: $b-timeline-color;
 }
@@ -57,7 +68,7 @@
 .sectionColumn2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 
   .headerText {
     justify-self: center;

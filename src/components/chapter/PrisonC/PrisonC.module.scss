@@ -1,13 +1,30 @@
 @import '@/App.scss';
 
+$randomNumberRight: random(3);
+$randomNumberLeft: random(3) - 3;
+img {
+  &.rotateLeft {
+    transform: rotate($randomNumberLeft + deg);
+  }
+  &.rotateRight {
+    transform: rotate($randomNumberRight + deg);
+  }
+}
+
 .heading {
   color: $c-timeline-color;
+}
+
+.text {
+  max-width: 70%;
+  text-align: justify;
 }
 
 .section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 10%;
 
   &.leftAlign {
@@ -34,6 +51,10 @@
 
   .imgM {
     width: 500px;
+  }
+
+  .text {
+    padding: 0 5% 0 5%;
   }
 }
 

@@ -111,6 +111,7 @@ img {
   height: fit-content;
 
   &::before {
+    z-index: 2;
     content: '';
     background-size: cover;
     position: absolute !important;

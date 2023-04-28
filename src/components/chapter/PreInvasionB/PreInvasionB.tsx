@@ -75,21 +75,21 @@ const PreInvasionB = (props: Props) => {
               </Modal>
             </p>
           </div>
-          <Parallax speed={10}>
+          <div className={classNames('imgContainerWithTape', 'tape2')}>
             <img
               src={SihanoukSpeech}
               alt='Testbild'
-              className={classes.img}
+              className={classNames(classes.img, classes.rotateLeft)}
               title='Prinz Sihanouk hält eine Rede, Quelle: https://lepetitjournal.com/sites/default/files/prince-norodom-sihanouk-giving-a-speech-at-the-opening-of-a-botteling-plant_i-G-37-3790-LIEIF00Z.jpg'
             />
-          </Parallax>
+          </div>
         </div>
         <div className={classNames(classes.section, classes.rightAlign)}>
-          <Parallax speed={10}>
+          <Parallax speed={5}>
             <img
               src={ManDrawingLenin}
               alt='Testbild'
-              className={classes.img}
+              className={classNames(classes.img, classes.rotateRight)}
               title='KI-generiertes Bild (labs.openai.com)'
             />
           </Parallax>
@@ -100,11 +100,11 @@ const PreInvasionB = (props: Props) => {
         </div>
         <div className={classes.section}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Druckerei}</p>
-          <Parallax speed={10}>
+          <Parallax speed={10} scale={[1, 1.2]}>
             <img
               src={Bombing}
               alt='Testbild'
-              className={classes.img}
+              className={classNames(classes.img, classes.rotateLeft)}
               title='Bombenangriff nahe Phnom Penh (1973) Quelle: https://revcom.us/en/a/526/american-crime-47-the-bombing-of-cambodia-1969-1973-en.html'
             />
           </Parallax>
