@@ -66,64 +66,60 @@ const ArrestB = (props: Props) => {
       </div>
       <div className='chapter-body-wrapper'>
         <div className={classNames(classes.section)}>
-          <Parallax speed={5}>
-            <img
-              src={SoldierImage}
-              className={classNames(classes.imgS)}
-              alt='Testbild'
-              title='Ein Kämpfer im Dorf seiner Frau, Quelle: http://d.dccam.org/Archives/Photographs/Stilled_Lives/The-Military-Security.htm#'
-            />
+          <Parallax speed={5} scale={[1, 1.1]} style={{ marginLeft: '5%' }}>
+            <div className={classNames('imgContainerWithTape', 'tape4')}>
+              <img
+                src={SoldierImage}
+                className={classNames(classes.imgS, classes.rotateLeft)}
+                alt='Testbild'
+                title='Ein Kämpfer im Dorf seiner Frau, Quelle: http://d.dccam.org/Archives/Photographs/Stilled_Lives/The-Military-Security.htm#'
+              />
+            </div>
           </Parallax>
           <div className={classNames(classes.sectionColumn)}>
-            <p> {language.T1_Nachricht}</p>
-            <p> {language.T2_Aufbruch}</p>
+            <p>{language.T1_Nachricht}</p>
+            <p>{language.T2_Aufbruch}</p>
           </div>
         </div>
         <div className={classNames(classes.section)}>
-          <p style={{ alignSelf: 'flex-Start', textAlign: 'justify' }}>{language.T3_Verdacht}</p>
-          <Parallax style={{ paddingTop: '15%' }} speed={5}>
+          <p>{language.T3_Verdacht}</p>
+          <Parallax speed={25}>
             <img
               src={PrisonImage}
-              style={{ width: '400px' }}
+              className={classNames(classes.imgM, classes.rotateRight)}
               alt='Testbild'
               title='S-21 Gefängnis früher, Quelle: https://www.figma.com/exit?url=http%3A%2F%2Fd.dccam.org%2FArchives%2FPhotographs%2FPhotos_from_Khmer_Rouge_Secret_Prison_S-21%2Findex.html'
             />
           </Parallax>
         </div>
-        <div className={classNames(classes.section)}>
-          <Parallax speed={5}>
-            <img
-              src={BlindfoldedImage}
-              className={classNames(classes.imgM)}
-              alt='Testbild'
-              title='Bou Meng und seine Frau im S-21-Gefängnis mit verbundenen Augen; gemalt von Bou Meng, Quelle: http://d.dccam.org/Archives/Photographs/Photos/Bou_Meng/Thumbnails/picture01.png'
-            />
-          </Parallax>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Verhaftung}</p>
+        <div className={classNames(classes.section, classes.lessGap)}>
+          <img
+            src={BlindfoldedImage}
+            className={classNames(classes.imgM)}
+            alt='Testbild'
+            title='Bou Meng und seine Frau im S-21-Gefängnis mit verbundenen Augen; gemalt von Bou Meng, Quelle: http://d.dccam.org/Archives/Photographs/Photos/Bou_Meng/Thumbnails/picture01.png'
+          />
+          <img
+            src={ArrestImage}
+            className={classNames(classes.imgM)}
+            alt='Testbild'
+            title='Bou Meng und seine Frau werden nach Ankunft im S-21 Gefängnis fotografiert; gemalt von Bou Meng, Quelle: http://d.dccam.org/Archives/Photographs/Photos/Bou_Meng/Thumbnails/picture02.png'
+          />
+          <div className={classNames(classes.sectionColumn)}>
+            <p>{language.T4_Verhaftung}</p>
+            <p>{language.T5_Ankunft}</p>
+          </div>
         </div>
-        <div className={classNames(classes.section)}>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Ankunft}</p>
-          <Parallax speed={5}>
-            <img
-              src={ArrestImage}
-              className={classNames(classes.imgM)}
-              alt='Testbild'
-              title='Bou Meng und seine Frau werden nach Ankunft im S-21 Gefängnis fotografiert; gemalt von Bou Meng, Quelle: http://d.dccam.org/Archives/Photographs/Photos/Bou_Meng/Thumbnails/picture02.png'
-            />
-          </Parallax>
-        </div>
-        <div className={classNames(classes.section)}>
-          <Parallax style={{ paddingTop: '-10%' }} speed={5}>
+        <div className={classNames(classes.section, classes.center)}>
+          <div className={classNames('imgContainerWithTape', 'tape3')}>
             <img
               src={MugshotImage}
-              className={classNames(classes.imgM)}
+              className={classNames(classes.imgM, classes.rotateLeft)}
               alt='Testbild'
               title='Bild eines Gefangenen im Gefängnis, Quelle: https://www.ushmm.org/api/phpThumb/phpThumb.php?src=/m/img/2523689-CAM-032.jpg&w=460&hash=2f086371bfa1c098bf90cc5fe26c7a68'
             />
-          </Parallax>
-          <p style={{ alignSelf: 'center', textAlign: 'justify', paddingTop: '20%' }}>
-            {language.T6_Gefaengnis}
-          </p>
+          </div>
+          <p>{language.T6_Gefaengnis}</p>
         </div>
       </div>
       <div ref={bottomRef}></div>

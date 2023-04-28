@@ -90,8 +90,8 @@ const DictatorshipBackground = (props: Props) => {
           citation={'Pol Pot, 1978'}
           colorCode={'none'}
         ></Quotation>
-        <div className={classNames(classes.section)}>
-          <Parallax style={{ paddingTop: 70 }} speed={5}>
+        <div className={classNames(classes.section, classes.center)} style={{ paddingTop: 70 }}>
+          <Parallax speed={5}>
             <img
               src={PolPotImage}
               className={classNames(classes.imgM)}

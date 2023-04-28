@@ -71,47 +71,51 @@ const ChildhoodC = (props: Props) => {
               title='Aktuelles Bild der Provinz Prey Veng, Quelle: https://de.wikipedia.org/wiki/Prey_Veng_(Provinz)'
               style={{ width: '400px' }}
               alt='Testbild'
+              className={classes.rotateLeft}
             />
           </Parallax>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T1_Geburt}</p>
         </div>
         <div className={classes.section}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T2_Kindheit}</p>
-          <Parallax speed={5}>
+          <Parallax speed={50}>
             <img
               src={ChildrenInRicefield}
               style={{ width: '400px' }}
               alt='Testbild'
               title='KI-generiertes Bild (labs.openai.com)'
+              className={classes.rotateRight}
             />
           </Parallax>
         </div>
-        <div className={classNames(classes.section)}>
+        <div className={classes.section}>
           <Parallax speed={5}>
             <img
               src={ManRepairingMotorbike}
               style={{ width: '500px' }}
               alt='Testbild'
               title='KI-generiertes Bild (labs.openai.com)'
+              className={classes.rotateLeft}
             />
           </Parallax>
-          <div className={classNames(classes.sectionColumn)}>
+          <div className={classes.sectionColumn}>
             <p> {language.T3_Hauptstadt}</p>
             <p> {language.T4_Mechaniker}</p>
           </div>
         </div>
-        <div className={classNames(classes.section)}>
+        <div className={classes.section}>
           <div className={classes.sectionColumn}>
             <p>{language.T5_Heirat}</p>
           </div>
-          <Parallax speed={5}>
+          <div className={classNames('imgContainerWithTape', 'tape1')}>
             <img
               src={Wedding}
               style={{ width: '400px' }}
               alt='Testbild'
               title='KI-generiertes Bild (labs.openai.com)'
+              className={classes.tape}
             />
-          </Parallax>
+          </div>
         </div>
       </div>
       <div ref={bottomRef}></div>

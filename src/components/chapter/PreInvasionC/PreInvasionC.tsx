@@ -72,20 +72,20 @@ const PreInvasionC = (props: Props) => {
             <img
               src={KhmerRougeAttack}
               alt='Testbild'
-              className={classes.img}
+              className={classNames(classes.img, classes.rotateRight)}
               title='Phnom Penh nach einem Angriff der Roten Khmer (1974), Quelle: https://www.ushmm.org/genocide-prevention/countries/cambodia/case-study/background/war-closes-in'
             />
           </Parallax>
         </div>
-        <div className={classes.section}>
-          <Parallax speed={5}>
+        <div className={classNames(classes.section, classes.rightAlign)}>
+          <div className={classNames('imgContainerWithTape', 'tape4')}>
             <img
               src={ChumEmptyWarStreet}
               alt='Testbild'
               title='KI-generiertes Bild (labs.openai.com)'
-              className={classes.img}
+              className={classNames(classes.img, classes.rotateLeft)}
             />
-          </Parallax>
+          </div>
           <p style={{ textAlign: 'justify' }}>{language.T3_Werkstatt}</p>
         </div>
       </div>

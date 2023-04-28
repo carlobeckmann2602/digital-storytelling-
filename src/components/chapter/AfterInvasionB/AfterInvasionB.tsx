@@ -67,10 +67,8 @@ const AfterInvasionB = (props: Props) => {
       </div>
       <div className='chapter-body-wrapper'>
         <div className={classNames(classes.section)}>
-          <p>{language.T1_Ankunft}</p>
-        </div>
-        <div className={classNames(classes.section)}>
           <div className={classNames(classes.sectionColumn)}>
+            <p>{language.T1_Ankunft}</p>
             <p>
               {language.T2_Kinder}
               <Modal direction='RIGHT'>
@@ -78,49 +76,54 @@ const AfterInvasionB = (props: Props) => {
                 <p>{language.I1_Angka}</p>
               </Modal>
             </p>
-            <p>{language.T3_Bio}</p>
           </div>
-          <Parallax speed={5}>
+          <div className={classNames('imgContainerWithTape', 'tape2')}>
             <img
+              className={classNames(classes.img, classes.rotateRight)}
               src={UniformImage}
               alt='Testbild'
               title='Mam Nay, ranghöchster Vernehmungsbeamter der Roten Khmer, führt eine Gruppe von Kaderleuten der Roten Khmer an, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/mam-nay-a-tall-thin-pock-faced-former-science-teacher-nachrichtenfoto/1354465680?adppopup=true'
             />
-          </Parallax>
+          </div>
         </div>
         <div className={classNames(classes.section)}>
-          <Parallax speed={5}>
-            <img
-              src={FieldImage1}
-              alt='Testbild'
-              title='Ein Propagandafoto zeigt Reisbauern bei der Arbeit in einem Gemeinschaftsbetrieb außerhalb von Phnom Penh, Quelle: http://www.tuolsleng.com/detail.php?photographsPage=9&photosPage=111'
-            />
-          </Parallax>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Plantage}</p>
+          <div className={classNames(classes.sectionColumn)}>
+            <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Plantage}</p>
+          </div>
         </div>
         <div className={classNames(classes.section)}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Straflager}</p>
-          <Parallax speed={5}>
+          <Parallax speed={15}>
             <img
+              className={classNames(classes.img, classes.rotateRight)}
               src={FieldImage2}
               alt='Testbild'
               title='Rote-Khmer-Bauern auf einem Propagandafoto, außerhalb von Phnom Penh, Quelle: http://www.tuolsleng.com/detail.php?photographsPage=7&photosPage=73'
             />
           </Parallax>
+          <Parallax speed={25}>
+            <img
+              className={classNames(classes.img, classes.rotateLeft)}
+              src={FieldImage1}
+              alt='Testbild'
+              title='Ein Propagandafoto zeigt Reisbauern bei der Arbeit in einem Gemeinschaftsbetrieb außerhalb von Phnom Penh, Quelle: http://www.tuolsleng.com/detail.php?photographsPage=9&photosPage=111'
+            />
+          </Parallax>
         </div>
         <Quotation quote={language.Q1_Plantage} citation={'Bou Meng'} colorCode={'bou'}></Quotation>
         <div className={classNames(classes.section)}>
-          <Parallax speed={5}>
+          <Parallax speed={15}>
             <img
+              className={classNames(classes.img, classes.rotateLeft)}
               src={FieldImage3}
               alt='Testbild'
               title='Bauern auf einem Propagandafoto, in einem Reisfeld außerhalb von Phnom Penh, Quelle: http://www.tuolsleng.com/detail.php?photographsPage=7&photosPage=80'
             />
           </Parallax>
-          <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T6_Verschwinden}</p>
-        </div>
-        <div className={classNames(classes.section)}>
-          <p>{language.T7_Angst}</p>
+          <div className={classNames(classes.sectionColumn)}>
+            <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T6_Verschwinden}</p>
+            <p>{language.T7_Angst}</p>
+          </div>
         </div>
       </div>
       <div ref={bottomRef}></div>

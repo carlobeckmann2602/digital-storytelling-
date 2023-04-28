@@ -63,28 +63,28 @@ const ArrestC = (props: Props) => {
         </div>
       </div>
       <div className='chapter-body-wrapper'>
-        <div className={classNames(classes.section, classes.leftAlign)}>
-          <p> {language.T1_Arbeit}</p>
-        </div>
-        <div id={CHAPTER_ID} className={classNames(classes.section)}>
-          <Parallax speed={5}>
+        <div className={classNames(classes.section)}>
+          <div className={classNames(classes.sectionColumn)}>
+            <p>{language.T1_Arbeit}</p>
+            <p style={{ textAlign: 'justify' }}> {language.T2_Verhaftung}</p>
+          </div>
+          <div className={classNames('imgContainerWithTape', 'tape2')}>
             <img
               src={ArrestImage}
-              className={classNames(classes.imgM)}
+              className={classNames(classes.imgM, classes.rotateLeft)}
               title='Verhaftung von zukünftigen Gefangenen; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
               alt='Testbild'
             />
-          </Parallax>
-          <p style={{ textAlign: 'justify' }}> {language.T2_Verhaftung}</p>
+          </div>
         </div>
         <div></div>
         <div className={classNames(classes.section)}>
           <div className={classNames(classes.sectionColumn)}>
             <p>{language.T3_Gefaengnis}</p>
-            <Parallax style={{ paddingTop: '20%' }} speed={5}>
+            <Parallax style={{ paddingTop: '50%' }} speed={25} easing={'easeOutBack'}>
               <img
                 src={Fotograph2Image}
-                style={{ width: '400px' }}
+                className={classNames(classes.imgM, classes.rotateLeft)}
                 title='Gefangenen-Fotografie bei Ankunft im Gefängnis; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
                 alt='Testbild'
               />
@@ -93,7 +93,7 @@ const ArrestC = (props: Props) => {
           <Parallax speed={5}>
             <img
               src={FotographImage}
-              style={{ width: '400px' }}
+              className={classNames(classes.imgM, classes.rotateRight)}
               title='Gefangenen-Fotografie bei Ankunft im Gefängnis; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
               alt='Testbild'
             />

@@ -67,7 +67,7 @@ const AfterInvasionC = (props: Props) => {
           <Parallax speed={5}>
             <img
               src={MarchImage}
-              className={classNames(classes.imgM)}
+              className={classNames(classes.imgM, classes.rotateLeft)}
               alt='Testbild'
               title='Tausende von Menschen strömen auf dem Monivong-Boulevard ins Zentrum von Phnom Penh, Quelle: https://api.time.com/wp-content/uploads/2019/01/gettyimages-158676320.jpg'
             />
@@ -82,20 +82,20 @@ const AfterInvasionC = (props: Props) => {
         </div>
         <div className={classNames(classes.section)}>
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T4_Arbeit}</p>
-          <Parallax speed={5}>
+          <div className={classNames('imgContainerWithTape', 'tape1')}>
             <img
               src={BikeImage}
-              className={classNames(classes.imgM)}
+              className={classNames(classes.imgM, classes.rotateRight)}
               alt='Testbild'
               title='Eine Straße in Phnom Penh, Quelle: https://www.pinterest.de/pin/545217098632521379/'
             />
-          </Parallax>
+          </div>
         </div>
         <div className={classNames(classes.section)}>
-          <Parallax speed={5}>
+          <Parallax speed={5} scale={[1, 1.2]} easing={'easeOutBack'}>
             <img
               src={FactoryImage}
-              className={classNames(classes.imgM)}
+              className={classNames(classes.imgM, classes.rotateLeft)}
               alt='Testbild'
               title='Kader der Roten Khmer bei der Arbeit in einer Textilfabrik, Quelle: https://www.researchgate.net/figure/Khmer-Rouge-cadre-working-in-a-textile-factory-source-Documentation-Center-of-Cambodia_fig5_275319887'
             />

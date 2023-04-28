@@ -64,24 +64,25 @@ const PrisonC = (props: Props) => {
       </div>
       <div className='chapter-body-wrapper'>
         <div className={classes.section}>
-          <div className={classNames(classes.sectionColumn)}>
-            <p className={classNames(classes.text)}> {language.T1_PrisonC}</p>
-          </div>
-          <Parallax speed={5}>
+          <p className={classNames(classes.text)}> {language.T1_PrisonC}</p>
+          <div
+            className={classNames('imgContainerWithTape', 'tape3')}
+            style={{ marginRight: '5%' }}
+          >
             <img
               src={Torture1Image}
               alt='Testbild'
-              className={classNames(classes.imgS)}
+              className={classNames(classes.imgS, classes.rotateRight)}
               title='Folter eines Gefangenen mit Werkzeugen; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
             />
-          </Parallax>
+          </div>
         </div>
         <div className={classes.section}>
           <Parallax speed={5}>
             <img
               src={Torture2Image}
               alt='Testbild'
-              className={classNames(classes.imgM)}
+              className={classNames(classes.imgM, classes.rotateLeft)}
               title='Ein Gefangener der Roten Khmer wird außerhalb des Gefängnisses ausgepeitscht; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
             />
           </Parallax>
@@ -90,23 +91,18 @@ const PrisonC = (props: Props) => {
           </div>
         </div>
         <div className={classes.section}>
-          <div className={classNames(classes.sectionColumn)}>
-            <p className={classNames(classes.text)}> {language.T3_PrisonC}</p>
-          </div>
-          <Parallax speed={5}>
+          <p className={classNames(classes.text)}> {language.T3_PrisonC}</p>
+          <Parallax speed={5} scale={[1, 1.3]}>
             <img
               src={Torture3Image}
               alt='Testbild'
-              className={classNames(classes.imgS)}
+              className={classNames(classes.imgM, classes.rotateRight)}
               title='Ein Gefangener der Roten Khmer wird ausgepeitscht; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
             />
           </Parallax>
         </div>
-        <div className={classes.spacer} />
         <div className={classes.section}>
-          <div className={classNames(classes.sectionColumn)}>
-            <p className={classNames(classes.text)}> {language.T4_PrisonC}</p>
-          </div>
+          <p className={classNames(classes.text)}> {language.T4_PrisonC}</p>
         </div>
       </div>
       <div ref={bottomRef}></div>

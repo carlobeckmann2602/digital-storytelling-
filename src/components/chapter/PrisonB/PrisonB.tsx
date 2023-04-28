@@ -69,7 +69,7 @@ const PrisonB = (props: Props) => {
             <img
               src={EscortingPainting}
               alt='Testbild'
-              className={classNames(classes.imgM)}
+              className={classNames(classes.imgM, classes.rotateLeft)}
               title='Ein Anhänger der Roten Khmer eskortiert Bou Meng zum Gefängnisleiter "Dutch"; gemalt von Bou Meng (2004), Quelle: http://d.dccam.org/Archives/Photographs/Bou_Meng.htm'
             />
           </Parallax>
@@ -86,21 +86,26 @@ const PrisonB = (props: Props) => {
             <p className={classNames(classes.text)}> {language.T4_PrisonB}</p>
           </div>
           <Parallax style={{ padding: '5% 0' }} speed={5}>
-            <img
-              src={ConfessionPainting}
-              alt='Testbild'
-              title='Die Roten Khmer erzwingen ein Geständnis von Bou Meng; gemalt von Bou Meng (2004), Quelle: http://d.dccam.org/Archives/Photographs/Bou_Meng.htm'
-            />
+            <div className={classNames('imgContainerWithTape', 'tape4')}>
+              <img
+                src={ConfessionPainting}
+                className={classNames(classes.imgM, classes.rotateRight)}
+                alt='Testbild'
+                title='Die Roten Khmer erzwingen ein Geständnis von Bou Meng; gemalt von Bou Meng (2004), Quelle: http://d.dccam.org/Archives/Photographs/Bou_Meng.htm'
+              />
+            </div>
           </Parallax>
         </div>
         <div className={classNames(classes.section)}>
           <Parallax speed={3}>
-            <img
-              src={PaintPainting}
-              alt='Testbild'
-              className={classNames(classes.imgS)}
-              title='Bou Meng malt den Anführer der Roten Khmer, Pol Pot; gemalt von Bou Meng (2004), Quelle: http://d.dccam.org/Archives/Photographs/Bou_Meng.htm'
-            />
+            <div className={classNames('imgContainerWithTape', 'tape1')}>
+              <img
+                src={PaintPainting}
+                alt='Testbild'
+                className={classNames(classes.imgS, classes.rotateLeft)}
+                title='Bou Meng malt den Anführer der Roten Khmer, Pol Pot; gemalt von Bou Meng (2004), Quelle: http://d.dccam.org/Archives/Photographs/Bou_Meng.htm'
+              />
+            </div>
           </Parallax>
           <div className={classNames(classes.sectionColumn2)}>
             <p className={classNames(classes.text)}> {language.T5_PrisonB}</p>
@@ -108,9 +113,10 @@ const PrisonB = (props: Props) => {
           </div>
         </div>
         <div style={{ paddingLeft: '35%' }}>
-          <Parallax speed={3}>
+          <Parallax speed={3} scale={[1, 1.3]}>
             <img
               src={Paint2Painting}
+              className={classNames(classes.imgM, classes.rotateRight)}
               alt='Testbild'
               title='Bou Meng und andere Gefangene fertigen unter der Beobachtung von Anhängern der Roten Khmer Gemälde und Skulpturen von Pol Pot an; gemalt von Bou Meng (2004), Quelle: http://d.dccam.org/Archives/Photographs/Bou_Meng.htm'
             />
