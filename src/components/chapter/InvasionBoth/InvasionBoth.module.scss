@@ -64,10 +64,12 @@
 }
 
 .dashed {
-  border-right: 3px dashed #bbb;
-  color: transparent;
-  margin-top: 0;
-  margin-bottom: 0;
+  border: none;
+  width: 2px;
+  background-image: linear-gradient(black 60%, rgba(255, 255, 255, 0) 0%);
+  background-position: right;
+  background-size: 2px 36px;
+  background-repeat: repeat-y;
 }
 
 .highlight {

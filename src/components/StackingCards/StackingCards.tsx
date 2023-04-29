@@ -10,7 +10,7 @@ function StackingCards(props: StackingCardsProps) {
   const TRANSLATE_FACTOR = 10
 
   const { scrollYProgress } = useScroll()
-  const s = useTransform(scrollYProgress, (latest) => 0.8 + latest)
+  const s = useTransform(scrollYProgress, (latest) => Math.min(0.8 + latest, 1))
 
   function getTranslateX(index: number) {
     const isEven = index % 2 === 0
