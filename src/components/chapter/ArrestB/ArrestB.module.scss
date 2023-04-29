@@ -28,6 +28,10 @@ img {
     .imgM {
       width: 33.3%;
       height: auto;
+      object-fit: contain;
+      border: none !important;
+      filter: drop-shadow(0 -6px 0 $white) drop-shadow(0 6px 0 $white) drop-shadow(-6px 0 0 $white)
+        drop-shadow(6px 0 0 $white);
     }
 
     .sectionColumn {
