@@ -86,23 +86,26 @@ const OutlookBackground = (props: Props) => {
             <p className={classNames(classes.text)}> {language.T2_Besuch}</p>
           </div>
           <div className={classNames(classes.sectionColumnImg)}>
-            <Parallax style={{ alignSelf: 'flex-end' }} speed={5}>
+            <Parallax style={{ alignSelf: 'flex-end' }} speed={-5}>
               <img
                 src={Painting1Image}
+                className={classNames(classes.imgXS)}
                 alt='Testbild'
                 title='Verhaftung von zukünftigen Gefangenen; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
               />
             </Parallax>
-            <Parallax style={{ alignSelf: 'flex-start' }} speed={9}>
+            <Parallax style={{ alignSelf: 'flex-start' }} speed={5}>
               <img
                 src={Painting2Image}
+                className={classNames(classes.imgM)}
                 alt='Testbild'
                 title='Bou Meng und seine Frau im S-21-Gefängnis mit verbundenen Augen; gemalt von Bou Meng, Quelle: http://d.dccam.org/Archives/Photographs/Photos/Bou_Meng/Thumbnails/picture01.png'
               />
             </Parallax>
-            <Parallax style={{ alignSelf: 'flex-end' }} speed={7}>
+            <Parallax style={{ alignSelf: 'flex-end' }} speed={20}>
               <img
                 src={Painting3Image}
+                className={classNames(classes.imgS)}
                 alt='Testbild'
                 title='Leben der Gefangenen im Gefängnis, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
               />
@@ -110,7 +113,7 @@ const OutlookBackground = (props: Props) => {
           </div>
         </div>
         <div className={classNames(classes.section)}>
-          <Parallax speed={5}>
+          <Parallax speed={-5}>
             <img
               src={Trial2Image}
               style={{ width: '500px' }}
@@ -124,11 +127,11 @@ const OutlookBackground = (props: Props) => {
           </div>
         </div>
         <div className={classNames(classes.section)}>
-          <div style={{ paddingTop: '200px' }} className={classNames(classes.sectionColumn2)}>
+          <div className={classNames(classes.sectionColumn2)}>
             <p className={classNames(classes.headerText)}>{language.H4_Verhandlung}</p>
             <p className={classNames(classes.text)}> {language.T4_Verhandlung}</p>
           </div>
-          <Parallax speed={5}>
+          <Parallax speed={15}>
             <img
               src={TrialImage}
               className={classNames(classes.imgM)}

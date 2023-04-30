@@ -1,5 +1,16 @@
 @import '@/App.scss';
 
+$randomNumberRight: random(3);
+$randomNumberLeft: random(3) - 4;
+img {
+  &.rotateLeft {
+    transform: rotate($randomNumberLeft + deg);
+  }
+  &.rotateRight {
+    transform: rotate($randomNumberRight + deg);
+  }
+}
+
 .heading {
   color: $context-timeline-color;
 }
@@ -33,23 +44,30 @@
 
   &.leftAlign {
     justify-content: flex-start;
+
+    p {
+      width: 70%;
+      text-align: justify;
+    }
   }
 
   &.rightAlign {
     justify-content: flex-end;
-  }
 
-  p {
-    width: 80%;
-    text-align: justify;
+    p {
+      width: 70%;
+      text-align: justify;
+    }
   }
 
   .imgL {
     width: 100%;
+    max-width: 500px;
   }
 
   .imgS {
     width: 80%;
+    max-width: 400px;
   }
 }
 
@@ -76,6 +94,7 @@
 
 .center {
   display: block;
+  text-align: justify;
   margin: 0 auto;
 }
 

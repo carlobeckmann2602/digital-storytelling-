@@ -1,7 +1,7 @@
 @import '@/App.scss';
 
 $randomNumberRight: random(3);
-$randomNumberLeft: random(3) - 3;
+$randomNumberLeft: random(3) - 4;
 img {
   &.rotateLeft {
     transform: rotate($randomNumberLeft + deg);
@@ -23,11 +23,6 @@ img {
 
   &.leftAlign {
     justify-content: flex-start;
-
-    // p {
-    //   width: 40%;
-    //   text-align: justify;
-    // }
   }
 
   &.rightAlign {

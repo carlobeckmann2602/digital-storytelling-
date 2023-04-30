@@ -83,18 +83,18 @@ const EscapeFromPrisonBoth = (props: Props) => {
           <div className={classes.splitScreenWrapper}>
             <div className={classNames(classes.leftSide)}>
               {/* Offset container for first section */}
-              <div style={{ height: computeHeight('.right-first', 0) }}></div>
+              <div style={{ height: computeHeight('.right-first', 450) }}></div>
               {/* 1.section LEFT */}
               <div className={classNames(classes.section, 'left-first')}>
-                <div className={classNames(classes.subsection, classes.leftAlign)}>
+                <div className={classNames(classes.subsection, classes.rightAlign)}>
                   <p>{language.C_1}</p>
                 </div>
-                <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  <Parallax speed={3}>
+                <div className={classNames(classes.subsection, classes.center)}>
+                  <Parallax speed={-7}>
                     <img
                       src={ChumLeavingPrison}
                       alt='Testbild'
-                      className={classNames(classes.imgS)}
+                      className={classNames(classes.imgS, classes.rotateLeft)}
                       title='KI-generiertes Bild (labs.openai.com)'
                     />
                   </Parallax>
@@ -102,21 +102,21 @@ const EscapeFromPrisonBoth = (props: Props) => {
                 <div className={classNames(classes.subsection, classes.leftAlign)}>
                   <p>{language.C_2}</p>
                 </div>
-                <div className={classNames(classes.subsection, classes.leftAlign)}>
+                <div className={classNames(classes.subsection, classes.rightAlign)}>
                   <p>{language.C_3}</p>
                 </div>
-                <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  <Parallax speed={3}>
+                <div className={classNames(classes.subsection, classes.leftAlign)}>
+                  <Parallax speed={17}>
                     <img
                       src={ChumHiking}
                       alt='Testbild'
-                      className={classNames(classes.imgS)}
+                      className={classNames(classes.imgL)}
                       title='KI-generiertes Bild (labs.openai.com)'
                     />
                   </Parallax>
                 </div>
               </div>
-              <div style={{ height: computeHeight('.right-second', 0) }}>
+              <div style={{ height: computeHeight('.right-second', 450) }}>
                 <div
                   className={classNames(
                     classes.section,
@@ -130,12 +130,13 @@ const EscapeFromPrisonBoth = (props: Props) => {
                   </div>
                 </div>
               </div>
+              {/* 2.section LEFT */}
               <div className={classNames(classes.section, 'left-second')}>
-                <div className={classNames(classes.subsection, classes.leftAlign)}>
+                <div className={classNames(classes.subsection, classes.rightAlign)}>
                   <p>{language.C_5}</p>
                 </div>
               </div>
-              <div style={{ height: computeHeight('.left-second', 0) }}>
+              <div style={{ height: computeHeight('.left-second', 300) }}>
                 <div
                   className={classNames(
                     classes.section,
@@ -157,18 +158,18 @@ const EscapeFromPrisonBoth = (props: Props) => {
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
                   <p>{language.B_1}</p>
                 </div>
-                <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  <Parallax speed={3}>
+                <div className={classNames(classes.subsection, classes.center)}>
+                  <Parallax speed={15}>
                     <img
                       src={BouTiedUp}
                       alt='Testbild'
-                      className={classNames(classes.imgS)}
+                      className={classNames(classes.imgL)}
                       title='KI-generiertes Bild (labs.openai.com)'
                     />
                   </Parallax>
                 </div>
               </div>
-              <div style={{ height: computeHeight('.left-first', 0) }}>
+              <div style={{ height: computeHeight('.left-first', 600) }}>
                 <div
                   className={classNames(
                     classes.section,
@@ -177,21 +178,22 @@ const EscapeFromPrisonBoth = (props: Props) => {
                     'left-first',
                   )}
                 >
-                  <div className={classNames(classes.subsection, classes.rightAlign)}>
+                  <div className={classNames(classes.subsection, classes.leftAlign)}>
                     <p>{language.B_2}</p>
                   </div>
                 </div>
               </div>
+              {/* 2.section RIGHT */}
               <div className={classNames(classes.section, 'right-second')}>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
                   <p>{language.B_3}</p>
                 </div>
-                <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  <Parallax speed={3}>
+                <div className={classNames(classes.subsection, classes.center)}>
+                  <Parallax speed={-7}>
                     <img
                       src={BouEatingBerries}
                       alt='Testbild'
-                      className={classNames(classes.imgS)}
+                      className={classNames(classes.imgS, classes.rotateRight)}
                       title='KI-generiertes Bild (labs.openai.com)'
                     />
                   </Parallax>
@@ -200,7 +202,7 @@ const EscapeFromPrisonBoth = (props: Props) => {
                   <p>{language.B_4}</p>
                 </div>
               </div>
-              <div style={{ height: computeHeight('.left-second', 0) }}>
+              <div style={{ height: computeHeight('.left-second', 400) }}>
                 <div
                   className={classNames(
                     classes.section,
@@ -209,18 +211,18 @@ const EscapeFromPrisonBoth = (props: Props) => {
                     'left-second',
                   )}
                 >
-                  <div className={classNames(classes.subsection, classes.rightAlign)}>
+                  <div className={classNames(classes.subsection, classes.leftAlign)}>
                     <p>{language.B_5}</p>
                   </div>
                 </div>
               </div>
               <div className={classNames(classes.section, 'right-third')}>
                 <div className={classNames(classes.subsection, classes.rightAlign)}>
-                  <Parallax speed={3}>
+                  <Parallax speed={18} scale={[1, 1.2]}>
                     <img
                       src={BouDrawingLenin}
                       alt='Testbild'
-                      className={classNames(classes.imgS)}
+                      className={classNames(classes.imgL)}
                       title='KI-generiertes Bild (labs.openai.com)'
                     />
                   </Parallax>

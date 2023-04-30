@@ -79,6 +79,14 @@ const ArrestC = (props: Props) => {
         </div>
         <div></div>
         <div className={classNames(classes.section)}>
+          <Parallax speed={5}>
+            <img
+              src={FotographImage}
+              className={classNames(classes.imgM, classes.rotateRight)}
+              title='Gefangenen-Fotografie bei Ankunft im Gefängnis; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
+              alt='Testbild'
+            />
+          </Parallax>
           <div className={classNames(classes.sectionColumn)}>
             <p>{language.T3_Gefaengnis}</p>
             <Parallax style={{ paddingTop: '50%' }} speed={25} easing={'easeOutBack'}>
@@ -90,14 +98,6 @@ const ArrestC = (props: Props) => {
               />
             </Parallax>
           </div>
-          <Parallax speed={5}>
-            <img
-              src={FotographImage}
-              className={classNames(classes.imgM, classes.rotateRight)}
-              title='Gefangenen-Fotografie bei Ankunft im Gefängnis; gemalt von Vann Nath, Quelle: https://khmerrougeincambodia.weebly.com/vann-naths-paintings.html'
-              alt='Testbild'
-            />
-          </Parallax>
         </div>
         <p className={classNames(classes.highlight)}>{language.T4_Toul}</p>
       </div>

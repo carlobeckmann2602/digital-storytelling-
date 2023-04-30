@@ -82,7 +82,7 @@ const PrisonLifeBackground = (props: Props) => {
           </Parallax>
         </div>
         <div className={classes.section}>
-          <Parallax speed={5}>
+          <Parallax speed={10}>
             <img
               src={CorpseImage}
               className={classNames(classes.imgM)}
@@ -106,7 +106,7 @@ const PrisonLifeBackground = (props: Props) => {
             <span className={classNames(classes.bold)}>{language.H3_1_PrisonLife}</span>
             <span>{language.T3_1_PrisonLife}</span>
           </p>
-          <Parallax speed={5}>
+          <Parallax speed={-8}>
             <img
               src={Torture4Image}
               className={classNames(classes.imgS)}
@@ -116,7 +116,7 @@ const PrisonLifeBackground = (props: Props) => {
           </Parallax>
         </div>
         <div className={classNames(classes.section)}>
-          <Parallax speed={5}>
+          <Parallax speed={10}>
             <img
               src={Torture3Image}
               className={classNames(classes.imgM)}
@@ -140,7 +140,7 @@ const PrisonLifeBackground = (props: Props) => {
             <span className={classNames(classes.bold)}>{language.H3_4_PrisonLife}</span>
             <span>{language.T3_4_PrisonLife}</span>
           </p>
-          <Parallax speed={5}>
+          <Parallax speed={20}>
             <img
               src={Torture5Image}
               className={classNames(classes.imgM)}

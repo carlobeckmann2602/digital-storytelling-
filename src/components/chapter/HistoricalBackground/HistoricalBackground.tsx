@@ -120,7 +120,7 @@ const HistoricalBackground = (props: Props) => {
             <p className={classNames(classes.headerText)}>{language.H3_Aufstand}</p>
             <p className={classNames(classes.text)}> {language.T3_Aufstand}</p>
           </div>
-          <Parallax speed={5}>
+          <Parallax speed={15}>
             <img
               src={LonNol}
               className={classNames(classes.imgS)}
@@ -130,7 +130,7 @@ const HistoricalBackground = (props: Props) => {
           </Parallax>
         </div>
         <div className={classNames(classes.section)}>
-          <Parallax speed={5}>
+          <Parallax speed={-10}>
             <img
               src={VietnamKrieg}
               className={classNames(classes.imgS)}

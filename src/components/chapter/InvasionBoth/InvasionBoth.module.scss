@@ -1,5 +1,16 @@
 @import '@/App.scss';
 
+$randomNumberRight: random(3);
+$randomNumberLeft: random(3) - 4;
+img {
+  &.rotateLeft {
+    transform: rotate($randomNumberLeft + deg);
+  }
+  &.rotateRight {
+    transform: rotate($randomNumberRight + deg);
+  }
+}
+
 .heading {
   color: $context-timeline-color;
 }
@@ -49,7 +60,7 @@
   }
 
   .imgL {
-    width: 100%;
+    width: 95%;
     max-width: 400px;
   }
 

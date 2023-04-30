@@ -69,7 +69,7 @@ const InvasionBackground = (props: Props) => {
             <p className={classNames(classes.headerText)}>{language.H1_Zuflucht}</p>
             <p className={classNames(classes.text)}> {language.T1_Zuflucht}</p>
           </div>
-          <Parallax speed={5}>
+          <Parallax speed={-5}>
             <img
               src={Students}
               className={classNames(classes.imgS)}
@@ -79,7 +79,7 @@ const InvasionBackground = (props: Props) => {
           </Parallax>
         </div>
         <div className={classNames(classes.section)}>
-          <Parallax speed={5}>
+          <Parallax speed={10}>
             <img
               src={Marines}
               className={classNames(classes.imgS)}

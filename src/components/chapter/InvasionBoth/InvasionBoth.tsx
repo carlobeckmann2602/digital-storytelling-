@@ -53,14 +53,6 @@ const InvasionBoth = (props: Props) => {
       sound1.play()
       sound1.fade(0, 0.3, props.fadingTime)
     }
-    // else {
-    //   if (sound && (!topOnScreen || !props.soundEnabled)) {
-    //     sound.once('fade', () => {
-    //       stop()
-    //     })
-    //     sound.fade(0.4, 0, props.fadingTime)
-    //   }
-    // }
   }, [topOnScreen, props.soundEnabled])
 
   useEffect(() => {
@@ -132,11 +124,11 @@ const InvasionBoth = (props: Props) => {
                 <p>{language.C_1}</p>
               </div>
               <div className={classNames(classes.subsection, classes.center)}>
-                <Parallax speed={3}>
+                <Parallax speed={7}>
                   <img
                     src={InvasionImage2}
                     alt='Testbild'
-                    className={classNames(classes.imgL)}
+                    className={classNames(classes.imgL, classes.rotateLeft)}
                     title='Kambodschanische Einwohner warten in einer Straße von Phnom Penh, während das Benzindepot brennt, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/cambodian-inhabitants-wait-in-a-street-of-phnom-penh-nachrichtenfoto/457589602?adppopup=true'
                   />
                 </Parallax>
@@ -145,11 +137,11 @@ const InvasionBoth = (props: Props) => {
                 <p>{language.C_2}</p>
               </div>
               <div className={classNames(classes.subsection, classes.leftAlign)}>
-                <Parallax speed={3}>
+                <Parallax speed={-5}>
                   <img
                     src={InvasionImage3}
                     alt='Testbild'
-                    className={classNames(classes.imgS)}
+                    className={classNames(classes.imgS, classes.rotateRight)}
                     title='Bürger feiern den Einmarsch der Roten Khmer, Quelle: https://www.ushmm.org/api/phpThumb/phpThumb.php?src=/m/img/2524135-CAM-054.jpg&w=1100&hash=a2f35cbd572701c89f4b0f8e3d525d26'
                   />
                 </Parallax>
@@ -179,7 +171,7 @@ const InvasionBoth = (props: Props) => {
                   <img
                     src={InvasionImage4}
                     alt='Testbild'
-                    className={classNames(classes.imgS)}
+                    className={classNames(classes.imgS, classes.rotateLeft)}
                     title='Menschen fliehen aus Phnom Penh, Quelle: https://www.pulitzer.org/cms/sites/default/files/content/fleeing_2.jpg'
                   />
                 </div>
@@ -200,7 +192,7 @@ const InvasionBoth = (props: Props) => {
                   <img
                     src={CorpsesImage1}
                     alt='Testbild'
-                    className={classNames(classes.imgL)}
+                    className={classNames(classes.imgL, classes.rotateRight)}
                     title='Fund von Leichen, die Opfer der Roten Khmer wurden, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/photo-just-received-from-the-vietnam-news-agency-hanoi-nachrichtenfoto/515554462'
                   />
                 </div>
@@ -210,7 +202,7 @@ const InvasionBoth = (props: Props) => {
                   <img
                     src={CorpsesImage2}
                     alt='Testbild'
-                    className={classNames(classes.imgL)}
+                    className={classNames(classes.imgL, classes.rotateLeft)}
                     title='Von den Roten Khmer hingerichtete Zivilisten, Quelle: https://www.flickr.com/photos/13476480@N07/3774403666/in/photostream/'
                   />
                   <p className={classNames(classes.highlight)}>{language.C_8_2}</p>
@@ -222,7 +214,7 @@ const InvasionBoth = (props: Props) => {
                   <img
                     src={CorpsesImage3}
                     alt='Testbild'
-                    className={classNames(classes.imgL)}
+                    className={classNames(classes.imgL, classes.rotateRight)}
                     title='"Killing Field" der Roten Khmer, Quelle: https://medium.com/@BWHopen/never-again-the-cambodian-genocide-2d9d17a2b7d4'
                   />
                 </div>
@@ -277,7 +269,7 @@ const InvasionBoth = (props: Props) => {
                     src={SoldierImage}
                     alt='Testbild'
                     title='Junge Menschen jubeln den eintreffenden Roten Khmer zu und präsentieren ihre Waffen, Quelle: https://www.gettyimages.de/detail/nachrichtenfoto/the-fall-of-phnom-penh-to-the-khmer-rouge-on-april-17-nachrichtenfoto/158676325'
-                    className={classNames(classes.imgS)}
+                    className={classNames(classes.imgS, classes.rotateRight)}
                   />
                 </div>
               </div>
@@ -299,7 +291,7 @@ const InvasionBoth = (props: Props) => {
                     src={VictimsImage}
                     title='Frauen und Kinder verstecken sich aus Angst vor den Roten Khmer, Quelle: https://www.buzzfeednews.com/article/jinamoore/theres-no-more-hiding-cambodias-history-of-sexual-abuse'
                     alt='Testbild'
-                    className={classNames(classes.imgS)}
+                    className={classNames(classes.imgS, classes.rotateLeft)}
                   />
                 </div>
                 <div className={classNames(classes.subsection, classes.leftAlign)}>

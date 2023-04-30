@@ -76,7 +76,7 @@ const DictatorshipBackground = (props: Props) => {
             <p className={classNames(classes.headerText)}>{language.H2_Deportation}</p>
             <p className={classNames(classes.text)}> {language.T2_Deportation}</p>
           </div>
-          <Parallax speed={5}>
+          <Parallax speed={-7}>
             <img
               src={UniformImage}
               className={classNames(classes.imgS)}
@@ -91,7 +91,7 @@ const DictatorshipBackground = (props: Props) => {
           colorCode={'none'}
         ></Quotation>
         <div className={classNames(classes.section, classes.center)} style={{ paddingTop: 70 }}>
-          <Parallax speed={5}>
+          <Parallax speed={22}>
             <img
               src={PolPotImage}
               className={classNames(classes.imgM)}
@@ -109,7 +109,7 @@ const DictatorshipBackground = (props: Props) => {
             <p className={classNames(classes.headerText)}>{language.H4_Verfolgung}</p>
             <p className={classNames(classes.text)}> {language.T4_Verfolgung}</p>
           </div>
-          <Parallax speed={5}>
+          <Parallax speed={-12}>
             <img
               src={TempleImage}
               className={classNames(classes.imgM)}

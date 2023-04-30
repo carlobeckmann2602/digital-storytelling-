@@ -70,11 +70,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 5%;
-  width: 100%;
+  // gap: 1%;
+  width: 150%;
 
-  img {
+  .imgXS {
     width: 200px;
+  }
+
+  .imgS {
+    width: 250px;
+  }
+
+  .imgM {
+    width: 300px;
   }
 }
 

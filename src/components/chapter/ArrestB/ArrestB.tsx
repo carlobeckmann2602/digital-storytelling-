@@ -95,13 +95,13 @@ const ArrestB = (props: Props) => {
         <div className={classNames(classes.section, classes.lessGap)}>
           <img
             src={BlindfoldedImage}
-            className={classNames(classes.imgM)}
+            className={classNames(classes.imgM, classes.rotateRight)}
             alt='Testbild'
             title='Bou Meng und seine Frau im S-21-Gefängnis mit verbundenen Augen; gemalt von Bou Meng, Quelle: http://d.dccam.org/Archives/Photographs/Photos/Bou_Meng/Thumbnails/picture01.png'
           />
           <img
             src={ArrestImage}
-            className={classNames(classes.imgM)}
+            className={classNames(classes.imgM, classes.rotateLeft)}
             alt='Testbild'
             title='Bou Meng und seine Frau werden nach Ankunft im S-21 Gefängnis fotografiert; gemalt von Bou Meng, Quelle: http://d.dccam.org/Archives/Photographs/Photos/Bou_Meng/Thumbnails/picture02.png'
           />
