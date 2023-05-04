@@ -95,7 +95,7 @@ const AfterInvasionB = (props: Props) => {
           <p style={{ alignSelf: 'center', textAlign: 'justify' }}>{language.T5_Straflager}</p>
           <Parallax speed={15}>
             <img
-              className={classNames(classes.img, classes.rotateRight)}
+              className={classNames(classes.img, classes.imgM, classes.rotateRight)}
               src={FieldImage2}
               alt='Testbild'
               title='Rote-Khmer-Bauern auf einem Propagandafoto, außerhalb von Phnom Penh, Quelle: http://www.tuolsleng.com/detail.php?photographsPage=7&photosPage=73'
@@ -103,7 +103,7 @@ const AfterInvasionB = (props: Props) => {
           </Parallax>
           <Parallax speed={25}>
             <img
-              className={classNames(classes.img, classes.rotateLeft)}
+              className={classNames(classes.img, classes.imgM, classes.rotateLeft)}
               src={FieldImage1}
               alt='Testbild'
               title='Ein Propagandafoto zeigt Reisbauern bei der Arbeit in einem Gemeinschaftsbetrieb außerhalb von Phnom Penh, Quelle: http://www.tuolsleng.com/detail.php?photographsPage=9&photosPage=111'
